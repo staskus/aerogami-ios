@@ -13,6 +13,12 @@
 		AA0A1EBC215BA87300754EC7 /* TravelDataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0A1EAE215BA87300754EC7 /* TravelDataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA0A1EC6215BA88300754EC7 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A1EC5215BA88300754EC7 /* Example.swift */; };
 		AA0A1ED6215BA91F00754EC7 /* TravelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1ED5215BA91F00754EC7 /* TravelKit.framework */; };
+		AA7FD501215BC778000FB362 /* APIRegionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD500215BC778000FB362 /* APIRegionDataStore.swift */; };
+		AA7FD503215BC796000FB362 /* RealmRegionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD502215BC796000FB362 /* RealmRegionDataStore.swift */; };
+		AA7FD505215BC7AE000FB362 /* TravelAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7FD504215BC7AE000FB362 /* TravelAPIKit.framework */; };
+		AA7FD507215BC859000FB362 /* LocalRegionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD506215BC859000FB362 /* LocalRegionDataStore.swift */; };
+		AA7FD509215BC86E000FB362 /* RemoteRegionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD508215BC86E000FB362 /* RemoteRegionDataStore.swift */; };
+		AA7FD50F215BCAC5000FB362 /* RegionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD50E215BCAC5000FB362 /* RegionRepository.swift */; };
 		BBBBB7D93B87941F94A099DD /* Pods_TravelDataKit_TravelDataKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543E2F0D23DBD5862F1C52B7 /* Pods_TravelDataKit_TravelDataKitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +46,12 @@
 		AA0A1EBB215BA87300754EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0A1EC5215BA88300754EC7 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		AA0A1ED5215BA91F00754EC7 /* TravelKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TravelKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7FD500215BC778000FB362 /* APIRegionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRegionDataStore.swift; sourceTree = "<group>"; };
+		AA7FD502215BC796000FB362 /* RealmRegionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRegionDataStore.swift; sourceTree = "<group>"; };
+		AA7FD504215BC7AE000FB362 /* TravelAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TravelAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7FD506215BC859000FB362 /* LocalRegionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRegionDataStore.swift; sourceTree = "<group>"; };
+		AA7FD508215BC86E000FB362 /* RemoteRegionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRegionDataStore.swift; sourceTree = "<group>"; };
+		AA7FD50E215BCAC5000FB362 /* RegionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRepository.swift; sourceTree = "<group>"; };
 		BB6DCC23F856A65029C18EB7 /* Pods-TravelDataKit-TravelDataKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelDataKit-TravelDataKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelDataKit-TravelDataKitTests/Pods-TravelDataKit-TravelDataKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7FD505215BC7AE000FB362 /* TravelAPIKit.framework in Frameworks */,
 				AA0A1ED6215BA91F00754EC7 /* TravelKit.framework in Frameworks */,
 				97846C334FB93FF032FF2AF2 /* Pods_TravelDataKit.framework in Frameworks */,
 			);
@@ -88,6 +101,7 @@
 		AA0A1EAD215BA87300754EC7 /* TravelDataKit */ = {
 			isa = PBXGroup;
 			children = (
+				AA7FD4FC215BC74A000FB362 /* Repositories */,
 				AA0A1EAE215BA87300754EC7 /* TravelDataKit.h */,
 				AA0A1EAF215BA87300754EC7 /* Info.plist */,
 				AA0A1EC5215BA88300754EC7 /* Example.swift */,
@@ -107,11 +121,48 @@
 		AA0A1ED4215BA91F00754EC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA7FD504215BC7AE000FB362 /* TravelAPIKit.framework */,
 				AA0A1ED5215BA91F00754EC7 /* TravelKit.framework */,
 				A8634BED9EEEAF02197CE692 /* Pods_TravelDataKit.framework */,
 				543E2F0D23DBD5862F1C52B7 /* Pods_TravelDataKit_TravelDataKitTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA7FD4FC215BC74A000FB362 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AA7FD4FD215BC752000FB362 /* Region */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AA7FD4FD215BC752000FB362 /* Region */ = {
+			isa = PBXGroup;
+			children = (
+				AA7FD4FF215BC75E000FB362 /* Remote */,
+				AA7FD4FE215BC75A000FB362 /* Local */,
+				AA7FD50E215BCAC5000FB362 /* RegionRepository.swift */,
+			);
+			path = Region;
+			sourceTree = "<group>";
+		};
+		AA7FD4FE215BC75A000FB362 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				AA7FD502215BC796000FB362 /* RealmRegionDataStore.swift */,
+				AA7FD506215BC859000FB362 /* LocalRegionDataStore.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		AA7FD4FF215BC75E000FB362 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				AA7FD500215BC778000FB362 /* APIRegionDataStore.swift */,
+				AA7FD508215BC86E000FB362 /* RemoteRegionDataStore.swift */,
+			);
+			path = Remote;
 			sourceTree = "<group>";
 		};
 		E5DB59FD1458E0E55E8DD218 /* Pods */ = {
@@ -286,6 +337,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TravelDataKit-TravelDataKitTests/Pods-TravelDataKit-TravelDataKitTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper+Realm/ObjectMapper_Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapperAdditions/ObjectMapperAdditions.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -297,6 +351,9 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper_Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapperAdditions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -316,7 +373,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7FD503215BC796000FB362 /* RealmRegionDataStore.swift in Sources */,
+				AA7FD509215BC86E000FB362 /* RemoteRegionDataStore.swift in Sources */,
+				AA7FD501215BC778000FB362 /* APIRegionDataStore.swift in Sources */,
+				AA7FD50F215BCAC5000FB362 /* RegionRepository.swift in Sources */,
 				AA0A1EC6215BA88300754EC7 /* Example.swift in Sources */,
+				AA7FD507215BC859000FB362 /* LocalRegionDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
