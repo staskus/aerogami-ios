@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AA0A1E8E215BA70900754EC7 /* TravelKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0A1E8C215BA70900754EC7 /* TravelKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA0A1E95215BA71F00754EC7 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A1E94215BA71F00754EC7 /* Example.swift */; };
+		AA7FD4F6215BC544000FB362 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD4F5215BC544000FB362 /* Region.swift */; };
+		AA7FD4FB215BC709000FB362 /* RegionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD4FA215BC709000FB362 /* RegionRepository.swift */; };
 		EB09658332F6160F6ECF9B1C /* Pods_TravelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AD78BD155DF36B3550B7ED /* Pods_TravelKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +22,8 @@
 		AA0A1E8C215BA70900754EC7 /* TravelKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravelKit.h; sourceTree = "<group>"; };
 		AA0A1E8D215BA70900754EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0A1E94215BA71F00754EC7 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		AA7FD4F5215BC544000FB362 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		AA7FD4FA215BC709000FB362 /* RegionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +68,29 @@
 		AA0A1E8B215BA70900754EC7 /* TravelKit */ = {
 			isa = PBXGroup;
 			children = (
+				AA7FD4F3215BC527000FB362 /* Repositories */,
 				AA0A1E8C215BA70900754EC7 /* TravelKit.h */,
 				AA0A1E8D215BA70900754EC7 /* Info.plist */,
 				AA0A1E94215BA71F00754EC7 /* Example.swift */,
 			);
 			path = TravelKit;
+			sourceTree = "<group>";
+		};
+		AA7FD4F3215BC527000FB362 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AA7FD4F4215BC537000FB362 /* Region */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AA7FD4F4215BC537000FB362 /* Region */ = {
+			isa = PBXGroup;
+			children = (
+				AA7FD4F5215BC544000FB362 /* Region.swift */,
+				AA7FD4FA215BC709000FB362 /* RegionRepository.swift */,
+			);
+			path = Region;
 			sourceTree = "<group>";
 		};
 		F6DA292A79D59E99960512AC /* Frameworks */ = {
@@ -184,7 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7FD4FB215BC709000FB362 /* RegionRepository.swift in Sources */,
 				AA0A1E95215BA71F00754EC7 /* Example.swift in Sources */,
+				AA7FD4F6215BC544000FB362 /* Region.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -70,6 +70,7 @@ def shared_TravelDataKit_pods
     pod 'RxSwift',                    $rxSwiftVersion
     pod 'SwiftDate',                  $swiftDateVersion
 
+  shared_TravelKit_pods
   shared_TravelAPIKit_pods
 end
 
