@@ -103,6 +103,12 @@ target 'TravelApplication' do
     shared_Apps_pods
 end
 
+target 'TravelApplication Dev' do
+    project 'TravelApplication.xcodeproj'
+    platform :ios, deployment_target
+    shared_Apps_pods
+end
+
 # #############################################################################
 # Customisation
 # #############################################################################
