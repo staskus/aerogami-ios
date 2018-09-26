@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08E1A813E6BA80FC1AF28902 /* Pods_TravelApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B37AAAF030B30A6F9533090 /* Pods_TravelApplication.framework */; };
+		AA0A1E9C215BA7E700754EC7 /* TravelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1E9B215BA7BB00754EC7 /* TravelKit.framework */; };
+		AA0A1E9D215BA7E700754EC7 /* TravelKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1E9B215BA7BB00754EC7 /* TravelKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA0A1ED0215BA8D000754EC7 /* TravelDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1ECD215BA8C900754EC7 /* TravelDataKit.framework */; };
+		AA0A1ED1215BA8D000754EC7 /* TravelDataKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1ECD215BA8C900754EC7 /* TravelDataKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA0A1EF2215BA9EE00754EC7 /* TravelFeatureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1EF1215BA9EA00754EC7 /* TravelFeatureKit.framework */; };
+		AA0A1EF3215BA9EE00754EC7 /* TravelFeatureKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1EF1215BA9EA00754EC7 /* TravelFeatureKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA0A1F11215BAD3E00754EC7 /* TravelAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1F10215BAD3900754EC7 /* TravelAPIKit.framework */; };
+		AA0A1F12215BAD3E00754EC7 /* TravelAPIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1F10215BAD3900754EC7 /* TravelAPIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA652F3C215BA46E0044E3C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA652F3B215BA46E0044E3C9 /* AppDelegate.swift */; };
 		AA652F3E215BA46E0044E3C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA652F3D215BA46E0044E3C9 /* ViewController.swift */; };
 		AA652F41215BA46E0044E3C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA652F3F215BA46E0044E3C9 /* Main.storyboard */; };
@@ -16,6 +25,69 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AA0A1E9A215BA7BB00754EC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0A1E96215BA7BB00754EC7 /* TravelKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AA0A1E89215BA70900754EC7;
+			remoteInfo = TravelKit;
+		};
+		AA0A1E9E215BA7E700754EC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0A1E96215BA7BB00754EC7 /* TravelKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AA0A1E88215BA70900754EC7;
+			remoteInfo = TravelKit;
+		};
+		AA0A1ECC215BA8C900754EC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0A1EC7215BA8C900754EC7 /* TravelDataKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AA0A1EAB215BA87300754EC7;
+			remoteInfo = TravelDataKit;
+		};
+		AA0A1ECE215BA8C900754EC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0A1EC7215BA8C900754EC7 /* TravelDataKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AA0A1EB4215BA87300754EC7;
+			remoteInfo = TravelDataKitTests;
+		};
+		AA0A1ED2215BA8D000754EC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0A1EC7215BA8C900754EC7 /* TravelDataKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AA0A1EAA215BA87300754EC7;
+			remoteInfo = TravelDataKit;
+		};
+		AA0A1EF0215BA9EA00754EC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0A1EEC215BA9EA00754EC7 /* TravelFeatureKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AA0A1EE1215BA9CD00754EC7;
+			remoteInfo = TravelFeatureKit;
+		};
+		AA0A1EF4215BA9EE00754EC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0A1EEC215BA9EA00754EC7 /* TravelFeatureKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AA0A1EE0215BA9CD00754EC7;
+			remoteInfo = TravelFeatureKit;
+		};
+		AA0A1F0F215BAD3900754EC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0A1F0B215BAD3800754EC7 /* TravelAPIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AA0A1F00215BAD2000754EC7;
+			remoteInfo = TravelAPIKit;
+		};
+		AA0A1F13215BAD3E00754EC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0A1F0B215BAD3800754EC7 /* TravelAPIKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AA0A1EFF215BAD2000754EC7;
+			remoteInfo = TravelAPIKit;
+		};
 		AA652F4D215BA46F0044E3C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AA652F30215BA46E0044E3C9 /* Project object */;
@@ -25,7 +97,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AA0A1EA0215BA7E700754EC7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA0A1E9D215BA7E700754EC7 /* TravelKit.framework in Embed Frameworks */,
+				AA0A1EF3215BA9EE00754EC7 /* TravelFeatureKit.framework in Embed Frameworks */,
+				AA0A1F12215BAD3E00754EC7 /* TravelAPIKit.framework in Embed Frameworks */,
+				AA0A1ED1215BA8D000754EC7 /* TravelDataKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4B37AAAF030B30A6F9533090 /* Pods_TravelApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99AB4C625408F1DC2FF354BA /* Pods-TravelApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApplication/Pods-TravelApplication.release.xcconfig"; sourceTree = "<group>"; };
+		AA0A1E96215BA7BB00754EC7 /* TravelKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TravelKit.xcodeproj; sourceTree = "<group>"; };
+		AA0A1EC7215BA8C900754EC7 /* TravelDataKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TravelDataKit.xcodeproj; sourceTree = "<group>"; };
+		AA0A1EEC215BA9EA00754EC7 /* TravelFeatureKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TravelFeatureKit.xcodeproj; sourceTree = "<group>"; };
+		AA0A1F0B215BAD3800754EC7 /* TravelAPIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TravelAPIKit.xcodeproj; sourceTree = "<group>"; };
 		AA652F38215BA46E0044E3C9 /* TravelApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA652F3B215BA46E0044E3C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA652F3D215BA46E0044E3C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +131,7 @@
 		AA652F4C215BA46F0044E3C9 /* TravelApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA652F50215BA46F0044E3C9 /* TravelApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelApplicationTests.swift; sourceTree = "<group>"; };
 		AA652F52215BA46F0044E3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E53814E834E75179C4DC538B /* Pods-TravelApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApplication/Pods-TravelApplication.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +139,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0A1E9C215BA7E700754EC7 /* TravelKit.framework in Frameworks */,
+				AA0A1EF2215BA9EE00754EC7 /* TravelFeatureKit.framework in Frameworks */,
+				AA0A1F11215BAD3E00754EC7 /* TravelAPIKit.framework in Frameworks */,
+				AA0A1ED0215BA8D000754EC7 /* TravelDataKit.framework in Frameworks */,
+				08E1A813E6BA80FC1AF28902 /* Pods_TravelApplication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +157,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19C43A2392085C0C47039BC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B37AAAF030B30A6F9533090 /* Pods_TravelApplication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DC8A9BA6D64C8CB1A9D1063 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E53814E834E75179C4DC538B /* Pods-TravelApplication.debug.xcconfig */,
+				99AB4C625408F1DC2FF354BA /* Pods-TravelApplication.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA0A1E97215BA7BB00754EC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0A1E9B215BA7BB00754EC7 /* TravelKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA0A1EC8215BA8C900754EC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0A1ECD215BA8C900754EC7 /* TravelDataKit.framework */,
+				AA0A1ECF215BA8C900754EC7 /* TravelDataKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA0A1EED215BA9EA00754EC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0A1EF1215BA9EA00754EC7 /* TravelFeatureKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA0A1F0C215BAD3800754EC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0A1F10215BAD3900754EC7 /* TravelAPIKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AA652F2F215BA46E0044E3C9 = {
 			isa = PBXGroup;
 			children = (
+				AA0A1F0B215BAD3800754EC7 /* TravelAPIKit.xcodeproj */,
+				AA0A1EEC215BA9EA00754EC7 /* TravelFeatureKit.xcodeproj */,
+				AA0A1EC7215BA8C900754EC7 /* TravelDataKit.xcodeproj */,
+				AA0A1E96215BA7BB00754EC7 /* TravelKit.xcodeproj */,
 				AA652F3A215BA46E0044E3C9 /* TravelApplication */,
 				AA652F4F215BA46F0044E3C9 /* TravelApplicationTests */,
 				AA652F39215BA46E0044E3C9 /* Products */,
+				3DC8A9BA6D64C8CB1A9D1063 /* Pods */,
+				19C43A2392085C0C47039BC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,13 +260,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA652F55215BA46F0044E3C9 /* Build configuration list for PBXNativeTarget "TravelApplication" */;
 			buildPhases = (
+				C2D42C71287E80A2F8AD9325 /* [CP] Check Pods Manifest.lock */,
 				AA652F34215BA46E0044E3C9 /* Sources */,
 				AA652F35215BA46E0044E3C9 /* Frameworks */,
 				AA652F36215BA46E0044E3C9 /* Resources */,
+				AA0A1EA0215BA7E700754EC7 /* Embed Frameworks */,
+				E02BD687707964F944DD85A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AA0A1E9F215BA7E700754EC7 /* PBXTargetDependency */,
+				AA0A1ED3215BA8D000754EC7 /* PBXTargetDependency */,
+				AA0A1EF5215BA9EE00754EC7 /* PBXTargetDependency */,
+				AA0A1F14215BAD3E00754EC7 /* PBXTargetDependency */,
 			);
 			name = TravelApplication;
 			productName = TravelApplication;
@@ -164,6 +328,24 @@
 			mainGroup = AA652F2F215BA46E0044E3C9;
 			productRefGroup = AA652F39215BA46E0044E3C9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AA0A1F0C215BAD3800754EC7 /* Products */;
+					ProjectRef = AA0A1F0B215BAD3800754EC7 /* TravelAPIKit.xcodeproj */;
+				},
+				{
+					ProductGroup = AA0A1EC8215BA8C900754EC7 /* Products */;
+					ProjectRef = AA0A1EC7215BA8C900754EC7 /* TravelDataKit.xcodeproj */;
+				},
+				{
+					ProductGroup = AA0A1EED215BA9EA00754EC7 /* Products */;
+					ProjectRef = AA0A1EEC215BA9EA00754EC7 /* TravelFeatureKit.xcodeproj */;
+				},
+				{
+					ProductGroup = AA0A1E97215BA7BB00754EC7 /* Products */;
+					ProjectRef = AA0A1E96215BA7BB00754EC7 /* TravelKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AA652F37215BA46E0044E3C9 /* TravelApplication */,
@@ -171,6 +353,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AA0A1E9B215BA7BB00754EC7 /* TravelKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TravelKit.framework;
+			remoteRef = AA0A1E9A215BA7BB00754EC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA0A1ECD215BA8C900754EC7 /* TravelDataKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TravelDataKit.framework;
+			remoteRef = AA0A1ECC215BA8C900754EC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA0A1ECF215BA8C900754EC7 /* TravelDataKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TravelDataKitTests.xctest;
+			remoteRef = AA0A1ECE215BA8C900754EC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA0A1EF1215BA9EA00754EC7 /* TravelFeatureKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TravelFeatureKit.framework;
+			remoteRef = AA0A1EF0215BA9EA00754EC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA0A1F10215BAD3900754EC7 /* TravelAPIKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TravelAPIKit.framework;
+			remoteRef = AA0A1F0F215BAD3900754EC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AA652F36215BA46E0044E3C9 /* Resources */ = {
@@ -191,6 +411,73 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C2D42C71287E80A2F8AD9325 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelApplication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E02BD687707964F944DD85A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravelApplication/Pods-TravelApplication-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper+Realm/ObjectMapper_Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapperAdditions/ObjectMapperAdditions.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper_Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapperAdditions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelApplication/Pods-TravelApplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AA652F34215BA46E0044E3C9 /* Sources */ = {
@@ -213,6 +500,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AA0A1E9F215BA7E700754EC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TravelKit;
+			targetProxy = AA0A1E9E215BA7E700754EC7 /* PBXContainerItemProxy */;
+		};
+		AA0A1ED3215BA8D000754EC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TravelDataKit;
+			targetProxy = AA0A1ED2215BA8D000754EC7 /* PBXContainerItemProxy */;
+		};
+		AA0A1EF5215BA9EE00754EC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TravelFeatureKit;
+			targetProxy = AA0A1EF4215BA9EE00754EC7 /* PBXContainerItemProxy */;
+		};
+		AA0A1F14215BAD3E00754EC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TravelAPIKit;
+			targetProxy = AA0A1F13215BAD3E00754EC7 /* PBXContainerItemProxy */;
+		};
 		AA652F4E215BA46F0044E3C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AA652F37215BA46E0044E3C9 /* TravelApplication */;
@@ -358,7 +665,9 @@
 		};
 		AA652F56215BA46F0044E3C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E53814E834E75179C4DC538B /* Pods-TravelApplication.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4KYCD4RPZ;
@@ -377,7 +686,9 @@
 		};
 		AA652F57215BA46F0044E3C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99AB4C625408F1DC2FF354BA /* Pods-TravelApplication.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4KYCD4RPZ;
