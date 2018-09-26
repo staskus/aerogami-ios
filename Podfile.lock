@@ -1,11 +1,5 @@
 PODS:
   - Alamofire (4.7.3)
-  - Moya/Core (10.0.2):
-    - Alamofire (~> 4.1)
-    - Result (~> 3.0)
-  - Moya/RxSwift (10.0.2):
-    - Moya/Core
-    - RxSwift (~> 4.0)
   - ObjectMapper (3.3.0)
   - "ObjectMapper+Realm (0.6)":
     - ObjectMapper
@@ -17,17 +11,22 @@ PODS:
   - Realm/Headers (3.10.0)
   - RealmSwift (3.10.0):
     - Realm (= 3.10.0)
-  - Result (3.2.4)
+  - RxAlamofire (4.3.0):
+    - RxAlamofire/Core (= 4.3.0)
+  - RxAlamofire/Core (4.3.0):
+    - Alamofire (~> 4.5)
+    - RxSwift (~> 4)
   - RxSwift (4.3.1)
   - SwiftDate (5.0.9)
   - Swinject (2.5.0)
 
 DEPENDENCIES:
-  - Moya/RxSwift (~> 10.0)
+  - Alamofire (~> 4.7)
   - ObjectMapper (~> 3.3)
   - "ObjectMapper+Realm (~> 0.6)"
   - ObjectMapperAdditions/Core (~> 4.1)
   - RealmSwift
+  - RxAlamofire (~> 4.2)
   - RxSwift (~> 4.2)
   - SwiftDate (~> 5.0)
   - Swinject (~> 2.4)
@@ -35,30 +34,28 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
-    - Moya
     - ObjectMapper
     - "ObjectMapper+Realm"
     - ObjectMapperAdditions
     - Realm
     - RealmSwift
-    - Result
+    - RxAlamofire
     - RxSwift
     - SwiftDate
     - Swinject
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  Moya: 2b0531a9fef318e0bc484030c3db1e6f279ccb66
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   "ObjectMapper+Realm": 4cf44ed3202a73f08594e21e13eb3f8aa9b5a664
   ObjectMapperAdditions: db4243e10ebd9abf7e5e7938e4b0a4bbfd840980
   Realm: 85ab9e4f779d66f6e9ffeb118dc25b7f130c96ac
   RealmSwift: 69121c8b86d0ae005fb779efdb10e606732e1c74
-  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
   SwiftDate: 52b718d32ec006861a2be2756cbfa482d438e781
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: b260164c291797811d39a727e1cccfc26668fda6
+PODFILE CHECKSUM: dbcfa171dc803f24a6e5b1461e47e85b76457fca
 
 COCOAPODS: 1.5.0

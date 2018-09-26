@@ -7,4 +7,13 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:TravelAPIKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TravelDataKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TravelKit.xcodeproj">
+   </FileRef>
 </Workspace>

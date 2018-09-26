@@ -14,7 +14,8 @@ $rxSwiftVersion =                     '~> 4.2'
 $omAdditionsVersion =                 '~> 4.1'
 $omRealmVersion =                     '~> 0.6'
 $swiftDateVersion =                   '~> 5.0'
-$moyaRxSwiftVersion =                 '~> 10.0'
+$rxAlamofireVersion =                 '~> 4.2'
+$alamofireVersion =                   '~> 4.7'
 $rSwiftVersion =                      '= 4.0.0'
 
 #pod 'R.swift',                        $rSwiftVersion
@@ -49,7 +50,8 @@ end
 
 def shared_TravelAPIKit_pods
     pod 'RxSwift',                        $rxSwiftVersion
-    pod 'Moya/RxSwift',               $moyaRxSwiftVersion
+    pod 'Alamofire',                      $alamofireVersion
+    pod 'RxAlamofire',                    $rxAlamofireVersion
 end
 
 target 'TravelAPIKit' do

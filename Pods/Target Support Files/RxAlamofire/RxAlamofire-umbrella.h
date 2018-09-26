@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double ResultVersionNumber;
-FOUNDATION_EXPORT const unsigned char ResultVersionString[];
+FOUNDATION_EXPORT double RxAlamofireVersionNumber;
+FOUNDATION_EXPORT const unsigned char RxAlamofireVersionString[];
 
