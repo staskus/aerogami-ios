@@ -1,6 +1,0 @@
-framework module Pods_TravelDataKit {
-  umbrella header "Pods-TravelDataKit-umbrella.h"
-
-  export *
-  module * { export * }
-}
