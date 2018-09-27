@@ -19,7 +19,7 @@ public class RegionRepository: TravelKit.RegionRepository {
     init(
         localDataStore: LocalRegionDataStore,
         remoteDataStore: RemoteRegionDataStore
-        ) {
+        ) { 
         self.localDataStore = localDataStore
         self.remoteDataStore = remoteDataStore
     }
