@@ -69,6 +69,7 @@ def shared_TravelDataKit_pods
     pod 'RealmSwift'
     pod 'RxSwift',                    $rxSwiftVersion
     pod 'SwiftDate',                  $swiftDateVersion
+    pod 'Swinject',                   $swinjectVersion
 
   shared_TravelKit_pods
   shared_TravelAPIKit_pods

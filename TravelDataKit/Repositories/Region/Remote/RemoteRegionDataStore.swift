@@ -10,10 +10,10 @@ import Foundation
 import RxSwift
 import TravelKit
 
-public enum RemoteRegionDataStoreError: Error {
+enum RemoteRegionDataStoreError: Error {
     case parseError
 }
 
-public protocol RemoteRegionDataStore {
+protocol RemoteRegionDataStore {
     func getAll() -> Observable<[Region]>
 }

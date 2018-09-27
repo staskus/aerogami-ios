@@ -11,18 +11,18 @@ import RealmSwift
 import RxSwift
 import TravelKit
 
-public class RealmRegionDataStore: LocalRegionDataStore {
+class RealmRegionDataStore: LocalRegionDataStore {
     private var realm: Realm
     
-    public init() {
+    init() {
         self.realm = try! Realm()
     }
     
-    public func getAll() -> [Region] {
+    func getAll() -> [Region] {
         return Array(self.realm.objects(Region.self))
     }
     
-    public func write(regions: [Region]) {
+    func write(regions: [Region]) {
         try! self.realm.write {
             self.realm.add(regions, update: true)
         }

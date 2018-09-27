@@ -13,26 +13,24 @@ enum Environment {
     case production
 }
 
-#if DEVELOPMENT
 
 struct Constants {
+    #if DEVELOPMENT
+    
     static let environment = Environment.development
     
     struct API {
         static let baseUrl = "https://48n584gglk.execute-api.eu-central-1.amazonaws.com/dev"
     }
     
-}
+    #else
 
-#else
-
-struct Constants {
     static let environment = Environment.production
     
     struct API {
         static let baseUrl = "https://48n584gglk.execute-api.eu-central-1.amazonaws.com/dev"
     }
     
+    #endif
 }
 
-#endif
