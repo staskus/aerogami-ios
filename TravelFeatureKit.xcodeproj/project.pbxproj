@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03C77D9FED0CFBC9D3336A63 /* Pods_TravelFeatureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75CE1FEFCD45A73B1AB4B97 /* Pods_TravelFeatureKit.framework */; };
 		AA0A1EE6215BA9CD00754EC7 /* TravelFeatureKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0A1EE4215BA9CD00754EC7 /* TravelFeatureKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA3FD394215CD34B006D9C61 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD393215CD34B006D9C61 /* R.generated.swift */; };
+		AA3FD396215CD361006D9C61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA3FD395215CD361006D9C61 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79A0B4589BFEE78478F47786 /* Pods-TravelFeatureKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelFeatureKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelFeatureKit/Pods-TravelFeatureKit.debug.xcconfig"; sourceTree = "<group>"; };
 		AA0A1EE1215BA9CD00754EC7 /* TravelFeatureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TravelFeatureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0A1EE4215BA9CD00754EC7 /* TravelFeatureKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravelFeatureKit.h; sourceTree = "<group>"; };
 		AA0A1EE5215BA9CD00754EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA3FD393215CD34B006D9C61 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		AA3FD395215CD361006D9C61 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B4FF4C26E44886479F007DF8 /* Pods-TravelFeatureKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelFeatureKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelFeatureKit/Pods-TravelFeatureKit.release.xcconfig"; sourceTree = "<group>"; };
+		B75CE1FEFCD45A73B1AB4B97 /* Pods_TravelFeatureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelFeatureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +29,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C77D9FED0CFBC9D3336A63 /* Pods_TravelFeatureKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		155154F23099882ED8CF4994 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B75CE1FEFCD45A73B1AB4B97 /* Pods_TravelFeatureKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B569ECF7BB4A351152EF37A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79A0B4589BFEE78478F47786 /* Pods-TravelFeatureKit.debug.xcconfig */,
+				B4FF4C26E44886479F007DF8 /* Pods-TravelFeatureKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AA0A1ED7215BA9CD00754EC7 = {
 			isa = PBXGroup;
 			children = (
 				AA0A1EE3215BA9CD00754EC7 /* TravelFeatureKit */,
 				AA0A1EE2215BA9CD00754EC7 /* Products */,
+				1B569ECF7BB4A351152EF37A /* Pods */,
+				155154F23099882ED8CF4994 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +74,20 @@
 		AA0A1EE3215BA9CD00754EC7 /* TravelFeatureKit */ = {
 			isa = PBXGroup;
 			children = (
+				AA3FD369215CCA9F006D9C61 /* Features */,
+				AA3FD393215CD34B006D9C61 /* R.generated.swift */,
+				AA3FD395215CD361006D9C61 /* Images.xcassets */,
 				AA0A1EE4215BA9CD00754EC7 /* TravelFeatureKit.h */,
 				AA0A1EE5215BA9CD00754EC7 /* Info.plist */,
 			);
 			path = TravelFeatureKit;
+			sourceTree = "<group>";
+		};
+		AA3FD369215CCA9F006D9C61 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,7 +108,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA0A1EE9215BA9CD00754EC7 /* Build configuration list for PBXNativeTarget "TravelFeatureKit" */;
 			buildPhases = (
+				4775E592B947F6DF5FB94FD5 /* [CP] Check Pods Manifest.lock */,
 				AA0A1EDC215BA9CD00754EC7 /* Headers */,
+				AA3FD36E215CCBCE006D9C61 /* ShellScript */,
 				AA0A1EDD215BA9CD00754EC7 /* Sources */,
 				AA0A1EDE215BA9CD00754EC7 /* Frameworks */,
 				AA0A1EDF215BA9CD00754EC7 /* Resources */,
@@ -95,6 +135,7 @@
 				TargetAttributes = {
 					AA0A1EE0215BA9CD00754EC7 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -120,16 +161,60 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3FD396215CD361006D9C61 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4775E592B947F6DF5FB94FD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelFeatureKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA3FD36E215CCBCE006D9C61 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AA0A1EDD215BA9CD00754EC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3FD394215CD34B006D9C61 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +345,9 @@
 		};
 		AA0A1EEA215BA9CD00754EC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79A0B4589BFEE78478F47786 /* Pods-TravelFeatureKit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -279,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Povilas-Staskus.TravelFeatureKit";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,7 +374,9 @@
 		};
 		AA0A1EEB215BA9CD00754EC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4FF4C26E44886479F007DF8 /* Pods-TravelFeatureKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
