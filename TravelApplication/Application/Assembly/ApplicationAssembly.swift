@@ -8,6 +8,7 @@
 
 import Foundation
 import Swinject
+import TravelAPIKit
 
 class ApplicationAssembly: Assembly {
     func assemble(container: Container) {
@@ -19,8 +20,8 @@ class ApplicationAssembly: Assembly {
             UIWindow(frame: UIScreen.main.bounds)
         }.inObjectScope(.container)
         
-        container.register(ViewController.self) { _ in
-            ViewController.init(nibName: nil, bundle: nil)
-        }.inObjectScope(.graph)
+        container.register(APIClient.self) { _ in
+            BaseAPIClient(baseUrl: Constants.API.baseUrl)
+        }.inObjectScope(.container)
     }
 }

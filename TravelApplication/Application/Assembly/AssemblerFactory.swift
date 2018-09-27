@@ -9,13 +9,14 @@
 import Foundation
 import Swinject
 import TravelFeatureKit
+import TravelDataKit
 
 class AssemblerFactory {
     
     func create() -> Assembler {
         let assemblies: [Assembly] = [
             ApplicationAssembly(),
-            HomeAssembly(),
+            RegionRepositoryAssembly(),
             FeedAssembly()
         ]
         

@@ -11,16 +11,16 @@ import TravelKit
 import TravelAPIKit
 import ObjectMapper
 
-public class APIRegionDataStore: RemoteRegionDataStore {
+class APIRegionDataStore: RemoteRegionDataStore {
     private let apiClient: APIClient
     private let path: String
     
-    public init(apiClient: APIClient, path: String) {
+    init(apiClient: APIClient, path: String) {
         self.apiClient = apiClient
         self.path = path
     }
     
-    public func getAll() -> Observable<[Region]> {
+    func getAll() -> Observable<[Region]> {
         return apiClient.get(path: path)
             .map { response in
                 guard let regions = Mapper<Region>().mapArray(JSONObject: response) else {
