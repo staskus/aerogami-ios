@@ -18,6 +18,6 @@ public class Example: TravelKit.Example {
     }
     
     func doStuffPrivately() {
-        print("Hi")
+        Logger.data.debug("Hi")
     }
 }

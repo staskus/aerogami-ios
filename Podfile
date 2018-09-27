@@ -33,10 +33,11 @@ def shared_TravelKit_pods
 end
 
 target 'TravelKit' do
-  project 'TravelKit.xcodeproj'
-  platform :ios, deployment_target
+    project 'TravelKit.xcodeproj'
+    platform :ios, deployment_target
 
-  shared_TravelKit_pods
+    pod 'CocoaLumberjack/Swift'
+    shared_TravelKit_pods
 
   #target 'TravelKitTests' do
     #project 'TravelKit.xcodeproj'

@@ -11,6 +11,8 @@
 
 import UIKit
 import Swinject
+import TravelKit
+import CocoaLumberjack
 
 class ApplicationLoader {
     public let assembler: Assembler
@@ -22,6 +24,7 @@ class ApplicationLoader {
     
     // Start the application loading sequence
     func start(launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
+        setupLogger()
         loadRootViewController()
     }
     
@@ -30,5 +33,9 @@ class ApplicationLoader {
         window = assembler.resolver.resolve(UIKit.UIWindow.self)!
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
+    }
+    
+    private func setupLogger() {
+        DDLog.add(DDASLLogger.sharedInstance)
     }
 }
