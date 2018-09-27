@@ -30,11 +30,11 @@ class {{properCase name}}Interactor {
         contentState = .loading(data: contentState.data)
     }
 
-    public func subscribe() {
+    func subscribe() {
         presenter.present(contentState)
     }
 
-    public func unsubscribe() {
+    func unsubscribe() {
         disposeBag = DisposeBag()
     }
 }

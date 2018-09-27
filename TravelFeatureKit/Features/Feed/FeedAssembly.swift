@@ -8,8 +8,10 @@ public class FeedAssembly: Assembly {
     }
 
     public func assemble(container: Container) {
-        container.register(FeedConfigurator.self) { _ in
-            FeedConfigurator()
+        container.register(FeedConfigurator.self) { r in
+            FeedConfigurator(
+                regionRepository: r.resolve(RegionRepository.self)!
+            )
         }.inObjectScope(.container)
     }
 }
