@@ -3,6 +3,8 @@ import TravelKit
 
 struct Feed {
     struct Data: Equatable {
+        let regions: [Region]
+        let selectedRegionId: String?
     }
 
     struct ViewModel: FeatureViewModel {
