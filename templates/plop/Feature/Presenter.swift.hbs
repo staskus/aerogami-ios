@@ -1,0 +1,20 @@
+import UIKit
+import TravelKit
+
+typealias {{properCase name}}Presenter = FeaturePresenter<{{properCase name}}ViewController, {{properCase name}}Adapter>
+
+class {{properCase name}}Adapter: FeatureAdapter {
+    typealias Content = {{properCase name}}.Data
+    typealias ViewModel = {{properCase name}}.ViewModel
+
+    func makeViewModel(viewState: ViewState<{{properCase name}}.ViewModel.Content>) -> {{properCase name}}.ViewModel {
+        return {{properCase name}}.ViewModel(
+            state: viewState,
+            title: ""
+        )
+    }
+
+    func makeContentViewModel(content: {{properCase name}}.Data) throws -> {{properCase name}}.ViewModel.Content {
+        return {{properCase name}}.ViewModel.Content()
+    }
+}

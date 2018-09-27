@@ -20,8 +20,65 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 0 files.
+  /// This `R.file` struct is generated, and contains static references to 7 files.
   struct file {
+    /// Resource file `Assembly.swift.hbs`.
+    static let assemblySwiftHbs = Rswift.FileResource(bundle: R.hostingBundle, name: "Assembly.swift", pathExtension: "hbs")
+    /// Resource file `Configurator.swift.hbs`.
+    static let configuratorSwiftHbs = Rswift.FileResource(bundle: R.hostingBundle, name: "Configurator.swift", pathExtension: "hbs")
+    /// Resource file `Interactor.swift.hbs`.
+    static let interactorSwiftHbs = Rswift.FileResource(bundle: R.hostingBundle, name: "Interactor.swift", pathExtension: "hbs")
+    /// Resource file `Models.swift.hbs`.
+    static let modelsSwiftHbs = Rswift.FileResource(bundle: R.hostingBundle, name: "Models.swift", pathExtension: "hbs")
+    /// Resource file `Presenter.swift.hbs`.
+    static let presenterSwiftHbs = Rswift.FileResource(bundle: R.hostingBundle, name: "Presenter.swift", pathExtension: "hbs")
+    /// Resource file `Router.swift.hbs`.
+    static let routerSwiftHbs = Rswift.FileResource(bundle: R.hostingBundle, name: "Router.swift", pathExtension: "hbs")
+    /// Resource file `ViewController.swift.hbs`.
+    static let viewControllerSwiftHbs = Rswift.FileResource(bundle: R.hostingBundle, name: "ViewController.swift", pathExtension: "hbs")
+    
+    /// `bundle.url(forResource: "Assembly.swift", withExtension: "hbs")`
+    static func assemblySwiftHbs(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.assemblySwiftHbs
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "Configurator.swift", withExtension: "hbs")`
+    static func configuratorSwiftHbs(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.configuratorSwiftHbs
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "Interactor.swift", withExtension: "hbs")`
+    static func interactorSwiftHbs(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.interactorSwiftHbs
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "Models.swift", withExtension: "hbs")`
+    static func modelsSwiftHbs(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.modelsSwiftHbs
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "Presenter.swift", withExtension: "hbs")`
+    static func presenterSwiftHbs(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.presenterSwiftHbs
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "Router.swift", withExtension: "hbs")`
+    static func routerSwiftHbs(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.routerSwiftHbs
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "ViewController.swift", withExtension: "hbs")`
+    static func viewControllerSwiftHbs(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.viewControllerSwiftHbs
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
     fileprivate init() {}
   }
   
@@ -57,18 +114,29 @@ struct R: Rswift.Validatable {
   
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 1 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 2 localization keys.
     struct localizable {
       /// en translation: Cancel
       /// 
       /// Locales: en
       static let cancel = Rswift.StringResource(key: "cancel", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Something went wrong!
+      /// 
+      /// Locales: en
+      static let errorGenericTitle = Rswift.StringResource(key: "error.genericTitle", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       
       /// en translation: Cancel
       /// 
       /// Locales: en
       static func cancel(_: Void = ()) -> String {
         return NSLocalizedString("cancel", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Something went wrong!
+      /// 
+      /// Locales: en
+      static func errorGenericTitle(_: Void = ()) -> String {
+        return NSLocalizedString("error.genericTitle", bundle: R.hostingBundle, comment: "")
       }
       
       fileprivate init() {}

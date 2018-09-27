@@ -1,0 +1,40 @@
+import UIKit
+import RxSwift
+import TravelKit
+
+class {{properCase name}}Interactor {
+    private let presenter: {{properCase name}}Presenter
+    private var disposeBag = DisposeBag()
+
+    private var contentState: ContentState<{{properCase name}}.Data> = .loading(data: nil) {
+        didSet {
+            guard contentState != oldValue else { return }
+            presenter.present(contentState)
+        }
+    }
+
+    init(presenter: {{properCase name}}Presenter) {
+        self.presenter = presenter
+    }
+
+    func dispatch(_ action: {{properCase name}}.Action) {
+        switch action {
+        case .load:
+            loadData()
+        }
+    }
+
+    private func loadData() {
+        disposeBag = DisposeBag()
+
+        contentState = .loading(data: contentState.data)
+    }
+
+    public func subscribe() {
+        presenter.present(contentState)
+    }
+
+    public func unsubscribe() {
+        disposeBag = DisposeBag()
+    }
+}

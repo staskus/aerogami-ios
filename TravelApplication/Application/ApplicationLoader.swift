@@ -12,6 +12,7 @@
 import UIKit
 import Swinject
 import TravelKit
+import TravelFeatureKit
 import CocoaLumberjack
 
 class ApplicationLoader {
@@ -29,7 +30,8 @@ class ApplicationLoader {
     }
     
     private func loadRootViewController() {
-        let rootViewController = assembler.resolver.resolve(ViewController.self)
+        let rootConfigurator = assembler.resolver.resolve(FeedConfigurator.self)!
+        let rootViewController = rootConfigurator.createViewController()
         window = assembler.resolver.resolve(UIKit.UIWindow.self)!
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()

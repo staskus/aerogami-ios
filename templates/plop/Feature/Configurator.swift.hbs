@@ -1,0 +1,21 @@
+import UIKit
+import TravelKit
+
+public class {{properCase name}}Configurator {
+
+    public init() {
+    }
+
+    public func createViewController() -> UIViewController {
+        let adapter = {{properCase name}}Adapter()
+        let presenter = {{properCase name}}Presenter(adapter: adapter)
+        let interactor = {{properCase name}}Interactor(presenter: presenter)
+        let router = {{properCase name}}Router()
+        let viewController = {{properCase name}}ViewController(interactor: interactor, router: router)
+
+        router.viewController = viewController
+        presenter.view = viewController
+
+        return viewController
+    }
+}

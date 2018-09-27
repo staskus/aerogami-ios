@@ -8,12 +8,15 @@
 
 import Foundation
 import Swinject
+import TravelFeatureKit
 
 class AssemblerFactory {
     
     func create() -> Assembler {
         let assemblies: [Assembly] = [
-            ApplicationAssembly()
+            ApplicationAssembly(),
+            HomeAssembly(),
+            FeedAssembly()
         ]
         
         let assembler = Assembler(assemblies)

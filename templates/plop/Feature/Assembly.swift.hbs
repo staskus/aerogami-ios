@@ -1,0 +1,15 @@
+import Foundation
+import Swinject
+import TravelKit
+
+public class {{properCase name}}Assembly: Assembly {
+
+    public init() {
+    }
+
+    public func assemble(container: Container) {
+        container.register({{properCase name}}Configurator.self) { _ in
+            {{properCase name}}Configurator()
+        }.inObjectScope(.container)
+    }
+}
