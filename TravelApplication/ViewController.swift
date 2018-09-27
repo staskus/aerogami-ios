@@ -15,9 +15,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let example = Example()
         example.doStuff()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
 
