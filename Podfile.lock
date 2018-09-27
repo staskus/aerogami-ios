@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.7.3)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Swift (3.4.2):
+    - CocoaLumberjack/Default
   - ObjectMapper (3.3.0)
   - "ObjectMapper+Realm (0.6)":
     - ObjectMapper
@@ -26,6 +29,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - CocoaLumberjack/Swift
   - ObjectMapper (~> 3.3)
   - "ObjectMapper+Realm (~> 0.6)"
   - ObjectMapperAdditions/Core (~> 4.1)
@@ -40,6 +44,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - CocoaLumberjack
     - ObjectMapper
     - "ObjectMapper+Realm"
     - ObjectMapperAdditions
@@ -55,6 +60,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   "ObjectMapper+Realm": 4cf44ed3202a73f08594e21e13eb3f8aa9b5a664
   ObjectMapperAdditions: db4243e10ebd9abf7e5e7938e4b0a4bbfd840980
@@ -68,6 +74,6 @@ SPEC CHECKSUMS:
   SwiftDate: 52b718d32ec006861a2be2756cbfa482d438e781
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: 961c1ef6f51687613554163249b79e8048508350
+PODFILE CHECKSUM: 8d488b973a487a4c254066184b127e8142b53021
 
 COCOAPODS: 1.5.0
