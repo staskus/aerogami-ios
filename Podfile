@@ -16,9 +16,8 @@ $omRealmVersion =                     '~> 0.6'
 $swiftDateVersion =                   '~> 5.0'
 $rxAlamofireVersion =                 '~> 4.2'
 $alamofireVersion =                   '~> 4.7'
-$rSwiftVersion =                      '= 4.0.0'
-
-#pod 'R.swift',                        $rSwiftVersion
+$rSwiftVersion =                      '~> 4.0.0'
+$snapKitVersion =                     '~> 4.0.0'
 
 # ############################################################
 # TravelKit
@@ -85,11 +84,27 @@ target 'TravelDataKit' do
   end
 end
 
+# #############################################################################
+# TravelFeatureKit
+# #############################################################################
+
 def shared_TravelFeatureKit_pods
-    #pod 'R.swift.Library',            $rSwiftVersion
     pod 'Swinject',                   $swinjectVersion
-  
+    pod 'SnapKit',                    $snapKitVersion
+    pod 'R.swift'
+
   shared_TravelDataKit_pods
+end
+
+target 'TravelFeatureKit' do
+  project 'TravelFeatureKit.xcodeproj'
+  platform :ios, deployment_target
+
+  shared_TravelFeatureKit_pods
+
+  #target 'TravelFeatureKitTests' do
+    #project 'TravelFeatureKit.xcodeproj'
+  #end
 end
 
 # #############################################################################
