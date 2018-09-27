@@ -11,6 +11,7 @@
 		AA0A1EE6215BA9CD00754EC7 /* TravelFeatureKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0A1EE4215BA9CD00754EC7 /* TravelFeatureKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA3FD394215CD34B006D9C61 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD393215CD34B006D9C61 /* R.generated.swift */; };
 		AA3FD396215CD361006D9C61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA3FD395215CD361006D9C61 /* Images.xcassets */; };
+		AA3FD3A5215CD6CB006D9C61 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA3FD3A7215CD6CB006D9C61 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		AA0A1EE5215BA9CD00754EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA3FD393215CD34B006D9C61 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		AA3FD395215CD361006D9C61 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AA3FD3A6215CD6CB006D9C61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B4FF4C26E44886479F007DF8 /* Pods-TravelFeatureKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelFeatureKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelFeatureKit/Pods-TravelFeatureKit.release.xcconfig"; sourceTree = "<group>"; };
 		B75CE1FEFCD45A73B1AB4B97 /* Pods_TravelFeatureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelFeatureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,6 +76,7 @@
 		AA0A1EE3215BA9CD00754EC7 /* TravelFeatureKit */ = {
 			isa = PBXGroup;
 			children = (
+				AA3FD3A2215CD68D006D9C61 /* Localization */,
 				AA3FD369215CCA9F006D9C61 /* Features */,
 				AA3FD393215CD34B006D9C61 /* R.generated.swift */,
 				AA3FD395215CD361006D9C61 /* Images.xcassets */,
@@ -88,6 +91,14 @@
 			children = (
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		AA3FD3A2215CD68D006D9C61 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FD3A7215CD6CB006D9C61 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA3FD396215CD361006D9C61 /* Images.xcassets in Resources */,
+				AA3FD3A5215CD6CB006D9C61 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +231,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA3FD3A7215CD6CB006D9C61 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA3FD3A6215CD6CB006D9C61 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AA0A1EE7215BA9CD00754EC7 /* Debug */ = {
