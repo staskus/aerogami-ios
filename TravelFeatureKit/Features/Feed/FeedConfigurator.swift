@@ -5,13 +5,16 @@ public class FeedConfigurator {
 
     private let regionRepository: RegionRepository
     private let tripRepository: TripRepository
+    private let airportRepository: AirportRepository
 
     public init(
         regionRepository: RegionRepository,
-        tripRepository: TripRepository
+        tripRepository: TripRepository,
+        airportRepository: AirportRepository
         ) {
         self.regionRepository = regionRepository
         self.tripRepository = tripRepository
+        self.airportRepository = airportRepository
     }
 
     public func createViewController() -> UIViewController {
@@ -20,7 +23,8 @@ public class FeedConfigurator {
         let interactor = FeedInteractor(
             presenter: presenter,
             regionRepository: regionRepository,
-            tripRepository: tripRepository
+            tripRepository: tripRepository,
+            airportRepository: airportRepository
         )
         let router = FeedRouter()
         let viewController = FeedViewController(interactor: interactor, router: router)

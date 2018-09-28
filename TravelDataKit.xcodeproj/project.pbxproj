@@ -24,6 +24,12 @@
 		AAD7AFE3215E1450000AC1F6 /* APITripDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFE2215E1450000AC1F6 /* APITripDataStore.swift */; };
 		AAD7AFE7215E1589000AC1F6 /* TripRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFE6215E1589000AC1F6 /* TripRepository.swift */; };
 		AAD7AFE9215E15BF000AC1F6 /* TripRepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFE8215E15BF000AC1F6 /* TripRepositoryAssembly.swift */; };
+		AAD7AFF6215E218B000AC1F6 /* RealmAirportDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFF5215E218B000AC1F6 /* RealmAirportDataStore.swift */; };
+		AAD7AFF8215E2198000AC1F6 /* LocalAirportDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFF7215E2198000AC1F6 /* LocalAirportDataStore.swift */; };
+		AAD7AFFB215E2290000AC1F6 /* APIAirportDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFFA215E2290000AC1F6 /* APIAirportDataStore.swift */; };
+		AAD7AFFD215E2298000AC1F6 /* RemoteAirportDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFFC215E2298000AC1F6 /* RemoteAirportDataStore.swift */; };
+		AAD7AFFF215E2317000AC1F6 /* AirportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFFE215E2317000AC1F6 /* AirportRepository.swift */; };
+		AAD7B001215E23C2000AC1F6 /* AirportRepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B000215E23C2000AC1F6 /* AirportRepositoryAssembly.swift */; };
 		BBBBB7D93B87941F94A099DD /* Pods_TravelDataKit_TravelDataKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543E2F0D23DBD5862F1C52B7 /* Pods_TravelDataKit_TravelDataKitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +68,12 @@
 		AAD7AFE2215E1450000AC1F6 /* APITripDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITripDataStore.swift; sourceTree = "<group>"; };
 		AAD7AFE6215E1589000AC1F6 /* TripRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRepository.swift; sourceTree = "<group>"; };
 		AAD7AFE8215E15BF000AC1F6 /* TripRepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRepositoryAssembly.swift; sourceTree = "<group>"; };
+		AAD7AFF5215E218B000AC1F6 /* RealmAirportDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAirportDataStore.swift; sourceTree = "<group>"; };
+		AAD7AFF7215E2198000AC1F6 /* LocalAirportDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAirportDataStore.swift; sourceTree = "<group>"; };
+		AAD7AFFA215E2290000AC1F6 /* APIAirportDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAirportDataStore.swift; sourceTree = "<group>"; };
+		AAD7AFFC215E2298000AC1F6 /* RemoteAirportDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAirportDataStore.swift; sourceTree = "<group>"; };
+		AAD7AFFE215E2317000AC1F6 /* AirportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportRepository.swift; sourceTree = "<group>"; };
+		AAD7B000215E23C2000AC1F6 /* AirportRepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportRepositoryAssembly.swift; sourceTree = "<group>"; };
 		BB6DCC23F856A65029C18EB7 /* Pods-TravelDataKit-TravelDataKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelDataKit-TravelDataKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelDataKit-TravelDataKitTests/Pods-TravelDataKit-TravelDataKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +154,7 @@
 		AA7FD4FC215BC74A000FB362 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				AAD7AFF2215E2158000AC1F6 /* Airport */,
 				AAD7AFDE215E1402000AC1F6 /* Trip */,
 				AA7FD4FD215BC752000FB362 /* Region */,
 			);
@@ -151,8 +164,8 @@
 		AA7FD4FD215BC752000FB362 /* Region */ = {
 			isa = PBXGroup;
 			children = (
-				AA7FD4FF215BC75E000FB362 /* Remote */,
 				AA7FD4FE215BC75A000FB362 /* Local */,
+				AA7FD4FF215BC75E000FB362 /* Remote */,
 				AA7FD50E215BCAC5000FB362 /* RegionRepository.swift */,
 				AAD7AFD3215D23EC000AC1F6 /* RegionRepositoryAssembly.swift */,
 			);
@@ -194,6 +207,35 @@
 				AAD7AFE0215E1443000AC1F6 /* RemoteTripDataStore.swift */,
 			);
 			path = Remote;
+			sourceTree = "<group>";
+		};
+		AAD7AFF2215E2158000AC1F6 /* Airport */ = {
+			isa = PBXGroup;
+			children = (
+				AAD7AFF4215E2167000AC1F6 /* Local */,
+				AAD7AFF3215E2163000AC1F6 /* Remote */,
+				AAD7AFFE215E2317000AC1F6 /* AirportRepository.swift */,
+				AAD7B000215E23C2000AC1F6 /* AirportRepositoryAssembly.swift */,
+			);
+			path = Airport;
+			sourceTree = "<group>";
+		};
+		AAD7AFF3215E2163000AC1F6 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				AAD7AFFA215E2290000AC1F6 /* APIAirportDataStore.swift */,
+				AAD7AFFC215E2298000AC1F6 /* RemoteAirportDataStore.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		AAD7AFF4215E2167000AC1F6 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				AAD7AFF5215E218B000AC1F6 /* RealmAirportDataStore.swift */,
+				AAD7AFF7215E2198000AC1F6 /* LocalAirportDataStore.swift */,
+			);
+			path = Local;
 			sourceTree = "<group>";
 		};
 		E5DB59FD1458E0E55E8DD218 /* Pods */ = {
@@ -407,16 +449,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7FD503215BC796000FB362 /* RealmRegionDataStore.swift in Sources */,
+				AAD7AFFD215E2298000AC1F6 /* RemoteAirportDataStore.swift in Sources */,
 				AA7FD509215BC86E000FB362 /* RemoteRegionDataStore.swift in Sources */,
+				AAD7AFFF215E2317000AC1F6 /* AirportRepository.swift in Sources */,
 				AAD7AFD4215D23EC000AC1F6 /* RegionRepositoryAssembly.swift in Sources */,
 				AA7FD501215BC778000FB362 /* APIRegionDataStore.swift in Sources */,
 				AAD7AFE7215E1589000AC1F6 /* TripRepository.swift in Sources */,
 				AAD7AFE9215E15BF000AC1F6 /* TripRepositoryAssembly.swift in Sources */,
+				AAD7AFFB215E2290000AC1F6 /* APIAirportDataStore.swift in Sources */,
 				AAD7AFE3215E1450000AC1F6 /* APITripDataStore.swift in Sources */,
+				AAD7AFF6215E218B000AC1F6 /* RealmAirportDataStore.swift in Sources */,
 				AA7FD50F215BCAC5000FB362 /* RegionRepository.swift in Sources */,
 				AA0A1EC6215BA88300754EC7 /* Example.swift in Sources */,
 				AAD7AFE1215E1443000AC1F6 /* RemoteTripDataStore.swift in Sources */,
+				AAD7B001215E23C2000AC1F6 /* AirportRepositoryAssembly.swift in Sources */,
 				AA7FD507215BC859000FB362 /* LocalRegionDataStore.swift in Sources */,
+				AAD7AFF8215E2198000AC1F6 /* LocalAirportDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

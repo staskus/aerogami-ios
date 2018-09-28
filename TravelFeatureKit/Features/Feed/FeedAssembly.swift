@@ -11,7 +11,8 @@ public class FeedAssembly: Assembly {
         container.register(FeedConfigurator.self) { r in
             FeedConfigurator(
                 regionRepository: r.resolve(RegionRepository.self)!,
-                tripRepository: r.resolve(TripRepository.self)!
+                tripRepository: r.resolve(TripRepository.self)!,
+                airportRepository: r.resolve(AirportRepository.self)!
             )
         }.inObjectScope(.container)
     }
