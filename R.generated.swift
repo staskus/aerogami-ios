@@ -5,6 +5,7 @@
 
 import Foundation
 import Rswift
+import UIKit
 
 /// This `R` struct is generated and contains references to static resources.
 struct R: Rswift.Validatable {
@@ -87,8 +88,23 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 0 images.
+  /// This `R.image` struct is generated, and contains static references to 2 images.
   struct image {
+    /// Image `tabFeedIcon`.
+    static let tabFeedIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabFeedIcon")
+    /// Image `tabPreferencesIcon`.
+    static let tabPreferencesIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabPreferencesIcon")
+    
+    /// `UIImage(named: "tabFeedIcon", bundle: ..., traitCollection: ...)`
+    static func tabFeedIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.tabFeedIcon, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "tabPreferencesIcon", bundle: ..., traitCollection: ...)`
+    static func tabPreferencesIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.tabPreferencesIcon, compatibleWith: traitCollection)
+    }
+    
     fileprivate init() {}
   }
   
@@ -114,12 +130,20 @@ struct R: Rswift.Validatable {
   
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 2 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 4 localization keys.
     struct localizable {
       /// en translation: Cancel
       /// 
       /// Locales: en
       static let cancel = Rswift.StringResource(key: "cancel", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Feed
+      /// 
+      /// Locales: en
+      static let feedTabTitle = Rswift.StringResource(key: "feedTab.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Preferences
+      /// 
+      /// Locales: en
+      static let preferencesTabTitle = Rswift.StringResource(key: "preferencesTab.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Something went wrong!
       /// 
       /// Locales: en
@@ -130,6 +154,20 @@ struct R: Rswift.Validatable {
       /// Locales: en
       static func cancel(_: Void = ()) -> String {
         return NSLocalizedString("cancel", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Feed
+      /// 
+      /// Locales: en
+      static func feedTabTitle(_: Void = ()) -> String {
+        return NSLocalizedString("feedTab.title", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Preferences
+      /// 
+      /// Locales: en
+      static func preferencesTabTitle(_: Void = ()) -> String {
+        return NSLocalizedString("preferencesTab.title", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Something went wrong!

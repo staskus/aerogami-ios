@@ -1,2 +1,4 @@
 "cancel" = "Cancel";
 "error.genericTitle" = "Something went wrong!";
+"feedTab.title" = "Feed";
+"preferencesTab.title" = "Preferences";
