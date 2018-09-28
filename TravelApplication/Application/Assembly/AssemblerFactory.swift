@@ -17,6 +17,7 @@ class AssemblerFactory {
         let assemblies: [Assembly] = [
             ApplicationAssembly(),
             RegionRepositoryAssembly(),
+            TripRepositoryAssembly(),
             FeedAssembly()
         ]
         

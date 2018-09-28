@@ -12,6 +12,9 @@
 		AA3FD39E215CD497006D9C61 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD39D215CD497006D9C61 /* Logger.swift */; };
 		AA7FD4F6215BC544000FB362 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD4F5215BC544000FB362 /* Region.swift */; };
 		AA7FD4FB215BC709000FB362 /* RegionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD4FA215BC709000FB362 /* RegionRepository.swift */; };
+		AAD7AFDB215D587F000AC1F6 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFDA215D587F000AC1F6 /* Trip.swift */; };
+		AAD7AFDD215E1398000AC1F6 /* TripRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFDC215E1398000AC1F6 /* TripRepository.swift */; };
+		AAD7AFEC215E1CDE000AC1F6 /* APIDateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFEB215E1CDE000AC1F6 /* APIDateTransform.swift */; };
 		EB09658332F6160F6ECF9B1C /* Pods_TravelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AD78BD155DF36B3550B7ED /* Pods_TravelKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +29,9 @@
 		AA3FD39D215CD497006D9C61 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		AA7FD4F5215BC544000FB362 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		AA7FD4FA215BC709000FB362 /* RegionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRepository.swift; sourceTree = "<group>"; };
+		AAD7AFDA215D587F000AC1F6 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		AAD7AFDC215E1398000AC1F6 /* TripRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRepository.swift; sourceTree = "<group>"; };
+		AAD7AFEB215E1CDE000AC1F6 /* APIDateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateTransform.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		AA0A1E8B215BA70900754EC7 /* TravelKit */ = {
 			isa = PBXGroup;
 			children = (
+				AAD7AFEA215E1CD2000AC1F6 /* Mapping */,
 				AA3FD39F215CD56A006D9C61 /* Logging */,
 				AA7FD4F3215BC527000FB362 /* Repositories */,
 				AA0A1E8C215BA70900754EC7 /* TravelKit.h */,
@@ -90,6 +97,7 @@
 		AA7FD4F3215BC527000FB362 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				AAD7AFD9215D5860000AC1F6 /* Trip */,
 				AA7FD4F4215BC537000FB362 /* Region */,
 			);
 			path = Repositories;
@@ -102,6 +110,23 @@
 				AA7FD4FA215BC709000FB362 /* RegionRepository.swift */,
 			);
 			path = Region;
+			sourceTree = "<group>";
+		};
+		AAD7AFD9215D5860000AC1F6 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				AAD7AFDA215D587F000AC1F6 /* Trip.swift */,
+				AAD7AFDC215E1398000AC1F6 /* TripRepository.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		AAD7AFEA215E1CD2000AC1F6 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				AAD7AFEB215E1CDE000AC1F6 /* APIDateTransform.swift */,
+			);
+			path = Mapping;
 			sourceTree = "<group>";
 		};
 		F6DA292A79D59E99960512AC /* Frameworks */ = {
@@ -217,8 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD7AFDB215D587F000AC1F6 /* Trip.swift in Sources */,
 				AA7FD4FB215BC709000FB362 /* RegionRepository.swift in Sources */,
+				AAD7AFDD215E1398000AC1F6 /* TripRepository.swift in Sources */,
 				AA0A1E95215BA71F00754EC7 /* Example.swift in Sources */,
+				AAD7AFEC215E1CDE000AC1F6 /* APIDateTransform.swift in Sources */,
 				AA7FD4F6215BC544000FB362 /* Region.swift in Sources */,
 				AA3FD39E215CD497006D9C61 /* Logger.swift in Sources */,
 			);
