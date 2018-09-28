@@ -30,7 +30,7 @@ class ApplicationLoader {
     }
 
     private func loadRootViewController() {
-        let rootConfigurator = assembler.resolver.resolve(FeedConfigurator.self)!
+        let rootConfigurator = assembler.resolver.resolve(MainConfigurator.self)!
         let rootViewController = rootConfigurator.createViewController()
         window = assembler.resolver.resolve(UIKit.UIWindow.self)!
         window?.rootViewController = rootViewController

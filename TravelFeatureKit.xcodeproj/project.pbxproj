@@ -34,6 +34,18 @@
 		AAD7AFD0215D2214000AC1F6 /* Interactor.swift.hbs in Resources */ = {isa = PBXBuildFile; fileRef = AAD7AFC9215D2214000AC1F6 /* Interactor.swift.hbs */; };
 		AAD7AFD1215D2214000AC1F6 /* ViewController.swift.hbs in Resources */ = {isa = PBXBuildFile; fileRef = AAD7AFCA215D2214000AC1F6 /* ViewController.swift.hbs */; };
 		AAD7AFD2215D2214000AC1F6 /* Configurator.swift.hbs in Resources */ = {isa = PBXBuildFile; fileRef = AAD7AFCB215D2214000AC1F6 /* Configurator.swift.hbs */; };
+		AAD7B004215E3138000AC1F6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B003215E3138000AC1F6 /* Theme.swift */; };
+		AAD7B007215E6645000AC1F6 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B006215E6645000AC1F6 /* MainConfigurator.swift */; };
+		AAD7B010215E666D000AC1F6 /* PreferencesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B009215E666D000AC1F6 /* PreferencesPresenter.swift */; };
+		AAD7B011215E666D000AC1F6 /* PreferencesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B00A215E666D000AC1F6 /* PreferencesConfigurator.swift */; };
+		AAD7B012215E666D000AC1F6 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B00B215E666D000AC1F6 /* PreferencesViewController.swift */; };
+		AAD7B013215E666E000AC1F6 /* PreferencesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B00C215E666D000AC1F6 /* PreferencesRouter.swift */; };
+		AAD7B014215E666E000AC1F6 /* PreferencesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B00D215E666D000AC1F6 /* PreferencesInteractor.swift */; };
+		AAD7B015215E666E000AC1F6 /* PreferencesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B00E215E666D000AC1F6 /* PreferencesModels.swift */; };
+		AAD7B016215E666E000AC1F6 /* PreferencesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B00F215E666D000AC1F6 /* PreferencesAssembly.swift */; };
+		AAD7B018215E66C9000AC1F6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B017215E66C9000AC1F6 /* MainViewController.swift */; };
+		AAD7B01A215E6821000AC1F6 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B019215E6821000AC1F6 /* BaseNavigationViewController.swift */; };
+		AAD7B01C215E6905000AC1F6 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B01B215E6905000AC1F6 /* MainAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +78,18 @@
 		AAD7AFC9215D2214000AC1F6 /* Interactor.swift.hbs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Interactor.swift.hbs; sourceTree = "<group>"; };
 		AAD7AFCA215D2214000AC1F6 /* ViewController.swift.hbs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ViewController.swift.hbs; sourceTree = "<group>"; };
 		AAD7AFCB215D2214000AC1F6 /* Configurator.swift.hbs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Configurator.swift.hbs; sourceTree = "<group>"; };
+		AAD7B003215E3138000AC1F6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		AAD7B006215E6645000AC1F6 /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
+		AAD7B009215E666D000AC1F6 /* PreferencesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesPresenter.swift; sourceTree = "<group>"; };
+		AAD7B00A215E666D000AC1F6 /* PreferencesConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesConfigurator.swift; sourceTree = "<group>"; };
+		AAD7B00B215E666D000AC1F6 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		AAD7B00C215E666D000AC1F6 /* PreferencesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesRouter.swift; sourceTree = "<group>"; };
+		AAD7B00D215E666D000AC1F6 /* PreferencesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesInteractor.swift; sourceTree = "<group>"; };
+		AAD7B00E215E666D000AC1F6 /* PreferencesModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesModels.swift; sourceTree = "<group>"; };
+		AAD7B00F215E666D000AC1F6 /* PreferencesAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesAssembly.swift; sourceTree = "<group>"; };
+		AAD7B017215E66C9000AC1F6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AAD7B019215E6821000AC1F6 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		AAD7B01B215E6905000AC1F6 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
 		B4FF4C26E44886479F007DF8 /* Pods-TravelFeatureKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelFeatureKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelFeatureKit/Pods-TravelFeatureKit.release.xcconfig"; sourceTree = "<group>"; };
 		B75CE1FEFCD45A73B1AB4B97 /* Pods_TravelFeatureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelFeatureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -135,6 +159,8 @@
 		AA3FD369215CCA9F006D9C61 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				AAD7B008215E666D000AC1F6 /* Preferences */,
+				AAD7B005215E663B000AC1F6 /* Main */,
 				AAD7AFB3215D218C000AC1F6 /* Feed */,
 			);
 			path = Features;
@@ -151,14 +177,9 @@
 		AA3FD3B7215CDAF9006D9C61 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				AA3FD3BA215CDCF5006D9C61 /* ContentState.swift */,
-				AA3FD3BE215CE0CA006D9C61 /* FeatureViewController.swift */,
-				AA3FD3C2215CE5F1006D9C61 /* ErrorView.swift */,
-				AA3FD3C4215CE60E006D9C61 /* EmptyView.swift */,
-				AA3FD3C6215CE628006D9C61 /* LoadingView.swift */,
-				AA3FD3C8215D1091006D9C61 /* Presenter.swift */,
-				AA3FD3CA215D1138006D9C61 /* View.swift */,
-				AA3FD3CC215D11AB006D9C61 /* FeaturePresenter.swift */,
+				AAD7B002215E3121000AC1F6 /* BaseFeature */,
+				AAD7B003215E3138000AC1F6 /* Theme.swift */,
+				AAD7B019215E6821000AC1F6 /* BaseNavigationViewController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -205,6 +226,45 @@
 				AAD7AFCB215D2214000AC1F6 /* Configurator.swift.hbs */,
 			);
 			path = Feature;
+			sourceTree = "<group>";
+		};
+		AAD7B002215E3121000AC1F6 /* BaseFeature */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FD3BA215CDCF5006D9C61 /* ContentState.swift */,
+				AA3FD3BE215CE0CA006D9C61 /* FeatureViewController.swift */,
+				AA3FD3C2215CE5F1006D9C61 /* ErrorView.swift */,
+				AA3FD3C4215CE60E006D9C61 /* EmptyView.swift */,
+				AA3FD3C6215CE628006D9C61 /* LoadingView.swift */,
+				AA3FD3C8215D1091006D9C61 /* Presenter.swift */,
+				AA3FD3CA215D1138006D9C61 /* View.swift */,
+				AA3FD3CC215D11AB006D9C61 /* FeaturePresenter.swift */,
+			);
+			path = BaseFeature;
+			sourceTree = "<group>";
+		};
+		AAD7B005215E663B000AC1F6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AAD7B006215E6645000AC1F6 /* MainConfigurator.swift */,
+				AAD7B017215E66C9000AC1F6 /* MainViewController.swift */,
+				AAD7B01B215E6905000AC1F6 /* MainAssembly.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AAD7B008215E666D000AC1F6 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				AAD7B009215E666D000AC1F6 /* PreferencesPresenter.swift */,
+				AAD7B00A215E666D000AC1F6 /* PreferencesConfigurator.swift */,
+				AAD7B00B215E666D000AC1F6 /* PreferencesViewController.swift */,
+				AAD7B00C215E666D000AC1F6 /* PreferencesRouter.swift */,
+				AAD7B00D215E666D000AC1F6 /* PreferencesInteractor.swift */,
+				AAD7B00E215E666D000AC1F6 /* PreferencesModels.swift */,
+				AAD7B00F215E666D000AC1F6 /* PreferencesAssembly.swift */,
+			);
+			path = Preferences;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,21 +400,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD7AFBF215D218C000AC1F6 /* FeedModels.swift in Sources */,
+				AAD7B018215E66C9000AC1F6 /* MainViewController.swift in Sources */,
+				AAD7B01C215E6905000AC1F6 /* MainAssembly.swift in Sources */,
 				AA3FD3CB215D1138006D9C61 /* View.swift in Sources */,
+				AAD7B016215E666E000AC1F6 /* PreferencesAssembly.swift in Sources */,
+				AAD7B010215E666D000AC1F6 /* PreferencesPresenter.swift in Sources */,
 				AA3FD3BB215CDCF5006D9C61 /* ContentState.swift in Sources */,
 				AAD7AFBC215D218C000AC1F6 /* FeedPresenter.swift in Sources */,
+				AAD7B012215E666D000AC1F6 /* PreferencesViewController.swift in Sources */,
 				AAD7AFC1215D218C000AC1F6 /* FeedRouter.swift in Sources */,
 				AA3FD3CD215D11AB006D9C61 /* FeaturePresenter.swift in Sources */,
+				AAD7B015215E666E000AC1F6 /* PreferencesModels.swift in Sources */,
 				AA3FD3C5215CE60E006D9C61 /* EmptyView.swift in Sources */,
+				AAD7B014215E666E000AC1F6 /* PreferencesInteractor.swift in Sources */,
 				AA3FD394215CD34B006D9C61 /* R.generated.swift in Sources */,
 				AAD7AFBB215D218C000AC1F6 /* FeedConfigurator.swift in Sources */,
+				AAD7B013215E666E000AC1F6 /* PreferencesRouter.swift in Sources */,
 				AA3FD3C9215D1091006D9C61 /* Presenter.swift in Sources */,
 				AAD7AFBD215D218C000AC1F6 /* FeedInteractor.swift in Sources */,
+				AAD7B007215E6645000AC1F6 /* MainConfigurator.swift in Sources */,
+				AAD7B011215E666D000AC1F6 /* PreferencesConfigurator.swift in Sources */,
 				AA3FD3BF215CE0CA006D9C61 /* FeatureViewController.swift in Sources */,
 				AAD7AFC0215D218C000AC1F6 /* FeedViewController.swift in Sources */,
 				AAD7AFBE215D218C000AC1F6 /* FeedAssembly.swift in Sources */,
 				AA3FD3C7215CE628006D9C61 /* LoadingView.swift in Sources */,
+				AAD7B01A215E6821000AC1F6 /* BaseNavigationViewController.swift in Sources */,
 				AA3FD3C3215CE5F1006D9C61 /* ErrorView.swift in Sources */,
+				AAD7B004215E3138000AC1F6 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
