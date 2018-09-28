@@ -18,6 +18,7 @@ $rxAlamofireVersion =                 '~> 4.2'
 $alamofireVersion =                   '~> 4.7'
 $rSwiftVersion =                      '~> 4.0.0'
 $snapKitVersion =                     '~> 4.0.0'
+$sdWebImageVersion =                  '~> 4.0'
 
 # ############################################################
 # TravelKit
@@ -94,6 +95,7 @@ def shared_TravelFeatureKit_pods
     pod 'Swinject',                   $swinjectVersion
     pod 'SnapKit',                    $snapKitVersion
     pod 'R.swift'
+    pod 'SDWebImage',                 $sdWebImageVersion
 
   shared_TravelDataKit_pods
 end

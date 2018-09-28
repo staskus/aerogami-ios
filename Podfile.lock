@@ -23,6 +23,9 @@ PODS:
     - Alamofire (~> 4.5)
     - RxSwift (~> 4)
   - RxSwift (4.3.1)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
   - SnapKit (4.0.1)
   - SwiftDate (5.0.9)
   - Swinject (2.5.0)
@@ -37,6 +40,7 @@ DEPENDENCIES:
   - RealmSwift
   - RxAlamofire (~> 4.2)
   - RxSwift (~> 4.2)
+  - SDWebImage (~> 4.0)
   - SnapKit (~> 4.0.0)
   - SwiftDate (~> 5.0)
   - Swinject (~> 2.4)
@@ -54,6 +58,7 @@ SPEC REPOS:
     - RealmSwift
     - RxAlamofire
     - RxSwift
+    - SDWebImage
     - SnapKit
     - SwiftDate
     - Swinject
@@ -70,10 +75,11 @@ SPEC CHECKSUMS:
   RealmSwift: 69121c8b86d0ae005fb779efdb10e606732e1c74
   RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SwiftDate: 52b718d32ec006861a2be2756cbfa482d438e781
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: ab021f372557926df34f51c27593b0414d6be776
+PODFILE CHECKSUM: a6893aa77873a8dcb8fcf9d8f68748bba54ac32d
 
 COCOAPODS: 1.5.0
