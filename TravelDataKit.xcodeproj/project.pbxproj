@@ -20,6 +20,10 @@
 		AA7FD509215BC86E000FB362 /* RemoteRegionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD508215BC86E000FB362 /* RemoteRegionDataStore.swift */; };
 		AA7FD50F215BCAC5000FB362 /* RegionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD50E215BCAC5000FB362 /* RegionRepository.swift */; };
 		AAD7AFD4215D23EC000AC1F6 /* RegionRepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFD3215D23EC000AC1F6 /* RegionRepositoryAssembly.swift */; };
+		AAD7AFE1215E1443000AC1F6 /* RemoteTripDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFE0215E1443000AC1F6 /* RemoteTripDataStore.swift */; };
+		AAD7AFE3215E1450000AC1F6 /* APITripDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFE2215E1450000AC1F6 /* APITripDataStore.swift */; };
+		AAD7AFE7215E1589000AC1F6 /* TripRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFE6215E1589000AC1F6 /* TripRepository.swift */; };
+		AAD7AFE9215E15BF000AC1F6 /* TripRepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFE8215E15BF000AC1F6 /* TripRepositoryAssembly.swift */; };
 		BBBBB7D93B87941F94A099DD /* Pods_TravelDataKit_TravelDataKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543E2F0D23DBD5862F1C52B7 /* Pods_TravelDataKit_TravelDataKitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +58,10 @@
 		AA7FD508215BC86E000FB362 /* RemoteRegionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRegionDataStore.swift; sourceTree = "<group>"; };
 		AA7FD50E215BCAC5000FB362 /* RegionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRepository.swift; sourceTree = "<group>"; };
 		AAD7AFD3215D23EC000AC1F6 /* RegionRepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRepositoryAssembly.swift; sourceTree = "<group>"; };
+		AAD7AFE0215E1443000AC1F6 /* RemoteTripDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTripDataStore.swift; sourceTree = "<group>"; };
+		AAD7AFE2215E1450000AC1F6 /* APITripDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITripDataStore.swift; sourceTree = "<group>"; };
+		AAD7AFE6215E1589000AC1F6 /* TripRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRepository.swift; sourceTree = "<group>"; };
+		AAD7AFE8215E15BF000AC1F6 /* TripRepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRepositoryAssembly.swift; sourceTree = "<group>"; };
 		BB6DCC23F856A65029C18EB7 /* Pods-TravelDataKit-TravelDataKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelDataKit-TravelDataKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelDataKit-TravelDataKitTests/Pods-TravelDataKit-TravelDataKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +142,7 @@
 		AA7FD4FC215BC74A000FB362 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				AAD7AFDE215E1402000AC1F6 /* Trip */,
 				AA7FD4FD215BC752000FB362 /* Region */,
 			);
 			path = Repositories;
@@ -164,6 +173,25 @@
 			children = (
 				AA7FD500215BC778000FB362 /* APIRegionDataStore.swift */,
 				AA7FD508215BC86E000FB362 /* RemoteRegionDataStore.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		AAD7AFDE215E1402000AC1F6 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				AAD7AFDF215E140C000AC1F6 /* Remote */,
+				AAD7AFE6215E1589000AC1F6 /* TripRepository.swift */,
+				AAD7AFE8215E15BF000AC1F6 /* TripRepositoryAssembly.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		AAD7AFDF215E140C000AC1F6 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				AAD7AFE2215E1450000AC1F6 /* APITripDataStore.swift */,
+				AAD7AFE0215E1443000AC1F6 /* RemoteTripDataStore.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -382,8 +410,12 @@
 				AA7FD509215BC86E000FB362 /* RemoteRegionDataStore.swift in Sources */,
 				AAD7AFD4215D23EC000AC1F6 /* RegionRepositoryAssembly.swift in Sources */,
 				AA7FD501215BC778000FB362 /* APIRegionDataStore.swift in Sources */,
+				AAD7AFE7215E1589000AC1F6 /* TripRepository.swift in Sources */,
+				AAD7AFE9215E15BF000AC1F6 /* TripRepositoryAssembly.swift in Sources */,
+				AAD7AFE3215E1450000AC1F6 /* APITripDataStore.swift in Sources */,
 				AA7FD50F215BCAC5000FB362 /* RegionRepository.swift in Sources */,
 				AA0A1EC6215BA88300754EC7 /* Example.swift in Sources */,
+				AAD7AFE1215E1443000AC1F6 /* RemoteTripDataStore.swift in Sources */,
 				AA7FD507215BC859000FB362 /* LocalRegionDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

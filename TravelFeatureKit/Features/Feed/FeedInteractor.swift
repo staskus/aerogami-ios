@@ -7,6 +7,7 @@ class FeedInteractor {
     private var disposeBag = DisposeBag()
     
     private let regionRepository: RegionRepository
+    private let tripRepository: TripRepository
 
     private var contentState: ContentState<Feed.Data> = .loading(data: nil) {
         didSet {
@@ -15,9 +16,14 @@ class FeedInteractor {
         }
     }
 
-    init(presenter: FeedPresenter, regionRepository: RegionRepository) {
+    init(
+        presenter: FeedPresenter,
+        regionRepository: RegionRepository,
+        tripRepository: TripRepository
+        ) {
         self.presenter = presenter
         self.regionRepository = regionRepository
+        self.tripRepository = tripRepository
     }
 
     func dispatch(_ action: Feed.Action) {
@@ -45,6 +51,16 @@ class FeedInteractor {
                 },
                 onError: { error in
                     self.contentState = .error(error: .loading(reason: error.localizedDescription))
+                }
+            )
+            .disposed(by: disposeBag)
+        
+        tripRepository.getTrips(in: nil)
+            .subscribe(
+                onNext: { data in
+                    print(data);
+                },
+                onError: { error in
                 }
             )
             .disposed(by: disposeBag)
