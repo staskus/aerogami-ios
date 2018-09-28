@@ -15,15 +15,15 @@ public class Region: Object, Mappable {
     @objc public dynamic var id: String = ""
     @objc public dynamic var name: String = ""
     @objc public dynamic var createdAt = Date()
-    
+
     public override static func primaryKey() -> String? {
         return "id"
     }
-    
+
     required convenience public init?(map: Map) {
         self.init()
     }
-    
+
     public func mapping(map: Map) {
         id                <- map["id"]
         name              <- map["name"]

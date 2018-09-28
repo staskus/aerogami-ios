@@ -26,37 +26,37 @@ extension FeatureAdapterError: LocalizedError {
 protocol FeatureAdapter {
     associatedtype Content: Equatable
     associatedtype ViewModel: FeatureViewModel
-    
+
     func makeViewModel(viewState: ViewState<ViewModel.ContentViewModel>) -> ViewModel
     func makeContentViewModel(content: Content) throws -> ViewModel.ContentViewModel
 }
 
 class FeaturePresenter<View: FeatureViewController, Adapter: FeatureAdapter> where Adapter.ViewModel == View.ViewModel {
-    
+
     typealias Content = Adapter.Content
     typealias ContentViewModel = View.ViewModel.ContentViewModel
-    
+
     private var currentState: ContentState<Content>?
     private var disposeBag = DisposeBag()
     let adapter: Adapter
     weak var view: View?
-    
+
     init (adapter: Adapter) {
         self.adapter = adapter
     }
-    
+
     func present(_ state: ContentState<Content>) {
         guard let view = self.view else {
             Logger.feature.warning("The view in \(self) is not available")
             return
         }
-        
+
         self.currentState = state
         let viewState = (try? contentViewState(for: state)) ?? .error(message: R.string.localizable.errorGenericTitle())
         let viewModel = adapter.makeViewModel(viewState: viewState)
         view.update(with: viewModel)
     }
-    
+
     private func contentViewState(for state: ContentState<Content>) throws -> ViewState<ContentViewModel> {
         switch state {
         case .loading(let content):
@@ -67,19 +67,19 @@ class FeaturePresenter<View: FeatureViewController, Adapter: FeatureAdapter> whe
             return .error(message: error.localizedDescription)
         }
     }
-    
+
     private func loadingViewModel(with content: Content?) throws -> ViewState<ContentViewModel> {
         if let content = content {
-            
+
             return .loading(viewModel: try adapter.makeContentViewModel(content: content))
         }
-        
+
         return .loading(viewModel: nil)
     }
-    
+
     private func loadedViewModel(with content: Content,
                                  and error: ContentStateError?) throws -> ViewState<ContentViewModel> {
-        
+
         return .loaded(
             viewModel: try adapter.makeContentViewModel(content: content),
             errorMessage: error?.localizedDescription

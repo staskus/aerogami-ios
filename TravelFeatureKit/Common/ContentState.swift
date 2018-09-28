@@ -12,7 +12,7 @@ enum ContentState<ContentType: Equatable> {
     case loading(data: ContentType?)
     case error(error: ContentStateError)
     case loaded(data: ContentType, error: ContentStateError?)
-    
+
     public var data: ContentType? {
         switch self {
         case .error:
@@ -26,7 +26,7 @@ enum ContentState<ContentType: Equatable> {
 }
 
 extension ContentState: Equatable {
-    
+
     public static func == (lhs: ContentState, rhs: ContentState) -> Bool {
         switch (lhs, rhs) {
         case (.error(let lhsError), .error(let rhsError)):

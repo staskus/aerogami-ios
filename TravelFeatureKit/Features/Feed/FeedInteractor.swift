@@ -5,7 +5,7 @@ import TravelKit
 class FeedInteractor {
     private let presenter: FeedPresenter
     private var disposeBag = DisposeBag()
-    
+
     private let regionRepository: RegionRepository
     private let tripRepository: TripRepository
 
@@ -37,7 +37,7 @@ class FeedInteractor {
         disposeBag = DisposeBag()
 
         contentState = .loading(data: contentState.data)
-        
+
         regionRepository.getRegions()
             .map {
                 Feed.Data(
@@ -54,11 +54,11 @@ class FeedInteractor {
                 }
             )
             .disposed(by: disposeBag)
-        
+
         tripRepository.getTrips(in: nil)
             .subscribe(
                 onNext: { data in
-                    print(data);
+                    print(data)
                 },
                 onError: { error in
                 }

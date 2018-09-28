@@ -13,7 +13,7 @@ class EmptyView: UIView {
         super.init(frame: .zero)
         backgroundColor = .blue
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

@@ -18,17 +18,17 @@ import CocoaLumberjack
 class ApplicationLoader {
     public let assembler: Assembler
     public var window: UIWindow?
-    
+
     init() {
         self.assembler = AssemblerFactory().create()
     }
-    
+
     // Start the application loading sequence
     func start(launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
         setupLogger()
         loadRootViewController()
     }
-    
+
     private func loadRootViewController() {
         let rootConfigurator = assembler.resolver.resolve(FeedConfigurator.self)!
         let rootViewController = rootConfigurator.createViewController()
@@ -36,7 +36,7 @@ class ApplicationLoader {
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
     }
-    
+
     private func setupLogger() {
         DDLog.add(DDASLLogger.sharedInstance)
     }

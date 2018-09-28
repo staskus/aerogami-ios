@@ -27,7 +27,7 @@ enum ViewState<ViewModel> {
     case loading(viewModel: ViewModel?)
     case loaded(viewModel: ViewModel, errorMessage: String?)
     case error(message: String)
-    
+
     var viewModel: ViewModel? {
         switch self {
         case .loading(let viewModel):
@@ -41,14 +41,14 @@ enum ViewState<ViewModel> {
 }
 
 protocol FeatureViewController: class {
-    
+
     associatedtype ViewModel: FeatureViewModel
-    
+
     var errorView: UIView? { get set }
     var loadingView: UIView? { get set }
     var emptyView: UIView? { get set }
     var viewModel: ViewModel? { get set }
-    
+
     func update(with viewModel: ViewModel)
     func configureView()
     func setupErrorView()
@@ -69,7 +69,7 @@ extension FeatureViewController where Self: UIViewController {
         guard isViewLoaded else {
             return
         }
-        
+
         self.viewModel = viewModel
         self.configureView()
     }
@@ -81,19 +81,19 @@ extension FeatureViewController where Self: UIViewController {
             Logger.feature.warning("configureView called in \(String(describing: type(of: self)))but no viewModel available")
             return
         }
-        
+
         switch viewModelState {
         case .loading(let viewModel):
             UIApplication.shared.isNetworkActivityIndicatorVisible = true
-            
+
             // If view model exists
             if let viewModel = viewModel {
                 configureView(for: viewModel)
             } else {
                 // If there is no viewModel
-                
+
                 if let loadingView = loadingView {
-                    
+
                     // Show loadingView
                     view.bringSubviewToFront(loadingView)
                     loadingView.isHidden = false
@@ -101,25 +101,25 @@ extension FeatureViewController where Self: UIViewController {
                 emptyView?.isHidden = true
                 errorView?.isHidden = true
             }
-            
-        case .error(let _):
+
+        case .error(_):
             emptyView?.isHidden = true
             loadingView?.isHidden = true
             if let errorView = errorView {
                 view.bringSubviewToFront(errorView)
                 errorView.isHidden = false
             }
-        case .loaded(let viewModel, let _):
+        case .loaded(let viewModel, _):
             configureView(for: viewModel)
         }
-        
+
     }
-    
+
     private func configureView(for viewModel: FeatureContentViewModel) {
         // If viewModel doesn't have content
         if !viewModel.hasContent {
             if let emptyView = emptyView {
-                
+
                 // Show Empty view
                 view.bringSubviewToFront(emptyView)
                 emptyView.isHidden = false
@@ -129,7 +129,7 @@ extension FeatureViewController where Self: UIViewController {
             emptyView?.isHidden = true
             display()
         }
-        
+
         errorView?.isHidden = true
         loadingView?.isHidden = true
     }
@@ -141,7 +141,7 @@ extension FeatureViewController where Self: UIViewController {
         setupEmptyView()
         setupErrorView()
     }
-    
+
     func setupErrorView() {
         errorView = ErrorView()
         guard let errorView = errorView else { return }
@@ -151,7 +151,7 @@ extension FeatureViewController where Self: UIViewController {
         }
         errorView.isHidden = true
     }
-    
+
     func setupLoadingView() {
         loadingView = LoadingView()
         guard let loadingView = loadingView else { return }
@@ -161,7 +161,7 @@ extension FeatureViewController where Self: UIViewController {
         }
         loadingView.isHidden = true
     }
-    
+
     func setupEmptyView() {
         emptyView = EmptyView()
         guard let emptyView = emptyView else { return }

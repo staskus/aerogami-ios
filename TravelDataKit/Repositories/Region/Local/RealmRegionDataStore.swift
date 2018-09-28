@@ -13,15 +13,15 @@ import TravelKit
 
 class RealmRegionDataStore: LocalRegionDataStore {
     private var realm: Realm
-    
+
     init() {
         self.realm = try! Realm()
     }
-    
+
     func getAll() -> [Region] {
         return Array(self.realm.objects(Region.self))
     }
-    
+
     func write(regions: [Region]) {
         try! self.realm.write {
             self.realm.add(regions, update: true)

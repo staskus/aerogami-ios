@@ -11,11 +11,11 @@ import RxSwift
 
 public class BaseAPIClient: APIClient {
     private let baseUrl: String
-    
+
     public init(baseUrl: String) {
         self.baseUrl = baseUrl
     }
-    
+
     public func get(path: String) -> Observable<Any> {
         return RxAlamofire
             .requestJSON(.get, "\(baseUrl)/\(path)")

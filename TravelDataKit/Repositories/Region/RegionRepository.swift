@@ -15,11 +15,11 @@ public class RegionRepository: TravelKit.RegionRepository {
     private let localDataStore: LocalRegionDataStore
     private let remoteDataStore: RemoteRegionDataStore
     private let apiCacheTimeLimit = 7.days
-    
+
     init(
         localDataStore: LocalRegionDataStore,
         remoteDataStore: RemoteRegionDataStore
-        ) { 
+        ) {
         self.localDataStore = localDataStore
         self.remoteDataStore = remoteDataStore
     }
@@ -31,10 +31,10 @@ public class RegionRepository: TravelKit.RegionRepository {
                     self.localDataStore.write(regions: regions)
                 })
         }
-        
+
         return .just(localDataStore.getAll())
     }
-    
+
     private func isPersistedWithinTimeLimit(_ region: TravelKit.Region) -> Bool {
         return Date() - apiCacheTimeLimit <= region.createdAt
     }

@@ -14,12 +14,12 @@ import ObjectMapper
 class APITripDataStore: RemoteTripDataStore {
     private let apiClient: APIClient
     private let path: String
-    
+
     init(apiClient: APIClient, path: String) {
         self.apiClient = apiClient
         self.path = path
     }
-    
+
     func getTrips(in region: String?) -> Observable<[Trip]> {
         var fullPath = path
         if let region = region {

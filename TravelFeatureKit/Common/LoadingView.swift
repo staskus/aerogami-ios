@@ -11,7 +11,7 @@ import UIKit
 class LoadingView: UIView {
     static let loadingAccessibilityLabel = "Default Loading View"
     let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView(style: .whiteLarge)
-    
+
     init() {
         super.init(frame: .zero)
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
@@ -24,7 +24,7 @@ class LoadingView: UIView {
         activityIndicator.isAccessibilityElement = true
         activityIndicator.accessibilityLabel = LoadingView.loadingAccessibilityLabel
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

@@ -10,7 +10,7 @@ import Foundation
 import CocoaLumberjack
 
 public class Logger {
-    
+
     public enum Context: Int {
         case data = 70
         case api = 80
@@ -18,35 +18,35 @@ public class Logger {
         case app = 140
         case domain = 200
     }
-    
+
     public enum Level: Int {
         case debug
         case info
         case warning
         case error
     }
-    
+
     public let context: Context
-    
+
     // Available loggers
     public static var data = Logger(context: .data)
     public static var api = Logger(context: .api)
     public static var feature = Logger(context: .feature)
     public static var app = Logger(context: .app)
     public static var domain = Logger(context: .domain)
-    
+
     // Available handlers
     public static var handlers: [LoggerHandler] = [LumberJackHandler()]
-    
+
     private init(context: Context) {
         self.context = context
     }
-    
+
     public func debug(_ message: @autoclosure () -> String,
                       file: StaticString = #file,
                       function: StaticString = #function,
                       line: UInt = #line) {
-        
+
         Logger.handlers.forEach { (handler) in
             handler.log(
                 message(),
@@ -58,12 +58,12 @@ public class Logger {
             )
         }
     }
-    
+
     public func info(_ message: @autoclosure () -> String,
                      file: StaticString = #file,
                      function: StaticString = #function,
                      line: UInt = #line) {
-        
+
         Logger.handlers.forEach { (handler) in
             handler.log(
                 message(),
@@ -75,12 +75,12 @@ public class Logger {
             )
         }
     }
-    
+
     public func warning(_ message: @autoclosure () -> String,
                         file: StaticString = #file,
                         function: StaticString = #function,
                         line: UInt = #line) {
-        
+
         Logger.handlers.forEach { (handler) in
             handler.log(
                 message(),
@@ -92,12 +92,12 @@ public class Logger {
             )
         }
     }
-    
+
     public func error(_ message: @autoclosure () -> String,
                       file: StaticString = #file,
                       function: StaticString = #function,
                       line: UInt = #line) {
-        
+
         Logger.handlers.forEach { (handler) in
             handler.log(
                 message(),
@@ -128,7 +128,7 @@ class LumberJackHandler: LoggerHandler {
              line: UInt,
              context: Logger.Context,
              level: Logger.Level) {
-        
+
         switch level {
         case .debug:
             DDLogDebug(

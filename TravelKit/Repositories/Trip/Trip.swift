@@ -13,29 +13,29 @@ import RealmSwift
 
 public class Trip: Object, Mappable {
     @objc public dynamic var id: String!
-    
+
     @objc public dynamic var currency: String!
     @objc public dynamic var price = 0
-    
+
     @objc public dynamic var airlines = ""
     @objc public dynamic var flightNumber = 0
-    
+
     @objc public dynamic var destination: TripLocation!
     @objc public dynamic var departure: TripLocation!
-    
+
     @objc public dynamic var createdAt: Date!
     @objc public dynamic var departureAt: Date!
     @objc public dynamic var returnAt: Date!
     @objc public dynamic var expiresAt: Date!
-    
+
     public override static func primaryKey() -> String? {
         return "id"
     }
-    
+
     required convenience public init?(map: Map) {
         self.init()
     }
-    
+
     public func mapping(map: Map) {
         id                      <- map["id"]
         currency                <- map["currency"]
@@ -59,11 +59,11 @@ public class TripLocation: Object, Mappable {
     public override static func primaryKey() -> String? {
         return "airportCode"
     }
-    
+
     required convenience public init?(map: Map) {
         self.init()
     }
-    
+
     public func mapping(map: Map) {
         city                     <- map["city"]
         countryCode              <- map["country_code"]

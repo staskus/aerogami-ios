@@ -13,13 +13,13 @@ import RxSwift
 
 public class TripRepository: TravelKit.TripRepository {
     private let remoteDataStore: RemoteTripDataStore
-    
+
     init(
         remoteDataStore: RemoteTripDataStore
         ) {
         self.remoteDataStore = remoteDataStore
     }
-    
+
     public func getTrips(in region: String?) -> Observable<[Trip]> {
         return remoteDataStore.getTrips(in: region)
     }

@@ -2,7 +2,7 @@ import UIKit
 import TravelKit
 
 public class FeedConfigurator {
-    
+
     private let regionRepository: RegionRepository
     private let tripRepository: TripRepository
 
