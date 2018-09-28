@@ -8,6 +8,7 @@ class FeedInteractor {
 
     private let regionRepository: RegionRepository
     private let tripRepository: TripRepository
+    private let airportRepository: AirportRepository
 
     private var contentState: ContentState<Feed.Data> = .loading(data: nil) {
         didSet {
@@ -19,11 +20,13 @@ class FeedInteractor {
     init(
         presenter: FeedPresenter,
         regionRepository: RegionRepository,
-        tripRepository: TripRepository
+        tripRepository: TripRepository,
+        airportRepository: AirportRepository
         ) {
         self.presenter = presenter
         self.regionRepository = regionRepository
         self.tripRepository = tripRepository
+        self.airportRepository = airportRepository
     }
 
     func dispatch(_ action: Feed.Action) {
@@ -55,13 +58,24 @@ class FeedInteractor {
             )
             .disposed(by: disposeBag)
 
-        tripRepository.getTrips(in: nil)
+//        tripRepository.getTrips(in: nil)
+//            .subscribe(
+//                onNext: { data in
+//                    print(data)
+//                },
+//                onError: { error in
+//                }
+//            )
+//            .disposed(by: disposeBag)
+        
+        
+        airportRepository.getAirport(by: "VNO")
             .subscribe(
                 onNext: { data in
                     print(data)
-                },
+            },
                 onError: { error in
-                }
+            }
             )
             .disposed(by: disposeBag)
     }

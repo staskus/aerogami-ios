@@ -18,6 +18,7 @@ class AssemblerFactory {
             ApplicationAssembly(),
             RegionRepositoryAssembly(),
             TripRepositoryAssembly(),
+            AirportRepositoryAssembly(),
             FeedAssembly()
         ]
 

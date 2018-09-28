@@ -15,6 +15,8 @@
 		AAD7AFDB215D587F000AC1F6 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFDA215D587F000AC1F6 /* Trip.swift */; };
 		AAD7AFDD215E1398000AC1F6 /* TripRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFDC215E1398000AC1F6 /* TripRepository.swift */; };
 		AAD7AFEC215E1CDE000AC1F6 /* APIDateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFEB215E1CDE000AC1F6 /* APIDateTransform.swift */; };
+		AAD7AFEF215E203A000AC1F6 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFEE215E203A000AC1F6 /* Airport.swift */; };
+		AAD7AFF1215E2115000AC1F6 /* AirportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFF0215E2115000AC1F6 /* AirportRepository.swift */; };
 		EB09658332F6160F6ECF9B1C /* Pods_TravelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AD78BD155DF36B3550B7ED /* Pods_TravelKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		AAD7AFDA215D587F000AC1F6 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		AAD7AFDC215E1398000AC1F6 /* TripRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRepository.swift; sourceTree = "<group>"; };
 		AAD7AFEB215E1CDE000AC1F6 /* APIDateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateTransform.swift; sourceTree = "<group>"; };
+		AAD7AFEE215E203A000AC1F6 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		AAD7AFF0215E2115000AC1F6 /* AirportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 		AAD7AFED215E1F53000AC1F6 /* Airport */ = {
 			isa = PBXGroup;
 			children = (
+				AAD7AFEE215E203A000AC1F6 /* Airport.swift */,
+				AAD7AFF0215E2115000AC1F6 /* AirportRepository.swift */,
 			);
 			path = Airport;
 			sourceTree = "<group>";
@@ -251,12 +257,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD7AFDB215D587F000AC1F6 /* Trip.swift in Sources */,
+				AAD7AFEF215E203A000AC1F6 /* Airport.swift in Sources */,
 				AA7FD4FB215BC709000FB362 /* RegionRepository.swift in Sources */,
 				AAD7AFDD215E1398000AC1F6 /* TripRepository.swift in Sources */,
 				AA0A1E95215BA71F00754EC7 /* Example.swift in Sources */,
 				AAD7AFEC215E1CDE000AC1F6 /* APIDateTransform.swift in Sources */,
 				AA7FD4F6215BC544000FB362 /* Region.swift in Sources */,
 				AA3FD39E215CD497006D9C61 /* Logger.swift in Sources */,
+				AAD7AFF1215E2115000AC1F6 /* AirportRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
