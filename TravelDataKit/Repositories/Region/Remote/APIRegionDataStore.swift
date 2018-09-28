@@ -14,12 +14,12 @@ import ObjectMapper
 class APIRegionDataStore: RemoteRegionDataStore {
     private let apiClient: APIClient
     private let path: String
-    
+
     init(apiClient: APIClient, path: String) {
         self.apiClient = apiClient
         self.path = path
     }
-    
+
     func getAll() -> Observable<[Region]> {
         return apiClient.get(path: path)
             .map { response in

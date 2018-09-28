@@ -12,7 +12,7 @@ import TravelFeatureKit
 import TravelDataKit
 
 class AssemblerFactory {
-    
+
     func create() -> Assembler {
         let assemblies: [Assembly] = [
             ApplicationAssembly(),
@@ -20,9 +20,9 @@ class AssemblerFactory {
             TripRepositoryAssembly(),
             FeedAssembly()
         ]
-        
+
         let assembler = Assembler(assemblies)
-        
+
         return assembler
     }
 }

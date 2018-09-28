@@ -15,7 +15,7 @@ public protocol UpdatableView: class {
 }
 
 public protocol ConfigurableView: UpdatableView {
-    
+
     var viewModel: UpdatableViewModel? {get set}
     func configureView()
 }

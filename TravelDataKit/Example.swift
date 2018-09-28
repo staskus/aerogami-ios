@@ -10,13 +10,13 @@ import UIKit
 import TravelKit
 
 public class Example: TravelKit.Example {
-    
+
     public init() {}
-    
+
     public func doStuff() {
         doStuffPrivately()
     }
-    
+
     func doStuffPrivately() {
         Logger.data.debug("Hi")
     }

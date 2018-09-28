@@ -4,10 +4,10 @@ import TravelKit
 import TravelAPIKit
 
 public class RegionRepositoryAssembly: Assembly {
-    
+
     public init() {
     }
-    
+
     public func assemble(container: Container) {
         container.register(RemoteRegionDataStore.self) { r in
             APIRegionDataStore(
@@ -15,11 +15,11 @@ public class RegionRepositoryAssembly: Assembly {
                 path: "regions"
             )
         }.inObjectScope(.container)
-        
+
         container.register(LocalRegionDataStore.self) { r in
             RealmRegionDataStore()
         }.inObjectScope(.container)
-        
+
         container.register(TravelKit.RegionRepository.self) { r in
             TravelDataKit.RegionRepository(
                 localDataStore: r.resolve(LocalRegionDataStore.self)!,

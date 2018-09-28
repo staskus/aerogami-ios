@@ -1,0 +1,25 @@
+excluded:
+  - Pods
+disabled_rules:
+  - function_parameter_count
+  - todo
+opt_in_rules:
+  - empty_count
+line_length: 160
+type_body_length:
+  - 300 # warning
+  - 400 # error
+file_length:
+  warning: 500
+  error: 1200
+type_name:
+  min_length: 4
+  max_length:
+    warning: 50
+    error: 50
+  excluded:
+    - Day
+identifier_name:
+  min_length:
+    error: 1
+    warning: 2

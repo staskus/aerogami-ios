@@ -97,6 +97,7 @@
 		AA7FD4F3215BC527000FB362 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				AAD7AFED215E1F53000AC1F6 /* Airport */,
 				AAD7AFD9215D5860000AC1F6 /* Trip */,
 				AA7FD4F4215BC537000FB362 /* Region */,
 			);
@@ -127,6 +128,13 @@
 				AAD7AFEB215E1CDE000AC1F6 /* APIDateTransform.swift */,
 			);
 			path = Mapping;
+			sourceTree = "<group>";
+		};
+		AAD7AFED215E1F53000AC1F6 /* Airport */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Airport;
 			sourceTree = "<group>";
 		};
 		F6DA292A79D59E99960512AC /* Frameworks */ = {

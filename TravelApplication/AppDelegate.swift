@@ -15,11 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         set { applicationLoader.window = newValue }
     }
     private let applicationLoader = ApplicationLoader()
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+
         applicationLoader.start(launchOptions: launchOptions)
-        
+
         return true
     }
 
@@ -38,4 +38,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
     }
 }
-
