@@ -144,7 +144,7 @@ struct R: Rswift.Validatable {
   
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 9 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 10 localization keys.
     struct localizable {
       /// en translation: All regions
       /// 
@@ -162,6 +162,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let cancel = Rswift.StringResource(key: "cancel", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Expired
+      /// 
+      /// Locales: en
+      static let feedExpiredTitle = Rswift.StringResource(key: "feed.expired.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Feed
       /// 
       /// Locales: en
@@ -209,6 +213,13 @@ struct R: Rswift.Validatable {
       /// Locales: en
       static func cancel(_: Void = ()) -> String {
         return NSLocalizedString("cancel", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Expired
+      /// 
+      /// Locales: en
+      static func feedExpiredTitle(_: Void = ()) -> String {
+        return NSLocalizedString("feed.expired.title", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Feed
