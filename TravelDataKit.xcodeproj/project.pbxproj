@@ -19,6 +19,8 @@
 		AA7FD507215BC859000FB362 /* LocalRegionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD506215BC859000FB362 /* LocalRegionDataStore.swift */; };
 		AA7FD509215BC86E000FB362 /* RemoteRegionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD508215BC86E000FB362 /* RemoteRegionDataStore.swift */; };
 		AA7FD50F215BCAC5000FB362 /* RegionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD50E215BCAC5000FB362 /* RegionRepository.swift */; };
+		AAC5E7992163615A0027323C /* LocalRegionPeferencesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E7982163615A0027323C /* LocalRegionPeferencesDataStore.swift */; };
+		AAC5E79B2163619D0027323C /* UserDefaultsRegionPreferencesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E79A2163619D0027323C /* UserDefaultsRegionPreferencesDataStore.swift */; };
 		AAD7AFD4215D23EC000AC1F6 /* RegionRepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFD3215D23EC000AC1F6 /* RegionRepositoryAssembly.swift */; };
 		AAD7AFE1215E1443000AC1F6 /* RemoteTripDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFE0215E1443000AC1F6 /* RemoteTripDataStore.swift */; };
 		AAD7AFE3215E1450000AC1F6 /* APITripDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFE2215E1450000AC1F6 /* APITripDataStore.swift */; };
@@ -63,6 +65,8 @@
 		AA7FD506215BC859000FB362 /* LocalRegionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRegionDataStore.swift; sourceTree = "<group>"; };
 		AA7FD508215BC86E000FB362 /* RemoteRegionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRegionDataStore.swift; sourceTree = "<group>"; };
 		AA7FD50E215BCAC5000FB362 /* RegionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRepository.swift; sourceTree = "<group>"; };
+		AAC5E7982163615A0027323C /* LocalRegionPeferencesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRegionPeferencesDataStore.swift; sourceTree = "<group>"; };
+		AAC5E79A2163619D0027323C /* UserDefaultsRegionPreferencesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsRegionPreferencesDataStore.swift; sourceTree = "<group>"; };
 		AAD7AFD3215D23EC000AC1F6 /* RegionRepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRepositoryAssembly.swift; sourceTree = "<group>"; };
 		AAD7AFE0215E1443000AC1F6 /* RemoteTripDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTripDataStore.swift; sourceTree = "<group>"; };
 		AAD7AFE2215E1450000AC1F6 /* APITripDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITripDataStore.swift; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 			children = (
 				AA7FD502215BC796000FB362 /* RealmRegionDataStore.swift */,
 				AA7FD506215BC859000FB362 /* LocalRegionDataStore.swift */,
+				AAC5E7982163615A0027323C /* LocalRegionPeferencesDataStore.swift */,
+				AAC5E79A2163619D0027323C /* UserDefaultsRegionPreferencesDataStore.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -451,6 +457,7 @@
 				AA7FD503215BC796000FB362 /* RealmRegionDataStore.swift in Sources */,
 				AAD7AFFD215E2298000AC1F6 /* RemoteAirportDataStore.swift in Sources */,
 				AA7FD509215BC86E000FB362 /* RemoteRegionDataStore.swift in Sources */,
+				AAC5E79B2163619D0027323C /* UserDefaultsRegionPreferencesDataStore.swift in Sources */,
 				AAD7AFFF215E2317000AC1F6 /* AirportRepository.swift in Sources */,
 				AAD7AFD4215D23EC000AC1F6 /* RegionRepositoryAssembly.swift in Sources */,
 				AA7FD501215BC778000FB362 /* APIRegionDataStore.swift in Sources */,
@@ -463,6 +470,7 @@
 				AA0A1EC6215BA88300754EC7 /* Example.swift in Sources */,
 				AAD7AFE1215E1443000AC1F6 /* RemoteTripDataStore.swift in Sources */,
 				AAD7B001215E23C2000AC1F6 /* AirportRepositoryAssembly.swift in Sources */,
+				AAC5E7992163615A0027323C /* LocalRegionPeferencesDataStore.swift in Sources */,
 				AA7FD507215BC859000FB362 /* LocalRegionDataStore.swift in Sources */,
 				AAD7AFF8215E2198000AC1F6 /* LocalAirportDataStore.swift in Sources */,
 			);

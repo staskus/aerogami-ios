@@ -11,5 +11,6 @@ import TravelKit
 
 public protocol LocalRegionDataStore {
     func getAll() -> [Region]
+    func get(by id: String) -> Region?
     func write(regions: [Region])
 }

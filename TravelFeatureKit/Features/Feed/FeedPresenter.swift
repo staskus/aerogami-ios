@@ -30,8 +30,29 @@ class FeedAdapter: FeatureAdapter {
 
     func makeContentViewModel(content: Feed.Data) throws -> Feed.ViewModel.Content {
         return Feed.ViewModel.Content(
-            rows: makeFeedCardRows(content)
+            rows: makeFeedCardRows(content),
+            availableRegions: makeAvailableRegions(content),
+            selectedRegion: makeSelectedRegion(content)
         )
+    }
+
+    private func makeSelectedRegion(_ content: Feed.Data) -> Feed.ViewModel.Content.Region? {
+        guard let regionId = content.selectedRegionId,
+            let region = (content.regions.filter { $0.id == regionId }).first else { return nil }
+
+        return Feed.ViewModel.Content.Region(
+            id: regionId,
+            name: region.name
+        )
+    }
+
+    private func makeAvailableRegions(_ content: Feed.Data) -> [Feed.ViewModel.Content.Region] {
+        return content.regions.map {
+            Feed.ViewModel.Content.Region(
+                id: $0.id,
+                name: $0.name
+            )
+        }
     }
 
     private func makeFeedCardRows(_ content: Feed.Data) -> [FeedCardViewModel] {

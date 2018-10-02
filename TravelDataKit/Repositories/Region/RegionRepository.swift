@@ -13,14 +13,17 @@ import RxSwift
 
 public class RegionRepository: TravelKit.RegionRepository {
     private let localDataStore: LocalRegionDataStore
+    private let localPreferencesDataStore: LocalRegionPeferencesDataStore
     private let remoteDataStore: RemoteRegionDataStore
     private let apiCacheTimeLimit = 7.days
 
     init(
         localDataStore: LocalRegionDataStore,
+        localPreferencesDataStore: LocalRegionPeferencesDataStore,
         remoteDataStore: RemoteRegionDataStore
         ) {
         self.localDataStore = localDataStore
+        self.localPreferencesDataStore = localPreferencesDataStore
         self.remoteDataStore = remoteDataStore
     }
 
@@ -33,6 +36,17 @@ public class RegionRepository: TravelKit.RegionRepository {
         }
 
         return .just(localDataStore.getAll())
+    }
+
+    public func getSelectedRegion() -> TravelKit.Region? {
+        guard let selectedRegionid = localPreferencesDataStore.getSelectedRegionId(),
+            let selectedRegion = localDataStore.get(by: selectedRegionid) else { return nil }
+
+        return selectedRegion
+    }
+
+    public func saveSelectedRegion(by id: String?) {
+        localPreferencesDataStore.save(selectedRegionId: id)
     }
 
     private func isPersistedWithinTimeLimit(_ region: TravelKit.Region) -> Bool {

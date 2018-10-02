@@ -25,6 +25,7 @@
 		AAC5E7902162233E0027323C /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E78F2162233E0027323C /* UITableView+Dequeue.swift */; };
 		AAC5E793216223CC0027323C /* FeedCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E792216223CC0027323C /* FeedCardCell.swift */; };
 		AAC5E79521622BDB0027323C /* UIButton+SetBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E79421622BDB0027323C /* UIButton+SetBackgroundColor.swift */; };
+		AAC5E797216355870027323C /* FeedTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E796216355870027323C /* FeedTableHeaderView.swift */; };
 		AAD7AFBB215D218C000AC1F6 /* FeedConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFB4215D218C000AC1F6 /* FeedConfigurator.swift */; };
 		AAD7AFBC215D218C000AC1F6 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFB5215D218C000AC1F6 /* FeedPresenter.swift */; };
 		AAD7AFBD215D218C000AC1F6 /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFB6215D218C000AC1F6 /* FeedInteractor.swift */; };
@@ -74,6 +75,7 @@
 		AAC5E78F2162233E0027323C /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
 		AAC5E792216223CC0027323C /* FeedCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCardCell.swift; sourceTree = "<group>"; };
 		AAC5E79421622BDB0027323C /* UIButton+SetBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+SetBackgroundColor.swift"; sourceTree = "<group>"; };
+		AAC5E796216355870027323C /* FeedTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableHeaderView.swift; sourceTree = "<group>"; };
 		AAD7AFB4215D218C000AC1F6 /* FeedConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedConfigurator.swift; sourceTree = "<group>"; };
 		AAD7AFB5215D218C000AC1F6 /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		AAD7AFB6215D218C000AC1F6 /* FeedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				AAC5E792216223CC0027323C /* FeedCardCell.swift */,
+				AAC5E796216355870027323C /* FeedTableHeaderView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				AAD7B007215E6645000AC1F6 /* MainConfigurator.swift in Sources */,
 				AAD7B011215E666D000AC1F6 /* PreferencesConfigurator.swift in Sources */,
 				AA3FD3BF215CE0CA006D9C61 /* FeatureViewController.swift in Sources */,
+				AAC5E797216355870027323C /* FeedTableHeaderView.swift in Sources */,
 				AAD7AFC0215D218C000AC1F6 /* FeedViewController.swift in Sources */,
 				AAD7AFBE215D218C000AC1F6 /* FeedAssembly.swift in Sources */,
 				AA3FD3C7215CE628006D9C61 /* LoadingView.swift in Sources */,

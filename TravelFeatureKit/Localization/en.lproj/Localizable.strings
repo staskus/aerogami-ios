@@ -5,3 +5,5 @@
 "feed.bothWays.title" = "Both ways";
 "feed.totalPrice.title" = "Total price";
 "feed.book.title" = "Book";
+"feed.regionButton.title" = "All regions";
+"feed.regionActionSheet.title" = "Select your region";

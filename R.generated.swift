@@ -88,10 +88,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 3 images.
+  /// This `R.image` struct is generated, and contains static references to 4 images.
   struct image {
     /// Image `FeedCardGradient`.
     static let feedCardGradient = Rswift.ImageResource(bundle: R.hostingBundle, name: "FeedCardGradient")
+    /// Image `RegionPickerIcon`.
+    static let regionPickerIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "RegionPickerIcon")
     /// Image `tabFeedIcon`.
     static let tabFeedIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabFeedIcon")
     /// Image `tabPreferencesIcon`.
@@ -100,6 +102,11 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "FeedCardGradient", bundle: ..., traitCollection: ...)`
     static func feedCardGradient(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.feedCardGradient, compatibleWith: traitCollection)
+    }
+
+    /// `UIImage(named: "RegionPickerIcon", bundle: ..., traitCollection: ...)`
+    static func regionPickerIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.regionPickerIcon, compatibleWith: traitCollection)
     }
 
     /// `UIImage(named: "tabFeedIcon", bundle: ..., traitCollection: ...)`
@@ -137,8 +144,12 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 7 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 9 localization keys.
     struct localizable {
+      /// en translation: All regions
+      /// 
+      /// Locales: en
+      static let feedRegionButtonTitle = Rswift.StringResource(key: "feed.regionButton.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Book
       /// 
       /// Locales: en
@@ -159,6 +170,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let preferencesTabTitle = Rswift.StringResource(key: "preferencesTab.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Select your region
+      /// 
+      /// Locales: en
+      static let feedRegionActionSheetTitle = Rswift.StringResource(key: "feed.regionActionSheet.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Something went wrong!
       /// 
       /// Locales: en
@@ -167,6 +182,13 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let feedTotalPriceTitle = Rswift.StringResource(key: "feed.totalPrice.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+
+      /// en translation: All regions
+      /// 
+      /// Locales: en
+      static func feedRegionButtonTitle(_: Void = ()) -> String {
+        return NSLocalizedString("feed.regionButton.title", bundle: R.hostingBundle, comment: "")
+      }
 
       /// en translation: Book
       /// 
@@ -201,6 +223,13 @@ struct R: Rswift.Validatable {
       /// Locales: en
       static func preferencesTabTitle(_: Void = ()) -> String {
         return NSLocalizedString("preferencesTab.title", bundle: R.hostingBundle, comment: "")
+      }
+
+      /// en translation: Select your region
+      /// 
+      /// Locales: en
+      static func feedRegionActionSheetTitle(_: Void = ()) -> String {
+        return NSLocalizedString("feed.regionActionSheet.title", bundle: R.hostingBundle, comment: "")
       }
 
       /// en translation: Something went wrong!

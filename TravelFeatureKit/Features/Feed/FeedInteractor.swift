@@ -33,6 +33,8 @@ class FeedInteractor {
         switch action {
         case .load:
             loadData()
+        case .changeRegion(let regionId):
+            changeRegion(id: regionId)
         }
     }
 
@@ -41,15 +43,17 @@ class FeedInteractor {
 
         contentState = .loading(data: contentState.data)
 
+        let selectedRegion = regionRepository.getSelectedRegion()
+
         Observable.combineLatest(
             self.regionRepository.getRegions(),
-            self.tripRepository.getTrips(in: nil)
+            self.tripRepository.getTrips(in: selectedRegion?.id)
         )
             .map { (regions, trips) -> Feed.Data in
                 Feed.Data(
                     regions: regions,
                     trips: trips,
-                    selectedRegionId: nil
+                    selectedRegionId: selectedRegion?.id
                 )
             }
             .subscribe(
@@ -61,6 +65,12 @@ class FeedInteractor {
                 }
             )
             .disposed(by: disposeBag)
+    }
+
+    private func changeRegion(id: String?) {
+        contentState = .loading(data: nil)
+        regionRepository.saveSelectedRegion(by: id)
+        loadData()
     }
 
     func subscribe() {

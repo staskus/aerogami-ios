@@ -22,6 +22,10 @@ class RealmRegionDataStore: LocalRegionDataStore {
         return Array(self.realm.objects(Region.self))
     }
 
+    func get(by id: String) -> Region? {
+        return self.realm.object(ofType: Region.self, forPrimaryKey: id)
+    }
+
     func write(regions: [Region]) {
         try! self.realm.write {
             self.realm.add(regions, update: true)
