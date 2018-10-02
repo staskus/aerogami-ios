@@ -7,3 +7,4 @@
 "feed.book.title" = "Book";
 "feed.regionButton.title" = "All regions";
 "feed.regionActionSheet.title" = "Select your region";
+"feed.expired.title" = "Expired";

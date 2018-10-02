@@ -52,7 +52,7 @@ class FeedInteractor {
             .map { (regions, trips) -> Feed.Data in
                 Feed.Data(
                     regions: regions,
-                    trips: trips.sorted { $0.createdAt < $1.createdAt },
+                    trips: trips,
                     selectedRegionId: selectedRegion?.id
                 )
             }
