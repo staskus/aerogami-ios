@@ -19,7 +19,7 @@ class AssemblerFactory {
             RegionRepositoryAssembly(),
             TripRepositoryAssembly(),
             AirportRepositoryAssembly(),
-            
+
             MainAssembly(),
             PreferencesAssembly(),
             FeedAssembly()

@@ -13,15 +13,15 @@ import TravelKit
 
 class RealmAirportDataStore: LocalAirportDataStore {
     private var realm: Realm
-    
+
     init() {
         self.realm = try! Realm()
     }
-    
+
     func getAirport(by code: String) -> Airport? {
         return self.realm.object(ofType: Airport.self, forPrimaryKey: code)
     }
-    
+
     func write(airport: Airport) {
         try! self.realm.write {
             self.realm.add(airport, update: true)

@@ -4,6 +4,7 @@ import TravelKit
 struct Feed {
     struct Data: Equatable {
         let regions: [Region]
+        let trips: [Trip]
         let selectedRegionId: String?
     }
 
@@ -12,6 +13,7 @@ struct Feed {
         let title: String
 
         struct Content: FeatureContentViewModel {
+            var rows: [FeedCardViewModel]
         }
     }
 
@@ -20,5 +22,6 @@ struct Feed {
     }
 
     enum Route {
+        case book
     }
 }

@@ -41,10 +41,14 @@ class FeedInteractor {
 
         contentState = .loading(data: contentState.data)
 
-        regionRepository.getRegions()
-            .map {
+        Observable.combineLatest(
+            self.regionRepository.getRegions(),
+            self.tripRepository.getTrips(in: nil)
+        )
+            .map { (regions, trips) -> Feed.Data in
                 Feed.Data(
-                    regions: $0,
+                    regions: regions,
+                    trips: trips,
                     selectedRegionId: nil
                 )
             }
@@ -55,27 +59,6 @@ class FeedInteractor {
                 onError: { error in
                     self.contentState = .error(error: .loading(reason: error.localizedDescription))
                 }
-            )
-            .disposed(by: disposeBag)
-
-//        tripRepository.getTrips(in: nil)
-//            .subscribe(
-//                onNext: { data in
-//                    print(data)
-//                },
-//                onError: { error in
-//                }
-//            )
-//            .disposed(by: disposeBag)
-        
-        
-        airportRepository.getAirport(by: "VNO")
-            .subscribe(
-                onNext: { data in
-                    print(data)
-            },
-                onError: { error in
-            }
             )
             .disposed(by: disposeBag)
     }

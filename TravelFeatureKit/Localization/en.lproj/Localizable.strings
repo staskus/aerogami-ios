@@ -2,3 +2,6 @@
 "error.genericTitle" = "Something went wrong!";
 "feedTab.title" = "Feed";
 "preferencesTab.title" = "Preferences";
+"feed.bothWays.title" = "Both ways";
+"feed.totalPrice.title" = "Total price";
+"feed.book.title" = "Book";
