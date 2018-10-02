@@ -160,7 +160,7 @@ private class FeedCardTopView: UIView {
         titleLabel.snp.makeConstraints { (make) in
             make.top.equalTo(self.subtitleLabel.snp.bottom).offset(2)
             make.left.equalTo(self).offset(20)
-            make.right.greaterThanOrEqualTo(self).offset(10)
+            make.right.lessThanOrEqualTo(self).offset(-10)
         }
     }
 

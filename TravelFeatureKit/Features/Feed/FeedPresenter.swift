@@ -75,7 +75,7 @@ class FeedAdapter: FeatureAdapter {
         guard let from = trip.departure.city,
             let to = trip.destination.city else { return "" }
 
-        return "\(from) -\n\(to)"
+        return "\(from) ↔️\n\(to)"
     }
 
     private func dateRange(_ trip: Trip) -> String {
