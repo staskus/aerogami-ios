@@ -3,10 +3,10 @@ import Swinject
 import TravelKit
 
 public class MainAssembly: Assembly {
-    
+
     public init() {
     }
-    
+
     public func assemble(container: Container) {
         container.register(MainConfigurator.self) { r in
             MainConfigurator()

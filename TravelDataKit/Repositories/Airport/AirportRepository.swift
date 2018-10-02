@@ -14,7 +14,7 @@ import RxSwift
 public class AirportRepository: TravelKit.AirportRepository {
     private let localDataStore: LocalAirportDataStore
     private let remoteDataStore: RemoteAirportDataStore
-    
+
     init(
         localDataStore: LocalAirportDataStore,
         remoteDataStore: RemoteAirportDataStore
@@ -22,7 +22,7 @@ public class AirportRepository: TravelKit.AirportRepository {
         self.localDataStore = localDataStore
         self.remoteDataStore = remoteDataStore
     }
-    
+
     public func getAirport(by airportCode: String) -> Observable<Airport> {
         guard let airport = localDataStore.getAirport(by: airportCode) else {
             return remoteDataStore.getAirport(by: airportCode)

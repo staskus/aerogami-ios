@@ -19,15 +19,15 @@ public class Airport: Object, Mappable {
     @objc public dynamic var state: String = ""
     @objc public dynamic var lon = 0.0
     @objc public dynamic var lat = 0.0
-    
+
     public override static func primaryKey() -> String? {
         return "code"
     }
-    
+
     required convenience public init?(map: Map) {
         self.init()
     }
-    
+
     public func mapping(map: Map) {
         code                <- map["code"]
         city                <- map["city"]
@@ -36,6 +36,6 @@ public class Airport: Object, Mappable {
         state               <- map["state"]
         lon                 <- map["lon"]
         lat                 <- map["lat"]
-        
+
     }
 }

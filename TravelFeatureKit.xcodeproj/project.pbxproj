@@ -20,6 +20,11 @@
 		AA3FD3C9215D1091006D9C61 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD3C8215D1091006D9C61 /* Presenter.swift */; };
 		AA3FD3CB215D1138006D9C61 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD3CA215D1138006D9C61 /* View.swift */; };
 		AA3FD3CD215D11AB006D9C61 /* FeaturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD3CC215D11AB006D9C61 /* FeaturePresenter.swift */; };
+		AAC5E78C216221A00027323C /* UIView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E78B216221A00027323C /* UIView+Style.swift */; };
+		AAC5E78E216221E00027323C /* UIView+AddSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E78D216221E00027323C /* UIView+AddSubviews.swift */; };
+		AAC5E7902162233E0027323C /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E78F2162233E0027323C /* UITableView+Dequeue.swift */; };
+		AAC5E793216223CC0027323C /* FeedCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E792216223CC0027323C /* FeedCardCell.swift */; };
+		AAC5E79521622BDB0027323C /* UIButton+SetBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E79421622BDB0027323C /* UIButton+SetBackgroundColor.swift */; };
 		AAD7AFBB215D218C000AC1F6 /* FeedConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFB4215D218C000AC1F6 /* FeedConfigurator.swift */; };
 		AAD7AFBC215D218C000AC1F6 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFB5215D218C000AC1F6 /* FeedPresenter.swift */; };
 		AAD7AFBD215D218C000AC1F6 /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFB6215D218C000AC1F6 /* FeedInteractor.swift */; };
@@ -64,6 +69,11 @@
 		AA3FD3C8215D1091006D9C61 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		AA3FD3CA215D1138006D9C61 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		AA3FD3CC215D11AB006D9C61 /* FeaturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturePresenter.swift; sourceTree = "<group>"; };
+		AAC5E78B216221A00027323C /* UIView+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Style.swift"; sourceTree = "<group>"; };
+		AAC5E78D216221E00027323C /* UIView+AddSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AddSubviews.swift"; sourceTree = "<group>"; };
+		AAC5E78F2162233E0027323C /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
+		AAC5E792216223CC0027323C /* FeedCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCardCell.swift; sourceTree = "<group>"; };
+		AAC5E79421622BDB0027323C /* UIButton+SetBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+SetBackgroundColor.swift"; sourceTree = "<group>"; };
 		AAD7AFB4215D218C000AC1F6 /* FeedConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedConfigurator.swift; sourceTree = "<group>"; };
 		AAD7AFB5215D218C000AC1F6 /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		AAD7AFB6215D218C000AC1F6 /* FeedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
@@ -144,6 +154,7 @@
 		AA0A1EE3215BA9CD00754EC7 /* TravelFeatureKit */ = {
 			isa = PBXGroup;
 			children = (
+				AAC5E78A2162218C0027323C /* Extensions */,
 				AA3FD3B7215CDAF9006D9C61 /* Common */,
 				AA3FD3A2215CD68D006D9C61 /* Localization */,
 				AA3FD369215CCA9F006D9C61 /* Features */,
@@ -184,9 +195,29 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		AAC5E78A2162218C0027323C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AAC5E78B216221A00027323C /* UIView+Style.swift */,
+				AAC5E78D216221E00027323C /* UIView+AddSubviews.swift */,
+				AAC5E78F2162233E0027323C /* UITableView+Dequeue.swift */,
+				AAC5E79421622BDB0027323C /* UIButton+SetBackgroundColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AAC5E791216223B60027323C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AAC5E792216223CC0027323C /* FeedCardCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		AAD7AFB3215D218C000AC1F6 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				AAC5E791216223B60027323C /* UI */,
 				AAD7AFB4215D218C000AC1F6 /* FeedConfigurator.swift */,
 				AAD7AFB5215D218C000AC1F6 /* FeedPresenter.swift */,
 				AAD7AFB6215D218C000AC1F6 /* FeedInteractor.swift */,
@@ -408,6 +439,7 @@
 				AA3FD3BB215CDCF5006D9C61 /* ContentState.swift in Sources */,
 				AAD7AFBC215D218C000AC1F6 /* FeedPresenter.swift in Sources */,
 				AAD7B012215E666D000AC1F6 /* PreferencesViewController.swift in Sources */,
+				AAC5E78C216221A00027323C /* UIView+Style.swift in Sources */,
 				AAD7AFC1215D218C000AC1F6 /* FeedRouter.swift in Sources */,
 				AA3FD3CD215D11AB006D9C61 /* FeaturePresenter.swift in Sources */,
 				AAD7B015215E666E000AC1F6 /* PreferencesModels.swift in Sources */,
@@ -417,6 +449,7 @@
 				AAD7AFBB215D218C000AC1F6 /* FeedConfigurator.swift in Sources */,
 				AAD7B013215E666E000AC1F6 /* PreferencesRouter.swift in Sources */,
 				AA3FD3C9215D1091006D9C61 /* Presenter.swift in Sources */,
+				AAC5E7902162233E0027323C /* UITableView+Dequeue.swift in Sources */,
 				AAD7AFBD215D218C000AC1F6 /* FeedInteractor.swift in Sources */,
 				AAD7B007215E6645000AC1F6 /* MainConfigurator.swift in Sources */,
 				AAD7B011215E666D000AC1F6 /* PreferencesConfigurator.swift in Sources */,
@@ -424,8 +457,11 @@
 				AAD7AFC0215D218C000AC1F6 /* FeedViewController.swift in Sources */,
 				AAD7AFBE215D218C000AC1F6 /* FeedAssembly.swift in Sources */,
 				AA3FD3C7215CE628006D9C61 /* LoadingView.swift in Sources */,
+				AAC5E793216223CC0027323C /* FeedCardCell.swift in Sources */,
+				AAC5E78E216221E00027323C /* UIView+AddSubviews.swift in Sources */,
 				AAD7B01A215E6821000AC1F6 /* BaseNavigationViewController.swift in Sources */,
 				AA3FD3C3215CE5F1006D9C61 /* ErrorView.swift in Sources */,
+				AAC5E79521622BDB0027323C /* UIButton+SetBackgroundColor.swift in Sources */,
 				AAD7B004215E3138000AC1F6 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
