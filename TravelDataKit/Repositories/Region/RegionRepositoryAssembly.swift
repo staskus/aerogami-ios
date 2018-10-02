@@ -20,9 +20,14 @@ public class RegionRepositoryAssembly: Assembly {
             RealmRegionDataStore()
         }.inObjectScope(.container)
 
+        container.register(LocalRegionPeferencesDataStore.self) { r in
+            UserDefaultsRegionPreferencesDataStore()
+        }.inObjectScope(.container)
+
         container.register(TravelKit.RegionRepository.self) { r in
             TravelDataKit.RegionRepository(
                 localDataStore: r.resolve(LocalRegionDataStore.self)!,
+                localPreferencesDataStore: r.resolve(LocalRegionPeferencesDataStore.self)!,
                 remoteDataStore: r.resolve(RemoteRegionDataStore.self)!
             )
         }.inObjectScope(.container)

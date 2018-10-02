@@ -12,6 +12,7 @@
 		AA3FD39E215CD497006D9C61 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD39D215CD497006D9C61 /* Logger.swift */; };
 		AA7FD4F6215BC544000FB362 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD4F5215BC544000FB362 /* Region.swift */; };
 		AA7FD4FB215BC709000FB362 /* RegionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD4FA215BC709000FB362 /* RegionRepository.swift */; };
+		AAC5E79D21636C5F0027323C /* TravelKit-Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC5E79C21636C5F0027323C /* TravelKit-Swift.h */; };
 		AAD7AFDB215D587F000AC1F6 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFDA215D587F000AC1F6 /* Trip.swift */; };
 		AAD7AFDD215E1398000AC1F6 /* TripRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFDC215E1398000AC1F6 /* TripRepository.swift */; };
 		AAD7AFEC215E1CDE000AC1F6 /* APIDateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFEB215E1CDE000AC1F6 /* APIDateTransform.swift */; };
@@ -31,6 +32,7 @@
 		AA3FD39D215CD497006D9C61 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		AA7FD4F5215BC544000FB362 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		AA7FD4FA215BC709000FB362 /* RegionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRepository.swift; sourceTree = "<group>"; };
+		AAC5E79C21636C5F0027323C /* TravelKit-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelKit-Swift.h"; sourceTree = "<group>"; };
 		AAD7AFDA215D587F000AC1F6 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		AAD7AFDC215E1398000AC1F6 /* TripRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRepository.swift; sourceTree = "<group>"; };
 		AAD7AFEB215E1CDE000AC1F6 /* APIDateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateTransform.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				AA3FD39F215CD56A006D9C61 /* Logging */,
 				AA7FD4F3215BC527000FB362 /* Repositories */,
 				AA0A1E8C215BA70900754EC7 /* TravelKit.h */,
+				AAC5E79C21636C5F0027323C /* TravelKit-Swift.h */,
 				AA0A1E8D215BA70900754EC7 /* Info.plist */,
 				AA0A1E94215BA71F00754EC7 /* Example.swift */,
 			);
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA0A1E8E215BA70900754EC7 /* TravelKit.h in Headers */,
+				AAC5E79D21636C5F0027323C /* TravelKit-Swift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

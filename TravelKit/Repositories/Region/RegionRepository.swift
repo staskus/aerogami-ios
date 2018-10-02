@@ -10,4 +10,6 @@ import RxSwift
 
 public protocol RegionRepository {
     func getRegions() -> Observable<[Region]>
+    func getSelectedRegion() -> Region?
+    func saveSelectedRegion(by id: String?)
 }

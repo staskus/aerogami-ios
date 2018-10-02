@@ -17,6 +17,7 @@ class FeedViewController: UIViewController, FeatureViewController {
     private let router: FeedRouter
 
     private let tableView = UITableView()
+    private let headerView = FeedTableHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 98))
 
     init(interactor: FeedInteractor, router: FeedRouter) {
         self.interactor = interactor
@@ -46,7 +47,10 @@ class FeedViewController: UIViewController, FeatureViewController {
     }
 
     func display() {
+        guard let viewModel = viewModel?.state.viewModel else { return }
+
         tableView.reloadData()
+        headerView.configure(with: viewModel.selectedRegion)
     }
 
     // MARK: - Required Init
@@ -61,6 +65,9 @@ extension FeedViewController {
         view.addSubviews(
             tableView.style(tableViewStyle)
         )
+
+        headerView.delegate = self
+        loadingView?.backgroundColor = view.backgroundColor
     }
 
     private func setupConstraints() {
@@ -79,6 +86,7 @@ extension FeedViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.registerReusableCell(FeedCardCell.self)
         tableView.delaysContentTouches = false
+        tableView.tableHeaderView = headerView
     }
 }
 
@@ -103,5 +111,49 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+    }
+}
+
+extension FeedViewController: FeedTableHeaderViewDelegate {
+    func onRegionButtonTapped() {
+        guard let viewModel = viewModel?.state.viewModel else { return }
+
+        let alertViewController = UIAlertController(
+            title: R.string.localizable.feedRegionActionSheetTitle(),
+            message: nil,
+            preferredStyle: .actionSheet
+        )
+
+        // If there is selected region, then we can show "All regions" selection
+        if let _ = viewModel.selectedRegion {
+            alertViewController.addAction(UIAlertAction(
+                title: R.string.localizable.feedRegionButtonTitle(),
+                style: .default,
+                handler: { _ in
+                    self.interactor.dispatch(Feed.Action.changeRegion(regionId: nil))
+            }))
+        }
+
+        // Add regions as options
+        viewModel.availableRegions.forEach { region in
+            guard region.id != viewModel.selectedRegion?.id else { return }
+
+            alertViewController.addAction(UIAlertAction(
+                title: region.name,
+                style: .default,
+                handler: { _ in
+                    self.interactor.dispatch(Feed.Action.changeRegion(regionId: region.id))
+            }))
+        }
+
+        alertViewController.addAction(UIAlertAction(
+            title: R.string.localizable.cancel(),
+            style: .cancel,
+            handler: nil)
+        )
+
+        alertViewController.view.tintColor = Theme.primary
+
+        present(alertViewController, animated: true, completion: nil)
     }
 }

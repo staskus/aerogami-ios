@@ -14,11 +14,19 @@ struct Feed {
 
         struct Content: FeatureContentViewModel {
             var rows: [FeedCardViewModel]
+            let availableRegions: [Feed.ViewModel.Content.Region]
+            let selectedRegion: Feed.ViewModel.Content.Region?
+
+            struct Region: Equatable {
+                let id: String
+                let name: String
+            }
         }
     }
 
     enum Action {
         case load
+        case changeRegion(regionId: String?)
     }
 
     enum Route {

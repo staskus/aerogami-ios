@@ -103,6 +103,7 @@ extension FeatureViewController where Self: UIViewController {
             }
 
         case .error(_):
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
             emptyView?.isHidden = true
             loadingView?.isHidden = true
             if let errorView = errorView {
@@ -110,6 +111,7 @@ extension FeatureViewController where Self: UIViewController {
                 errorView.isHidden = false
             }
         case .loaded(let viewModel, _):
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
             configureView(for: viewModel)
         }
 
