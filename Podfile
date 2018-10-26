@@ -44,9 +44,12 @@ target 'TravelKit' do
     pod 'CocoaLumberjack/Swift'
     shared_TravelKit_pods
 
-  #target 'TravelKitTests' do
-    #project 'TravelKit.xcodeproj'
-  #end
+  target 'TravelKitTests' do
+    project 'TravelKit.xcodeproj'
+    inherit! :search_paths
+
+    shared_testing_pods
+  end
 end
 
 # #############################################################################
