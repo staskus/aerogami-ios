@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01A3572B21834B8500B493F6 /* TravelKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3572A21834B8500B493F6 /* TravelKitTests.swift */; };
+		01A3572D21834B8500B493F6 /* TravelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1E89215BA70900754EC7 /* TravelKit.framework */; };
+		01A3573B21834C0900B493F6 /* AirportMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3573A21834C0900B493F6 /* AirportMappingTests.swift */; };
+		01A3573E21834DC000B493F6 /* AirportTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3573D21834DC000B493F6 /* AirportTest.swift */; };
 		AA0A1E8E215BA70900754EC7 /* TravelKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0A1E8C215BA70900754EC7 /* TravelKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA0A1E95215BA71F00754EC7 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A1E94215BA71F00754EC7 /* Example.swift */; };
 		AA3FD39E215CD497006D9C61 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD39D215CD497006D9C61 /* Logger.swift */; };
@@ -18,13 +22,39 @@
 		AAD7AFEC215E1CDE000AC1F6 /* APIDateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFEB215E1CDE000AC1F6 /* APIDateTransform.swift */; };
 		AAD7AFEF215E203A000AC1F6 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFEE215E203A000AC1F6 /* Airport.swift */; };
 		AAD7AFF1215E2115000AC1F6 /* AirportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFF0215E2115000AC1F6 /* AirportRepository.swift */; };
+		B9E6229EF885123E8F184419 /* Pods_TravelKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A254AA62199AC09CA9A7BD53 /* Pods_TravelKitTests.framework */; };
 		EB09658332F6160F6ECF9B1C /* Pods_TravelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AD78BD155DF36B3550B7ED /* Pods_TravelKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		01A3572E21834B8500B493F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0A1E80215BA70900754EC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA0A1E88215BA70900754EC7;
+			remoteInfo = TravelKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		01A3572821834B8500B493F6 /* TravelKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01A3572A21834B8500B493F6 /* TravelKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelKitTests.swift; sourceTree = "<group>"; };
+		01A3572C21834B8500B493F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01A3573A21834C0900B493F6 /* AirportMappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportMappingTests.swift; sourceTree = "<group>"; };
+		01A3573D21834DC000B493F6 /* AirportTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportTest.swift; sourceTree = "<group>"; };
+		01A3574F2183557A00B493F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		01A357512183575700B493F6 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01A357532183576900B493F6 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01A3575D218358EB00B493F6 /* Pods_TravelAPIKit_TravelAPIKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TravelAPIKit_TravelAPIKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01A3575F218358EB00B493F6 /* Pods_TravelAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_TravelAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4121611F4C5A48A40F44141B /* Pods-TravelKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelKit/Pods-TravelKit.release.xcconfig"; sourceTree = "<group>"; };
 		46AD78BD155DF36B3550B7ED /* Pods_TravelKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BCFE8B1A840BA962836B775 /* Pods_TravelKit_TravelKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelKit_TravelKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7337570158B5CC9F60124F71 /* Pods-TravelKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelKit/Pods-TravelKit.debug.xcconfig"; sourceTree = "<group>"; };
+		76D0377C866E4523BBE3481C /* Pods-TravelKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelKitTests/Pods-TravelKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		7EC73E2C8172B43447FFC98A /* Pods-TravelKit-TravelKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelKit-TravelKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelKit-TravelKitTests/Pods-TravelKit-TravelKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		959180A7BAD72FEAC1603ED9 /* Pods-TravelKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelKitTests/Pods-TravelKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A254AA62199AC09CA9A7BD53 /* Pods_TravelKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0A1E89215BA70900754EC7 /* TravelKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TravelKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0A1E8C215BA70900754EC7 /* TravelKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravelKit.h; sourceTree = "<group>"; };
 		AA0A1E8D215BA70900754EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,9 +68,19 @@
 		AAD7AFEB215E1CDE000AC1F6 /* APIDateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateTransform.swift; sourceTree = "<group>"; };
 		AAD7AFEE215E203A000AC1F6 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		AAD7AFF0215E2115000AC1F6 /* AirportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportRepository.swift; sourceTree = "<group>"; };
+		EEC099803785F4C1A352D001 /* Pods-TravelKit-TravelKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelKit-TravelKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelKit-TravelKitTests/Pods-TravelKit-TravelKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		01A3572521834B8500B493F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A3572D21834B8500B493F6 /* TravelKit.framework in Frameworks */,
+				B9E6229EF885123E8F184419 /* Pods_TravelKitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA0A1E86215BA70900754EC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,11 +92,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A3572921834B8500B493F6 /* TravelKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				01A3573C21834DB100B493F6 /* TestingData */,
+				01A3573721834BB200B493F6 /* Mapping */,
+				01A3573821834BE700B493F6 /* Repositories */,
+				01A3572A21834B8500B493F6 /* TravelKitTests.swift */,
+				01A3572C21834B8500B493F6 /* Info.plist */,
+			);
+			path = TravelKitTests;
+			sourceTree = "<group>";
+		};
+		01A3573721834BB200B493F6 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mapping;
+			sourceTree = "<group>";
+		};
+		01A3573821834BE700B493F6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				01A3573921834BEF00B493F6 /* Airport */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		01A3573921834BEF00B493F6 /* Airport */ = {
+			isa = PBXGroup;
+			children = (
+				01A3573A21834C0900B493F6 /* AirportMappingTests.swift */,
+			);
+			path = Airport;
+			sourceTree = "<group>";
+		};
+		01A3573C21834DB100B493F6 /* TestingData */ = {
+			isa = PBXGroup;
+			children = (
+				01A3573D21834DC000B493F6 /* AirportTest.swift */,
+			);
+			path = TestingData;
+			sourceTree = "<group>";
+		};
 		760BA981360867CAEC160E4C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				7337570158B5CC9F60124F71 /* Pods-TravelKit.debug.xcconfig */,
 				4121611F4C5A48A40F44141B /* Pods-TravelKit.release.xcconfig */,
+				EEC099803785F4C1A352D001 /* Pods-TravelKit-TravelKitTests.debug.xcconfig */,
+				7EC73E2C8172B43447FFC98A /* Pods-TravelKit-TravelKitTests.release.xcconfig */,
+				959180A7BAD72FEAC1603ED9 /* Pods-TravelKitTests.debug.xcconfig */,
+				76D0377C866E4523BBE3481C /* Pods-TravelKitTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -65,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0A1E8B215BA70900754EC7 /* TravelKit */,
+				01A3572921834B8500B493F6 /* TravelKitTests */,
 				AA0A1E8A215BA70900754EC7 /* Products */,
 				760BA981360867CAEC160E4C /* Pods */,
 				F6DA292A79D59E99960512AC /* Frameworks */,
@@ -75,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0A1E89215BA70900754EC7 /* TravelKit.framework */,
+				01A3572821834B8500B493F6 /* TravelKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,7 +238,14 @@
 		F6DA292A79D59E99960512AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01A3575D218358EB00B493F6 /* Pods_TravelAPIKit_TravelAPIKitTests.framework */,
+				01A3575F218358EB00B493F6 /* Pods_TravelAPIKit.framework */,
+				01A357532183576900B493F6 /* ObjectMapper.framework */,
+				01A357512183575700B493F6 /* ObjectMapper.framework */,
+				01A3574F2183557A00B493F6 /* Foundation.framework */,
 				46AD78BD155DF36B3550B7ED /* Pods_TravelKit.framework */,
+				4BCFE8B1A840BA962836B775 /* Pods_TravelKit_TravelKitTests.framework */,
+				A254AA62199AC09CA9A7BD53 /* Pods_TravelKitTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,6 +265,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		01A3572721834B8500B493F6 /* TravelKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01A3573221834B8500B493F6 /* Build configuration list for PBXNativeTarget "TravelKitTests" */;
+			buildPhases = (
+				48F806300AD768C6C92F623F /* [CP] Check Pods Manifest.lock */,
+				01A3572421834B8500B493F6 /* Sources */,
+				01A3572521834B8500B493F6 /* Frameworks */,
+				01A3572621834B8500B493F6 /* Resources */,
+				99B720B5324D5B4843467DE9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01A3572F21834B8500B493F6 /* PBXTargetDependency */,
+			);
+			name = TravelKitTests;
+			productName = TravelKitTests;
+			productReference = 01A3572821834B8500B493F6 /* TravelKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AA0A1E88215BA70900754EC7 /* TravelKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA0A1E91215BA70900754EC7 /* Build configuration list for PBXNativeTarget "TravelKit" */;
@@ -194,9 +310,13 @@
 		AA0A1E80215BA70900754EC7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Povilas Staskus";
 				TargetAttributes = {
+					01A3572721834B8500B493F6 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					AA0A1E88215BA70900754EC7 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -216,11 +336,19 @@
 			projectRoot = "";
 			targets = (
 				AA0A1E88215BA70900754EC7 /* TravelKit */,
+				01A3572721834B8500B493F6 /* TravelKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		01A3572621834B8500B493F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA0A1E87215BA70900754EC7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,20 +359,68 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C39CF66ED1B99F751B9E24A0 /* [CP] Check Pods Manifest.lock */ = {
+		48F806300AD768C6C92F623F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelKitTests-checkManifestLockResult.txt",
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99B720B5324D5B4843467DE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravelKitTests/Pods-TravelKitTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper+Realm/ObjectMapper_Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapperAdditions/ObjectMapperAdditions.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper_Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapperAdditions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelKitTests/Pods-TravelKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C39CF66ED1B99F751B9E24A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-TravelKit-checkManifestLockResult.txt",
 			);
@@ -256,6 +432,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		01A3572421834B8500B493F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A3573E21834DC000B493F6 /* AirportTest.swift in Sources */,
+				01A3573B21834C0900B493F6 /* AirportMappingTests.swift in Sources */,
+				01A3572B21834B8500B493F6 /* TravelKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA0A1E85215BA70900754EC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,7 +460,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		01A3572F21834B8500B493F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA0A1E88215BA70900754EC7 /* TravelKit */;
+			targetProxy = 01A3572E21834B8500B493F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		01A3573021834B8500B493F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 959180A7BAD72FEAC1603ED9 /* Pods-TravelKitTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TravelKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PovilasStaskus.TravelKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01A3573121834B8500B493F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D0377C866E4523BBE3481C /* Pods-TravelKitTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TravelKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PovilasStaskus.TravelKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		AA0A1E8F215BA70900754EC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -457,6 +689,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		01A3573221834B8500B493F6 /* Build configuration list for PBXNativeTarget "TravelKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01A3573021834B8500B493F6 /* Debug */,
+				01A3573121834B8500B493F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AA0A1E83215BA70900754EC7 /* Build configuration list for PBXProject "TravelKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
