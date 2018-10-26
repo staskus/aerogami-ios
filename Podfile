@@ -20,6 +20,10 @@ $rSwiftVersion =                      '~> 4.0.0'
 $snapKitVersion =                     '~> 4.0.0'
 $sdWebImageVersion =                  '~> 4.0'
 
+def shared_testing_pods
+    pod 'RxBlocking',                 $rSwiftVersion
+end
+
 # ############################################################
 # TravelKit
 # ############################################################
@@ -60,6 +64,12 @@ target 'TravelAPIKit' do
   platform :ios, deployment_target
 
   shared_TravelAPIKit_pods
+
+  target 'TravelAPIKitTests' do
+    project 'TravelAPIKit.xcodeproj'
+
+    shared_testing_pods
+  end
 end
 
 # #############################################################################

@@ -7,24 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01A35712218348EC00B493F6 /* TravelAPIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A35711218348EC00B493F6 /* TravelAPIKitTests.swift */; };
+		01A35714218348EC00B493F6 /* TravelAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1F00215BAD2000754EC7 /* TravelAPIKit.framework */; };
+		01A3571B2183490B00B493F6 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3571A2183490B00B493F6 /* APIClientTests.swift */; };
 		06A3C9CA84E409BD428EEBB5 /* Pods_TravelAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79414B6939FABCBB23B00DF0 /* Pods_TravelAPIKit.framework */; };
 		AA0A1F05215BAD2000754EC7 /* TravelAPIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0A1F03215BAD2000754EC7 /* TravelAPIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7FD4F0215BC3EF000FB362 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD4EF215BC3EF000FB362 /* APIClient.swift */; };
 		AA7FD4F2215BC41F000FB362 /* BaseAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD4F1215BC41F000FB362 /* BaseAPIClient.swift */; };
+		E0F816AC733AEEDA9C49A5C4 /* Pods_TravelAPIKit_TravelAPIKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2489EC3D486C060B8B7B096 /* Pods_TravelAPIKit_TravelAPIKitTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		01A35715218348EC00B493F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0A1EF7215BAD2000754EC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA0A1EFF215BAD2000754EC7;
+			remoteInfo = TravelAPIKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		01A3570F218348EC00B493F6 /* TravelAPIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelAPIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01A35711218348EC00B493F6 /* TravelAPIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAPIKitTests.swift; sourceTree = "<group>"; };
+		01A35713218348EC00B493F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01A3571A2183490B00B493F6 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		5AEBA2CEF3A2D8AB128DD3F2 /* Pods-TravelAPIKit-TravelAPIKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAPIKit-TravelAPIKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelAPIKit-TravelAPIKitTests/Pods-TravelAPIKit-TravelAPIKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		71CE3C2786DB02DF4B2D7674 /* Pods-TravelAPIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAPIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelAPIKit/Pods-TravelAPIKit.release.xcconfig"; sourceTree = "<group>"; };
 		748E1C7AB735872661CCBE4D /* Pods-TravelAPIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAPIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelAPIKit/Pods-TravelAPIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		7896E25967C718255C95CB3B /* Pods-TravelAPIKit-TravelAPIKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAPIKit-TravelAPIKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelAPIKit-TravelAPIKitTests/Pods-TravelAPIKit-TravelAPIKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		79414B6939FABCBB23B00DF0 /* Pods_TravelAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0A1F00215BAD2000754EC7 /* TravelAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TravelAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0A1F03215BAD2000754EC7 /* TravelAPIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravelAPIKit.h; sourceTree = "<group>"; };
 		AA0A1F04215BAD2000754EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA7FD4EF215BC3EF000FB362 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		AA7FD4F1215BC41F000FB362 /* BaseAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIClient.swift; sourceTree = "<group>"; };
+		C2489EC3D486C060B8B7B096 /* Pods_TravelAPIKit_TravelAPIKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelAPIKit_TravelAPIKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		01A3570C218348EC00B493F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A35714218348EC00B493F6 /* TravelAPIKit.framework in Frameworks */,
+				E0F816AC733AEEDA9C49A5C4 /* Pods_TravelAPIKit_TravelAPIKitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA0A1EFD215BAD2000754EC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -36,11 +66,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A35710218348EC00B493F6 /* TravelAPIKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				01A35711218348EC00B493F6 /* TravelAPIKitTests.swift */,
+				01A35713218348EC00B493F6 /* Info.plist */,
+				01A3571A2183490B00B493F6 /* APIClientTests.swift */,
+			);
+			path = TravelAPIKitTests;
+			sourceTree = "<group>";
+		};
 		61B86508AF0B2D614BB9E0FB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				748E1C7AB735872661CCBE4D /* Pods-TravelAPIKit.debug.xcconfig */,
 				71CE3C2786DB02DF4B2D7674 /* Pods-TravelAPIKit.release.xcconfig */,
+				5AEBA2CEF3A2D8AB128DD3F2 /* Pods-TravelAPIKit-TravelAPIKitTests.debug.xcconfig */,
+				7896E25967C718255C95CB3B /* Pods-TravelAPIKit-TravelAPIKitTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -49,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0A1F02215BAD2000754EC7 /* TravelAPIKit */,
+				01A35710218348EC00B493F6 /* TravelAPIKitTests */,
 				AA0A1F01215BAD2000754EC7 /* Products */,
 				61B86508AF0B2D614BB9E0FB /* Pods */,
 				D1C0EAC2920B3ED7506538AD /* Frameworks */,
@@ -59,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0A1F00215BAD2000754EC7 /* TravelAPIKit.framework */,
+				01A3570F218348EC00B493F6 /* TravelAPIKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				79414B6939FABCBB23B00DF0 /* Pods_TravelAPIKit.framework */,
+				C2489EC3D486C060B8B7B096 /* Pods_TravelAPIKit_TravelAPIKitTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,6 +141,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		01A3570E218348EC00B493F6 /* TravelAPIKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01A35719218348EC00B493F6 /* Build configuration list for PBXNativeTarget "TravelAPIKitTests" */;
+			buildPhases = (
+				2676EE63AB2E4FB75F7D36C7 /* [CP] Check Pods Manifest.lock */,
+				01A3570B218348EC00B493F6 /* Sources */,
+				01A3570C218348EC00B493F6 /* Frameworks */,
+				01A3570D218348EC00B493F6 /* Resources */,
+				BA62D500F66FC90E330B4929 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01A35716218348EC00B493F6 /* PBXTargetDependency */,
+			);
+			name = TravelAPIKitTests;
+			productName = TravelAPIKitTests;
+			productReference = 01A3570F218348EC00B493F6 /* TravelAPIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AA0A1EFF215BAD2000754EC7 /* TravelAPIKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA0A1F08215BAD2000754EC7 /* Build configuration list for PBXNativeTarget "TravelAPIKit" */;
@@ -121,9 +186,13 @@
 		AA0A1EF7215BAD2000754EC7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Povilas Staskus";
 				TargetAttributes = {
+					01A3570E218348EC00B493F6 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					AA0A1EFF215BAD2000754EC7 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -143,11 +212,19 @@
 			projectRoot = "";
 			targets = (
 				AA0A1EFF215BAD2000754EC7 /* TravelAPIKit */,
+				01A3570E218348EC00B493F6 /* TravelAPIKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		01A3570D218348EC00B493F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA0A1EFE215BAD2000754EC7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,20 +235,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		38916F85007953AAD55D2415 /* [CP] Check Pods Manifest.lock */ = {
+		2676EE63AB2E4FB75F7D36C7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelAPIKit-TravelAPIKitTests-checkManifestLockResult.txt",
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38916F85007953AAD55D2415 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-TravelAPIKit-checkManifestLockResult.txt",
 			);
@@ -180,9 +271,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BA62D500F66FC90E330B4929 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravelAPIKit-TravelAPIKitTests/Pods-TravelAPIKit-TravelAPIKitTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelAPIKit-TravelAPIKitTests/Pods-TravelAPIKit-TravelAPIKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		01A3570B218348EC00B493F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A35712218348EC00B493F6 /* TravelAPIKitTests.swift in Sources */,
+				01A3571B2183490B00B493F6 /* APIClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA0A1EFC215BAD2000754EC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,7 +318,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		01A35716218348EC00B493F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA0A1EFF215BAD2000754EC7 /* TravelAPIKit */;
+			targetProxy = 01A35715218348EC00B493F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		01A35717218348EC00B493F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AEBA2CEF3A2D8AB128DD3F2 /* Pods-TravelAPIKit-TravelAPIKitTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TravelAPIKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PovilasStaskus.TravelAPIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01A35718218348EC00B493F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7896E25967C718255C95CB3B /* Pods-TravelAPIKit-TravelAPIKitTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TravelAPIKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PovilasStaskus.TravelAPIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		AA0A1F06215BAD2000754EC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -377,6 +545,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		01A35719218348EC00B493F6 /* Build configuration list for PBXNativeTarget "TravelAPIKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01A35717218348EC00B493F6 /* Debug */,
+				01A35718218348EC00B493F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AA0A1EFA215BAD2000754EC7 /* Build configuration list for PBXProject "TravelAPIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
