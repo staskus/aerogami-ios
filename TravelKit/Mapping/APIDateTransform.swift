@@ -21,7 +21,7 @@ class APIDateTransform: TransformType {
 
     open func transformToJSON(_ value: Date?) -> Double? {
         if let date = value {
-            return Double(date.timeIntervalSince1970)
+            return Double(date.timeIntervalSince1970) * 1000
         }
         return nil
     }

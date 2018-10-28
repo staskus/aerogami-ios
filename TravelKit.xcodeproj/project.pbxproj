@@ -12,6 +12,10 @@
 		01A3573E21834DC000B493F6 /* AirportTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3573D21834DC000B493F6 /* AirportTest.swift */; };
 		AA0A1E8E215BA70900754EC7 /* TravelKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0A1E8C215BA70900754EC7 /* TravelKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA0A1E95215BA71F00754EC7 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A1E94215BA71F00754EC7 /* Example.swift */; };
+		AA3519B121860BFB00EB7059 /* TripMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3519B021860BFB00EB7059 /* TripMappingTests.swift */; };
+		AA3519B321860D1700EB7059 /* TripTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3519B221860D1700EB7059 /* TripTest.swift */; };
+		AA3519B521863D5A00EB7059 /* RegionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3519B421863D5A00EB7059 /* RegionTest.swift */; };
+		AA3519B821863E0F00EB7059 /* RegionMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3519B721863E0F00EB7059 /* RegionMappingTests.swift */; };
 		AA3FD39E215CD497006D9C61 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD39D215CD497006D9C61 /* Logger.swift */; };
 		AA7FD4F6215BC544000FB362 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD4F5215BC544000FB362 /* Region.swift */; };
 		AA7FD4FB215BC709000FB362 /* RegionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD4FA215BC709000FB362 /* RegionRepository.swift */; };
@@ -57,6 +61,10 @@
 		AA0A1E8C215BA70900754EC7 /* TravelKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravelKit.h; sourceTree = "<group>"; };
 		AA0A1E8D215BA70900754EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0A1E94215BA71F00754EC7 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		AA3519B021860BFB00EB7059 /* TripMappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMappingTests.swift; sourceTree = "<group>"; };
+		AA3519B221860D1700EB7059 /* TripTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTest.swift; sourceTree = "<group>"; };
+		AA3519B421863D5A00EB7059 /* RegionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionTest.swift; sourceTree = "<group>"; };
+		AA3519B721863E0F00EB7059 /* RegionMappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionMappingTests.swift; sourceTree = "<group>"; };
 		AA3FD39D215CD497006D9C61 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		AA7FD4F5215BC544000FB362 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		AA7FD4FA215BC709000FB362 /* RegionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRepository.swift; sourceTree = "<group>"; };
@@ -94,23 +102,17 @@
 			isa = PBXGroup;
 			children = (
 				01A3573C21834DB100B493F6 /* TestingData */,
-				01A3573721834BB200B493F6 /* Mapping */,
 				01A3573821834BE700B493F6 /* Repositories */,
 				01A3572C21834B8500B493F6 /* Info.plist */,
 			);
 			path = TravelKitTests;
 			sourceTree = "<group>";
 		};
-		01A3573721834BB200B493F6 /* Mapping */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mapping;
-			sourceTree = "<group>";
-		};
 		01A3573821834BE700B493F6 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				AA3519B621863E0200EB7059 /* Region */,
+				AA3519AF21860BF100EB7059 /* Trip */,
 				01A3573921834BEF00B493F6 /* Airport */,
 			);
 			path = Repositories;
@@ -128,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				01A3573D21834DC000B493F6 /* AirportTest.swift */,
+				AA3519B221860D1700EB7059 /* TripTest.swift */,
+				AA3519B421863D5A00EB7059 /* RegionTest.swift */,
 			);
 			path = TestingData;
 			sourceTree = "<group>";
@@ -177,6 +181,22 @@
 				AA0A1E94215BA71F00754EC7 /* Example.swift */,
 			);
 			path = TravelKit;
+			sourceTree = "<group>";
+		};
+		AA3519AF21860BF100EB7059 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				AA3519B021860BFB00EB7059 /* TripMappingTests.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		AA3519B621863E0200EB7059 /* Region */ = {
+			isa = PBXGroup;
+			children = (
+				AA3519B721863E0F00EB7059 /* RegionMappingTests.swift */,
+			);
+			path = Region;
 			sourceTree = "<group>";
 		};
 		AA3FD39F215CD56A006D9C61 /* Logging */ = {
@@ -433,8 +453,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3519B821863E0F00EB7059 /* RegionMappingTests.swift in Sources */,
+				AA3519B321860D1700EB7059 /* TripTest.swift in Sources */,
+				AA3519B521863D5A00EB7059 /* RegionTest.swift in Sources */,
 				01A3573E21834DC000B493F6 /* AirportTest.swift in Sources */,
 				01A3573B21834C0900B493F6 /* AirportMappingTests.swift in Sources */,
+				AA3519B121860BFB00EB7059 /* TripMappingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

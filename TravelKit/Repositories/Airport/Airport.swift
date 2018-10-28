@@ -36,12 +36,12 @@ public class Airport: Object, ImmutableMappable {
     }
 
     public func mapping(map: Map) {
-        code                <- map["code"]
-        city                <- map["city"]
-        countryCode         <- map["country"]
-        name                <- map["name"]
-        state               <- map["state"]
-        lon                 <- map["lon"]
-        lat                 <- map["lat"]
+        code                >>> map["code"]
+        city                >>> map["city"]
+        countryCode         >>> map["country"]
+        name                >>> map["name"]
+        state               >>> map["state"]
+        lon                 >>> map["lon"]
+        lat                 >>> map["lat"]
     }
 }
