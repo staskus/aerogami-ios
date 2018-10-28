@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01A3572B21834B8500B493F6 /* TravelKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3572A21834B8500B493F6 /* TravelKitTests.swift */; };
 		01A3572D21834B8500B493F6 /* TravelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1E89215BA70900754EC7 /* TravelKit.framework */; };
 		01A3573B21834C0900B493F6 /* AirportMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3573A21834C0900B493F6 /* AirportMappingTests.swift */; };
 		01A3573E21834DC000B493F6 /* AirportTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A3573D21834DC000B493F6 /* AirportTest.swift */; };
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		01A3572821834B8500B493F6 /* TravelKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		01A3572A21834B8500B493F6 /* TravelKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelKitTests.swift; sourceTree = "<group>"; };
 		01A3572C21834B8500B493F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01A3573A21834C0900B493F6 /* AirportMappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportMappingTests.swift; sourceTree = "<group>"; };
 		01A3573D21834DC000B493F6 /* AirportTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportTest.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 				01A3573C21834DB100B493F6 /* TestingData */,
 				01A3573721834BB200B493F6 /* Mapping */,
 				01A3573821834BE700B493F6 /* Repositories */,
-				01A3572A21834B8500B493F6 /* TravelKitTests.swift */,
 				01A3572C21834B8500B493F6 /* Info.plist */,
 			);
 			path = TravelKitTests;
@@ -438,7 +435,6 @@
 			files = (
 				01A3573E21834DC000B493F6 /* AirportTest.swift in Sources */,
 				01A3573B21834C0900B493F6 /* AirportMappingTests.swift in Sources */,
-				01A3572B21834B8500B493F6 /* TravelKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

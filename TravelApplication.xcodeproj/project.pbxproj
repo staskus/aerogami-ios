@@ -109,6 +109,20 @@
 			remoteGlobalIDString = AA0A1EFF215BAD2000754EC7;
 			remoteInfo = TravelAPIKit;
 		};
+		AA39B4B72185F05B000BE6C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0A1F0B215BAD3800754EC7 /* TravelAPIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01A3570F218348EC00B493F6;
+			remoteInfo = TravelAPIKitTests;
+		};
+		AA39B4BB2185F05B000BE6C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0A1E96215BA7BB00754EC7 /* TravelKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01A3572821834B8500B493F6;
+			remoteInfo = TravelKitTests;
+		};
 		AA652F4D215BA46F0044E3C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AA652F30215BA46E0044E3C9 /* Project object */;
@@ -265,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0A1E9B215BA7BB00754EC7 /* TravelKit.framework */,
+				AA39B4BC2185F05B000BE6C7 /* TravelKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -290,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0A1F10215BAD3900754EC7 /* TravelAPIKit.framework */,
+				AA39B4B82185F05B000BE6C7 /* TravelAPIKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -521,6 +537,20 @@
 			fileType = wrapper.framework;
 			path = TravelAPIKit.framework;
 			remoteRef = AA0A1F0F215BAD3900754EC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA39B4B82185F05B000BE6C7 /* TravelAPIKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TravelAPIKitTests.xctest;
+			remoteRef = AA39B4B72185F05B000BE6C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA39B4BC2185F05B000BE6C7 /* TravelKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TravelKitTests.xctest;
+			remoteRef = AA39B4BB2185F05B000BE6C7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -796,7 +826,7 @@
 		AA652F53215BA46F0044E3C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -858,7 +888,7 @@
 		AA652F54215BA46F0044E3C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
