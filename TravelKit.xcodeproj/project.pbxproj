@@ -16,6 +16,7 @@
 		AA3519B321860D1700EB7059 /* TripTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3519B221860D1700EB7059 /* TripTest.swift */; };
 		AA3519B521863D5A00EB7059 /* RegionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3519B421863D5A00EB7059 /* RegionTest.swift */; };
 		AA3519B821863E0F00EB7059 /* RegionMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3519B721863E0F00EB7059 /* RegionMappingTests.swift */; };
+		AA3519BD2186407B00EB7059 /* APIDateTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3519BC2186407B00EB7059 /* APIDateTransformTests.swift */; };
 		AA3FD39E215CD497006D9C61 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD39D215CD497006D9C61 /* Logger.swift */; };
 		AA7FD4F6215BC544000FB362 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD4F5215BC544000FB362 /* Region.swift */; };
 		AA7FD4FB215BC709000FB362 /* RegionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD4FA215BC709000FB362 /* RegionRepository.swift */; };
@@ -65,6 +66,7 @@
 		AA3519B221860D1700EB7059 /* TripTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTest.swift; sourceTree = "<group>"; };
 		AA3519B421863D5A00EB7059 /* RegionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionTest.swift; sourceTree = "<group>"; };
 		AA3519B721863E0F00EB7059 /* RegionMappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionMappingTests.swift; sourceTree = "<group>"; };
+		AA3519BC2186407B00EB7059 /* APIDateTransformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateTransformTests.swift; sourceTree = "<group>"; };
 		AA3FD39D215CD497006D9C61 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		AA7FD4F5215BC544000FB362 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		AA7FD4FA215BC709000FB362 /* RegionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRepository.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		01A3572921834B8500B493F6 /* TravelKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				AA3519BB2186406B00EB7059 /* Mapping */,
 				01A3573C21834DB100B493F6 /* TestingData */,
 				01A3573821834BE700B493F6 /* Repositories */,
 				01A3572C21834B8500B493F6 /* Info.plist */,
@@ -197,6 +200,14 @@
 				AA3519B721863E0F00EB7059 /* RegionMappingTests.swift */,
 			);
 			path = Region;
+			sourceTree = "<group>";
+		};
+		AA3519BB2186406B00EB7059 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				AA3519BC2186407B00EB7059 /* APIDateTransformTests.swift */,
+			);
+			path = Mapping;
 			sourceTree = "<group>";
 		};
 		AA3FD39F215CD56A006D9C61 /* Logging */ = {
@@ -454,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA3519B821863E0F00EB7059 /* RegionMappingTests.swift in Sources */,
+				AA3519BD2186407B00EB7059 /* APIDateTransformTests.swift in Sources */,
 				AA3519B321860D1700EB7059 /* TripTest.swift in Sources */,
 				AA3519B521863D5A00EB7059 /* RegionTest.swift in Sources */,
 				01A3573E21834DC000B493F6 /* AirportTest.swift in Sources */,
