@@ -11,7 +11,7 @@ import ObjectMapper
 import ObjectMapper_Realm
 import RealmSwift
 
-public class Region: Object, Mappable {
+public class Region: Object, ImmutableMappable {
     @objc public dynamic var id: String = ""
     @objc public dynamic var name: String = ""
     @objc public dynamic var createdAt = Date()
@@ -20,8 +20,10 @@ public class Region: Object, Mappable {
         return "id"
     }
 
-    required convenience public init?(map: Map) {
+    required convenience public init(map: Map) throws {
         self.init()
+        id =                try map.value("id")
+        name =              try map.value("name")
     }
 
     public func mapping(map: Map) {
