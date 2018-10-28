@@ -12,7 +12,7 @@ class APIDateTransform: TransformType {
             return Date(timeIntervalSince1970: TimeInterval(timeInt/1000))
         }
 
-        if let timeStr = value as? String {
+        if let timeStr = value as? String, TimeInterval(timeStr) != nil {
             return Date(timeIntervalSince1970: TimeInterval(atof(timeStr)/1000))
         }
 
