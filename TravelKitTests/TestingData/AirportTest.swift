@@ -9,23 +9,47 @@
 import Foundation
 
 struct AirportTest {
-    struct ValidAiport {
-        static let code = ""
-        static let city = ""
-        static let country = ""
-        static let name = ""
-        static let state = ""
+    struct Data {
+        static let code = "VNO"
+        static let city = "Vilnius"
+        static let country = "Lithuania"
+        static let name = "Vilnius Airport"
+        static let state = "VNO"
         static let lon = 45.5
         static let lat = 56.65
-        
+    }
+    
+    struct ValidAiport {
         static let JSON: [String: Any] = [
-            "code": AirportTest.ValidAiport.code,
-            "city": AirportTest.ValidAiport.city,
-            "country": AirportTest.ValidAiport.country,
-            "name": AirportTest.ValidAiport.name,
-            "state": AirportTest.ValidAiport.state,
-            "lon": AirportTest.ValidAiport.lon,
-            "lat": AirportTest.ValidAiport.lat
+            "code": AirportTest.Data.code,
+            "city": AirportTest.Data.city,
+            "country": AirportTest.Data.country,
+            "name": AirportTest.Data.name,
+            "state": AirportTest.Data.state,
+            "lon": AirportTest.Data.lon,
+            "lat": AirportTest.Data.lat
+        ]
+    }
+    
+    struct ValidAiportWithoutState {
+        static let JSON: [String: Any] = [
+            "code": AirportTest.Data.code,
+            "city": AirportTest.Data.city,
+            "country": AirportTest.Data.country,
+            "name": AirportTest.Data.name,
+            "lon": AirportTest.Data.lon,
+            "lat": AirportTest.Data.lat
+        ]
+    }
+    
+    struct InvalidAiportWithoutCode {
+        static let JSON: [String: Any] = [
+            "city": AirportTest.Data.city,
+            "country": AirportTest.Data.country,
+            "name": AirportTest.Data.name,
+            "state": AirportTest.Data.state,
+            "lon": AirportTest.Data.lon,
+            "lat": AirportTest.Data.lat
         ]
     }
 }
