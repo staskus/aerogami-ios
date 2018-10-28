@@ -9,18 +9,15 @@
 import XCTest
 @testable import TravelKit
 
-class AirportMappingTests: XCTest {
+class AirportMappingTests: XCTestCase {
     func testSingleObjectMapping() {
-        // Given there is a valid airport JSON
-//        let json = AirportTest.ValidAiport.JSON
-//
-//        // When we map Airport
-//        let airport = Airport(JSON: json)!
-//
-//        // Then all properties should be mapped correctly
-//        let dictJson = json as NSDictionary
-//        let dictAirport = airport.toJSON() as NSDictionary
-//
-//        XCTAssertTrue(dictJson.isEqual(to: airport.toJSON()))
+        //Given there is a valid airport JSON
+        let json = AirportTest.ValidAiport.JSON
+
+        // When we map Airport
+        let airport = Airport(JSON: json)!
+
+        // Then all properties should be mapped correctly
+        XCTAssertTrue((json as NSDictionary).isEqual(to: airport.toJSON()))
     }
 }

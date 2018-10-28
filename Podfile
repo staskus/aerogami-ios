@@ -157,6 +157,7 @@ post_install do |installer|
               config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf'
               config.build_settings['OTHER_SWIFT_FLAGS'] = ['$(inherited)', '-Onone']
               config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Owholemodule'
+              config.build_settings['ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES'] = 'YES'
             else
               config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf-with-dsym'
               config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Owholemodule'
