@@ -120,9 +120,9 @@ target 'TravelFeatureKit' do
 
   shared_TravelFeatureKit_pods
 
-  #target 'TravelFeatureKitTests' do
-    #project 'TravelFeatureKit.xcodeproj'
-  #end
+  target 'TravelFeatureKitTests' do
+    project 'TravelFeatureKit.xcodeproj'
+  end
 end
 
 # #############################################################################

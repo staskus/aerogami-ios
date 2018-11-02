@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import SDWebImage
 
-struct FeedCardViewModel {
+struct FeedCardViewModel: Equatable {
     let direction: String
     let trip: String
     let price: String
