@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		018FA4DB218C9A2D00643AD9 /* FeatureInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FA4DA218C9A2D00643AD9 /* FeatureInteractor.swift */; };
 		03C77D9FED0CFBC9D3336A63 /* Pods_TravelFeatureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75CE1FEFCD45A73B1AB4B97 /* Pods_TravelFeatureKit.framework */; };
 		AA0A1EE6215BA9CD00754EC7 /* TravelFeatureKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0A1EE4215BA9CD00754EC7 /* TravelFeatureKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA3FD394215CD34B006D9C61 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD393215CD34B006D9C61 /* R.generated.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		018FA4DA218C9A2D00643AD9 /* FeatureInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureInteractor.swift; sourceTree = "<group>"; };
 		79A0B4589BFEE78478F47786 /* Pods-TravelFeatureKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelFeatureKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelFeatureKit/Pods-TravelFeatureKit.debug.xcconfig"; sourceTree = "<group>"; };
 		AA0A1EE1215BA9CD00754EC7 /* TravelFeatureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TravelFeatureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0A1EE4215BA9CD00754EC7 /* TravelFeatureKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravelFeatureKit.h; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				AA3FD3C8215D1091006D9C61 /* Presenter.swift */,
 				AA3FD3CA215D1138006D9C61 /* View.swift */,
 				AA3FD3CC215D11AB006D9C61 /* FeaturePresenter.swift */,
+				018FA4DA218C9A2D00643AD9 /* FeatureInteractor.swift */,
 			);
 			path = BaseFeature;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				AAC5E797216355870027323C /* FeedTableHeaderView.swift in Sources */,
 				AAD7AFC0215D218C000AC1F6 /* FeedViewController.swift in Sources */,
 				AAD7AFBE215D218C000AC1F6 /* FeedAssembly.swift in Sources */,
+				018FA4DB218C9A2D00643AD9 /* FeatureInteractor.swift in Sources */,
 				AA3FD3C7215CE628006D9C61 /* LoadingView.swift in Sources */,
 				AAC5E793216223CC0027323C /* FeedCardCell.swift in Sources */,
 				AAC5E78E216221E00027323C /* UIView+AddSubviews.swift in Sources */,
