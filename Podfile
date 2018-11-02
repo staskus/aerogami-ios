@@ -109,6 +109,7 @@ def shared_TravelFeatureKit_pods
     pod 'SnapKit',                    $snapKitVersion
     pod 'R.swift'
     pod 'SDWebImage',                 $sdWebImageVersion
+    pod 'RxCocoa',                    $rxSwiftVersion
 
   shared_TravelDataKit_pods
 end

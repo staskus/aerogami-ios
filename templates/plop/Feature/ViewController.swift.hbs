@@ -6,6 +6,7 @@ class {{properCase name}}ViewController: UIViewController, FeatureViewController
     // View Model
     var viewModel: {{properCase name}}.ViewModel?
     typealias ViewModel = {{properCase name}}.ViewModel
+    typealias Interactor = {{properCase name}}Interactor & {{properCase name}}Interactable
 
     // State Views
     var errorView: UIView?
@@ -13,10 +14,10 @@ class {{properCase name}}ViewController: UIViewController, FeatureViewController
     var emptyView: UIView?
 
     // Properties
-    private let interactor: {{properCase name}}Interactor
+    private let interactor: Interactor
     private let router: {{properCase name}}Router
 
-    init(interactor: {{properCase name}}Interactor, router: {{properCase name}}Router) {
+    init(interactor: Interactor, router: {{properCase name}}Router) {
         self.interactor = interactor
         self.router = router
         super.init(nibName: nil, bundle: nil)

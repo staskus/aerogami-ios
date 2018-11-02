@@ -2,7 +2,12 @@ import UIKit
 import RxSwift
 import TravelKit
 
-class FeedInteractor {
+protocol FeedInteractable {
+    func dispatch(_ action: Feed.Action)
+    func changeRegion(id: String?)
+}
+
+class FeedInteractor: FeatureInteractor, FeedInteractable {
     private let presenter: FeedPresenter
     private var disposeBag = DisposeBag()
 
@@ -32,13 +37,13 @@ class FeedInteractor {
     func dispatch(_ action: Feed.Action) {
         switch action {
         case .load:
-            loadData()
+            load()
         case .changeRegion(let regionId):
             changeRegion(id: regionId)
         }
     }
 
-    private func loadData() {
+    func load() {
         disposeBag = DisposeBag()
 
         contentState = .loading(data: contentState.data)
@@ -67,10 +72,10 @@ class FeedInteractor {
             .disposed(by: disposeBag)
     }
 
-    private func changeRegion(id: String?) {
+    func changeRegion(id: String?) {
         contentState = .loading(data: nil)
         regionRepository.saveSelectedRegion(by: id)
-        loadData()
+        load()
     }
 
     func subscribe() {
