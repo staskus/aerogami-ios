@@ -83,9 +83,8 @@ class FeedAdapter: FeatureAdapter {
     }
 
     private func formatCurrency(_ trip: Trip) -> String {
-        guard let currency = trip.currency else { return "" }
-
         let price = trip.price
+        let currency = trip.currency
         currencyFormatter.currencyCode = currency
 
         return currencyFormatter.string(from: NSNumber(value: price)) ?? "\(price) \(currency)"

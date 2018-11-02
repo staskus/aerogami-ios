@@ -25,7 +25,7 @@ class APIAirportDataStore: RemoteAirportDataStore {
         return apiClient.get(path: fullPath)
             .map { response in
                 guard let body = ((response as? [String: Any])?["body"]) as? String,
-                    let aiport = Mapper<Airport>().map(JSONString: body) else {
+                    let aiport = try? Mapper<Airport>().map(JSONString: body) else {
                     throw RemoteAirportDataStoreError.parseError
                 }
                 return aiport

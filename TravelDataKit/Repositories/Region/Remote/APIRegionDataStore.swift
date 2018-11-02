@@ -23,7 +23,7 @@ class APIRegionDataStore: RemoteRegionDataStore {
     func getAll() -> Observable<[Region]> {
         return apiClient.get(path: path)
             .map { response in
-                guard let regions = Mapper<Region>().mapArray(JSONObject: response) else {
+                guard let regions = try? Mapper<Region>().mapArray(JSONObject: response) else {
                     throw RemoteRegionDataStoreError.parseError
                 }
                 return regions

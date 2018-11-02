@@ -27,7 +27,7 @@ class APITripDataStore: RemoteTripDataStore {
         }
         return apiClient.get(path: fullPath)
             .map { response in
-                guard let trips = Mapper<Trip>().mapArray(JSONObject: response) else {
+                guard let trips = try? Mapper<Trip>().mapArray(JSONObject: response) else {
                     throw RemoteTripDataStoreError.parseError
                 }
                 return trips
