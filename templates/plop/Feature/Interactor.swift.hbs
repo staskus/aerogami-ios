@@ -2,7 +2,11 @@ import UIKit
 import RxSwift
 import TravelKit
 
-class {{properCase name}}Interactor {
+protocol {{properCase name}}Interactable {
+    func dispatch(_ action: {{properCase name}}.Action)
+}
+
+class {{properCase name}}Interactor: FeatureInteractor, {{properCase name}}Interactable {
     private let presenter: {{properCase name}}Presenter
     private var disposeBag = DisposeBag()
 
@@ -20,11 +24,11 @@ class {{properCase name}}Interactor {
     func dispatch(_ action: {{properCase name}}.Action) {
         switch action {
         case .load:
-            loadData()
+            load()
         }
     }
 
-    private func loadData() {
+    func load() {
         disposeBag = DisposeBag()
 
         contentState = .loading(data: contentState.data)

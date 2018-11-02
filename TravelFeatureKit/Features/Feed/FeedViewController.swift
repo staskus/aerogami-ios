@@ -6,6 +6,7 @@ class FeedViewController: UIViewController, FeatureViewController {
     // View Model
     var viewModel: Feed.ViewModel?
     typealias ViewModel = Feed.ViewModel
+    typealias Interactor = FeatureInteractor & FeedInteractable
 
     // State Views
     var errorView: UIView?
@@ -13,13 +14,13 @@ class FeedViewController: UIViewController, FeatureViewController {
     var emptyView: UIView?
 
     // Properties
-    private let interactor: FeedInteractor
+    private let interactor: Interactor
     private let router: FeedRouter
 
     private let tableView = UITableView()
     private let headerView = FeedTableHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 98))
 
-    init(interactor: FeedInteractor, router: FeedRouter) {
+    init(interactor: Interactor, router: FeedRouter) {
         self.interactor = interactor
         self.router = router
         super.init(nibName: nil, bundle: nil)

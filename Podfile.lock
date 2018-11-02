@@ -49,7 +49,7 @@ DEPENDENCIES:
   - Swinject (~> 2.4)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - CocoaLumberjack
     - ObjectMapper
@@ -87,4 +87,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 0a98222aba53e7365a1a5d996f576445a0930149
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
