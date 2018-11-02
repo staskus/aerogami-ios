@@ -24,6 +24,8 @@ PODS:
     - RxSwift (~> 4)
   - RxBlocking (4.0.0):
     - RxSwift (~> 4.0)
+  - RxCocoa (4.3.1):
+    - RxSwift (~> 4.0)
   - RxSwift (4.3.1)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
@@ -42,6 +44,7 @@ DEPENDENCIES:
   - RealmSwift
   - RxAlamofire (~> 4.2)
   - RxBlocking (~> 4.0.0)
+  - RxCocoa (~> 4.2)
   - RxSwift (~> 4.2)
   - SDWebImage (~> 4.0)
   - SnapKit (~> 4.0.0)
@@ -61,6 +64,7 @@ SPEC REPOS:
     - RealmSwift
     - RxAlamofire
     - RxBlocking
+    - RxCocoa
     - RxSwift
     - SDWebImage
     - SnapKit
@@ -79,12 +83,13 @@ SPEC CHECKSUMS:
   RealmSwift: 69121c8b86d0ae005fb779efdb10e606732e1c74
   RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
   RxBlocking: 923c2c8106d80d7c2d6b276afd66ce3b10824836
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SwiftDate: 52b718d32ec006861a2be2756cbfa482d438e781
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: 0a98222aba53e7365a1a5d996f576445a0930149
+PODFILE CHECKSUM: 5ea69c466a4ac6f0ef2b08b9d14620487a4dbdd7
 
 COCOAPODS: 1.5.3

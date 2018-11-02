@@ -12,7 +12,7 @@ struct Feed {
         let state: ViewState<Feed.ViewModel.Content>
         let title: String
 
-        struct Content: FeatureContentViewModel {
+        struct Content: FeatureContentViewModel, Equatable {
             var rows: [FeedCardViewModel]
             let availableRegions: [Feed.ViewModel.Content.Region]
             let selectedRegion: Feed.ViewModel.Content.Region?
