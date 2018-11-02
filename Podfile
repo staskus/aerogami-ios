@@ -122,6 +122,7 @@ target 'TravelFeatureKit' do
 
   target 'TravelFeatureKitTests' do
     project 'TravelFeatureKit.xcodeproj'
+    pod 'CocoaLumberjack/Swift'
   end
 end
 
