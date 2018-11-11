@@ -1,0 +1,19 @@
+import TravelKit
+
+{% for type in types.all %}{% if type.kind == "struct" %}
+extension {{ type.name }} {
+    {% for variable in type.storedVariables %}
+    public func with({{ variable.name }}: {{ variable.unwrappedTypeName}}) -> {{ type.name }} {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = {{ type.name }}({% for initVariable in type.storedVariables %}
+            {{ initVariable.name }}: {{ initVariable.name }}{% if not forloop.last %}, {% endif %}{% endfor %}
+        )
+
+        return newInstance
+    }{% if not forloop.last %}
+
+    {% endif %}{% endfor %}
+}
+
+{% endif %}{% endfor %}

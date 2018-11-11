@@ -31,6 +31,7 @@ PODS:
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
   - SnapKit (4.0.1)
+  - Sourcery (0.10.1)
   - SwiftDate (5.0.9)
   - Swinject (2.5.0)
 
@@ -48,6 +49,7 @@ DEPENDENCIES:
   - RxSwift (~> 4.2)
   - SDWebImage (~> 4.0)
   - SnapKit (~> 4.0.0)
+  - Sourcery (~> 0.10.1)
   - SwiftDate (~> 5.0)
   - Swinject (~> 2.4)
 
@@ -68,6 +70,7 @@ SPEC REPOS:
     - RxSwift
     - SDWebImage
     - SnapKit
+    - Sourcery
     - SwiftDate
     - Swinject
 
@@ -87,9 +90,10 @@ SPEC CHECKSUMS:
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  Sourcery: ac71ac4d490f62fd381a9f3b558f3093d91bddd5
   SwiftDate: 52b718d32ec006861a2be2756cbfa482d438e781
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: 6a72124d19253a1222d451e8cf51c2e12120b0cd
+PODFILE CHECKSUM: 45a1fd7d00c7ff6bd03227fef333dbeda3b48075
 
 COCOAPODS: 1.5.0

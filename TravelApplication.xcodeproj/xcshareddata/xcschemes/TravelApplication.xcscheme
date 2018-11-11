@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AA652F37215BA46E0044E3C9"
-               BuildableName = "TravelApplication.app"
+               BuildableName = "Paper Plane.app"
                BlueprintName = "TravelApplication"
                ReferencedContainer = "container:TravelApplication.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA652F37215BA46E0044E3C9"
-            BuildableName = "TravelApplication.app"
+            BuildableName = "Paper Plane.app"
             BlueprintName = "TravelApplication"
             ReferencedContainer = "container:TravelApplication.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA652F37215BA46E0044E3C9"
-            BuildableName = "TravelApplication.app"
+            BuildableName = "Paper Plane.app"
             BlueprintName = "TravelApplication"
             ReferencedContainer = "container:TravelApplication.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA652F37215BA46E0044E3C9"
-            BuildableName = "TravelApplication.app"
+            BuildableName = "Paper Plane.app"
             BlueprintName = "TravelApplication"
             ReferencedContainer = "container:TravelApplication.xcodeproj">
          </BuildableReference>
