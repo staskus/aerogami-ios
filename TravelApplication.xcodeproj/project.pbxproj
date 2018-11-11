@@ -130,6 +130,13 @@
 			remoteGlobalIDString = AA652F37215BA46E0044E3C9;
 			remoteInfo = TravelApplication;
 		};
+		AACDF5EE219883BD00789F1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0A1EEC215BA9EA00754EC7 /* TravelFeatureKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 018FA4E0218C9D5200643AD9;
+			remoteInfo = TravelFeatureKitTests;
+		};
 		AAD2E34A215BB6BC008B77BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AA0A1E96215BA7BB00754EC7 /* TravelKit.xcodeproj */;
@@ -203,7 +210,7 @@
 		AA6183D5215BEB7600F47C9C /* AssemblerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblerFactory.swift; sourceTree = "<group>"; };
 		AA6183D8215BEC4E00F47C9C /* ApplicationLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationLoader.swift; sourceTree = "<group>"; };
 		AA6183DB215BEC8E00F47C9C /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
-		AA652F38215BA46E0044E3C9 /* TravelApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA652F38215BA46E0044E3C9 /* Paper Plane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paper Plane.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA652F3B215BA46E0044E3C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA652F3D215BA46E0044E3C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA652F42215BA46F0044E3C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -212,7 +219,7 @@
 		AA652F4C215BA46F0044E3C9 /* TravelApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA652F50215BA46F0044E3C9 /* TravelApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelApplicationTests.swift; sourceTree = "<group>"; };
 		AA652F52215BA46F0044E3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAD2E368215BB6BC008B77BE /* TravelApplication Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TravelApplication Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD2E368215BB6BC008B77BE /* Papar Plane Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Papar Plane Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD2E36A215BB6BC008B77BE /* Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Dev.plist"; path = "/Users/Povilas/Projects/TravelSwift/Info-Dev.plist"; sourceTree = "<absolute>"; };
 		AAD2E36B215BB842008B77BE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B3DD0F23D49182673376940F /* Pods-TravelApplication Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApplication Dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApplication Dev/Pods-TravelApplication Dev.release.xcconfig"; sourceTree = "<group>"; };
@@ -297,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0A1EF1215BA9EA00754EC7 /* TravelFeatureKit.framework */,
+				AACDF5EF219883BD00789F1A /* TravelFeatureKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -346,9 +354,9 @@
 		AA652F39215BA46E0044E3C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA652F38215BA46E0044E3C9 /* TravelApplication.app */,
+				AA652F38215BA46E0044E3C9 /* Paper Plane.app */,
 				AA652F4C215BA46F0044E3C9 /* TravelApplicationTests.xctest */,
-				AAD2E368215BB6BC008B77BE /* TravelApplication Dev.app */,
+				AAD2E368215BB6BC008B77BE /* Papar Plane Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -401,7 +409,7 @@
 			);
 			name = TravelApplication;
 			productName = TravelApplication;
-			productReference = AA652F38215BA46E0044E3C9 /* TravelApplication.app */;
+			productReference = AA652F38215BA46E0044E3C9 /* Paper Plane.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AA652F4B215BA46F0044E3C9 /* TravelApplicationTests */ = {
@@ -443,7 +451,7 @@
 			);
 			name = "TravelApplication Dev";
 			productName = TravelApplication;
-			productReference = AAD2E368215BB6BC008B77BE /* TravelApplication Dev.app */;
+			productReference = AAD2E368215BB6BC008B77BE /* Papar Plane Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -551,6 +559,13 @@
 			fileType = wrapper.cfbundle;
 			path = TravelKitTests.xctest;
 			remoteRef = AA39B4BB2185F05B000BE6C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AACDF5EF219883BD00789F1A /* TravelFeatureKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TravelFeatureKitTests.xctest;
+			remoteRef = AACDF5EE219883BD00789F1A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -944,7 +959,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Povilas-Staskus.TravelApplication";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Paper Plane";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -965,7 +980,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Povilas-Staskus.TravelApplication";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Paper Plane";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1029,7 +1044,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-DDEVELOPMENT\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "Povilas-Staskus.TravelApplication-Dev";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Papar Plane Dev";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1051,7 +1066,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-DDEVELOPMENT\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "Povilas-Staskus.TravelApplication-Dev";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Papar Plane Dev";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
