@@ -20,6 +20,8 @@ $rSwiftVersion =                      '~> 4.0.0'
 $snapKitVersion =                     '~> 4.0.0'
 $sdWebImageVersion =                  '~> 4.0'
 
+pod 'Sourcery',                       '~> 0.10.1'
+
 def shared_testing_pods
     pod 'RxBlocking',                 $rSwiftVersion
 end

@@ -40,6 +40,7 @@
 		AACDF5FD2198882E00789F1A /* BookTripInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDF5F62198882E00789F1A /* BookTripInteractor.swift */; };
 		AACDF5FE2198882E00789F1A /* BookTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDF5F72198882E00789F1A /* BookTripViewController.swift */; };
 		AACDF5FF2198882E00789F1A /* BookTripAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDF5F82198882E00789F1A /* BookTripAssembly.swift */; };
+		AACDF60721988F1C00789F1A /* BuildersImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDF60621988F1C00789F1A /* BuildersImplementations.swift */; };
 		AAD7AFBB215D218C000AC1F6 /* FeedConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFB4215D218C000AC1F6 /* FeedConfigurator.swift */; };
 		AAD7AFBC215D218C000AC1F6 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFB5215D218C000AC1F6 /* FeedPresenter.swift */; };
 		AAD7AFBD215D218C000AC1F6 /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFB6215D218C000AC1F6 /* FeedInteractor.swift */; };
@@ -116,6 +117,7 @@
 		AACDF5F62198882E00789F1A /* BookTripInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTripInteractor.swift; sourceTree = "<group>"; };
 		AACDF5F72198882E00789F1A /* BookTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTripViewController.swift; sourceTree = "<group>"; };
 		AACDF5F82198882E00789F1A /* BookTripAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTripAssembly.swift; sourceTree = "<group>"; };
+		AACDF60621988F1C00789F1A /* BuildersImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildersImplementations.swift; sourceTree = "<group>"; };
 		AAD7AFB4215D218C000AC1F6 /* FeedConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedConfigurator.swift; sourceTree = "<group>"; };
 		AAD7AFB5215D218C000AC1F6 /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		AAD7AFB6215D218C000AC1F6 /* FeedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 		AA3FD3B7215CDAF9006D9C61 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AACDF60521988E5300789F1A /* FeatureBuilders */,
 				AAD7B002215E3121000AC1F6 /* BaseFeature */,
 				AAD7B003215E3138000AC1F6 /* Theme.swift */,
 				AAD7B019215E6821000AC1F6 /* BaseNavigationViewController.swift */,
@@ -307,6 +310,14 @@
 				AACDF5F82198882E00789F1A /* BookTripAssembly.swift */,
 			);
 			path = "Book Trip";
+			sourceTree = "<group>";
+		};
+		AACDF60521988E5300789F1A /* FeatureBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				AACDF60621988F1C00789F1A /* BuildersImplementations.swift */,
+			);
+			path = FeatureBuilders;
 			sourceTree = "<group>";
 		};
 		AAD7AFB3215D218C000AC1F6 /* Feed */ = {
@@ -435,6 +446,7 @@
 				4775E592B947F6DF5FB94FD5 /* [CP] Check Pods Manifest.lock */,
 				AA0A1EDC215BA9CD00754EC7 /* Headers */,
 				AA3FD36E215CCBCE006D9C61 /* ShellScript */,
+				AACDF60021988DC200789F1A /* Generate builders */,
 				AA0A1EDD215BA9CD00754EC7 /* Sources */,
 				AA0A1EDE215BA9CD00754EC7 /* Frameworks */,
 				AA0A1EDF215BA9CD00754EC7 /* Resources */,
@@ -561,6 +573,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"\n";
 		};
+		AACDF60021988DC200789F1A /* Generate builders */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate builders";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -ex\n\n\"${SRCROOT}/Pods/Sourcery/bin/sourcery\" \\\n--sources ${SRCROOT}/TravelFeatureKit/Features \\\n--templates ${SRCROOT}/templates/sourcery/Builder.stencil \\\n--output ${SRCROOT}/TravelFeatureKit/Common/FeatureBuilders/BuildersImplementations.swift\n";
+		};
 		BFEE919DD55538BC736227C6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -651,6 +681,7 @@
 				AAD7B007215E6645000AC1F6 /* MainConfigurator.swift in Sources */,
 				AAD7B011215E666D000AC1F6 /* PreferencesConfigurator.swift in Sources */,
 				AA3FD3BF215CE0CA006D9C61 /* FeatureViewController.swift in Sources */,
+				AACDF60721988F1C00789F1A /* BuildersImplementations.swift in Sources */,
 				AACDF5F92198882E00789F1A /* BookTripPresenter.swift in Sources */,
 				AAC5E797216355870027323C /* FeedTableHeaderView.swift in Sources */,
 				AAD7AFC0215D218C000AC1F6 /* FeedViewController.swift in Sources */,
