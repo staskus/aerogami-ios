@@ -33,6 +33,13 @@
 		AAC5E793216223CC0027323C /* FeedCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E792216223CC0027323C /* FeedCardCell.swift */; };
 		AAC5E79521622BDB0027323C /* UIButton+SetBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E79421622BDB0027323C /* UIButton+SetBackgroundColor.swift */; };
 		AAC5E797216355870027323C /* FeedTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E796216355870027323C /* FeedTableHeaderView.swift */; };
+		AACDF5F92198882E00789F1A /* BookTripPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDF5F22198882E00789F1A /* BookTripPresenter.swift */; };
+		AACDF5FA2198882E00789F1A /* BookTripRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDF5F32198882E00789F1A /* BookTripRouter.swift */; };
+		AACDF5FB2198882E00789F1A /* BookTripModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDF5F42198882E00789F1A /* BookTripModels.swift */; };
+		AACDF5FC2198882E00789F1A /* BookTripConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDF5F52198882E00789F1A /* BookTripConfigurator.swift */; };
+		AACDF5FD2198882E00789F1A /* BookTripInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDF5F62198882E00789F1A /* BookTripInteractor.swift */; };
+		AACDF5FE2198882E00789F1A /* BookTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDF5F72198882E00789F1A /* BookTripViewController.swift */; };
+		AACDF5FF2198882E00789F1A /* BookTripAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDF5F82198882E00789F1A /* BookTripAssembly.swift */; };
 		AAD7AFBB215D218C000AC1F6 /* FeedConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFB4215D218C000AC1F6 /* FeedConfigurator.swift */; };
 		AAD7AFBC215D218C000AC1F6 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFB5215D218C000AC1F6 /* FeedPresenter.swift */; };
 		AAD7AFBD215D218C000AC1F6 /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFB6215D218C000AC1F6 /* FeedInteractor.swift */; };
@@ -102,6 +109,13 @@
 		AAC5E792216223CC0027323C /* FeedCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCardCell.swift; sourceTree = "<group>"; };
 		AAC5E79421622BDB0027323C /* UIButton+SetBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+SetBackgroundColor.swift"; sourceTree = "<group>"; };
 		AAC5E796216355870027323C /* FeedTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableHeaderView.swift; sourceTree = "<group>"; };
+		AACDF5F22198882E00789F1A /* BookTripPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTripPresenter.swift; sourceTree = "<group>"; };
+		AACDF5F32198882E00789F1A /* BookTripRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTripRouter.swift; sourceTree = "<group>"; };
+		AACDF5F42198882E00789F1A /* BookTripModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTripModels.swift; sourceTree = "<group>"; };
+		AACDF5F52198882E00789F1A /* BookTripConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTripConfigurator.swift; sourceTree = "<group>"; };
+		AACDF5F62198882E00789F1A /* BookTripInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTripInteractor.swift; sourceTree = "<group>"; };
+		AACDF5F72198882E00789F1A /* BookTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTripViewController.swift; sourceTree = "<group>"; };
+		AACDF5F82198882E00789F1A /* BookTripAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTripAssembly.swift; sourceTree = "<group>"; };
 		AAD7AFB4215D218C000AC1F6 /* FeedConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedConfigurator.swift; sourceTree = "<group>"; };
 		AAD7AFB5215D218C000AC1F6 /* FeedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		AAD7AFB6215D218C000AC1F6 /* FeedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
@@ -235,6 +249,7 @@
 		AA3FD369215CCA9F006D9C61 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				AACDF5F12198882E00789F1A /* Book Trip */,
 				AAD7B008215E666D000AC1F6 /* Preferences */,
 				AAD7B005215E663B000AC1F6 /* Main */,
 				AAD7AFB3215D218C000AC1F6 /* Feed */,
@@ -278,6 +293,20 @@
 				AAC5E796216355870027323C /* FeedTableHeaderView.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		AACDF5F12198882E00789F1A /* Book Trip */ = {
+			isa = PBXGroup;
+			children = (
+				AACDF5F22198882E00789F1A /* BookTripPresenter.swift */,
+				AACDF5F32198882E00789F1A /* BookTripRouter.swift */,
+				AACDF5F42198882E00789F1A /* BookTripModels.swift */,
+				AACDF5F52198882E00789F1A /* BookTripConfigurator.swift */,
+				AACDF5F62198882E00789F1A /* BookTripInteractor.swift */,
+				AACDF5F72198882E00789F1A /* BookTripViewController.swift */,
+				AACDF5F82198882E00789F1A /* BookTripAssembly.swift */,
+			);
+			path = "Book Trip";
 			sourceTree = "<group>";
 		};
 		AAD7AFB3215D218C000AC1F6 /* Feed */ = {
@@ -594,9 +623,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AACDF5FD2198882E00789F1A /* BookTripInteractor.swift in Sources */,
 				AAD7AFBF215D218C000AC1F6 /* FeedModels.swift in Sources */,
 				AAD7B018215E66C9000AC1F6 /* MainViewController.swift in Sources */,
 				AAD7B01C215E6905000AC1F6 /* MainAssembly.swift in Sources */,
+				AACDF5FC2198882E00789F1A /* BookTripConfigurator.swift in Sources */,
 				AA3FD3CB215D1138006D9C61 /* View.swift in Sources */,
 				AAD7B016215E666E000AC1F6 /* PreferencesAssembly.swift in Sources */,
 				AAD7B010215E666D000AC1F6 /* PreferencesPresenter.swift in Sources */,
@@ -611,6 +642,8 @@
 				AAD7B014215E666E000AC1F6 /* PreferencesInteractor.swift in Sources */,
 				AA3FD394215CD34B006D9C61 /* R.generated.swift in Sources */,
 				AAD7AFBB215D218C000AC1F6 /* FeedConfigurator.swift in Sources */,
+				AACDF5FB2198882E00789F1A /* BookTripModels.swift in Sources */,
+				AACDF5FE2198882E00789F1A /* BookTripViewController.swift in Sources */,
 				AAD7B013215E666E000AC1F6 /* PreferencesRouter.swift in Sources */,
 				AA3FD3C9215D1091006D9C61 /* Presenter.swift in Sources */,
 				AAC5E7902162233E0027323C /* UITableView+Dequeue.swift in Sources */,
@@ -618,13 +651,16 @@
 				AAD7B007215E6645000AC1F6 /* MainConfigurator.swift in Sources */,
 				AAD7B011215E666D000AC1F6 /* PreferencesConfigurator.swift in Sources */,
 				AA3FD3BF215CE0CA006D9C61 /* FeatureViewController.swift in Sources */,
+				AACDF5F92198882E00789F1A /* BookTripPresenter.swift in Sources */,
 				AAC5E797216355870027323C /* FeedTableHeaderView.swift in Sources */,
 				AAD7AFC0215D218C000AC1F6 /* FeedViewController.swift in Sources */,
+				AACDF5FA2198882E00789F1A /* BookTripRouter.swift in Sources */,
 				AAD7AFBE215D218C000AC1F6 /* FeedAssembly.swift in Sources */,
 				018FA4DB218C9A2D00643AD9 /* FeatureInteractor.swift in Sources */,
 				AA3FD3C7215CE628006D9C61 /* LoadingView.swift in Sources */,
 				AAC5E793216223CC0027323C /* FeedCardCell.swift in Sources */,
 				AAC5E78E216221E00027323C /* UIView+AddSubviews.swift in Sources */,
+				AACDF5FF2198882E00789F1A /* BookTripAssembly.swift in Sources */,
 				AAD7B01A215E6821000AC1F6 /* BaseNavigationViewController.swift in Sources */,
 				AA3FD3C3215CE5F1006D9C61 /* ErrorView.swift in Sources */,
 				AAC5E79521622BDB0027323C /* UIButton+SetBackgroundColor.swift in Sources */,
