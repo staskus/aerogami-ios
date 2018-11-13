@@ -23,11 +23,11 @@ private class APIClientMock: APIClient {
 
 class APIClientTests: XCTestCase {
     private let apiClient = APIClientMock()
-    
+
     func testGet() {
         let path = "https://www.testUrl.com"
         let result = try! apiClient.get(path: path).toBlocking().first() as! String
-        
+
         XCTAssertEqual(path, result)
     }
 }

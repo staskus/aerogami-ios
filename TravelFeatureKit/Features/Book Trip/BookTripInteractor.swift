@@ -10,6 +10,8 @@ class BookTripInteractor: FeatureInteractor, BookTripInteractable {
     private let presenter: BookTripPresenter
     private var disposeBag = DisposeBag()
 
+    private let trip: Trip
+
     private var contentState: ContentState<BookTrip.Data> = .loading(data: nil) {
         didSet {
             guard contentState != oldValue else { return }
@@ -17,8 +19,9 @@ class BookTripInteractor: FeatureInteractor, BookTripInteractable {
         }
     }
 
-    init(presenter: BookTripPresenter) {
+    init(presenter: BookTripPresenter, trip: Trip) {
         self.presenter = presenter
+        self.trip = trip
     }
 
     func dispatch(_ action: BookTrip.Action) {

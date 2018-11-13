@@ -1,7 +1,6 @@
 // Generated using Sourcery 0.10.0 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
-
 import TravelKit
 
 extension BookTrip {
@@ -15,7 +14,7 @@ extension BookTrip.ViewModel {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = BookTrip.ViewModel(
-            state: state, 
+            state: state,
             title: title
         )
 
@@ -26,7 +25,7 @@ extension BookTrip.ViewModel {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = BookTrip.ViewModel(
-            state: state, 
+            state: state,
             title: title
         )
 
@@ -45,8 +44,8 @@ extension Feed.Data {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = Feed.Data(
-            regions: regions, 
-            trips: trips, 
+            regions: regions,
+            trips: trips,
             selectedRegionId: selectedRegionId
         )
 
@@ -57,8 +56,8 @@ extension Feed.Data {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = Feed.Data(
-            regions: regions, 
-            trips: trips, 
+            regions: regions,
+            trips: trips,
             selectedRegionId: selectedRegionId
         )
 
@@ -69,8 +68,8 @@ extension Feed.Data {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = Feed.Data(
-            regions: regions, 
-            trips: trips, 
+            regions: regions,
+            trips: trips,
             selectedRegionId: selectedRegionId
         )
 
@@ -83,7 +82,7 @@ extension Feed.ViewModel {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = Feed.ViewModel(
-            state: state, 
+            state: state,
             title: title
         )
 
@@ -94,7 +93,7 @@ extension Feed.ViewModel {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = Feed.ViewModel(
-            state: state, 
+            state: state,
             title: title
         )
 
@@ -107,8 +106,8 @@ extension Feed.ViewModel.Content {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = Feed.ViewModel.Content(
-            rows: rows, 
-            availableRegions: availableRegions, 
+            rows: rows,
+            availableRegions: availableRegions,
             selectedRegion: selectedRegion
         )
 
@@ -119,8 +118,8 @@ extension Feed.ViewModel.Content {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = Feed.ViewModel.Content(
-            rows: rows, 
-            availableRegions: availableRegions, 
+            rows: rows,
+            availableRegions: availableRegions,
             selectedRegion: selectedRegion
         )
 
@@ -131,8 +130,8 @@ extension Feed.ViewModel.Content {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = Feed.ViewModel.Content(
-            rows: rows, 
-            availableRegions: availableRegions, 
+            rows: rows,
+            availableRegions: availableRegions,
             selectedRegion: selectedRegion
         )
 
@@ -145,7 +144,7 @@ extension Feed.ViewModel.Content.Region {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = Feed.ViewModel.Content.Region(
-            id: id, 
+            id: id,
             name: name
         )
 
@@ -156,7 +155,7 @@ extension Feed.ViewModel.Content.Region {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = Feed.ViewModel.Content.Region(
-            id: id, 
+            id: id,
             name: name
         )
 
@@ -169,13 +168,13 @@ extension FeedCardViewModel {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = FeedCardViewModel(
-            direction: direction, 
-            trip: trip, 
-            price: price, 
-            dateRange: dateRange, 
-            routeName: routeName, 
-            imageUrl: imageUrl, 
-            route: route, 
+            direction: direction,
+            trip: trip,
+            price: price,
+            dateRange: dateRange,
+            routeName: routeName,
+            imageUrl: imageUrl,
+            route: route,
             isExpired: isExpired
         )
 
@@ -186,13 +185,13 @@ extension FeedCardViewModel {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = FeedCardViewModel(
-            direction: direction, 
-            trip: trip, 
-            price: price, 
-            dateRange: dateRange, 
-            routeName: routeName, 
-            imageUrl: imageUrl, 
-            route: route, 
+            direction: direction,
+            trip: trip,
+            price: price,
+            dateRange: dateRange,
+            routeName: routeName,
+            imageUrl: imageUrl,
+            route: route,
             isExpired: isExpired
         )
 
@@ -203,13 +202,13 @@ extension FeedCardViewModel {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = FeedCardViewModel(
-            direction: direction, 
-            trip: trip, 
-            price: price, 
-            dateRange: dateRange, 
-            routeName: routeName, 
-            imageUrl: imageUrl, 
-            route: route, 
+            direction: direction,
+            trip: trip,
+            price: price,
+            dateRange: dateRange,
+            routeName: routeName,
+            imageUrl: imageUrl,
+            route: route,
             isExpired: isExpired
         )
 
@@ -220,13 +219,13 @@ extension FeedCardViewModel {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = FeedCardViewModel(
-            direction: direction, 
-            trip: trip, 
-            price: price, 
-            dateRange: dateRange, 
-            routeName: routeName, 
-            imageUrl: imageUrl, 
-            route: route, 
+            direction: direction,
+            trip: trip,
+            price: price,
+            dateRange: dateRange,
+            routeName: routeName,
+            imageUrl: imageUrl,
+            route: route,
             isExpired: isExpired
         )
 
@@ -237,13 +236,13 @@ extension FeedCardViewModel {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = FeedCardViewModel(
-            direction: direction, 
-            trip: trip, 
-            price: price, 
-            dateRange: dateRange, 
-            routeName: routeName, 
-            imageUrl: imageUrl, 
-            route: route, 
+            direction: direction,
+            trip: trip,
+            price: price,
+            dateRange: dateRange,
+            routeName: routeName,
+            imageUrl: imageUrl,
+            route: route,
             isExpired: isExpired
         )
 
@@ -254,13 +253,13 @@ extension FeedCardViewModel {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = FeedCardViewModel(
-            direction: direction, 
-            trip: trip, 
-            price: price, 
-            dateRange: dateRange, 
-            routeName: routeName, 
-            imageUrl: imageUrl, 
-            route: route, 
+            direction: direction,
+            trip: trip,
+            price: price,
+            dateRange: dateRange,
+            routeName: routeName,
+            imageUrl: imageUrl,
+            route: route,
             isExpired: isExpired
         )
 
@@ -271,13 +270,13 @@ extension FeedCardViewModel {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = FeedCardViewModel(
-            direction: direction, 
-            trip: trip, 
-            price: price, 
-            dateRange: dateRange, 
-            routeName: routeName, 
-            imageUrl: imageUrl, 
-            route: route, 
+            direction: direction,
+            trip: trip,
+            price: price,
+            dateRange: dateRange,
+            routeName: routeName,
+            imageUrl: imageUrl,
+            route: route,
             isExpired: isExpired
         )
 
@@ -288,13 +287,13 @@ extension FeedCardViewModel {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = FeedCardViewModel(
-            direction: direction, 
-            trip: trip, 
-            price: price, 
-            dateRange: dateRange, 
-            routeName: routeName, 
-            imageUrl: imageUrl, 
-            route: route, 
+            direction: direction,
+            trip: trip,
+            price: price,
+            dateRange: dateRange,
+            routeName: routeName,
+            imageUrl: imageUrl,
+            route: route,
             isExpired: isExpired
         )
 
@@ -313,7 +312,7 @@ extension Preferences.ViewModel {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = Preferences.ViewModel(
-            state: state, 
+            state: state,
             title: title
         )
 
@@ -324,7 +323,7 @@ extension Preferences.ViewModel {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = Preferences.ViewModel(
-            state: state, 
+            state: state,
             title: title
         )
 
@@ -334,4 +333,3 @@ extension Preferences.ViewModel {
 
 extension Preferences.ViewModel.Content {
 }
-

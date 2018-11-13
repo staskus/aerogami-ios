@@ -27,6 +27,10 @@
 		AA3FD3C9215D1091006D9C61 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD3C8215D1091006D9C61 /* Presenter.swift */; };
 		AA3FD3CB215D1138006D9C61 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD3CA215D1138006D9C61 /* View.swift */; };
 		AA3FD3CD215D11AB006D9C61 /* FeaturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD3CC215D11AB006D9C61 /* FeaturePresenter.swift */; };
+		AABB46B6219B5273001AA5D1 /* UIView+GetConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46B5219B5273001AA5D1 /* UIView+GetConstraint.swift */; };
+		AABB46B8219B5477001AA5D1 /* UIViewController+TopMost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46B7219B5477001AA5D1 /* UIViewController+TopMost.swift */; };
+		AABB46BC219B5AD3001AA5D1 /* BookTripViewController+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46BB219B5AD3001AA5D1 /* BookTripViewController+Blur.swift */; };
+		AABB46BE219B5CCD001AA5D1 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46BD219B5CCD001AA5D1 /* UIView+CornerRadius.swift */; };
 		AAC5E78C216221A00027323C /* UIView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E78B216221A00027323C /* UIView+Style.swift */; };
 		AAC5E78E216221E00027323C /* UIView+AddSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E78D216221E00027323C /* UIView+AddSubviews.swift */; };
 		AAC5E7902162233E0027323C /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E78F2162233E0027323C /* UITableView+Dequeue.swift */; };
@@ -104,6 +108,10 @@
 		AA3FD3C8215D1091006D9C61 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		AA3FD3CA215D1138006D9C61 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		AA3FD3CC215D11AB006D9C61 /* FeaturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturePresenter.swift; sourceTree = "<group>"; };
+		AABB46B5219B5273001AA5D1 /* UIView+GetConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+GetConstraint.swift"; sourceTree = "<group>"; };
+		AABB46B7219B5477001AA5D1 /* UIViewController+TopMost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopMost.swift"; sourceTree = "<group>"; };
+		AABB46BB219B5AD3001AA5D1 /* BookTripViewController+Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookTripViewController+Blur.swift"; sourceTree = "<group>"; };
+		AABB46BD219B5CCD001AA5D1 /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
 		AAC5E78B216221A00027323C /* UIView+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Style.swift"; sourceTree = "<group>"; };
 		AAC5E78D216221E00027323C /* UIView+AddSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AddSubviews.swift"; sourceTree = "<group>"; };
 		AAC5E78F2162233E0027323C /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
@@ -285,6 +293,9 @@
 				AAC5E78D216221E00027323C /* UIView+AddSubviews.swift */,
 				AAC5E78F2162233E0027323C /* UITableView+Dequeue.swift */,
 				AAC5E79421622BDB0027323C /* UIButton+SetBackgroundColor.swift */,
+				AABB46B5219B5273001AA5D1 /* UIView+GetConstraint.swift */,
+				AABB46B7219B5477001AA5D1 /* UIViewController+TopMost.swift */,
+				AABB46BD219B5CCD001AA5D1 /* UIView+CornerRadius.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -308,6 +319,7 @@
 				AACDF5F62198882E00789F1A /* BookTripInteractor.swift */,
 				AACDF5F72198882E00789F1A /* BookTripViewController.swift */,
 				AACDF5F82198882E00789F1A /* BookTripAssembly.swift */,
+				AABB46BB219B5AD3001AA5D1 /* BookTripViewController+Blur.swift */,
 			);
 			path = "Book Trip";
 			sourceTree = "<group>";
@@ -655,10 +667,12 @@
 			files = (
 				AACDF5FD2198882E00789F1A /* BookTripInteractor.swift in Sources */,
 				AAD7AFBF215D218C000AC1F6 /* FeedModels.swift in Sources */,
+				AABB46B8219B5477001AA5D1 /* UIViewController+TopMost.swift in Sources */,
 				AAD7B018215E66C9000AC1F6 /* MainViewController.swift in Sources */,
 				AAD7B01C215E6905000AC1F6 /* MainAssembly.swift in Sources */,
 				AACDF5FC2198882E00789F1A /* BookTripConfigurator.swift in Sources */,
 				AA3FD3CB215D1138006D9C61 /* View.swift in Sources */,
+				AABB46B6219B5273001AA5D1 /* UIView+GetConstraint.swift in Sources */,
 				AAD7B016215E666E000AC1F6 /* PreferencesAssembly.swift in Sources */,
 				AAD7B010215E666D000AC1F6 /* PreferencesPresenter.swift in Sources */,
 				AA3FD3BB215CDCF5006D9C61 /* ContentState.swift in Sources */,
@@ -683,11 +697,13 @@
 				AA3FD3BF215CE0CA006D9C61 /* FeatureViewController.swift in Sources */,
 				AACDF60721988F1C00789F1A /* BuildersImplementations.swift in Sources */,
 				AACDF5F92198882E00789F1A /* BookTripPresenter.swift in Sources */,
+				AABB46BE219B5CCD001AA5D1 /* UIView+CornerRadius.swift in Sources */,
 				AAC5E797216355870027323C /* FeedTableHeaderView.swift in Sources */,
 				AAD7AFC0215D218C000AC1F6 /* FeedViewController.swift in Sources */,
 				AACDF5FA2198882E00789F1A /* BookTripRouter.swift in Sources */,
 				AAD7AFBE215D218C000AC1F6 /* FeedAssembly.swift in Sources */,
 				018FA4DB218C9A2D00643AD9 /* FeatureInteractor.swift in Sources */,
+				AABB46BC219B5AD3001AA5D1 /* BookTripViewController+Blur.swift in Sources */,
 				AA3FD3C7215CE628006D9C61 /* LoadingView.swift in Sources */,
 				AAC5E793216223CC0027323C /* FeedCardCell.swift in Sources */,
 				AAC5E78E216221E00027323C /* UIView+AddSubviews.swift in Sources */,

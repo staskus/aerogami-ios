@@ -65,7 +65,7 @@ class FeedAdapter: FeatureAdapter {
                 dateRange: dateRange(trip),
                 routeName: R.string.localizable.feedBookTitle(),
                 imageUrl: URL(string: "https://picsum.photos/1000/1000/?image=\(arc4random_uniform(1000))")!,
-                route: Feed.Route.book,
+                route: Feed.Route.book(trip),
                 isExpired: trip.expiresAt <= Date()
             )
         }
@@ -89,25 +89,25 @@ class FeedAdapter: FeatureAdapter {
 
         return currencyFormatter.string(from: NSNumber(value: price)) ?? "\(price) \(currency)"
     }
-    
+
     // MARK: - Sorting of trips
-    
+
     private func getSortedTrips(_ content: Feed.Data) -> [Trip] {
         let validTrips = content.trips
             .filter { !self.isExpired($0) }
             .sorted(by: tripDateSort)
-        
+
         let expiredTrips = content.trips
             .filter { self.isExpired($0) }
             .sorted(by: tripDateSort)
-        
+
         return validTrips + expiredTrips
     }
-    
+
     private func tripDateSort(_ lTrip: Trip, rTrip: Trip) -> Bool {
         return lTrip.createdAt < rTrip.createdAt
     }
-    
+
     private func isExpired(_ trip: Trip) -> Bool {
         return trip.expiresAt <= Date()
     }

@@ -29,7 +29,7 @@ struct Feed {
         case changeRegion(regionId: String?)
     }
 
-    enum Route {
-        case book
+    enum Route: Equatable {
+        case book(Trip)
     }
 }
