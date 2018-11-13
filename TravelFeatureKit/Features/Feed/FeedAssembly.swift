@@ -14,6 +14,10 @@ public class FeedAssembly: Assembly {
                 tripRepository: r.resolve(TripRepository.self)!,
                 airportRepository: r.resolve(AirportRepository.self)!
             )
-        }.inObjectScope(.container)
+            }
+            .initCompleted { (resolver, feedConfigurator) in
+                feedConfigurator.bookTripConfigurator = resolver.resolve(BookTripConfigurator.self)!
+            }
+            .inObjectScope(.container)
     }
 }

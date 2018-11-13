@@ -13,14 +13,14 @@ struct RegionTest {
         static let id = "blt"
         static let name = "Baltics"
     }
-    
+
     struct ValidRegion {
         static let JSON: [String: Any] = [
             "id": RegionTest.Data.id,
             "name": RegionTest.Data.name
         ]
     }
-    
+
     struct InvalidRegion {
         static let JSON: [String: Any] = [
             "name": RegionTest.Data.name

@@ -6,10 +6,10 @@ public class BookTripConfigurator {
     public init() {
     }
 
-    public func createViewController() -> UIViewController {
+    public func createViewController(trip: Trip) -> UIViewController {
         let adapter = BookTripAdapter()
         let presenter = BookTripPresenter(adapter: adapter)
-        let interactor = BookTripInteractor(presenter: presenter)
+        let interactor = BookTripInteractor(presenter: presenter, trip: trip)
         let router = BookTripRouter()
         let viewController = BookTripViewController(interactor: interactor, router: router)
 

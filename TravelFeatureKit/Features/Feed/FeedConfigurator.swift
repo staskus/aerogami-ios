@@ -7,6 +7,8 @@ public class FeedConfigurator {
     private let tripRepository: TripRepository
     private let airportRepository: AirportRepository
 
+    weak var bookTripConfigurator: BookTripConfigurator!
+
     public init(
         regionRepository: RegionRepository,
         tripRepository: TripRepository,
@@ -26,7 +28,7 @@ public class FeedConfigurator {
             tripRepository: tripRepository,
             airportRepository: airportRepository
         )
-        let router = FeedRouter()
+        let router = FeedRouter(bookTripConfigurator: bookTripConfigurator)
         let viewController = FeedViewController(interactor: interactor, router: router)
 
         router.viewController = viewController

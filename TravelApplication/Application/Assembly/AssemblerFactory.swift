@@ -22,7 +22,8 @@ class AssemblerFactory {
 
             MainAssembly(),
             PreferencesAssembly(),
-            FeedAssembly()
+            FeedAssembly(),
+            BookTripAssembly()
         ]
 
         let assembler = Assembler(assemblies)

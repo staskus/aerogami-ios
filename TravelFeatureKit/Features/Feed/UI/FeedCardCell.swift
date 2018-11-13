@@ -74,7 +74,7 @@ class FeedCardCell: UITableViewCell, ReusableView {
             make.right.equalTo(self.containerView)
             make.bottom.equalTo(self.containerView)
         }
-        
+
         expiredView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.containerView)
         }
@@ -108,6 +108,18 @@ class FeedCardCell: UITableViewCell, ReusableView {
         containerView.clipsToBounds = true
         containerView.layer.masksToBounds = true
     }
+
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        alpha = 0.7
+//    }
+//    
+//    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        alpha = 1.0
+//    }
+//    
+//    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        alpha = 1.0
+//    }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -207,7 +219,7 @@ private class FeedCardBottomView: UIView {
     }
 
     func configure(with viewModel: FeedCardViewModel) {
-        button.setTitle(" \(viewModel.routeName) ", for: .normal)
+        button.setTitle("  \(viewModel.routeName)  ", for: .normal)
         topLabel.text = R.string.localizable.feedTotalPriceTitle().lowercased()
         priceLabel.text = viewModel.price
         dateLabel.text = viewModel.dateRange
@@ -275,6 +287,7 @@ private class FeedCardBottomView: UIView {
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 8
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .medium)
+        button.isUserInteractionEnabled = false
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -285,29 +298,29 @@ private class FeedCardBottomView: UIView {
 private class FeedCardExpiredView: UIView {
     private let backgroundView = UIView()
     private let expiredLabel = UILabel()
-    
+
     init() {
         super.init(frame: .zero)
         setupView()
         setupConstraints()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     private func setupView() {
         addSubviews(
             backgroundView.style(backgroundStyle),
             expiredLabel.style(expiredLabelStyle)
         )
     }
-    
+
     private func setupConstraints() {
         backgroundView.snp.makeConstraints { (make) in
             make.edges.equalTo(self)
         }
-        
+
         expiredLabel.snp.makeConstraints { (make) in
             make.centerY.equalTo(self)
             make.centerX.equalTo(self)
@@ -315,12 +328,12 @@ private class FeedCardExpiredView: UIView {
             make.right.equalTo(self).offset(-10)
         }
     }
-    
+
     private func backgroundStyle(_ view: UIView) {
         view.backgroundColor = .white
         view.alpha = 0.7
     }
-    
+
     private func expiredLabelStyle(_ label: UILabel) {
         label.numberOfLines = 1
         label.adjustsFontSizeToFitWidth = true

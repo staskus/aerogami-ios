@@ -29,6 +29,8 @@
 		AA652F43215BA46F0044E3C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA652F42215BA46F0044E3C9 /* Assets.xcassets */; };
 		AA652F46215BA46F0044E3C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA652F44215BA46F0044E3C9 /* LaunchScreen.storyboard */; };
 		AA652F51215BA46F0044E3C9 /* TravelApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA652F50215BA46F0044E3C9 /* TravelApplicationTests.swift */; };
+		AABB46B3219B506A001AA5D1 /* UIViewController+Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46B2219B506A001AA5D1 /* UIViewController+Injected.swift */; };
+		AABB46B4219B506A001AA5D1 /* UIViewController+Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46B2219B506A001AA5D1 /* UIViewController+Injected.swift */; };
 		AAD2E353215BB6BC008B77BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA652F3D215BA46E0044E3C9 /* ViewController.swift */; };
 		AAD2E354215BB6BC008B77BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA652F3B215BA46E0044E3C9 /* AppDelegate.swift */; };
 		AAD2E356215BB6BC008B77BE /* TravelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1E9B215BA7BB00754EC7 /* TravelKit.framework */; };
@@ -219,6 +221,7 @@
 		AA652F4C215BA46F0044E3C9 /* TravelApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA652F50215BA46F0044E3C9 /* TravelApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelApplicationTests.swift; sourceTree = "<group>"; };
 		AA652F52215BA46F0044E3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AABB46B2219B506A001AA5D1 /* UIViewController+Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Injected.swift"; sourceTree = "<group>"; };
 		AAD2E368215BB6BC008B77BE /* Papar Plane Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Papar Plane Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD2E36A215BB6BC008B77BE /* Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Dev.plist"; path = "/Users/Povilas/Projects/TravelSwift/Info-Dev.plist"; sourceTree = "<absolute>"; };
 		AAD2E36B215BB842008B77BE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -322,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				AA6183D4215BEA6500F47C9C /* Assembly */,
+				AABB46AD219B5059001AA5D1 /* Injection */,
 				AA6183D8215BEC4E00F47C9C /* ApplicationLoader.swift */,
 			);
 			path = Application;
@@ -383,6 +387,14 @@
 				AA652F52215BA46F0044E3C9 /* Info.plist */,
 			);
 			path = TravelApplicationTests;
+			sourceTree = "<group>";
+		};
+		AABB46AD219B5059001AA5D1 /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				AABB46B2219B506A001AA5D1 /* UIViewController+Injected.swift */,
+			);
+			path = Injection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -738,6 +750,7 @@
 				AA652F3C215BA46E0044E3C9 /* AppDelegate.swift in Sources */,
 				AA6183D9215BEC4E00F47C9C /* ApplicationLoader.swift in Sources */,
 				AAD2E36C215BB842008B77BE /* Constants.swift in Sources */,
+				AABB46B3219B506A001AA5D1 /* UIViewController+Injected.swift in Sources */,
 				AA6183DC215BEC8E00F47C9C /* ApplicationAssembly.swift in Sources */,
 				AA6183D6215BEB7600F47C9C /* AssemblerFactory.swift in Sources */,
 			);
@@ -759,6 +772,7 @@
 				AAD2E354215BB6BC008B77BE /* AppDelegate.swift in Sources */,
 				AA6183DA215BEC4E00F47C9C /* ApplicationLoader.swift in Sources */,
 				AAD2E36D215BB842008B77BE /* Constants.swift in Sources */,
+				AABB46B4219B506A001AA5D1 /* UIViewController+Injected.swift in Sources */,
 				AA6183DD215BEC8E00F47C9C /* ApplicationAssembly.swift in Sources */,
 				AA6183D7215BEB7600F47C9C /* AssemblerFactory.swift in Sources */,
 			);

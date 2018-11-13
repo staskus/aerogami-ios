@@ -111,7 +111,9 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cellViewModel = viewModel?.state.viewModel?.rows[indexPath.row] else { return }
 
+        router.route(to: cellViewModel.route)
     }
 }
 

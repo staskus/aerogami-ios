@@ -18,7 +18,7 @@ struct AirportTest {
         static let lon = 45.5
         static let lat = 56.65
     }
-    
+
     struct ValidAiport {
         static let JSON: [String: Any] = [
             "code": AirportTest.Data.code,
@@ -30,7 +30,7 @@ struct AirportTest {
             "lat": AirportTest.Data.lat
         ]
     }
-    
+
     struct ValidAiportWithoutState {
         static let JSON: [String: Any] = [
             "code": AirportTest.Data.code,
@@ -41,7 +41,7 @@ struct AirportTest {
             "lat": AirportTest.Data.lat
         ]
     }
-    
+
     struct InvalidAiportWithoutCode {
         static let JSON: [String: Any] = [
             "city": AirportTest.Data.city,
