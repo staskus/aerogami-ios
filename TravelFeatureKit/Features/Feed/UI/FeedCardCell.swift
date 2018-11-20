@@ -229,7 +229,7 @@ private class FeedCardBottomView: UIView {
         backgroundColor = .white
 
         addSubviews(
-            button.style(buttonStyle),
+            button.style(Style.Button.main).style(buttonStyle),
             topLabel.style(topLabelStyle),
             priceLabel.style(priceLabelStyle),
             dateLabel.style(dateLabelStyle)
@@ -281,11 +281,6 @@ private class FeedCardBottomView: UIView {
     }
 
     private func buttonStyle(_ button: UIButton) {
-        button.setBackgroundColor(Theme.primary, forUIControlState: .normal)
-        button.setBackgroundColor(Theme.primaryLight, forUIControlState: .highlighted)
-        button.setTitleColor(.white, for: .normal)
-        button.layer.masksToBounds = true
-        button.layer.cornerRadius = 8
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         button.isUserInteractionEnabled = false
     }
