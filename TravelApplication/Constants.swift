@@ -32,5 +32,5 @@ struct Constants {
 
     #endif
 
-    static let bookingURLMarker = "d0116d33d3445e61d64615852917f9e6"
+    static let affiliateId = "d0116d33d3445e61d64615852917f9e6"
 }

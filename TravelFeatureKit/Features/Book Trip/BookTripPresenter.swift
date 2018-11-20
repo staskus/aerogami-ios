@@ -32,16 +32,16 @@ class BookTripAdapter: FeatureAdapter {
         return BookTrip.ViewModel.Content(
             header: makeHeader(content.trip),
             sectionButtons: [],
-            bookButton: makeBookButton(content.trip)
+            bookButton: makeBookButton(content.trip, url: content.bookUrl)
         )
     }
 
     // MARK: Private
 
-    private func makeBookButton(_ trip: Trip) -> BookTrip.ViewModel.BookButton {
+    private func makeBookButton(_ trip: Trip, url: URL) -> BookTrip.ViewModel.BookButton {
         return BookTrip.ViewModel.BookButton(
             title: "\(R.string.localizable.feedBookTitle()) \(formatCurrency(trip))",
-            route: .book
+            route: .book(url)
         )
     }
 

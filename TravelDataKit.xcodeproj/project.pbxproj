@@ -34,6 +34,7 @@
 		AAFC201F21A4A2F900E1D8A8 /* BookURLRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC201E21A4A2F900E1D8A8 /* BookURLRepository.swift */; };
 		AAFC202321A4A34C00E1D8A8 /* BookURLRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC202221A4A34C00E1D8A8 /* BookURLRepositoryTests.swift */; };
 		AAFC202821A4A46E00E1D8A8 /* TripData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC202721A4A46E00E1D8A8 /* TripData.swift */; };
+		AAFC203221A4ABDC00E1D8A8 /* BookURLRepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC203121A4ABDC00E1D8A8 /* BookURLRepositoryAssembly.swift */; };
 		BBBBB7D93B87941F94A099DD /* Pods_TravelDataKit_TravelDataKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543E2F0D23DBD5862F1C52B7 /* Pods_TravelDataKit_TravelDataKitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		AAFC201E21A4A2F900E1D8A8 /* BookURLRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookURLRepository.swift; sourceTree = "<group>"; };
 		AAFC202221A4A34C00E1D8A8 /* BookURLRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookURLRepositoryTests.swift; sourceTree = "<group>"; };
 		AAFC202721A4A46E00E1D8A8 /* TripData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripData.swift; sourceTree = "<group>"; };
+		AAFC203121A4ABDC00E1D8A8 /* BookURLRepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookURLRepositoryAssembly.swift; sourceTree = "<group>"; };
 		BB6DCC23F856A65029C18EB7 /* Pods-TravelDataKit-TravelDataKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelDataKit-TravelDataKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelDataKit-TravelDataKitTests/Pods-TravelDataKit-TravelDataKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -254,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				AAFC201E21A4A2F900E1D8A8 /* BookURLRepository.swift */,
+				AAFC203121A4ABDC00E1D8A8 /* BookURLRepositoryAssembly.swift */,
 			);
 			path = BookURL;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				AA7FD503215BC796000FB362 /* RealmRegionDataStore.swift in Sources */,
 				AAD7AFFD215E2298000AC1F6 /* RemoteAirportDataStore.swift in Sources */,
 				AA7FD509215BC86E000FB362 /* RemoteRegionDataStore.swift in Sources */,
+				AAFC203221A4ABDC00E1D8A8 /* BookURLRepositoryAssembly.swift in Sources */,
 				AAC5E79B2163619D0027323C /* UserDefaultsRegionPreferencesDataStore.swift in Sources */,
 				AAD7AFFF215E2317000AC1F6 /* AirportRepository.swift in Sources */,
 				AAD7AFD4215D23EC000AC1F6 /* RegionRepositoryAssembly.swift in Sources */,
