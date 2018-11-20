@@ -4,6 +4,7 @@ import TravelKit
 struct BookTrip {
     struct Data: Equatable {
         let trip: Trip
+        let bookUrl: URL
     }
 
     struct ViewModel: FeatureViewModel {
@@ -35,6 +36,6 @@ struct BookTrip {
     }
 
     enum Route {
-        case book
+        case book(URL)
     }
 }

@@ -23,7 +23,8 @@ class AssemblerFactory {
             MainAssembly(),
             PreferencesAssembly(),
             FeedAssembly(),
-            BookTripAssembly()
+            BookTripAssembly(),
+            BookURLRepositoryAssembly(affiliateId: Constants.affiliateId)
         ]
 
         let assembler = Assembler(assemblies)

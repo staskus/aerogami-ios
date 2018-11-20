@@ -11,7 +11,19 @@ extension BookTrip.Data {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = BookTrip.Data(
-            trip: trip
+            trip: trip,
+            bookUrl: bookUrl
+        )
+
+        return newInstance
+    }
+
+    public func with(bookUrl: URL) -> BookTrip.Data {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTrip.Data(
+            trip: trip,
+            bookUrl: bookUrl
         )
 
         return newInstance

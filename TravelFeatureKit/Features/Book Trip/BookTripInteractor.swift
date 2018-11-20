@@ -8,6 +8,7 @@ protocol BookTripInteractable {
 
 class BookTripInteractor: FeatureInteractor, BookTripInteractable {
     private let presenter: BookTripPresenter
+    private let bookURLRepository: BookURLRepository
     private var disposeBag = DisposeBag()
 
     private let trip: Trip
@@ -19,8 +20,11 @@ class BookTripInteractor: FeatureInteractor, BookTripInteractable {
         }
     }
 
-    init(presenter: BookTripPresenter, trip: Trip) {
+    init(presenter: BookTripPresenter,
+         bookURLRepository: BookURLRepository,
+         trip: Trip) {
         self.presenter = presenter
+        self.bookURLRepository = bookURLRepository
         self.trip = trip
     }
 
@@ -34,7 +38,19 @@ class BookTripInteractor: FeatureInteractor, BookTripInteractable {
     }
 
     func load() {
-        contentState = .loaded(data: BookTrip.Data(trip: trip), error: nil)
+        bookURLRepository.getURL(for: trip)
+            .map { url in
+                return BookTrip.Data(trip: self.trip, bookUrl: url)
+            }
+            .subscribe(
+                onNext: { data in
+                    self.contentState = .loaded(data: data, error: nil)
+                },
+                onError: { error in
+                    self.contentState = .error(error: .loading(reason: error.localizedDescription))
+                }
+            )
+            .disposed(by: disposeBag)
     }
 
     func subscribe() {
