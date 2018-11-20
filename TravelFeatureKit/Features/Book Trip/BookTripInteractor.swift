@@ -28,13 +28,13 @@ class BookTripInteractor: FeatureInteractor, BookTripInteractable {
         switch action {
         case .load:
             load()
+        default:
+            break
         }
     }
 
     func load() {
-        disposeBag = DisposeBag()
-
-        contentState = .loading(data: contentState.data)
+        contentState = .loaded(data: BookTrip.Data(trip: trip), error: nil)
     }
 
     func subscribe() {

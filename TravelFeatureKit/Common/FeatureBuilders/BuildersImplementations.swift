@@ -7,6 +7,15 @@ extension BookTrip {
 }
 
 extension BookTrip.Data {
+    public func with(trip: Trip) -> BookTrip.Data {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTrip.Data(
+            trip: trip
+        )
+
+        return newInstance
+    }
 }
 
 extension BookTrip.ViewModel {
@@ -33,7 +42,142 @@ extension BookTrip.ViewModel {
     }
 }
 
+extension BookTrip.ViewModel.BookButton {
+    public func with(title: String) -> BookTrip.ViewModel.BookButton {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTrip.ViewModel.BookButton(
+            title: title,
+            route: route
+        )
+
+        return newInstance
+    }
+
+    public func with(route: BookTrip.Route) -> BookTrip.ViewModel.BookButton {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTrip.ViewModel.BookButton(
+            title: title,
+            route: route
+        )
+
+        return newInstance
+    }
+}
+
 extension BookTrip.ViewModel.Content {
+    public func with(header: BookTripHeaderViewModel) -> BookTrip.ViewModel.Content {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTrip.ViewModel.Content(
+            header: header,
+            sectionButtons: sectionButtons,
+            bookButton: bookButton
+        )
+
+        return newInstance
+    }
+
+    public func with(sectionButtons: [BookTrip.ViewModel.SectionButton]) -> BookTrip.ViewModel.Content {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTrip.ViewModel.Content(
+            header: header,
+            sectionButtons: sectionButtons,
+            bookButton: bookButton
+        )
+
+        return newInstance
+    }
+
+    public func with(bookButton: BookTrip.ViewModel.BookButton) -> BookTrip.ViewModel.Content {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTrip.ViewModel.Content(
+            header: header,
+            sectionButtons: sectionButtons,
+            bookButton: bookButton
+        )
+
+        return newInstance
+    }
+}
+
+extension BookTrip.ViewModel.SectionButton {
+    public func with(title: String) -> BookTrip.ViewModel.SectionButton {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTrip.ViewModel.SectionButton(
+            title: title,
+            image: image,
+            action: action
+        )
+
+        return newInstance
+    }
+
+    public func with(image: String) -> BookTrip.ViewModel.SectionButton {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTrip.ViewModel.SectionButton(
+            title: title,
+            image: image,
+            action: action
+        )
+
+        return newInstance
+    }
+
+    public func with(action: BookTrip.Action) -> BookTrip.ViewModel.SectionButton {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTrip.ViewModel.SectionButton(
+            title: title,
+            image: image,
+            action: action
+        )
+
+        return newInstance
+    }
+}
+
+extension BookTripHeaderViewModel {
+    public func with(title: String) -> BookTripHeaderViewModel {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTripHeaderViewModel(
+            title: title,
+            subtitle: subtitle,
+            imageUrl: imageUrl
+        )
+
+        return newInstance
+    }
+
+    public func with(subtitle: String) -> BookTripHeaderViewModel {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTripHeaderViewModel(
+            title: title,
+            subtitle: subtitle,
+            imageUrl: imageUrl
+        )
+
+        return newInstance
+    }
+
+    public func with(imageUrl: URL) -> BookTripHeaderViewModel {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTripHeaderViewModel(
+            title: title,
+            subtitle: subtitle,
+            imageUrl: imageUrl
+        )
+
+        return newInstance
+    }
 }
 
 extension Feed {

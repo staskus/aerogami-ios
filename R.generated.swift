@@ -88,12 +88,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 4 images.
+  /// This `R.image` struct is generated, and contains static references to 5 images.
   struct image {
     /// Image `FeedCardGradient`.
     static let feedCardGradient = Rswift.ImageResource(bundle: R.hostingBundle, name: "FeedCardGradient")
     /// Image `RegionPickerIcon`.
     static let regionPickerIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "RegionPickerIcon")
+    /// Image `closeIcon`.
+    static let closeIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "closeIcon")
     /// Image `tabFeedIcon`.
     static let tabFeedIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabFeedIcon")
     /// Image `tabPreferencesIcon`.
@@ -107,6 +109,11 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "RegionPickerIcon", bundle: ..., traitCollection: ...)`
     static func regionPickerIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.regionPickerIcon, compatibleWith: traitCollection)
+    }
+
+    /// `UIImage(named: "closeIcon", bundle: ..., traitCollection: ...)`
+    static func closeIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.closeIcon, compatibleWith: traitCollection)
     }
 
     /// `UIImage(named: "tabFeedIcon", bundle: ..., traitCollection: ...)`
