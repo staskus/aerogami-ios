@@ -99,6 +99,9 @@ target 'TravelDataKit' do
 
   target 'TravelDataKitTests' do
     project 'TravelDataKit.xcodeproj'
+
+    shared_testing_pods
+    pod 'CocoaLumberjack/Swift'
   end
 end
 

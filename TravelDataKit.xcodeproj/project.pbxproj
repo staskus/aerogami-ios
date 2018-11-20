@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		97846C334FB93FF032FF2AF2 /* Pods_TravelDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8634BED9EEEAF02197CE692 /* Pods_TravelDataKit.framework */; };
 		AA0A1EB5215BA87300754EC7 /* TravelDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1EAB215BA87300754EC7 /* TravelDataKit.framework */; };
-		AA0A1EBA215BA87300754EC7 /* TravelDataKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A1EB9215BA87300754EC7 /* TravelDataKitTests.swift */; };
 		AA0A1EBC215BA87300754EC7 /* TravelDataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0A1EAE215BA87300754EC7 /* TravelDataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA0A1EC6215BA88300754EC7 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A1EC5215BA88300754EC7 /* Example.swift */; };
 		AA0A1ED6215BA91F00754EC7 /* TravelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1ED5215BA91F00754EC7 /* TravelKit.framework */; };
@@ -32,6 +31,9 @@
 		AAD7AFFD215E2298000AC1F6 /* RemoteAirportDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFFC215E2298000AC1F6 /* RemoteAirportDataStore.swift */; };
 		AAD7AFFF215E2317000AC1F6 /* AirportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFFE215E2317000AC1F6 /* AirportRepository.swift */; };
 		AAD7B001215E23C2000AC1F6 /* AirportRepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B000215E23C2000AC1F6 /* AirportRepositoryAssembly.swift */; };
+		AAFC201F21A4A2F900E1D8A8 /* BookURLRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC201E21A4A2F900E1D8A8 /* BookURLRepository.swift */; };
+		AAFC202321A4A34C00E1D8A8 /* BookURLRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC202221A4A34C00E1D8A8 /* BookURLRepositoryTests.swift */; };
+		AAFC202821A4A46E00E1D8A8 /* TripData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC202721A4A46E00E1D8A8 /* TripData.swift */; };
 		BBBBB7D93B87941F94A099DD /* Pods_TravelDataKit_TravelDataKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543E2F0D23DBD5862F1C52B7 /* Pods_TravelDataKit_TravelDataKitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +57,6 @@
 		AA0A1EAE215BA87300754EC7 /* TravelDataKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravelDataKit.h; sourceTree = "<group>"; };
 		AA0A1EAF215BA87300754EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0A1EB4215BA87300754EC7 /* TravelDataKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelDataKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA0A1EB9215BA87300754EC7 /* TravelDataKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDataKitTests.swift; sourceTree = "<group>"; };
 		AA0A1EBB215BA87300754EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0A1EC5215BA88300754EC7 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		AA0A1ED5215BA91F00754EC7 /* TravelKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TravelKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +79,9 @@
 		AAD7AFFC215E2298000AC1F6 /* RemoteAirportDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAirportDataStore.swift; sourceTree = "<group>"; };
 		AAD7AFFE215E2317000AC1F6 /* AirportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportRepository.swift; sourceTree = "<group>"; };
 		AAD7B000215E23C2000AC1F6 /* AirportRepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportRepositoryAssembly.swift; sourceTree = "<group>"; };
+		AAFC201E21A4A2F900E1D8A8 /* BookURLRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookURLRepository.swift; sourceTree = "<group>"; };
+		AAFC202221A4A34C00E1D8A8 /* BookURLRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookURLRepositoryTests.swift; sourceTree = "<group>"; };
+		AAFC202721A4A46E00E1D8A8 /* TripData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripData.swift; sourceTree = "<group>"; };
 		BB6DCC23F856A65029C18EB7 /* Pods-TravelDataKit-TravelDataKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelDataKit-TravelDataKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelDataKit-TravelDataKitTests/Pods-TravelDataKit-TravelDataKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +142,8 @@
 		AA0A1EB8215BA87300754EC7 /* TravelDataKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				AA0A1EB9215BA87300754EC7 /* TravelDataKitTests.swift */,
+				AAFC202521A4A44E00E1D8A8 /* TestingData */,
+				AAFC202021A4A33A00E1D8A8 /* Repositories */,
 				AA0A1EBB215BA87300754EC7 /* Info.plist */,
 			);
 			path = TravelDataKitTests;
@@ -158,6 +163,7 @@
 		AA7FD4FC215BC74A000FB362 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				AAFC201D21A4A2EC00E1D8A8 /* BookURL */,
 				AAD7AFF2215E2158000AC1F6 /* Airport */,
 				AAD7AFDE215E1402000AC1F6 /* Trip */,
 				AA7FD4FD215BC752000FB362 /* Region */,
@@ -242,6 +248,46 @@
 				AAD7AFF7215E2198000AC1F6 /* LocalAirportDataStore.swift */,
 			);
 			path = Local;
+			sourceTree = "<group>";
+		};
+		AAFC201D21A4A2EC00E1D8A8 /* BookURL */ = {
+			isa = PBXGroup;
+			children = (
+				AAFC201E21A4A2F900E1D8A8 /* BookURLRepository.swift */,
+			);
+			path = BookURL;
+			sourceTree = "<group>";
+		};
+		AAFC202021A4A33A00E1D8A8 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AAFC202121A4A33E00E1D8A8 /* BookURL */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AAFC202121A4A33E00E1D8A8 /* BookURL */ = {
+			isa = PBXGroup;
+			children = (
+				AAFC202221A4A34C00E1D8A8 /* BookURLRepositoryTests.swift */,
+			);
+			path = BookURL;
+			sourceTree = "<group>";
+		};
+		AAFC202521A4A44E00E1D8A8 /* TestingData */ = {
+			isa = PBXGroup;
+			children = (
+				AAFC202621A4A45700E1D8A8 /* Trip */,
+			);
+			path = TestingData;
+			sourceTree = "<group>";
+		};
+		AAFC202621A4A45700E1D8A8 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				AAFC202721A4A46E00E1D8A8 /* TripData.swift */,
+			);
+			path = Trip;
 			sourceTree = "<group>";
 		};
 		E5DB59FD1458E0E55E8DD218 /* Pods */ = {
@@ -416,6 +462,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TravelDataKit-TravelDataKitTests/Pods-TravelDataKit-TravelDataKitTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper+Realm/ObjectMapper_Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapperAdditions/ObjectMapperAdditions.framework",
@@ -426,11 +473,13 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper_Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapperAdditions.framework",
@@ -441,6 +490,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -466,6 +516,7 @@
 				AAD7AFFB215E2290000AC1F6 /* APIAirportDataStore.swift in Sources */,
 				AAD7AFE3215E1450000AC1F6 /* APITripDataStore.swift in Sources */,
 				AAD7AFF6215E218B000AC1F6 /* RealmAirportDataStore.swift in Sources */,
+				AAFC201F21A4A2F900E1D8A8 /* BookURLRepository.swift in Sources */,
 				AA7FD50F215BCAC5000FB362 /* RegionRepository.swift in Sources */,
 				AA0A1EC6215BA88300754EC7 /* Example.swift in Sources */,
 				AAD7AFE1215E1443000AC1F6 /* RemoteTripDataStore.swift in Sources */,
@@ -480,7 +531,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA0A1EBA215BA87300754EC7 /* TravelDataKitTests.swift in Sources */,
+				AAFC202321A4A34C00E1D8A8 /* BookURLRepositoryTests.swift in Sources */,
+				AAFC202821A4A46E00E1D8A8 /* TripData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,16 +11,16 @@ import UIKit
 struct R: Rswift.Validatable {
   fileprivate static let applicationLocale = hostingBundle.preferredLocalizations.first.flatMap(Locale.init) ?? Locale.current
   fileprivate static let hostingBundle = Bundle(for: R.Class.self)
-  
+
   static func validate() throws {
     try intern.validate()
   }
-  
+
   /// This `R.color` struct is generated, and contains static references to 0 colors.
   struct color {
     fileprivate init() {}
   }
-  
+
   /// This `R.file` struct is generated, and contains static references to 7 files.
   struct file {
     /// Resource file `Assembly.swift.hbs`.
@@ -37,57 +37,57 @@ struct R: Rswift.Validatable {
     static let routerSwiftHbs = Rswift.FileResource(bundle: R.hostingBundle, name: "Router.swift", pathExtension: "hbs")
     /// Resource file `ViewController.swift.hbs`.
     static let viewControllerSwiftHbs = Rswift.FileResource(bundle: R.hostingBundle, name: "ViewController.swift", pathExtension: "hbs")
-    
+
     /// `bundle.url(forResource: "Assembly.swift", withExtension: "hbs")`
     static func assemblySwiftHbs(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.assemblySwiftHbs
       return fileResource.bundle.url(forResource: fileResource)
     }
-    
+
     /// `bundle.url(forResource: "Configurator.swift", withExtension: "hbs")`
     static func configuratorSwiftHbs(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.configuratorSwiftHbs
       return fileResource.bundle.url(forResource: fileResource)
     }
-    
+
     /// `bundle.url(forResource: "Interactor.swift", withExtension: "hbs")`
     static func interactorSwiftHbs(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.interactorSwiftHbs
       return fileResource.bundle.url(forResource: fileResource)
     }
-    
+
     /// `bundle.url(forResource: "Models.swift", withExtension: "hbs")`
     static func modelsSwiftHbs(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.modelsSwiftHbs
       return fileResource.bundle.url(forResource: fileResource)
     }
-    
+
     /// `bundle.url(forResource: "Presenter.swift", withExtension: "hbs")`
     static func presenterSwiftHbs(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.presenterSwiftHbs
       return fileResource.bundle.url(forResource: fileResource)
     }
-    
+
     /// `bundle.url(forResource: "Router.swift", withExtension: "hbs")`
     static func routerSwiftHbs(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.routerSwiftHbs
       return fileResource.bundle.url(forResource: fileResource)
     }
-    
+
     /// `bundle.url(forResource: "ViewController.swift", withExtension: "hbs")`
     static func viewControllerSwiftHbs(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.viewControllerSwiftHbs
       return fileResource.bundle.url(forResource: fileResource)
     }
-    
+
     fileprivate init() {}
   }
-  
+
   /// This `R.font` struct is generated, and contains static references to 0 fonts.
   struct font {
     fileprivate init() {}
   }
-  
+
   /// This `R.image` struct is generated, and contains static references to 5 images.
   struct image {
     /// Image `FeedCardGradient`.
@@ -100,55 +100,55 @@ struct R: Rswift.Validatable {
     static let tabFeedIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabFeedIcon")
     /// Image `tabPreferencesIcon`.
     static let tabPreferencesIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabPreferencesIcon")
-    
+
     /// `UIImage(named: "FeedCardGradient", bundle: ..., traitCollection: ...)`
     static func feedCardGradient(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.feedCardGradient, compatibleWith: traitCollection)
     }
-    
+
     /// `UIImage(named: "RegionPickerIcon", bundle: ..., traitCollection: ...)`
     static func regionPickerIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.regionPickerIcon, compatibleWith: traitCollection)
     }
-    
+
     /// `UIImage(named: "closeIcon", bundle: ..., traitCollection: ...)`
     static func closeIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.closeIcon, compatibleWith: traitCollection)
     }
-    
+
     /// `UIImage(named: "tabFeedIcon", bundle: ..., traitCollection: ...)`
     static func tabFeedIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.tabFeedIcon, compatibleWith: traitCollection)
     }
-    
+
     /// `UIImage(named: "tabPreferencesIcon", bundle: ..., traitCollection: ...)`
     static func tabPreferencesIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.tabPreferencesIcon, compatibleWith: traitCollection)
     }
-    
+
     fileprivate init() {}
   }
-  
+
   /// This `R.nib` struct is generated, and contains static references to 0 nibs.
   struct nib {
     fileprivate init() {}
   }
-  
+
   /// This `R.reuseIdentifier` struct is generated, and contains static references to 0 reuse identifiers.
   struct reuseIdentifier {
     fileprivate init() {}
   }
-  
+
   /// This `R.segue` struct is generated, and contains static references to 0 view controllers.
   struct segue {
     fileprivate init() {}
   }
-  
+
   /// This `R.storyboard` struct is generated, and contains static references to 0 storyboards.
   struct storyboard {
     fileprivate init() {}
   }
-  
+
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
     /// This `R.string.localizable` struct is generated, and contains static references to 10 localization keys.
@@ -193,93 +193,93 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let feedTotalPriceTitle = Rswift.StringResource(key: "feed.totalPrice.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
-      
+
       /// en translation: All regions
       /// 
       /// Locales: en
       static func feedRegionButtonTitle(_: Void = ()) -> String {
         return NSLocalizedString("feed.regionButton.title", bundle: R.hostingBundle, comment: "")
       }
-      
+
       /// en translation: Book
       /// 
       /// Locales: en
       static func feedBookTitle(_: Void = ()) -> String {
         return NSLocalizedString("feed.book.title", bundle: R.hostingBundle, comment: "")
       }
-      
+
       /// en translation: Both ways
       /// 
       /// Locales: en
       static func feedBothWaysTitle(_: Void = ()) -> String {
         return NSLocalizedString("feed.bothWays.title", bundle: R.hostingBundle, comment: "")
       }
-      
+
       /// en translation: Cancel
       /// 
       /// Locales: en
       static func cancel(_: Void = ()) -> String {
         return NSLocalizedString("cancel", bundle: R.hostingBundle, comment: "")
       }
-      
+
       /// en translation: Expired
       /// 
       /// Locales: en
       static func feedExpiredTitle(_: Void = ()) -> String {
         return NSLocalizedString("feed.expired.title", bundle: R.hostingBundle, comment: "")
       }
-      
+
       /// en translation: Feed
       /// 
       /// Locales: en
       static func feedTabTitle(_: Void = ()) -> String {
         return NSLocalizedString("feedTab.title", bundle: R.hostingBundle, comment: "")
       }
-      
+
       /// en translation: Preferences
       /// 
       /// Locales: en
       static func preferencesTabTitle(_: Void = ()) -> String {
         return NSLocalizedString("preferencesTab.title", bundle: R.hostingBundle, comment: "")
       }
-      
+
       /// en translation: Select your region
       /// 
       /// Locales: en
       static func feedRegionActionSheetTitle(_: Void = ()) -> String {
         return NSLocalizedString("feed.regionActionSheet.title", bundle: R.hostingBundle, comment: "")
       }
-      
+
       /// en translation: Something went wrong!
       /// 
       /// Locales: en
       static func errorGenericTitle(_: Void = ()) -> String {
         return NSLocalizedString("error.genericTitle", bundle: R.hostingBundle, comment: "")
       }
-      
+
       /// en translation: Total price
       /// 
       /// Locales: en
       static func feedTotalPriceTitle(_: Void = ()) -> String {
         return NSLocalizedString("feed.totalPrice.title", bundle: R.hostingBundle, comment: "")
       }
-      
+
       fileprivate init() {}
     }
-    
+
     fileprivate init() {}
   }
-  
+
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       // There are no resources to validate
     }
-    
+
     fileprivate init() {}
   }
-  
+
   fileprivate class Class {}
-  
+
   fileprivate init() {}
 }
 
@@ -287,10 +287,10 @@ struct _R {
   struct nib {
     fileprivate init() {}
   }
-  
+
   struct storyboard {
     fileprivate init() {}
   }
-  
+
   fileprivate init() {}
 }

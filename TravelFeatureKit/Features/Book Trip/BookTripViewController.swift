@@ -107,7 +107,7 @@ extension BookTripViewController {
             make.right.equalTo(self.contentView.snp.right)
             make.height.equalTo(255)
         }
-        
+
         bookButton.snp.makeConstraints { (make) in
             make.height.equalTo(50)
             make.left.equalTo(self.contentView.snp.left).offset(16)
@@ -131,7 +131,7 @@ extension BookTripViewController {
         headerView.backgroundColor = .clear
         headerView.roundCorners(corners: [.topLeft, .topRight], radius: 12)
     }
-    
+
     private func bookButtonStyle(_ button: UIButton) {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 24, weight: .medium)
         handleBookButton()
@@ -149,7 +149,7 @@ extension BookTripViewController {
             })
             .disposed(by: disposeBag)
     }
-    
+
     private func handleBookButton() {
         bookButton.rx.tap
             .asDriver()

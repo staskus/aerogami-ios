@@ -26,6 +26,7 @@
 		AAD7AFEC215E1CDE000AC1F6 /* APIDateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFEB215E1CDE000AC1F6 /* APIDateTransform.swift */; };
 		AAD7AFEF215E203A000AC1F6 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFEE215E203A000AC1F6 /* Airport.swift */; };
 		AAD7AFF1215E2115000AC1F6 /* AirportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFF0215E2115000AC1F6 /* AirportRepository.swift */; };
+		AAFC201C21A4A27600E1D8A8 /* BookURLRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC201B21A4A27600E1D8A8 /* BookURLRepository.swift */; };
 		B9E6229EF885123E8F184419 /* Pods_TravelKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A254AA62199AC09CA9A7BD53 /* Pods_TravelKitTests.framework */; };
 		EB09658332F6160F6ECF9B1C /* Pods_TravelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AD78BD155DF36B3550B7ED /* Pods_TravelKit.framework */; };
 /* End PBXBuildFile section */
@@ -76,6 +77,7 @@
 		AAD7AFEB215E1CDE000AC1F6 /* APIDateTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateTransform.swift; sourceTree = "<group>"; };
 		AAD7AFEE215E203A000AC1F6 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		AAD7AFF0215E2115000AC1F6 /* AirportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportRepository.swift; sourceTree = "<group>"; };
+		AAFC201B21A4A27600E1D8A8 /* BookURLRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookURLRepository.swift; sourceTree = "<group>"; };
 		EEC099803785F4C1A352D001 /* Pods-TravelKit-TravelKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelKit-TravelKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelKit-TravelKitTests/Pods-TravelKit-TravelKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,6 +223,7 @@
 		AA7FD4F3215BC527000FB362 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				AAFC201A21A4A26900E1D8A8 /* BookURL */,
 				AAD7AFED215E1F53000AC1F6 /* Airport */,
 				AAD7AFD9215D5860000AC1F6 /* Trip */,
 				AA7FD4F4215BC537000FB362 /* Region */,
@@ -261,6 +264,14 @@
 				AAD7AFF0215E2115000AC1F6 /* AirportRepository.swift */,
 			);
 			path = Airport;
+			sourceTree = "<group>";
+		};
+		AAFC201A21A4A26900E1D8A8 /* BookURL */ = {
+			isa = PBXGroup;
+			children = (
+				AAFC201B21A4A27600E1D8A8 /* BookURLRepository.swift */,
+			);
+			path = BookURL;
 			sourceTree = "<group>";
 		};
 		F6DA292A79D59E99960512AC /* Frameworks */ = {
@@ -480,6 +491,7 @@
 			files = (
 				AAD7AFDB215D587F000AC1F6 /* Trip.swift in Sources */,
 				AAD7AFEF215E203A000AC1F6 /* Airport.swift in Sources */,
+				AAFC201C21A4A27600E1D8A8 /* BookURLRepository.swift in Sources */,
 				AA7FD4FB215BC709000FB362 /* RegionRepository.swift in Sources */,
 				AAD7AFDD215E1398000AC1F6 /* TripRepository.swift in Sources */,
 				AA0A1E95215BA71F00754EC7 /* Example.swift in Sources */,
