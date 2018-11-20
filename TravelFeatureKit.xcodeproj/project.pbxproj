@@ -31,6 +31,7 @@
 		AABB46B8219B5477001AA5D1 /* UIViewController+TopMost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46B7219B5477001AA5D1 /* UIViewController+TopMost.swift */; };
 		AABB46BC219B5AD3001AA5D1 /* BookTripViewController+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46BB219B5AD3001AA5D1 /* BookTripViewController+Blur.swift */; };
 		AABB46BE219B5CCD001AA5D1 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46BD219B5CCD001AA5D1 /* UIView+CornerRadius.swift */; };
+		AABB46C1219B621C001AA5D1 /* BookTripHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46C0219B621C001AA5D1 /* BookTripHeaderView.swift */; };
 		AAC5E78C216221A00027323C /* UIView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E78B216221A00027323C /* UIView+Style.swift */; };
 		AAC5E78E216221E00027323C /* UIView+AddSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E78D216221E00027323C /* UIView+AddSubviews.swift */; };
 		AAC5E7902162233E0027323C /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5E78F2162233E0027323C /* UITableView+Dequeue.swift */; };
@@ -112,6 +113,7 @@
 		AABB46B7219B5477001AA5D1 /* UIViewController+TopMost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopMost.swift"; sourceTree = "<group>"; };
 		AABB46BB219B5AD3001AA5D1 /* BookTripViewController+Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookTripViewController+Blur.swift"; sourceTree = "<group>"; };
 		AABB46BD219B5CCD001AA5D1 /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
+		AABB46C0219B621C001AA5D1 /* BookTripHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTripHeaderView.swift; sourceTree = "<group>"; };
 		AAC5E78B216221A00027323C /* UIView+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Style.swift"; sourceTree = "<group>"; };
 		AAC5E78D216221E00027323C /* UIView+AddSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AddSubviews.swift"; sourceTree = "<group>"; };
 		AAC5E78F2162233E0027323C /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
@@ -286,6 +288,14 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		AABB46BF219B61BC001AA5D1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AABB46C0219B621C001AA5D1 /* BookTripHeaderView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		AAC5E78A2162218C0027323C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +322,7 @@
 		AACDF5F12198882E00789F1A /* Book Trip */ = {
 			isa = PBXGroup;
 			children = (
+				AABB46BF219B61BC001AA5D1 /* UI */,
 				AACDF5F22198882E00789F1A /* BookTripPresenter.swift */,
 				AACDF5F32198882E00789F1A /* BookTripRouter.swift */,
 				AACDF5F42198882E00789F1A /* BookTripModels.swift */,
@@ -682,6 +693,7 @@
 				AAD7AFC1215D218C000AC1F6 /* FeedRouter.swift in Sources */,
 				AA3FD3CD215D11AB006D9C61 /* FeaturePresenter.swift in Sources */,
 				AAD7B015215E666E000AC1F6 /* PreferencesModels.swift in Sources */,
+				AABB46C1219B621C001AA5D1 /* BookTripHeaderView.swift in Sources */,
 				AA3FD3C5215CE60E006D9C61 /* EmptyView.swift in Sources */,
 				AAD7B014215E666E000AC1F6 /* PreferencesInteractor.swift in Sources */,
 				AA3FD394215CD34B006D9C61 /* R.generated.swift in Sources */,

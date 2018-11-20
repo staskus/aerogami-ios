@@ -1,10 +1,12 @@
 import UIKit
 import SnapKit
+import RxSwift
 
 class BookTripViewController: UIViewController, FeatureViewController {
 
     // View Model
     var viewModel: BookTrip.ViewModel?
+    var content: BookTrip.ViewModel.Content? { return viewModel?.state.viewModel }
     typealias ViewModel = BookTrip.ViewModel
     typealias Interactor = BookTripInteractor & BookTripInteractable
 
@@ -22,6 +24,10 @@ class BookTripViewController: UIViewController, FeatureViewController {
     let contentView = UIView()
     let blurBackground = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
     let blurHeader = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
+
+    private let headerView = BookTripHeaderView()
+
+    private let disposeBag = DisposeBag()
 
     init(interactor: Interactor, router: BookTripRouter) {
         self.interactor = interactor
@@ -55,7 +61,9 @@ class BookTripViewController: UIViewController, FeatureViewController {
     }
 
     func display() {
+        guard let content = content else { return }
 
+        headerView.configure(with: content.header)
     }
 
     // MARK: - Required Init
@@ -71,19 +79,30 @@ extension BookTripViewController {
 
         view.addSubviews(
             blurHeader,
-            contentView.style(contentViewStyle)
+            contentView.style(contentViewStyle).addSubviews(
+                headerView.style(headerViewStyle)
+            )
         )
 
         addBlur()
         addDragGestures()
+
+        handleCloseButton()
     }
 
     private func setupConstraints() {
         contentView.snp.makeConstraints { (make) in
-            make.height.equalTo(UIScreen.main.bounds.height * 0.85)
+            make.height.equalTo(UIScreen.main.bounds.height * 0.9)
             make.left.equalTo(self.view.snp.left)
             make.right.equalTo(self.view.snp.right)
             make.bottom.equalTo(self.view.snp.bottom)
+        }
+
+        headerView.snp.makeConstraints { (make) in
+            make.top.equalTo(self.contentView.snp.top).offset(0)
+            make.left.equalTo(self.contentView.snp.left)
+            make.right.equalTo(self.contentView.snp.right)
+            make.height.equalTo(255)
         }
     }
 }
@@ -92,7 +111,27 @@ extension BookTripViewController {
 
 extension BookTripViewController {
     private func contentViewStyle(_ contentView: UIView) {
-        contentView.roundCorners(corners: [.topLeft, .topRight], radius: 12)
         contentView.backgroundColor = .white
+        contentView.layer.shadowColor = UIColor.black.cgColor
+        contentView.layer.shadowOpacity = 0.3
+        contentView.roundCorners(corners: [.topLeft, .topRight], radius: 12)
+    }
+
+    private func headerViewStyle(_ headerView: BookTripHeaderView) {
+        headerView.backgroundColor = .clear
+        headerView.roundCorners(corners: [.topLeft, .topRight], radius: 12)
+    }
+}
+
+// MARK: - Actions
+
+extension BookTripViewController {
+    private func handleCloseButton() {
+        headerView.closeButton.rx.tap
+            .asDriver()
+            .drive(onNext: { [weak self] in
+                self?.dismiss(animated: true, completion: nil)
+            })
+            .disposed(by: disposeBag)
     }
 }
