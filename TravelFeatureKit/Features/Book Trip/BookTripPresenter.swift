@@ -32,7 +32,8 @@ class BookTripAdapter: FeatureAdapter {
         return BookTrip.ViewModel.Content(
             header: makeHeader(content.trip),
             sectionButtons: [],
-            bookButton: makeBookButton(content.trip, url: content.bookUrl)
+            bookButton: makeBookButton(content.trip, url: content.bookUrl),
+            sections: makeSections(content.trip)
         )
     }
 
@@ -60,16 +61,36 @@ class BookTripAdapter: FeatureAdapter {
         return "\(from) \n\(to)"
     }
 
+    private func makeSections(_ trip: Trip) -> [BookTrip.ViewModel.Section] {
+        return [
+            makeInformationSection(trip)
+        ]
+    }
+    
+    private func makeInformationSection(_ trip: Trip) -> BookTrip.ViewModel.Section {
+        let rows = [
+            BookTrip.ViewModel.Row.information(BookTripCellViewModel(
+                title: "",
+                details: ""
+            ))
+        ]
+
+        return BookTrip.ViewModel.Section(rows: rows)
+    }
+}
+
+// MARK: - Helper methods
+
+extension BookTripAdapter {
     private func dateRange(_ trip: Trip) -> String {
         return "\(dateFormatter.string(from: trip.departureAt)) - \(dateFormatter.string(from: trip.returnAt))"
     }
-
+    
     private func formatCurrency(_ trip: Trip) -> String {
         let price = trip.price
         let currency = trip.currency
         currencyFormatter.currencyCode = currency
-
+        
         return currencyFormatter.string(from: NSNumber(value: price)) ?? "\(price) \(currency)"
     }
-
 }

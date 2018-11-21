@@ -27,6 +27,7 @@ class BookTripViewController: UIViewController, FeatureViewController {
 
     private let headerView = BookTripHeaderView()
     private let bookButton = UIButton()
+    private let tableView = UITableView()
 
     private let disposeBag = DisposeBag()
 
@@ -83,7 +84,8 @@ extension BookTripViewController {
             blurHeader,
             contentView.style(contentViewStyle).addSubviews(
                 headerView.style(headerViewStyle),
-                bookButton.style(Style.Button.main).style(bookButtonStyle)
+                bookButton.style(Style.Button.main).style(bookButtonStyle),
+                tableView.style(tableViewStyle)
             )
         )
 
@@ -114,6 +116,13 @@ extension BookTripViewController {
             make.right.equalTo(self.contentView.snp.right).offset(-16)
             make.bottom.equalTo(self.contentView.snp.bottom).offset(-8)
         }
+        
+        tableView.snp.makeConstraints { (make) in
+            make.top.equalTo(self.headerView.snp.bottom)
+            make.bottom.equalTo(self.bookButton.snp.top)
+            make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(16)
+            make.right.equalTo(self.view.safeAreaLayoutGuide.snp.right).offset(-16)
+        }
     }
 }
 
@@ -135,6 +144,16 @@ extension BookTripViewController {
     private func bookButtonStyle(_ button: UIButton) {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 24, weight: .medium)
         handleBookButton()
+    }
+    
+    private func tableViewStyle(_ tableView: UITableView) {
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.separatorStyle = .none
+        tableView.delaysContentTouches = false
+        tableView.registerReusableCell(BookTripCell.self)
+        tableView.estimatedRowHeight = 60
+        tableView.rowHeight = UITableView.automaticDimension
     }
 }
 
@@ -159,5 +178,30 @@ extension BookTripViewController {
                 self?.router.route(to: route)
             })
             .disposed(by: disposeBag)
+    }
+}
+
+// MARK: - UITableView
+
+extension BookTripViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return content?.sections.count ?? 0
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return content?.sections[section].rows.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let viewModel = content?.sections[indexPath.section].rows[indexPath.row] else {
+            return UITableViewCell()
+        }
+        
+        switch viewModel {
+        case .information(let bookTripCellViewModel):
+            let cell: BookTripCell = tableView.dequeueReusableCell(indexPath: indexPath)
+            cell.configure(with: bookTripCellViewModel)
+            return cell
+        }
     }
 }
