@@ -15,6 +15,7 @@ struct BookTrip {
             let header: BookTripHeaderViewModel
             let sectionButtons: [BookTrip.ViewModel.SectionButton]
             let bookButton: BookTrip.ViewModel.BookButton
+            let sections: [BookTrip.ViewModel.Section]
         }
 
         struct SectionButton {
@@ -26,6 +27,14 @@ struct BookTrip {
         struct BookButton {
             let title: String
             let route: BookTrip.Route
+        }
+        
+        struct Section {
+            let rows: [BookTrip.ViewModel.Row]
+        }
+        
+        enum Row {
+            case information(BookTripCellViewModel)
         }
     }
 
