@@ -28,7 +28,7 @@ class BookTripTableHeaderView: UITableViewHeaderFooterView, ReusableView {
     
     private func render() {
         backgroundView = UIView()
-        backgroundColor = .white
+        backgroundView?.backgroundColor = .white
     
         contentView.addSubviews(
             lineView.style(lineViewStyle),

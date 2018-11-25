@@ -16,3 +16,5 @@
 "bookTrip.airport.title" = "Airport";
 "bookTrip.airlines.title" = "Airlines";
 "bookTrip.flightNumber.title" = "Flight number";
+"bookTrip.favoriteButton.Title" = "Favorite";
+"bookTrip.shareButton.Title" = "Share";

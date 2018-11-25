@@ -16,6 +16,7 @@ struct BookTrip {
             let sectionButtons: [BookTrip.ViewModel.SectionButton]
             let bookButton: BookTrip.ViewModel.BookButton
             let sections: [BookTrip.ViewModel.Section]
+            let buttons: [BookTripButtonViewModel]
         }
 
         struct SectionButton {

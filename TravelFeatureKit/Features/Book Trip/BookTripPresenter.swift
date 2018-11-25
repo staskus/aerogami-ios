@@ -33,7 +33,8 @@ class BookTripAdapter: FeatureAdapter {
             header: makeHeader(content.trip),
             sectionButtons: [],
             bookButton: makeBookButton(content.trip, url: content.bookUrl),
-            sections: makeSections(content.trip)
+            sections: makeSections(content.trip),
+            buttons: makeButtons()
         )
     }
 
@@ -61,6 +62,23 @@ class BookTripAdapter: FeatureAdapter {
             let to = trip.destination.city else { return "" }
 
         return "\(from) \n\(to)"
+    }
+    
+    // MARK: - Buttons
+    
+    private func makeButtons() -> [BookTripButtonViewModel] {
+        return [
+            BookTripButtonViewModel(
+                title: R.string.localizable.bookTripFavoriteButtonTitle(),
+                imageName: R.image.favoriteOnIcon.name,
+                action: .favorite
+            ),
+            BookTripButtonViewModel(
+                title: R.string.localizable.bookTripShareButtonTitle(),
+                imageName: R.image.shareIcon.name,
+                action: .share
+            )
+        ]
     }
 }
 
