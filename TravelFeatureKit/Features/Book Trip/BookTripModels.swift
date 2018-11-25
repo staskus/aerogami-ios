@@ -30,6 +30,7 @@ struct BookTrip {
         }
         
         struct Section {
+            let title: String
             let rows: [BookTrip.ViewModel.Row]
         }
         

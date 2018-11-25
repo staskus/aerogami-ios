@@ -134,10 +134,22 @@ extension BookTrip.ViewModel.Content {
 }
 
 extension BookTrip.ViewModel.Section {
+    public func with(title: String) -> BookTrip.ViewModel.Section {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTrip.ViewModel.Section(
+            title: title, 
+            rows: rows
+        )
+
+        return newInstance
+    }
+
     public func with(rows: [BookTrip.ViewModel.Row]) -> BookTrip.ViewModel.Section {
         // Note: The order of the properties have to match the order
         // of the paramaters in the init method
         let newInstance = BookTrip.ViewModel.Section(
+            title: title, 
             rows: rows
         )
 
