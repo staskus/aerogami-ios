@@ -9,6 +9,7 @@ protocol BookTripInteractable {
 class BookTripInteractor: FeatureInteractor, BookTripInteractable {
     private let presenter: BookTripPresenter
     private let bookURLRepository: BookURLRepository
+    private let favoriteTripRepository: FavoriteTripRepository
     private var disposeBag = DisposeBag()
 
     private let trip: Trip
@@ -22,9 +23,11 @@ class BookTripInteractor: FeatureInteractor, BookTripInteractable {
 
     init(presenter: BookTripPresenter,
          bookURLRepository: BookURLRepository,
+         favoriteTripRepository: FavoriteTripRepository,
          trip: Trip) {
         self.presenter = presenter
         self.bookURLRepository = bookURLRepository
+        self.favoriteTripRepository = favoriteTripRepository
         self.trip = trip
     }
 
@@ -32,15 +35,21 @@ class BookTripInteractor: FeatureInteractor, BookTripInteractable {
         switch action {
         case .load:
             load()
+        case .favorite:
+            toggleFavorite()
         default:
             break
         }
     }
 
     func load() {
-        bookURLRepository.getURL(for: trip)
-            .map { url in
-                return BookTrip.Data(trip: self.trip, bookUrl: url)
+        Observable
+            .combineLatest(
+                bookURLRepository.getURL(for: trip),
+                favoriteTripRepository.isFavorite(trip)
+            )
+            .map { (url, isFavorite) in
+                return BookTrip.Data(trip: self.trip, bookUrl: url, isFavorite: isFavorite)
             }
             .subscribe(
                 onNext: { data in
@@ -50,6 +59,19 @@ class BookTripInteractor: FeatureInteractor, BookTripInteractable {
                     self.contentState = .error(error: .loading(reason: error.localizedDescription))
                 }
             )
+            .disposed(by: disposeBag)
+    }
+
+    private func toggleFavorite() {
+        favoriteTripRepository.isFavorite(trip)
+            .flatMap { isFavorite -> Completable in
+                if isFavorite {
+                    return self.favoriteTripRepository.removeFavorite(self.trip)
+                } else {
+                    return self.favoriteTripRepository.saveFavorite(self.trip)
+                }
+            }
+            .subscribe { _ in self.load() }
             .disposed(by: disposeBag)
     }
 

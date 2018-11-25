@@ -10,7 +10,8 @@ public class BookTripAssembly: Assembly {
     public func assemble(container: Container) {
         container.register(BookTripConfigurator.self) { r in
             BookTripConfigurator(
-                bookURLRepository: r.resolve(TravelKit.BookURLRepository.self)!
+                bookURLRepository: r.resolve(TravelKit.BookURLRepository.self)!,
+                favoriteTripRepository: r.resolve(TravelKit.FavoriteTripRepository.self)!
             )
         }.inObjectScope(.container)
     }

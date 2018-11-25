@@ -88,7 +88,7 @@ extension BookTripViewController {
                 headerView.style(headerViewStyle),
                 bookButton.style(Style.Button.main).style(bookButtonStyle),
                 tableView.style(tableViewStyle),
-                buttonsView
+                buttonsView.style { $0.delegate = self }
             )
         )
 
@@ -112,7 +112,7 @@ extension BookTripViewController {
             make.right.equalTo(self.contentView.snp.right)
             make.height.equalTo(255)
         }
-        
+
         buttonsView.snp.makeConstraints { (make) in
             make.top.equalTo(self.headerView.snp.bottom).offset(16)
             make.left.equalTo(self.contentView.snp.left)
@@ -125,7 +125,7 @@ extension BookTripViewController {
             make.right.equalTo(self.contentView.snp.right).offset(-16)
             make.bottom.equalTo(self.contentView.snp.bottom).offset(-8)
         }
-        
+
         tableView.snp.makeConstraints { (make) in
             make.top.equalTo(self.buttonsView.snp.bottom).offset(8)
             make.bottom.equalTo(self.bookButton.snp.top)
@@ -154,7 +154,7 @@ extension BookTripViewController {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 24, weight: .medium)
         handleBookButton()
     }
-    
+
     private func tableViewStyle(_ tableView: UITableView) {
         tableView.dataSource = self
         tableView.delegate = self
@@ -207,12 +207,12 @@ extension BookTripViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return content?.sections[section].rows.count ?? 0
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let viewModel = content?.sections[indexPath.section].rows[indexPath.row] else {
             return UITableViewCell()
         }
-        
+
         switch viewModel {
         case .information(let bookTripCellViewModel):
             let cell: BookTripCell = tableView.dequeueReusableCell(indexPath: indexPath)
@@ -220,24 +220,30 @@ extension BookTripViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
     }
-    
+
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let viewModel = content?.sections[section] else {
             return nil
         }
-        
+
         let header: BookTripTableHeaderView = tableView.dequeueReusableHeaderFooterView()
         header.configure(with: viewModel.title)
         return header
     }
-    
+
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let view = UIView()
         view.backgroundColor = .white
         return view
     }
-    
+
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 1
+    }
+}
+
+extension BookTripViewController: BookTripButtonsViewDelegate {
+    func onButtonTapped(_ viewModel: BookTripButtonViewModel) {
+        interactor.dispatch(viewModel.action)
     }
 }

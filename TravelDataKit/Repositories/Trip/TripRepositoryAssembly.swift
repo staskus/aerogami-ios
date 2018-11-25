@@ -21,5 +21,15 @@ public class TripRepositoryAssembly: Assembly {
                 remoteDataStore: r.resolve(RemoteTripDataStore.self)!
             )
         }.inObjectScope(.container)
+
+        container.register(LocalTripDataStore.self) { r in
+            RealmTripDataStore()
+        }.inObjectScope(.container)
+
+        container.register(TravelKit.FavoriteTripRepository.self) { r in
+            TravelDataKit.FavoriteTripRepository(
+                localDataStore: r.resolve(LocalTripDataStore.self)!
+            )
+        }.inObjectScope(.container)
     }
 }

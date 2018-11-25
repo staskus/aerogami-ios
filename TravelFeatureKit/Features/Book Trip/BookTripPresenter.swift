@@ -34,7 +34,7 @@ class BookTripAdapter: FeatureAdapter {
             sectionButtons: [],
             bookButton: makeBookButton(content.trip, url: content.bookUrl),
             sections: makeSections(content.trip),
-            buttons: makeButtons()
+            buttons: makeButtons(content)
         )
     }
 
@@ -46,7 +46,7 @@ class BookTripAdapter: FeatureAdapter {
             route: .book(url)
         )
     }
-    
+
     // MARK: - Header
 
     private func makeHeader(_ trip: Trip) -> BookTripHeaderViewModel {
@@ -63,14 +63,14 @@ class BookTripAdapter: FeatureAdapter {
 
         return "\(from) \n\(to)"
     }
-    
+
     // MARK: - Buttons
-    
-    private func makeButtons() -> [BookTripButtonViewModel] {
+
+    private func makeButtons(_ content: BookTrip.Data) -> [BookTripButtonViewModel] {
         return [
             BookTripButtonViewModel(
                 title: R.string.localizable.bookTripFavoriteButtonTitle(),
-                imageName: R.image.favoriteOnIcon.name,
+                imageName: content.isFavorite ? R.image.favoriteOnIcon.name : R.image.favoriteOffIcon.name,
                 action: .favorite
             ),
             BookTripButtonViewModel(
@@ -92,84 +92,84 @@ extension BookTripAdapter {
             makeGeneralSection(trip)
         ]
     }
-    
+
     // MARK: - Departure
-    
+
     private func makeDepartureSection(_ trip: Trip) -> BookTrip.ViewModel.Section {
         let rows = [
             makeDepartureDateRow(trip),
             makeDepartureAirportRow(trip)
         ]
-        
+
         return BookTrip.ViewModel.Section(
             title: R.string.localizable.bookTripDepartureTitle(),
             rows: rows
         )
     }
-    
+
     private func makeDepartureDateRow(_ trip: Trip) -> BookTrip.ViewModel.Row {
         return BookTrip.ViewModel.Row.information(BookTripCellViewModel(
             title: R.string.localizable.bookTripDateTitle(),
             details: dateFormatter.string(from: trip.departureAt)
         ))
     }
-    
+
     private func makeDepartureAirportRow(_ trip: Trip) -> BookTrip.ViewModel.Row {
         return BookTrip.ViewModel.Row.information(BookTripCellViewModel(
             title: R.string.localizable.bookTripAirportTitle(),
             details: trip.departure!.airportCode
         ))
     }
-    
+
     // MARK: - Return
-    
+
     private func makeReturnSection(_ trip: Trip) -> BookTrip.ViewModel.Section {
         let rows = [
             makeReturnDateRow(trip),
             makeReturnAirportRow(trip)
         ]
-        
+
         return BookTrip.ViewModel.Section(
             title: R.string.localizable.bookTripReturnTitle(),
             rows: rows
         )
     }
-    
+
     private func makeReturnDateRow(_ trip: Trip) -> BookTrip.ViewModel.Row {
         return BookTrip.ViewModel.Row.information(BookTripCellViewModel(
             title: R.string.localizable.bookTripDateTitle(),
             details: dateFormatter.string(from: trip.returnAt)
         ))
     }
-    
+
     private func makeReturnAirportRow(_ trip: Trip) -> BookTrip.ViewModel.Row {
         return BookTrip.ViewModel.Row.information(BookTripCellViewModel(
             title: R.string.localizable.bookTripAirportTitle(),
             details: trip.destination.airportCode!
         ))
     }
-    
+
     // MARK: - General
-    
+
     private func makeGeneralSection(_ trip: Trip) -> BookTrip.ViewModel.Section {
         let rows = [
             makeFlightNumberRow(trip),
             makeAirlinesRow(trip)
         ]
-        
+
         return BookTrip.ViewModel.Section(
             title: R.string.localizable.bookTripGeneralTitle(),
             rows: rows
         )
     }
-    
+
     private func makeFlightNumberRow(_ trip: Trip) -> BookTrip.ViewModel.Row {
         return BookTrip.ViewModel.Row.information(BookTripCellViewModel(
             title: R.string.localizable.bookTripFlightNumberTitle(),
             details: "\(trip.flightNumber)"
         ))
     }
-    
+
     private func makeAirlinesRow(_ trip: Trip) -> BookTrip.ViewModel.Row {
         return BookTrip.ViewModel.Row.information(BookTripCellViewModel(
             title: R.string.localizable.bookTripAirlinesTitle(),
@@ -185,7 +185,7 @@ extension BookTripAdapter {
         let price = trip.price
         let currency = trip.currency
         currencyFormatter.currencyCode = currency
-        
+
         return currencyFormatter.string(from: NSNumber(value: price)) ?? "\(price) \(currency)"
     }
 }
