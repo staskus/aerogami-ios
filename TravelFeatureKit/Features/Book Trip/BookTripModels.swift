@@ -5,6 +5,7 @@ struct BookTrip {
     struct Data: Equatable {
         let trip: Trip
         let bookUrl: URL
+        let isFavorite: Bool
     }
 
     struct ViewModel: FeatureViewModel {
@@ -29,12 +30,12 @@ struct BookTrip {
             let title: String
             let route: BookTrip.Route
         }
-        
+
         struct Section {
             let title: String
             let rows: [BookTrip.ViewModel.Row]
         }
-        
+
         enum Row {
             case information(BookTripCellViewModel)
         }

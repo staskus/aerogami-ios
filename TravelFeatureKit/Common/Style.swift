@@ -18,7 +18,7 @@ struct Style {
             button.layer.cornerRadius = 8
         }
     }
-    
+
     struct Image {
         static func scaleAspectFit(_ image: UIImageView) {
             image.contentMode = .scaleAspectFit

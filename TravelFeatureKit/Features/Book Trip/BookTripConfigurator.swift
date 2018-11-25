@@ -4,9 +4,13 @@ import TravelKit
 public class BookTripConfigurator {
 
     private let bookURLRepository: BookURLRepository
+    private let favoriteTripRepository: FavoriteTripRepository
 
-    public init(bookURLRepository: BookURLRepository) {
+    public init(
+        bookURLRepository: BookURLRepository,
+        favoriteTripRepository: FavoriteTripRepository) {
         self.bookURLRepository = bookURLRepository
+        self.favoriteTripRepository = favoriteTripRepository
     }
 
     public func createViewController(trip: Trip) -> UIViewController {
@@ -15,6 +19,7 @@ public class BookTripConfigurator {
         let interactor = BookTripInteractor(
             presenter: presenter,
             bookURLRepository: bookURLRepository,
+            favoriteTripRepository: favoriteTripRepository,
             trip: trip
         )
         let router = BookTripRouter()
