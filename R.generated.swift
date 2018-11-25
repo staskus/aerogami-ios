@@ -88,7 +88,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 5 images.
+  /// This `R.image` struct is generated, and contains static references to 8 images.
   struct image {
     /// Image `FeedCardGradient`.
     static let feedCardGradient = Rswift.ImageResource(bundle: R.hostingBundle, name: "FeedCardGradient")
@@ -96,6 +96,12 @@ struct R: Rswift.Validatable {
     static let regionPickerIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "RegionPickerIcon")
     /// Image `closeIcon`.
     static let closeIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "closeIcon")
+    /// Image `favoriteOffIcon`.
+    static let favoriteOffIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "favoriteOffIcon")
+    /// Image `favoriteOnIcon`.
+    static let favoriteOnIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "favoriteOnIcon")
+    /// Image `shareIcon`.
+    static let shareIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "shareIcon")
     /// Image `tabFeedIcon`.
     static let tabFeedIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabFeedIcon")
     /// Image `tabPreferencesIcon`.
@@ -114,6 +120,21 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "closeIcon", bundle: ..., traitCollection: ...)`
     static func closeIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.closeIcon, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "favoriteOffIcon", bundle: ..., traitCollection: ...)`
+    static func favoriteOffIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.favoriteOffIcon, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "favoriteOnIcon", bundle: ..., traitCollection: ...)`
+    static func favoriteOnIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.favoriteOnIcon, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "shareIcon", bundle: ..., traitCollection: ...)`
+    static func shareIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.shareIcon, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "tabFeedIcon", bundle: ..., traitCollection: ...)`
@@ -151,7 +172,7 @@ struct R: Rswift.Validatable {
   
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 17 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 19 localization keys.
     struct localizable {
       /// en translation: Airlines
       /// 
@@ -189,6 +210,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let feedExpiredTitle = Rswift.StringResource(key: "feed.expired.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Favorite
+      /// 
+      /// Locales: en
+      static let bookTripFavoriteButtonTitle = Rswift.StringResource(key: "bookTrip.favoriteButton.Title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Feed
       /// 
       /// Locales: en
@@ -213,6 +238,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let feedRegionActionSheetTitle = Rswift.StringResource(key: "feed.regionActionSheet.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Share
+      /// 
+      /// Locales: en
+      static let bookTripShareButtonTitle = Rswift.StringResource(key: "bookTrip.shareButton.Title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Something went wrong!
       /// 
       /// Locales: en
@@ -285,6 +314,13 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("feed.expired.title", bundle: R.hostingBundle, comment: "")
       }
       
+      /// en translation: Favorite
+      /// 
+      /// Locales: en
+      static func bookTripFavoriteButtonTitle(_: Void = ()) -> String {
+        return NSLocalizedString("bookTrip.favoriteButton.Title", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// en translation: Feed
       /// 
       /// Locales: en
@@ -325,6 +361,13 @@ struct R: Rswift.Validatable {
       /// Locales: en
       static func feedRegionActionSheetTitle(_: Void = ()) -> String {
         return NSLocalizedString("feed.regionActionSheet.title", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Share
+      /// 
+      /// Locales: en
+      static func bookTripShareButtonTitle(_: Void = ()) -> String {
+        return NSLocalizedString("bookTrip.shareButton.Title", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Something went wrong!

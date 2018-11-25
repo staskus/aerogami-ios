@@ -27,7 +27,8 @@ class BookTripViewController: UIViewController, FeatureViewController {
 
     private let headerView = BookTripHeaderView()
     private let bookButton = UIButton()
-    private let tableView = UITableView()
+    private let buttonsView = BookTripButtonsView()
+    private let tableView = UITableView(frame: .zero, style: .grouped)
 
     private let disposeBag = DisposeBag()
 
@@ -67,6 +68,7 @@ class BookTripViewController: UIViewController, FeatureViewController {
 
         headerView.configure(with: content.header)
         bookButton.setTitle(content.bookButton.title, for: .normal)
+        buttonsView.configure(with: content.buttons)
     }
 
     // MARK: - Required Init
@@ -85,7 +87,8 @@ extension BookTripViewController {
             contentView.style(contentViewStyle).addSubviews(
                 headerView.style(headerViewStyle),
                 bookButton.style(Style.Button.main).style(bookButtonStyle),
-                tableView.style(tableViewStyle)
+                tableView.style(tableViewStyle),
+                buttonsView
             )
         )
 
@@ -109,6 +112,12 @@ extension BookTripViewController {
             make.right.equalTo(self.contentView.snp.right)
             make.height.equalTo(255)
         }
+        
+        buttonsView.snp.makeConstraints { (make) in
+            make.top.equalTo(self.headerView.snp.bottom).offset(16)
+            make.left.equalTo(self.contentView.snp.left)
+            make.right.equalTo(self.contentView.snp.right)
+        }
 
         bookButton.snp.makeConstraints { (make) in
             make.height.equalTo(50)
@@ -118,7 +127,7 @@ extension BookTripViewController {
         }
         
         tableView.snp.makeConstraints { (make) in
-            make.top.equalTo(self.headerView.snp.bottom).offset(16)
+            make.top.equalTo(self.buttonsView.snp.bottom).offset(8)
             make.bottom.equalTo(self.bookButton.snp.top)
             make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(16)
             make.right.equalTo(self.view.safeAreaLayoutGuide.snp.right).offset(-16)
@@ -157,8 +166,10 @@ extension BookTripViewController {
         tableView.estimatedSectionHeaderHeight = 22
         tableView.rowHeight = UITableView.automaticDimension
         tableView.sectionHeaderHeight = UITableView.automaticDimension
-        tableView.bounces = false
-        tableView.isUserInteractionEnabled = false
+        tableView.bounces = true
+        tableView.showsVerticalScrollIndicator = false
+        tableView.backgroundView = UIView()
+        tableView.backgroundView?.backgroundColor = .white
     }
 }
 
@@ -218,5 +229,15 @@ extension BookTripViewController: UITableViewDelegate, UITableViewDataSource {
         let header: BookTripTableHeaderView = tableView.dequeueReusableHeaderFooterView()
         header.configure(with: viewModel.title)
         return header
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = .white
+        return view
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 1
     }
 }

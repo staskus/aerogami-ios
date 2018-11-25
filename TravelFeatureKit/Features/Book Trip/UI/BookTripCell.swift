@@ -59,6 +59,8 @@ class BookTripCell: UITableViewCell, ReusableView {
             make.left.equalTo(detailsContainer.snp.left).offset(10)
             make.bottom.equalTo(detailsContainer.snp.bottom).offset(-5)
         }
+        
+        selectionStyle = .none
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -27,6 +27,7 @@
 		AA3FD3C9215D1091006D9C61 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD3C8215D1091006D9C61 /* Presenter.swift */; };
 		AA3FD3CB215D1138006D9C61 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD3CA215D1138006D9C61 /* View.swift */; };
 		AA3FD3CD215D11AB006D9C61 /* FeaturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD3CC215D11AB006D9C61 /* FeaturePresenter.swift */; };
+		AA49F82721AB193D008B72FB /* BookTripButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA49F82621AB193D008B72FB /* BookTripButtonsView.swift */; };
 		AABB46B6219B5273001AA5D1 /* UIView+GetConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46B5219B5273001AA5D1 /* UIView+GetConstraint.swift */; };
 		AABB46B8219B5477001AA5D1 /* UIViewController+TopMost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46B7219B5477001AA5D1 /* UIViewController+TopMost.swift */; };
 		AABB46BC219B5AD3001AA5D1 /* BookTripViewController+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46BB219B5AD3001AA5D1 /* BookTripViewController+Blur.swift */; };
@@ -112,6 +113,7 @@
 		AA3FD3C8215D1091006D9C61 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		AA3FD3CA215D1138006D9C61 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		AA3FD3CC215D11AB006D9C61 /* FeaturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturePresenter.swift; sourceTree = "<group>"; };
+		AA49F82621AB193D008B72FB /* BookTripButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTripButtonsView.swift; sourceTree = "<group>"; };
 		AABB46B5219B5273001AA5D1 /* UIView+GetConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+GetConstraint.swift"; sourceTree = "<group>"; };
 		AABB46B7219B5477001AA5D1 /* UIViewController+TopMost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopMost.swift"; sourceTree = "<group>"; };
 		AABB46BB219B5AD3001AA5D1 /* BookTripViewController+Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookTripViewController+Blur.swift"; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 				AABB46C0219B621C001AA5D1 /* BookTripHeaderView.swift */,
 				AAFC203321A5E9D300E1D8A8 /* BookTripCell.swift */,
 				AAF0521A21AB0D44003705FB /* BookTripTableHeaderView.swift */,
+				AA49F82621AB193D008B72FB /* BookTripButtonsView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -693,6 +696,7 @@
 				AACDF5FC2198882E00789F1A /* BookTripConfigurator.swift in Sources */,
 				AA3FD3CB215D1138006D9C61 /* View.swift in Sources */,
 				AABB46B6219B5273001AA5D1 /* UIView+GetConstraint.swift in Sources */,
+				AA49F82721AB193D008B72FB /* BookTripButtonsView.swift in Sources */,
 				AAD7B016215E666E000AC1F6 /* PreferencesAssembly.swift in Sources */,
 				AAD7B010215E666D000AC1F6 /* PreferencesPresenter.swift in Sources */,
 				AA3FD3BB215CDCF5006D9C61 /* ContentState.swift in Sources */,
