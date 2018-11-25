@@ -27,6 +27,7 @@ class FeedCardCell: UITableViewCell, ReusableView {
     private let topView = FeedCardTopView()
     private let bottomView = FeedCardBottomView()
     private let expiredView = FeedCardExpiredView()
+    private let backgroundButton = UIButton()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .default, reuseIdentifier: reuseIdentifier)
@@ -47,7 +48,8 @@ class FeedCardCell: UITableViewCell, ReusableView {
         containerView.addSubviews(
             topView,
             bottomView,
-            expiredView.style { $0.isHidden = true }
+            expiredView.style { $0.isHidden = true },
+            backgroundButton.style(backgroundButtonStyle)
         )
     }
 
@@ -78,6 +80,10 @@ class FeedCardCell: UITableViewCell, ReusableView {
         expiredView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.containerView)
         }
+        
+//        backgroundButton.snp.makeConstraints { (make) in
+//            make.edges.equalTo(self.containerView)
+//        }
     }
 
     override func layoutSubviews() {
@@ -108,18 +114,22 @@ class FeedCardCell: UITableViewCell, ReusableView {
         containerView.clipsToBounds = true
         containerView.layer.masksToBounds = true
     }
+    
+    private func backgroundButtonStyle(_ button: UIButton) {
+        return;
+        backgroundButton.addTarget(self, action: #selector(onTouchDown), for: .touchDown)
+        backgroundButton.addTarget(self, action: #selector(onTouchUp), for: .touchUpInside)
+        backgroundButton.addTarget(self, action: #selector(onTouchUp), for: .touchUpOutside)
+        backgroundButton.addTarget(self, action: #selector(onTouchUp), for: .touchCancel)
+    }
 
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        alpha = 0.7
-//    }
-//    
-//    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        alpha = 1.0
-//    }
-//    
-//    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        alpha = 1.0
-//    }
+    @objc private func onTouchDown() {
+        alpha = 0.7
+    }
+    
+    @objc private func onTouchUp() {
+        alpha = 1.0
+    }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
