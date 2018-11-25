@@ -151,8 +151,16 @@ struct R: Rswift.Validatable {
   
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 10 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 17 localization keys.
     struct localizable {
+      /// en translation: Airlines
+      /// 
+      /// Locales: en
+      static let bookTripAirlinesTitle = Rswift.StringResource(key: "bookTrip.airlines.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Airport
+      /// 
+      /// Locales: en
+      static let bookTripAirportTitle = Rswift.StringResource(key: "bookTrip.airport.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: All regions
       /// 
       /// Locales: en
@@ -169,6 +177,14 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let cancel = Rswift.StringResource(key: "cancel", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Date
+      /// 
+      /// Locales: en
+      static let bookTripDateTitle = Rswift.StringResource(key: "bookTrip.date.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Departure
+      /// 
+      /// Locales: en
+      static let bookTripDepartureTitle = Rswift.StringResource(key: "bookTrip.departure.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Expired
       /// 
       /// Locales: en
@@ -177,10 +193,22 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let feedTabTitle = Rswift.StringResource(key: "feedTab.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Flight number
+      /// 
+      /// Locales: en
+      static let bookTripFlightNumberTitle = Rswift.StringResource(key: "bookTrip.flightNumber.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: General
+      /// 
+      /// Locales: en
+      static let bookTripGeneralTitle = Rswift.StringResource(key: "bookTrip.general.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Preferences
       /// 
       /// Locales: en
       static let preferencesTabTitle = Rswift.StringResource(key: "preferencesTab.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Return
+      /// 
+      /// Locales: en
+      static let bookTripReturnTitle = Rswift.StringResource(key: "bookTrip.return.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Select your region
       /// 
       /// Locales: en
@@ -193,6 +221,20 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let feedTotalPriceTitle = Rswift.StringResource(key: "feed.totalPrice.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      
+      /// en translation: Airlines
+      /// 
+      /// Locales: en
+      static func bookTripAirlinesTitle(_: Void = ()) -> String {
+        return NSLocalizedString("bookTrip.airlines.title", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Airport
+      /// 
+      /// Locales: en
+      static func bookTripAirportTitle(_: Void = ()) -> String {
+        return NSLocalizedString("bookTrip.airport.title", bundle: R.hostingBundle, comment: "")
+      }
       
       /// en translation: All regions
       /// 
@@ -222,6 +264,20 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("cancel", bundle: R.hostingBundle, comment: "")
       }
       
+      /// en translation: Date
+      /// 
+      /// Locales: en
+      static func bookTripDateTitle(_: Void = ()) -> String {
+        return NSLocalizedString("bookTrip.date.title", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Departure
+      /// 
+      /// Locales: en
+      static func bookTripDepartureTitle(_: Void = ()) -> String {
+        return NSLocalizedString("bookTrip.departure.title", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// en translation: Expired
       /// 
       /// Locales: en
@@ -236,11 +292,32 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("feedTab.title", bundle: R.hostingBundle, comment: "")
       }
       
+      /// en translation: Flight number
+      /// 
+      /// Locales: en
+      static func bookTripFlightNumberTitle(_: Void = ()) -> String {
+        return NSLocalizedString("bookTrip.flightNumber.title", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: General
+      /// 
+      /// Locales: en
+      static func bookTripGeneralTitle(_: Void = ()) -> String {
+        return NSLocalizedString("bookTrip.general.title", bundle: R.hostingBundle, comment: "")
+      }
+      
       /// en translation: Preferences
       /// 
       /// Locales: en
       static func preferencesTabTitle(_: Void = ()) -> String {
         return NSLocalizedString("preferencesTab.title", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Return
+      /// 
+      /// Locales: en
+      static func bookTripReturnTitle(_: Void = ()) -> String {
+        return NSLocalizedString("bookTrip.return.title", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: Select your region

@@ -118,7 +118,7 @@ extension BookTripViewController {
         }
         
         tableView.snp.makeConstraints { (make) in
-            make.top.equalTo(self.headerView.snp.bottom)
+            make.top.equalTo(self.headerView.snp.bottom).offset(16)
             make.bottom.equalTo(self.bookButton.snp.top)
             make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(16)
             make.right.equalTo(self.view.safeAreaLayoutGuide.snp.right).offset(-16)
@@ -152,8 +152,13 @@ extension BookTripViewController {
         tableView.separatorStyle = .none
         tableView.delaysContentTouches = false
         tableView.registerReusableCell(BookTripCell.self)
+        tableView.registerReusableHeaderFooterCell(BookTripTableHeaderView.self)
         tableView.estimatedRowHeight = 60
+        tableView.estimatedSectionHeaderHeight = 22
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.sectionHeaderHeight = UITableView.automaticDimension
+        tableView.bounces = false
+        tableView.isUserInteractionEnabled = false
     }
 }
 
@@ -203,5 +208,15 @@ extension BookTripViewController: UITableViewDelegate, UITableViewDataSource {
             cell.configure(with: bookTripCellViewModel)
             return cell
         }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let viewModel = content?.sections[section] else {
+            return nil
+        }
+        
+        let header: BookTripTableHeaderView = tableView.dequeueReusableHeaderFooterView()
+        header.configure(with: viewModel.title)
+        return header
     }
 }

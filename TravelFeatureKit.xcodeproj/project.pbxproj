@@ -72,6 +72,7 @@
 		AAD7B018215E66C9000AC1F6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B017215E66C9000AC1F6 /* MainViewController.swift */; };
 		AAD7B01A215E6821000AC1F6 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B019215E6821000AC1F6 /* BaseNavigationViewController.swift */; };
 		AAD7B01C215E6905000AC1F6 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B01B215E6905000AC1F6 /* MainAssembly.swift */; };
+		AAF0521B21AB0D44003705FB /* BookTripTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0521A21AB0D44003705FB /* BookTripTableHeaderView.swift */; };
 		AAFC201621A49A8B00E1D8A8 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC201521A49A8B00E1D8A8 /* Style.swift */; };
 		AAFC203421A5E9D300E1D8A8 /* BookTripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC203321A5E9D300E1D8A8 /* BookTripCell.swift */; };
 /* End PBXBuildFile section */
@@ -156,6 +157,7 @@
 		AAD7B017215E66C9000AC1F6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AAD7B019215E6821000AC1F6 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		AAD7B01B215E6905000AC1F6 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		AAF0521A21AB0D44003705FB /* BookTripTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTripTableHeaderView.swift; sourceTree = "<group>"; };
 		AAFC201521A49A8B00E1D8A8 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		AAFC203321A5E9D300E1D8A8 /* BookTripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTripCell.swift; sourceTree = "<group>"; };
 		B4FF4C26E44886479F007DF8 /* Pods-TravelFeatureKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelFeatureKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelFeatureKit/Pods-TravelFeatureKit.release.xcconfig"; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 			children = (
 				AABB46C0219B621C001AA5D1 /* BookTripHeaderView.swift */,
 				AAFC203321A5E9D300E1D8A8 /* BookTripCell.swift */,
+				AAF0521A21AB0D44003705FB /* BookTripTableHeaderView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -711,6 +714,7 @@
 				AA3FD3C9215D1091006D9C61 /* Presenter.swift in Sources */,
 				AAC5E7902162233E0027323C /* UITableView+Dequeue.swift in Sources */,
 				AAD7AFBD215D218C000AC1F6 /* FeedInteractor.swift in Sources */,
+				AAF0521B21AB0D44003705FB /* BookTripTableHeaderView.swift in Sources */,
 				AAD7B007215E6645000AC1F6 /* MainConfigurator.swift in Sources */,
 				AAD7B011215E666D000AC1F6 /* PreferencesConfigurator.swift in Sources */,
 				AA3FD3BF215CE0CA006D9C61 /* FeatureViewController.swift in Sources */,

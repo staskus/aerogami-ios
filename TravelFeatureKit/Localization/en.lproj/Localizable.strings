@@ -8,3 +8,11 @@
 "feed.regionButton.title" = "All regions";
 "feed.regionActionSheet.title" = "Select your region";
 "feed.expired.title" = "Expired";
+
+"bookTrip.departure.title" = "Departure";
+"bookTrip.return.title" = "Return";
+"bookTrip.general.title" = "General";
+"bookTrip.date.title" = "Date";
+"bookTrip.airport.title" = "Airport";
+"bookTrip.airlines.title" = "Airlines";
+"bookTrip.flightNumber.title" = "Flight number";
