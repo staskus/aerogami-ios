@@ -34,7 +34,8 @@ class BookTripAdapter: FeatureAdapter {
             sectionButtons: [],
             bookButton: makeBookButton(content.trip, url: content.bookUrl),
             sections: makeSections(content.trip),
-            buttons: makeButtons(content)
+            buttons: makeButtons(content),
+            isExpired: content.trip.expiresAt <= Date()
         )
     }
 

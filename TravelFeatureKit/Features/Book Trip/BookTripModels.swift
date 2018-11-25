@@ -18,6 +18,7 @@ struct BookTrip {
             let bookButton: BookTrip.ViewModel.BookButton
             let sections: [BookTrip.ViewModel.Section]
             let buttons: [BookTripButtonViewModel]
+            let isExpired: Bool
         }
 
         struct SectionButton {
