@@ -101,7 +101,8 @@ extension BookTrip.ViewModel.Content {
             sectionButtons: sectionButtons,
             bookButton: bookButton,
             sections: sections,
-            buttons: buttons
+            buttons: buttons,
+            isExpired: isExpired
         )
 
         return newInstance
@@ -115,7 +116,8 @@ extension BookTrip.ViewModel.Content {
             sectionButtons: sectionButtons,
             bookButton: bookButton,
             sections: sections,
-            buttons: buttons
+            buttons: buttons,
+            isExpired: isExpired
         )
 
         return newInstance
@@ -129,7 +131,8 @@ extension BookTrip.ViewModel.Content {
             sectionButtons: sectionButtons,
             bookButton: bookButton,
             sections: sections,
-            buttons: buttons
+            buttons: buttons,
+            isExpired: isExpired
         )
 
         return newInstance
@@ -143,7 +146,8 @@ extension BookTrip.ViewModel.Content {
             sectionButtons: sectionButtons,
             bookButton: bookButton,
             sections: sections,
-            buttons: buttons
+            buttons: buttons,
+            isExpired: isExpired
         )
 
         return newInstance
@@ -157,7 +161,23 @@ extension BookTrip.ViewModel.Content {
             sectionButtons: sectionButtons,
             bookButton: bookButton,
             sections: sections,
-            buttons: buttons
+            buttons: buttons,
+            isExpired: isExpired
+        )
+
+        return newInstance
+    }
+
+    public func with(isExpired: Bool) -> BookTrip.ViewModel.Content {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTrip.ViewModel.Content(
+            header: header,
+            sectionButtons: sectionButtons,
+            bookButton: bookButton,
+            sections: sections,
+            buttons: buttons,
+            isExpired: isExpired
         )
 
         return newInstance

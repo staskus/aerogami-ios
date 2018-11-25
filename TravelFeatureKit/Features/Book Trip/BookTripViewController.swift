@@ -69,6 +69,7 @@ class BookTripViewController: UIViewController, FeatureViewController {
         headerView.configure(with: content.header)
         bookButton.setTitle(content.bookButton.title, for: .normal)
         buttonsView.configure(with: content.buttons)
+        bookButton.isEnabled = !content.isExpired
     }
 
     // MARK: - Required Init
