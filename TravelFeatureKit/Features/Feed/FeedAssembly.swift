@@ -12,7 +12,8 @@ public class FeedAssembly: Assembly {
             FeedConfigurator(
                 regionRepository: r.resolve(RegionRepository.self)!,
                 tripRepository: r.resolve(TripRepository.self)!,
-                airportRepository: r.resolve(AirportRepository.self)!
+                airportRepository: r.resolve(AirportRepository.self)!,
+                tripImageRepository: r.resolve(TripImageRepository.self)!
             )
             }
             .initCompleted { (resolver, feedConfigurator) in

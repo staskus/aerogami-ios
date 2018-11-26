@@ -5,12 +5,15 @@ public class BookTripConfigurator {
 
     private let bookURLRepository: BookURLRepository
     private let favoriteTripRepository: FavoriteTripRepository
+    private let tripImageRepository: TripImageRepository
 
     public init(
         bookURLRepository: BookURLRepository,
-        favoriteTripRepository: FavoriteTripRepository) {
+        favoriteTripRepository: FavoriteTripRepository,
+        tripImageRepository: TripImageRepository) {
         self.bookURLRepository = bookURLRepository
         self.favoriteTripRepository = favoriteTripRepository
+        self.tripImageRepository = tripImageRepository
     }
 
     public func createViewController(trip: Trip) -> UIViewController {
@@ -20,6 +23,7 @@ public class BookTripConfigurator {
             presenter: presenter,
             bookURLRepository: bookURLRepository,
             favoriteTripRepository: favoriteTripRepository,
+            tripImageRepository: tripImageRepository,
             trip: trip
         )
         let router = BookTripRouter()

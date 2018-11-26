@@ -11,7 +11,8 @@ public class BookTripAssembly: Assembly {
         container.register(BookTripConfigurator.self) { r in
             BookTripConfigurator(
                 bookURLRepository: r.resolve(TravelKit.BookURLRepository.self)!,
-                favoriteTripRepository: r.resolve(TravelKit.FavoriteTripRepository.self)!
+                favoriteTripRepository: r.resolve(TravelKit.FavoriteTripRepository.self)!,
+                tripImageRepository: r.resolve(TravelKit.TripImageRepository.self)!
             )
         }.inObjectScope(.container)
     }

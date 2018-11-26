@@ -10,6 +10,7 @@ class BookTripInteractor: FeatureInteractor, BookTripInteractable {
     private let presenter: BookTripPresenter
     private let bookURLRepository: BookURLRepository
     private let favoriteTripRepository: FavoriteTripRepository
+    private let tripImageRepository: TripImageRepository
     private var disposeBag = DisposeBag()
 
     private let trip: Trip
@@ -24,10 +25,12 @@ class BookTripInteractor: FeatureInteractor, BookTripInteractable {
     init(presenter: BookTripPresenter,
          bookURLRepository: BookURLRepository,
          favoriteTripRepository: FavoriteTripRepository,
+         tripImageRepository: TripImageRepository,
          trip: Trip) {
         self.presenter = presenter
         self.bookURLRepository = bookURLRepository
         self.favoriteTripRepository = favoriteTripRepository
+        self.tripImageRepository = tripImageRepository
         self.trip = trip
     }
 
@@ -46,10 +49,16 @@ class BookTripInteractor: FeatureInteractor, BookTripInteractable {
         Observable
             .combineLatest(
                 bookURLRepository.getURL(for: trip),
+                tripImageRepository.getImageURL(for: trip),
                 favoriteTripRepository.isFavorite(trip)
             )
-            .map { (url, isFavorite) in
-                return BookTrip.Data(trip: self.trip, bookUrl: url, isFavorite: isFavorite)
+            .map { (url, tripImage, isFavorite) in
+                return BookTrip.Data(
+                    trip: self.trip,
+                    tripImage: tripImage,
+                    bookUrl: url,
+                    isFavorite: isFavorite
+                )
             }
             .subscribe(
                 onNext: { data in

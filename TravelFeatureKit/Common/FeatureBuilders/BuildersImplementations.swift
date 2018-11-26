@@ -13,6 +13,20 @@ extension BookTrip.Data {
         // of the paramaters in the init method
         let newInstance = BookTrip.Data(
             trip: trip, 
+            tripImage: tripImage, 
+            bookUrl: bookUrl, 
+            isFavorite: isFavorite
+        )
+
+        return newInstance
+    }
+
+    public func with(tripImage: TripImage) -> BookTrip.Data {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = BookTrip.Data(
+            trip: trip, 
+            tripImage: tripImage, 
             bookUrl: bookUrl, 
             isFavorite: isFavorite
         )
@@ -25,6 +39,7 @@ extension BookTrip.Data {
         // of the paramaters in the init method
         let newInstance = BookTrip.Data(
             trip: trip, 
+            tripImage: tripImage, 
             bookUrl: bookUrl, 
             isFavorite: isFavorite
         )
@@ -37,6 +52,7 @@ extension BookTrip.Data {
         // of the paramaters in the init method
         let newInstance = BookTrip.Data(
             trip: trip, 
+            tripImage: tripImage, 
             bookUrl: bookUrl, 
             isFavorite: isFavorite
         )
@@ -357,7 +373,8 @@ extension Feed.Data {
         let newInstance = Feed.Data(
             regions: regions, 
             trips: trips, 
-            selectedRegionId: selectedRegionId
+            selectedRegionId: selectedRegionId, 
+            tripImages: tripImages
         )
 
         return newInstance
@@ -369,7 +386,8 @@ extension Feed.Data {
         let newInstance = Feed.Data(
             regions: regions, 
             trips: trips, 
-            selectedRegionId: selectedRegionId
+            selectedRegionId: selectedRegionId, 
+            tripImages: tripImages
         )
 
         return newInstance
@@ -381,7 +399,21 @@ extension Feed.Data {
         let newInstance = Feed.Data(
             regions: regions, 
             trips: trips, 
-            selectedRegionId: selectedRegionId
+            selectedRegionId: selectedRegionId, 
+            tripImages: tripImages
+        )
+
+        return newInstance
+    }
+
+    public func with(tripImages: [TripImage]) -> Feed.Data {
+        // Note: The order of the properties have to match the order
+        // of the paramaters in the init method
+        let newInstance = Feed.Data(
+            regions: regions, 
+            trips: trips, 
+            selectedRegionId: selectedRegionId, 
+            tripImages: tripImages
         )
 
         return newInstance
