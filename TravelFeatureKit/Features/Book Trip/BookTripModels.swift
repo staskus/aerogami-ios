@@ -4,6 +4,7 @@ import TravelKit
 struct BookTrip {
     struct Data: Equatable {
         let trip: Trip
+        let tripImage: TripImage
         let bookUrl: URL
         let isFavorite: Bool
     }

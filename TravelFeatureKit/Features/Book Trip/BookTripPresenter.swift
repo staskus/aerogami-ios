@@ -30,7 +30,7 @@ class BookTripAdapter: FeatureAdapter {
 
     func makeContentViewModel(content: BookTrip.Data) throws -> BookTrip.ViewModel.Content {
         return BookTrip.ViewModel.Content(
-            header: makeHeader(content.trip),
+            header: makeHeader(content.trip, tripImage: content.tripImage),
             sectionButtons: [],
             bookButton: makeBookButton(content.trip, url: content.bookUrl),
             sections: makeSections(content.trip),
@@ -50,11 +50,11 @@ class BookTripAdapter: FeatureAdapter {
 
     // MARK: - Header
 
-    private func makeHeader(_ trip: Trip) -> BookTripHeaderViewModel {
+    private func makeHeader(_ trip: Trip, tripImage: TripImage) -> BookTripHeaderViewModel {
         return BookTripHeaderViewModel(
             title: makeTripString(trip),
             subtitle: R.string.localizable.feedBothWaysTitle(),
-            imageUrl: URL(string: "https://picsum.photos/1000/1000/?image=\(arc4random_uniform(1000))")!
+            imageUrl: tripImage.imageURL
         )
     }
 

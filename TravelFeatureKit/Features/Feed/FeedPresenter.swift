@@ -64,7 +64,7 @@ class FeedAdapter: FeatureAdapter {
                 price: formatCurrency(trip),
                 dateRange: dateRange(trip),
                 routeName: R.string.localizable.feedBookTitle(),
-                imageUrl: URL(string: "https://picsum.photos/1000/1000/?image=\(arc4random_uniform(1000))")!,
+                imageUrl: makeTripImageURL(trip, content: content),
                 route: Feed.Route.book(trip),
                 isExpired: trip.expiresAt <= Date()
             )
@@ -76,6 +76,13 @@ class FeedAdapter: FeatureAdapter {
             let to = trip.destination.city else { return "" }
 
         return "\(from) \n\(to)"
+    }
+    
+    private func makeTripImageURL(_ trip: Trip, content: Feed.Data) -> URL? {
+        return content.tripImages
+            .filter { $0.tripId == trip.id }
+            .first?
+            .imageURL
     }
 
     private func dateRange(_ trip: Trip) -> String {

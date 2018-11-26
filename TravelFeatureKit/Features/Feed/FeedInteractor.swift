@@ -14,6 +14,7 @@ class FeedInteractor: FeatureInteractor, FeedInteractable {
     private let regionRepository: RegionRepository
     private let tripRepository: TripRepository
     private let airportRepository: AirportRepository
+    private let tripImageRepository: TripImageRepository
 
     private var contentState: ContentState<Feed.Data> = .loading(data: nil) {
         didSet {
@@ -26,12 +27,14 @@ class FeedInteractor: FeatureInteractor, FeedInteractable {
         presenter: FeedPresenter,
         regionRepository: RegionRepository,
         tripRepository: TripRepository,
-        airportRepository: AirportRepository
+        airportRepository: AirportRepository,
+        tripImageRepository: TripImageRepository
         ) {
         self.presenter = presenter
         self.regionRepository = regionRepository
         self.tripRepository = tripRepository
         self.airportRepository = airportRepository
+        self.tripImageRepository = tripImageRepository
     }
 
     func dispatch(_ action: Feed.Action) {
@@ -53,20 +56,35 @@ class FeedInteractor: FeatureInteractor, FeedInteractable {
         Observable.combineLatest(
             self.regionRepository.getRegions(),
             self.tripRepository.getTrips(in: selectedRegion?.id)
-        )
+            )
             .map { (regions, trips) -> Feed.Data in
-                Feed.Data(
+                return Feed.Data(
                     regions: regions,
                     trips: trips,
-                    selectedRegionId: selectedRegion?.id
+                    selectedRegionId: selectedRegion?.id,
+                    tripImages: []
                 )
             }
             .subscribe(
                 onNext: { data in
                     self.contentState = .loaded(data: data, error: nil)
+                    self.loadImages(for: data.trips)
                 },
                 onError: { error in
                     self.contentState = .error(error: .loading(reason: error.localizedDescription))
+                }
+            )
+            .disposed(by: disposeBag)
+    }
+    
+    private func loadImages(for trips: [Trip]) {
+        Observable.combineLatest(trips.map { self.tripImageRepository.getImageURL(for: $0) })
+            .subscribe(
+                onNext: { tripImages in
+                    guard let currentData = self.contentState.data else { return }
+                    
+                    let data = currentData.with(tripImages: tripImages)
+                    self.contentState = .loaded(data: data, error: nil)
                 }
             )
             .disposed(by: disposeBag)

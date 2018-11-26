@@ -8,7 +8,6 @@
 
 import Foundation
 import TravelKit
-import SwiftDate
 import RxSwift
 
 public class FavoriteTripRepository: TravelKit.FavoriteTripRepository {

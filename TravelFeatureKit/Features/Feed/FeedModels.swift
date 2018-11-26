@@ -6,6 +6,7 @@ struct Feed {
         let regions: [Region]
         let trips: [Trip]
         let selectedRegionId: String?
+        let tripImages: [TripImage]
     }
 
     struct ViewModel: FeatureViewModel {

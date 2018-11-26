@@ -16,7 +16,7 @@ struct FeedCardViewModel: Equatable {
     let price: String
     let dateRange: String
     let routeName: String
-    let imageUrl: URL
+    let imageUrl: URL?
     let route: Feed.Route
     let isExpired: Bool
 }

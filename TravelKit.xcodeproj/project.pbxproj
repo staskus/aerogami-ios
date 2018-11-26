@@ -19,6 +19,8 @@
 		AA3519BD2186407B00EB7059 /* APIDateTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3519BC2186407B00EB7059 /* APIDateTransformTests.swift */; };
 		AA3FD39E215CD497006D9C61 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD39D215CD497006D9C61 /* Logger.swift */; };
 		AA49F82921AB3151008B72FB /* FavoriteTripRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA49F82821AB3151008B72FB /* FavoriteTripRepository.swift */; };
+		AA49F83221AC6972008B72FB /* TripImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA49F83121AC6972008B72FB /* TripImageRepository.swift */; };
+		AA49F83B21AC6C5E008B72FB /* TripImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA49F83A21AC6C5E008B72FB /* TripImage.swift */; };
 		AA7FD4F6215BC544000FB362 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD4F5215BC544000FB362 /* Region.swift */; };
 		AA7FD4FB215BC709000FB362 /* RegionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD4FA215BC709000FB362 /* RegionRepository.swift */; };
 		AAC5E79D21636C5F0027323C /* TravelKit-Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC5E79C21636C5F0027323C /* TravelKit-Swift.h */; };
@@ -71,6 +73,8 @@
 		AA3519BC2186407B00EB7059 /* APIDateTransformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDateTransformTests.swift; sourceTree = "<group>"; };
 		AA3FD39D215CD497006D9C61 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		AA49F82821AB3151008B72FB /* FavoriteTripRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTripRepository.swift; sourceTree = "<group>"; };
+		AA49F83121AC6972008B72FB /* TripImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripImageRepository.swift; sourceTree = "<group>"; };
+		AA49F83A21AC6C5E008B72FB /* TripImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripImage.swift; sourceTree = "<group>"; };
 		AA7FD4F5215BC544000FB362 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		AA7FD4FA215BC709000FB362 /* RegionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionRepository.swift; sourceTree = "<group>"; };
 		AAC5E79C21636C5F0027323C /* TravelKit-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelKit-Swift.h"; sourceTree = "<group>"; };
@@ -222,12 +226,22 @@
 			path = Logging;
 			sourceTree = "<group>";
 		};
+		AA49F83621AC6A13008B72FB /* TripImage */ = {
+			isa = PBXGroup;
+			children = (
+				AA49F83121AC6972008B72FB /* TripImageRepository.swift */,
+				AA49F83A21AC6C5E008B72FB /* TripImage.swift */,
+			);
+			path = TripImage;
+			sourceTree = "<group>";
+		};
 		AA7FD4F3215BC527000FB362 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
 				AAFC201A21A4A26900E1D8A8 /* BookURL */,
 				AAD7AFED215E1F53000AC1F6 /* Airport */,
 				AAD7AFD9215D5860000AC1F6 /* Trip */,
+				AA49F83621AC6A13008B72FB /* TripImage */,
 				AA7FD4F4215BC537000FB362 /* Region */,
 			);
 			path = Repositories;
@@ -493,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD7AFDB215D587F000AC1F6 /* Trip.swift in Sources */,
+				AA49F83B21AC6C5E008B72FB /* TripImage.swift in Sources */,
 				AAD7AFEF215E203A000AC1F6 /* Airport.swift in Sources */,
 				AAFC201C21A4A27600E1D8A8 /* BookURLRepository.swift in Sources */,
 				AA7FD4FB215BC709000FB362 /* RegionRepository.swift in Sources */,
@@ -502,6 +517,7 @@
 				AAD7AFEC215E1CDE000AC1F6 /* APIDateTransform.swift in Sources */,
 				AA7FD4F6215BC544000FB362 /* Region.swift in Sources */,
 				AA3FD39E215CD497006D9C61 /* Logger.swift in Sources */,
+				AA49F83221AC6972008B72FB /* TripImageRepository.swift in Sources */,
 				AAD7AFF1215E2115000AC1F6 /* AirportRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

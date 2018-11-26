@@ -31,5 +31,11 @@ public class TripRepositoryAssembly: Assembly {
                 localDataStore: r.resolve(LocalTripDataStore.self)!
             )
         }.inObjectScope(.container)
+        
+        container.register(TravelKit.TripImageRepository.self) { r in
+            TravelDataKit.TripImageRepository(
+                apiClient: r.resolve(APIClient.self)!
+            )
+        }.inObjectScope(.container)
     }
 }
