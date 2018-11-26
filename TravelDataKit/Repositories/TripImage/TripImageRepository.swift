@@ -20,6 +20,7 @@ public class TripImageRepository: TravelKit.TripImageRepository {
     private let apiClient: APIClient
     private let defaults = UserDefaults.standard
     private let imageKey = "picsum_image_key"
+    private var memoryIds: [Int] = []
     
     public init(apiClient: APIClient) {
         self.apiClient = apiClient
@@ -39,8 +40,32 @@ public class TripImageRepository: TravelKit.TripImageRepository {
             }
     }
     
+    public func getImageURLs(for trips: [Trip]) -> Observable<[TripImage]> {
+        return getAllImageIds()
+            .map { ids in
+                var tripImages: [TripImage] = []
+                
+                try trips.forEach { trip in
+                    let imageIndex = trip.flightNumber % ids.count
+                    let imageId = ids[imageIndex]
+                    
+                    guard let url = URL(string: "https://picsum.photos/1000/1000/?image=\(imageId)") else {
+                        throw TripImageRepositoryError.couldNotBuildURL
+                    }
+                    tripImages.append(TripImage(tripId: trip.id, imageURL: url))
+                }
+                
+                return tripImages
+            }
+    }
+    
     private func getAllImageIds() -> Observable<[Int]> {
-        guard let images = defaults.array(forKey: imageKey) as? [Int] else {
+        if !memoryIds.isEmpty {
+            return .just(memoryIds)
+        } else if let defaultsIds = defaults.array(forKey: imageKey) as? [Int] {
+            memoryIds = defaultsIds
+            return .just(defaultsIds)
+        } else {
             return RxAlamofire
                 .requestJSON(.get, "https://picsum.photos/list")
                 .map { $1 }
@@ -53,13 +78,12 @@ public class TripImageRepository: TravelKit.TripImageRepository {
                         throw TripImageRepositoryError.couldNotBuildURL
                     }
                     
+                    self.memoryIds = ids
                     self.defaults.setValue(ids, forKey: self.imageKey)
                     self.defaults.synchronize()
                     
                     return ids
-                }
+            }
         }
-        
-        return .just(images)
     }
 }

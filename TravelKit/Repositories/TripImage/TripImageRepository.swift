@@ -10,4 +10,5 @@ import RxSwift
 
 public protocol TripImageRepository {
     func getImageURL(for trip: Trip) -> Observable<TripImage>
+    func getImageURLs(for trips: [Trip]) -> Observable<[TripImage]>
 }
