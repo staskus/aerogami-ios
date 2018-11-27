@@ -21,7 +21,7 @@ class AssemblerFactory {
             AirportRepositoryAssembly(),
 
             MainAssembly(),
-            PreferencesAssembly(),
+            FavoritesAssembly(),
             FeedAssembly(),
             BookTripAssembly(),
             BookURLRepositoryAssembly(affiliateId: Constants.affiliateId)

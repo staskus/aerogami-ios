@@ -119,7 +119,9 @@ extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension FeedViewController: FeedTableHeaderViewDelegate {
     func onRegionButtonTapped() {
-        guard let viewModel = viewModel?.state.viewModel else { return }
+        guard let viewModel = viewModel?.state.viewModel, viewModel.availableRegions.count > 1 else {
+            return
+        }
 
         let alertViewController = UIAlertController(
             title: R.string.localizable.feedRegionActionSheetTitle(),

@@ -4,7 +4,7 @@ import TravelKit
 public class MainConfigurator {
 
     var feedConfigurator: FeedConfigurator!
-    var preferencesConfigurator: PreferencesConfigurator!
+    var favoritesConfigurator: FavoritesConfigurator!
 
     public init() {
     }
@@ -21,13 +21,14 @@ public class MainConfigurator {
         )
         viewControllers.append(BaseNavigationViewController(rootViewController: feedViewController))
 
-        let preferencesViewController = preferencesConfigurator.createViewController()
-        preferencesViewController.tabBarItem = UITabBarItem(
-            title: R.string.localizable.preferencesTabTitle(),
-            image: R.image.tabPreferencesIcon(),
+        let favoritesViewController = favoritesConfigurator.createViewController()
+
+        favoritesViewController.tabBarItem = UITabBarItem(
+            title: R.string.localizable.favoritesTabTitle(),
+            image: R.image.tabFavoritesIcon(),
             tag: 1
         )
-        viewControllers.append(BaseNavigationViewController(rootViewController: preferencesViewController))
+        viewControllers.append(BaseNavigationViewController(rootViewController: favoritesViewController))
 
         let viewController = MainViewController(viewControllers: viewControllers)
 
