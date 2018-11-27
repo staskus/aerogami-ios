@@ -46,10 +46,10 @@ struct BookTrip {
     enum Action {
         case load
         case favorite
-        case share
     }
 
     enum Route {
         case book(URL)
+        case share(String)
     }
 }

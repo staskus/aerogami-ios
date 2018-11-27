@@ -40,8 +40,6 @@ class BookTripInteractor: FeatureInteractor, BookTripInteractable {
             load()
         case .favorite:
             toggleFavorite()
-        default:
-            break
         }
     }
 

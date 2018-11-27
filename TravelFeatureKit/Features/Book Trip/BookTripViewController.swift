@@ -245,6 +245,12 @@ extension BookTripViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension BookTripViewController: BookTripButtonsViewDelegate {
     func onButtonTapped(_ viewModel: BookTripButtonViewModel) {
-        interactor.dispatch(viewModel.action)
+        if let action = viewModel.action {
+            interactor.dispatch(action)
+        }
+        
+        if let route = viewModel.route {
+            router.route(to: route)
+        }
     }
 }
