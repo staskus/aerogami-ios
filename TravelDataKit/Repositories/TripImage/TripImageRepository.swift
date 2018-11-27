@@ -21,44 +21,44 @@ public class TripImageRepository: TravelKit.TripImageRepository {
     private let defaults = UserDefaults.standard
     private let imageKey = "picsum_image_key"
     private var memoryIds: [Int] = []
-    
+
     public init(apiClient: APIClient) {
         self.apiClient = apiClient
     }
-    
+
     public func getImageURL(for trip: Trip) -> Observable<TripImage> {
         return getAllImageIds()
             .map { ids in
                 let imageIndex = trip.flightNumber % ids.count
                 let imageId = ids[imageIndex]
-                
+
                 guard let url = URL(string: "https://picsum.photos/1000/1000/?image=\(imageId)") else {
                     throw TripImageRepositoryError.couldNotBuildURL
                 }
-                
+
                 return TripImage(tripId: trip.id, imageURL: url)
             }
     }
-    
+
     public func getImageURLs(for trips: [Trip]) -> Observable<[TripImage]> {
         return getAllImageIds()
             .map { ids in
                 var tripImages: [TripImage] = []
-                
+
                 try trips.forEach { trip in
                     let imageIndex = trip.flightNumber % ids.count
                     let imageId = ids[imageIndex]
-                    
+
                     guard let url = URL(string: "https://picsum.photos/1000/1000/?image=\(imageId)") else {
                         throw TripImageRepositoryError.couldNotBuildURL
                     }
                     tripImages.append(TripImage(tripId: trip.id, imageURL: url))
                 }
-                
+
                 return tripImages
             }
     }
-    
+
     private func getAllImageIds() -> Observable<[Int]> {
         if !memoryIds.isEmpty {
             return .just(memoryIds)
@@ -73,15 +73,15 @@ public class TripImageRepository: TravelKit.TripImageRepository {
                     guard let imagesJSON = images as? [[String: Any]] else {
                         throw TripImageRepositoryError.couldNotBuildURL
                     }
-                    
+
                     guard let ids = (imagesJSON.compactMap { $0["id"] }) as? [Int] else {
                         throw TripImageRepositoryError.couldNotBuildURL
                     }
-                    
+
                     self.memoryIds = ids
                     self.defaults.setValue(ids, forKey: self.imageKey)
                     self.defaults.synchronize()
-                    
+
                     return ids
             }
         }
