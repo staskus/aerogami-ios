@@ -77,9 +77,16 @@ class BookTripAdapter: FeatureAdapter {
             BookTripButtonViewModel(
                 title: R.string.localizable.bookTripShareButtonTitle(),
                 imageName: R.image.shareIcon.name,
-                action: .share
+                route: makeShareRoute(content)
             )
         ]
+    }
+    
+    // MARK: - Share
+    
+    private func makeShareRoute(_ content: BookTrip.Data) -> BookTrip.Route {
+        let shareText = R.string.localizable.bookTripShareText(content.bookUrl.absoluteString)
+        return BookTrip.Route.share(shareText)
     }
 }
 

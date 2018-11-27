@@ -14,7 +14,15 @@ import RxCocoa
 struct BookTripButtonViewModel {
     let title: String
     let imageName: String
-    let action: BookTrip.Action
+    let action: BookTrip.Action?
+    let route: BookTrip.Route?
+    
+    init(title: String, imageName: String, action: BookTrip.Action? = nil, route: BookTrip.Route? = nil) {
+        self.title = title
+        self.imageName = imageName
+        self.action = action
+        self.route = route
+    }
 }
 
 protocol BookTripButtonsViewDelegate: class {

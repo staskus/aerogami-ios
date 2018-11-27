@@ -18,3 +18,4 @@
 "bookTrip.flightNumber.title" = "Flight number";
 "bookTrip.favoriteButton.Title" = "Favorite";
 "bookTrip.shareButton.Title" = "Share";
+"bookTrip.shareText" = "Hey! Check out this flight I found in PaperPlane application: %@";

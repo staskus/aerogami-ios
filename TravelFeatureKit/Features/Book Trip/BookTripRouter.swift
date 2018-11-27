@@ -11,6 +11,9 @@ class BookTripRouter {
         switch route {
         case .book(let url):
             open(url: url)
+        case .share(let text):
+            let shareController = UIActivityViewController(activityItems: [text], applicationActivities: [])
+            viewController?.present(shareController, animated: true, completion: nil)
         }
     }
 
