@@ -11,7 +11,11 @@ import Foundation
 public struct TripImage: Equatable {
     public let tripId: String
     public let imageURL: URL
-    
+
+    public static var empty: TripImage {
+        return TripImage(tripId: "0", imageURL: URL(fileURLWithPath: ""))
+    }
+
     public init(tripId: String, imageURL: URL) {
         self.tripId = tripId
         self.imageURL = imageURL

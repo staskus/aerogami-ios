@@ -80,7 +80,7 @@ class FeedCardCell: UITableViewCell, ReusableView {
         expiredView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.containerView)
         }
-        
+
 //        backgroundButton.snp.makeConstraints { (make) in
 //            make.edges.equalTo(self.containerView)
 //        }
@@ -114,9 +114,9 @@ class FeedCardCell: UITableViewCell, ReusableView {
         containerView.clipsToBounds = true
         containerView.layer.masksToBounds = true
     }
-    
+
     private func backgroundButtonStyle(_ button: UIButton) {
-        return;
+        return
         backgroundButton.addTarget(self, action: #selector(onTouchDown), for: .touchDown)
         backgroundButton.addTarget(self, action: #selector(onTouchUp), for: .touchUpInside)
         backgroundButton.addTarget(self, action: #selector(onTouchUp), for: .touchUpOutside)
@@ -126,7 +126,7 @@ class FeedCardCell: UITableViewCell, ReusableView {
     @objc private func onTouchDown() {
         alpha = 0.7
     }
-    
+
     @objc private func onTouchUp() {
         alpha = 1.0
     }

@@ -49,7 +49,7 @@ class BookTripInteractor: FeatureInteractor, BookTripInteractable {
         Observable
             .combineLatest(
                 bookURLRepository.getURL(for: trip),
-                tripImageRepository.getImageURL(for: trip),
+                tripImageRepository.getImageURL(for: trip).catchErrorJustReturn(TripImage.empty),
                 favoriteTripRepository.isFavorite(trip)
             )
             .map { (url, tripImage, isFavorite) in

@@ -76,13 +76,13 @@ class FeedInteractor: FeatureInteractor, FeedInteractable {
             )
             .disposed(by: disposeBag)
     }
-    
+
     private func loadImages(for trips: [Trip]) {
         Observable.combineLatest(trips.map { self.tripImageRepository.getImageURL(for: $0) })
             .subscribe(
                 onNext: { tripImages in
                     guard let currentData = self.contentState.data else { return }
-                    
+
                     let data = currentData.with(tripImages: tripImages)
                     self.contentState = .loaded(data: data, error: nil)
                 }

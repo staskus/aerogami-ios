@@ -77,7 +77,7 @@ class FeedAdapter: FeatureAdapter {
 
         return "\(from) \n\(to)"
     }
-    
+
     private func makeTripImageURL(_ trip: Trip, content: Feed.Data) -> URL? {
         return content.tripImages
             .filter { $0.tripId == trip.id }
