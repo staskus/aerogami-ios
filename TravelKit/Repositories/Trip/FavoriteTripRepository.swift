@@ -8,8 +8,7 @@
 
 import RxSwift
 
-public protocol FavoriteTripRepository {
-    func getFavoriteTrips() -> Observable<[Trip]>
+public protocol FavoriteTripRepository: TripRepository {
     func isFavorite(_ trip: Trip) -> Observable<Bool>
     func saveFavorite(_ trip: Trip) -> Completable
     func removeFavorite(_ trip: Trip) -> Completable

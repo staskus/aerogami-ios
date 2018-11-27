@@ -31,7 +31,7 @@ class BookTripInteractor: FeatureInteractor, BookTripInteractable {
         self.bookURLRepository = bookURLRepository
         self.favoriteTripRepository = favoriteTripRepository
         self.tripImageRepository = tripImageRepository
-        self.trip = trip
+        self.trip = Trip(value: trip)
     }
 
     func dispatch(_ action: BookTrip.Action) {

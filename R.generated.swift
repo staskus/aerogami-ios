@@ -102,10 +102,10 @@ struct R: Rswift.Validatable {
     static let favoriteOnIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "favoriteOnIcon")
     /// Image `shareIcon`.
     static let shareIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "shareIcon")
+    /// Image `tabFavoritesIcon`.
+    static let tabFavoritesIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabFavoritesIcon")
     /// Image `tabFeedIcon`.
     static let tabFeedIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabFeedIcon")
-    /// Image `tabPreferencesIcon`.
-    static let tabPreferencesIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "tabPreferencesIcon")
 
     /// `UIImage(named: "FeedCardGradient", bundle: ..., traitCollection: ...)`
     static func feedCardGradient(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
@@ -137,14 +137,14 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.shareIcon, compatibleWith: traitCollection)
     }
 
+    /// `UIImage(named: "tabFavoritesIcon", bundle: ..., traitCollection: ...)`
+    static func tabFavoritesIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.tabFavoritesIcon, compatibleWith: traitCollection)
+    }
+
     /// `UIImage(named: "tabFeedIcon", bundle: ..., traitCollection: ...)`
     static func tabFeedIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.tabFeedIcon, compatibleWith: traitCollection)
-    }
-
-    /// `UIImage(named: "tabPreferencesIcon", bundle: ..., traitCollection: ...)`
-    static func tabPreferencesIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.tabPreferencesIcon, compatibleWith: traitCollection)
     }
 
     fileprivate init() {}
@@ -214,6 +214,10 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let bookTripFavoriteButtonTitle = Rswift.StringResource(key: "bookTrip.favoriteButton.Title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Favorites
+      /// 
+      /// Locales: en
+      static let favoritesTabTitle = Rswift.StringResource(key: "favoritesTab.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Feed
       /// 
       /// Locales: en
@@ -226,10 +230,6 @@ struct R: Rswift.Validatable {
       /// 
       /// Locales: en
       static let bookTripGeneralTitle = Rswift.StringResource(key: "bookTrip.general.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
-      /// en translation: Preferences
-      /// 
-      /// Locales: en
-      static let preferencesTabTitle = Rswift.StringResource(key: "preferencesTab.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
       /// en translation: Return
       /// 
       /// Locales: en
@@ -321,6 +321,13 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("bookTrip.favoriteButton.Title", bundle: R.hostingBundle, comment: "")
       }
 
+      /// en translation: Favorites
+      /// 
+      /// Locales: en
+      static func favoritesTabTitle(_: Void = ()) -> String {
+        return NSLocalizedString("favoritesTab.title", bundle: R.hostingBundle, comment: "")
+      }
+
       /// en translation: Feed
       /// 
       /// Locales: en
@@ -340,13 +347,6 @@ struct R: Rswift.Validatable {
       /// Locales: en
       static func bookTripGeneralTitle(_: Void = ()) -> String {
         return NSLocalizedString("bookTrip.general.title", bundle: R.hostingBundle, comment: "")
-      }
-
-      /// en translation: Preferences
-      /// 
-      /// Locales: en
-      static func preferencesTabTitle(_: Void = ()) -> String {
-        return NSLocalizedString("preferencesTab.title", bundle: R.hostingBundle, comment: "")
       }
 
       /// en translation: Return

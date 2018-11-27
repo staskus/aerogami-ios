@@ -19,7 +19,7 @@ public class FavoriteTripRepository: TravelKit.FavoriteTripRepository {
         self.localDataStore = localDataStore
     }
 
-    public func getFavoriteTrips() -> Observable<[Trip]> {
+    public func getTrips(in region: String?) -> Observable<[Trip]> {
         return Observable.deferred { () -> Observable<[Trip]> in
             return .just(self.localDataStore.getTrips())
         }

@@ -13,7 +13,7 @@ public class MainAssembly: Assembly {
         }
         .initCompleted { (r, c) in
             c.feedConfigurator = r.resolve(FeedConfigurator.self)!
-            c.preferencesConfigurator = r.resolve(PreferencesConfigurator.self)!
+            c.favoritesConfigurator = r.resolve(FavoritesConfigurator.self)!
         }
         .inObjectScope(.container)
     }

@@ -28,6 +28,9 @@
 		AA3FD3CB215D1138006D9C61 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD3CA215D1138006D9C61 /* View.swift */; };
 		AA3FD3CD215D11AB006D9C61 /* FeaturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FD3CC215D11AB006D9C61 /* FeaturePresenter.swift */; };
 		AA49F82721AB193D008B72FB /* BookTripButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA49F82621AB193D008B72FB /* BookTripButtonsView.swift */; };
+		AA49F84721ADC5C1008B72FB /* FavoritesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA49F84621ADC5C1008B72FB /* FavoritesAssembly.swift */; };
+		AA49F84921ADC68F008B72FB /* FavoritesRegionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA49F84821ADC68F008B72FB /* FavoritesRegionRepository.swift */; };
+		AA49F84B21ADC7B4008B72FB /* FavoritesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA49F84A21ADC7B4008B72FB /* FavoritesConfigurator.swift */; };
 		AABB46B6219B5273001AA5D1 /* UIView+GetConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46B5219B5273001AA5D1 /* UIView+GetConstraint.swift */; };
 		AABB46B8219B5477001AA5D1 /* UIViewController+TopMost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46B7219B5477001AA5D1 /* UIViewController+TopMost.swift */; };
 		AABB46BC219B5AD3001AA5D1 /* BookTripViewController+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB46BB219B5AD3001AA5D1 /* BookTripViewController+Blur.swift */; };
@@ -63,13 +66,6 @@
 		AAD7AFD2215D2214000AC1F6 /* Configurator.swift.hbs in Resources */ = {isa = PBXBuildFile; fileRef = AAD7AFCB215D2214000AC1F6 /* Configurator.swift.hbs */; };
 		AAD7B004215E3138000AC1F6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B003215E3138000AC1F6 /* Theme.swift */; };
 		AAD7B007215E6645000AC1F6 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B006215E6645000AC1F6 /* MainConfigurator.swift */; };
-		AAD7B010215E666D000AC1F6 /* PreferencesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B009215E666D000AC1F6 /* PreferencesPresenter.swift */; };
-		AAD7B011215E666D000AC1F6 /* PreferencesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B00A215E666D000AC1F6 /* PreferencesConfigurator.swift */; };
-		AAD7B012215E666D000AC1F6 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B00B215E666D000AC1F6 /* PreferencesViewController.swift */; };
-		AAD7B013215E666E000AC1F6 /* PreferencesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B00C215E666D000AC1F6 /* PreferencesRouter.swift */; };
-		AAD7B014215E666E000AC1F6 /* PreferencesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B00D215E666D000AC1F6 /* PreferencesInteractor.swift */; };
-		AAD7B015215E666E000AC1F6 /* PreferencesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B00E215E666D000AC1F6 /* PreferencesModels.swift */; };
-		AAD7B016215E666E000AC1F6 /* PreferencesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B00F215E666D000AC1F6 /* PreferencesAssembly.swift */; };
 		AAD7B018215E66C9000AC1F6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B017215E66C9000AC1F6 /* MainViewController.swift */; };
 		AAD7B01A215E6821000AC1F6 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B019215E6821000AC1F6 /* BaseNavigationViewController.swift */; };
 		AAD7B01C215E6905000AC1F6 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7B01B215E6905000AC1F6 /* MainAssembly.swift */; };
@@ -114,6 +110,9 @@
 		AA3FD3CA215D1138006D9C61 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		AA3FD3CC215D11AB006D9C61 /* FeaturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturePresenter.swift; sourceTree = "<group>"; };
 		AA49F82621AB193D008B72FB /* BookTripButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTripButtonsView.swift; sourceTree = "<group>"; };
+		AA49F84621ADC5C1008B72FB /* FavoritesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesAssembly.swift; sourceTree = "<group>"; };
+		AA49F84821ADC68F008B72FB /* FavoritesRegionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRegionRepository.swift; sourceTree = "<group>"; };
+		AA49F84A21ADC7B4008B72FB /* FavoritesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesConfigurator.swift; sourceTree = "<group>"; };
 		AABB46B5219B5273001AA5D1 /* UIView+GetConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+GetConstraint.swift"; sourceTree = "<group>"; };
 		AABB46B7219B5477001AA5D1 /* UIViewController+TopMost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopMost.swift"; sourceTree = "<group>"; };
 		AABB46BB219B5AD3001AA5D1 /* BookTripViewController+Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookTripViewController+Blur.swift"; sourceTree = "<group>"; };
@@ -149,13 +148,6 @@
 		AAD7AFCB215D2214000AC1F6 /* Configurator.swift.hbs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Configurator.swift.hbs; sourceTree = "<group>"; };
 		AAD7B003215E3138000AC1F6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		AAD7B006215E6645000AC1F6 /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
-		AAD7B009215E666D000AC1F6 /* PreferencesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesPresenter.swift; sourceTree = "<group>"; };
-		AAD7B00A215E666D000AC1F6 /* PreferencesConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesConfigurator.swift; sourceTree = "<group>"; };
-		AAD7B00B215E666D000AC1F6 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
-		AAD7B00C215E666D000AC1F6 /* PreferencesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesRouter.swift; sourceTree = "<group>"; };
-		AAD7B00D215E666D000AC1F6 /* PreferencesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesInteractor.swift; sourceTree = "<group>"; };
-		AAD7B00E215E666D000AC1F6 /* PreferencesModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesModels.swift; sourceTree = "<group>"; };
-		AAD7B00F215E666D000AC1F6 /* PreferencesAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesAssembly.swift; sourceTree = "<group>"; };
 		AAD7B017215E66C9000AC1F6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AAD7B019215E6821000AC1F6 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		AAD7B01B215E6905000AC1F6 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
@@ -270,8 +262,8 @@
 			isa = PBXGroup;
 			children = (
 				AACDF5F12198882E00789F1A /* Book Trip */,
-				AAD7B008215E666D000AC1F6 /* Preferences */,
 				AAD7B005215E663B000AC1F6 /* Main */,
+				AA49F84521ADC5B1008B72FB /* Favorites */,
 				AAD7AFB3215D218C000AC1F6 /* Feed */,
 			);
 			path = Features;
@@ -295,6 +287,16 @@
 				AAFC201521A49A8B00E1D8A8 /* Style.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		AA49F84521ADC5B1008B72FB /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				AA49F84621ADC5C1008B72FB /* FavoritesAssembly.swift */,
+				AA49F84821ADC68F008B72FB /* FavoritesRegionRepository.swift */,
+				AA49F84A21ADC7B4008B72FB /* FavoritesConfigurator.swift */,
+			);
+			path = Favorites;
 			sourceTree = "<group>";
 		};
 		AABB46BF219B61BC001AA5D1 /* UI */ = {
@@ -424,20 +426,6 @@
 				AAD7B01B215E6905000AC1F6 /* MainAssembly.swift */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		AAD7B008215E666D000AC1F6 /* Preferences */ = {
-			isa = PBXGroup;
-			children = (
-				AAD7B009215E666D000AC1F6 /* PreferencesPresenter.swift */,
-				AAD7B00A215E666D000AC1F6 /* PreferencesConfigurator.swift */,
-				AAD7B00B215E666D000AC1F6 /* PreferencesViewController.swift */,
-				AAD7B00C215E666D000AC1F6 /* PreferencesRouter.swift */,
-				AAD7B00D215E666D000AC1F6 /* PreferencesInteractor.swift */,
-				AAD7B00E215E666D000AC1F6 /* PreferencesModels.swift */,
-				AAD7B00F215E666D000AC1F6 /* PreferencesAssembly.swift */,
-			);
-			path = Preferences;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -691,36 +679,31 @@
 				AACDF5FD2198882E00789F1A /* BookTripInteractor.swift in Sources */,
 				AAD7AFBF215D218C000AC1F6 /* FeedModels.swift in Sources */,
 				AABB46B8219B5477001AA5D1 /* UIViewController+TopMost.swift in Sources */,
+				AA49F84B21ADC7B4008B72FB /* FavoritesConfigurator.swift in Sources */,
+				AA49F84721ADC5C1008B72FB /* FavoritesAssembly.swift in Sources */,
 				AAD7B018215E66C9000AC1F6 /* MainViewController.swift in Sources */,
 				AAD7B01C215E6905000AC1F6 /* MainAssembly.swift in Sources */,
 				AACDF5FC2198882E00789F1A /* BookTripConfigurator.swift in Sources */,
 				AA3FD3CB215D1138006D9C61 /* View.swift in Sources */,
 				AABB46B6219B5273001AA5D1 /* UIView+GetConstraint.swift in Sources */,
 				AA49F82721AB193D008B72FB /* BookTripButtonsView.swift in Sources */,
-				AAD7B016215E666E000AC1F6 /* PreferencesAssembly.swift in Sources */,
-				AAD7B010215E666D000AC1F6 /* PreferencesPresenter.swift in Sources */,
 				AA3FD3BB215CDCF5006D9C61 /* ContentState.swift in Sources */,
 				AAD7AFBC215D218C000AC1F6 /* FeedPresenter.swift in Sources */,
 				AAFC201621A49A8B00E1D8A8 /* Style.swift in Sources */,
-				AAD7B012215E666D000AC1F6 /* PreferencesViewController.swift in Sources */,
 				AAC5E78C216221A00027323C /* UIView+Style.swift in Sources */,
 				AAD7AFC1215D218C000AC1F6 /* FeedRouter.swift in Sources */,
 				AA3FD3CD215D11AB006D9C61 /* FeaturePresenter.swift in Sources */,
-				AAD7B015215E666E000AC1F6 /* PreferencesModels.swift in Sources */,
 				AABB46C1219B621C001AA5D1 /* BookTripHeaderView.swift in Sources */,
 				AA3FD3C5215CE60E006D9C61 /* EmptyView.swift in Sources */,
-				AAD7B014215E666E000AC1F6 /* PreferencesInteractor.swift in Sources */,
 				AA3FD394215CD34B006D9C61 /* R.generated.swift in Sources */,
 				AAD7AFBB215D218C000AC1F6 /* FeedConfigurator.swift in Sources */,
 				AACDF5FB2198882E00789F1A /* BookTripModels.swift in Sources */,
 				AACDF5FE2198882E00789F1A /* BookTripViewController.swift in Sources */,
-				AAD7B013215E666E000AC1F6 /* PreferencesRouter.swift in Sources */,
 				AA3FD3C9215D1091006D9C61 /* Presenter.swift in Sources */,
 				AAC5E7902162233E0027323C /* UITableView+Dequeue.swift in Sources */,
 				AAD7AFBD215D218C000AC1F6 /* FeedInteractor.swift in Sources */,
 				AAF0521B21AB0D44003705FB /* BookTripTableHeaderView.swift in Sources */,
 				AAD7B007215E6645000AC1F6 /* MainConfigurator.swift in Sources */,
-				AAD7B011215E666D000AC1F6 /* PreferencesConfigurator.swift in Sources */,
 				AA3FD3BF215CE0CA006D9C61 /* FeatureViewController.swift in Sources */,
 				AACDF60721988F1C00789F1A /* BuildersImplementations.swift in Sources */,
 				AACDF5F92198882E00789F1A /* BookTripPresenter.swift in Sources */,
@@ -734,6 +717,7 @@
 				AABB46BC219B5AD3001AA5D1 /* BookTripViewController+Blur.swift in Sources */,
 				AA3FD3C7215CE628006D9C61 /* LoadingView.swift in Sources */,
 				AAC5E793216223CC0027323C /* FeedCardCell.swift in Sources */,
+				AA49F84921ADC68F008B72FB /* FavoritesRegionRepository.swift in Sources */,
 				AAC5E78E216221E00027323C /* UIView+AddSubviews.swift in Sources */,
 				AACDF5FF2198882E00789F1A /* BookTripAssembly.swift in Sources */,
 				AAD7B01A215E6821000AC1F6 /* BaseNavigationViewController.swift in Sources */,

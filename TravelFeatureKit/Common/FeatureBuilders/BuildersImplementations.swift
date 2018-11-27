@@ -642,36 +642,3 @@ extension FeedCardViewModel {
         return newInstance
     }
 }
-
-extension Preferences {
-}
-
-extension Preferences.Data {
-}
-
-extension Preferences.ViewModel {
-    public func with(state: ViewState<Preferences.ViewModel.Content>) -> Preferences.ViewModel {
-        // Note: The order of the properties have to match the order
-        // of the paramaters in the init method
-        let newInstance = Preferences.ViewModel(
-            state: state,
-            title: title
-        )
-
-        return newInstance
-    }
-
-    public func with(title: String) -> Preferences.ViewModel {
-        // Note: The order of the properties have to match the order
-        // of the paramaters in the init method
-        let newInstance = Preferences.ViewModel(
-            state: state,
-            title: title
-        )
-
-        return newInstance
-    }
-}
-
-extension Preferences.ViewModel.Content {
-}
