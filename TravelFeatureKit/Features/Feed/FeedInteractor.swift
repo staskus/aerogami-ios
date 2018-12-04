@@ -46,7 +46,6 @@ class FeedInteractor: FeatureInteractor, FeedInteractable {
     func dispatch(_ action: Feed.Action) {
         switch action {
         case .load:
-            contentState = .loading(data: contentState.data)
             load()
         case .changeRegion(let regionId):
             changeRegion(id: regionId)
@@ -54,7 +53,7 @@ class FeedInteractor: FeatureInteractor, FeedInteractable {
     }
 
     func load() {
-        disposeBag = DisposeBag()
+        contentState = .loading(data: nil)
 
         let selectedRegion = regionRepository.getSelectedRegion()
 
@@ -96,7 +95,10 @@ class FeedInteractor: FeatureInteractor, FeedInteractable {
     }
 
     func changeRegion(id: String?) {
-        contentState = .loading(data: nil)
+        guard let currentData = self.contentState.data else { return }
+        let data = currentData.with(trips: []).with(tripImages: [])
+        self.contentState = .loaded(data: data, error: nil)
+
         regionRepository.saveSelectedRegion(by: id)
         load()
     }
