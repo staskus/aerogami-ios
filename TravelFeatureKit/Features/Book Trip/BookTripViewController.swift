@@ -101,10 +101,10 @@ extension BookTripViewController {
 
     private func setupConstraints() {
         contentView.snp.makeConstraints { (make) in
-            make.height.equalTo(UIScreen.main.bounds.height * 0.85)
+            make.height.equalTo(UIScreen.main.bounds.height * 0.925)
             make.left.equalTo(self.view.snp.left)
             make.right.equalTo(self.view.snp.right)
-            make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
+            make.bottom.equalTo(self.view.snp.bottom)
         }
 
         headerView.snp.makeConstraints { (make) in
@@ -124,12 +124,12 @@ extension BookTripViewController {
             make.height.equalTo(50)
             make.left.equalTo(self.contentView.snp.left).offset(16)
             make.right.equalTo(self.contentView.snp.right).offset(-16)
-            make.bottom.equalTo(self.contentView.snp.bottom).offset(-8)
+            make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom).offset(-8)
         }
 
         tableView.snp.makeConstraints { (make) in
             make.top.equalTo(self.buttonsView.snp.bottom).offset(8)
-            make.bottom.equalTo(self.bookButton.snp.top)
+            make.bottom.equalTo(self.bookButton.snp.top).offset(-8)
             make.left.equalTo(self.view.safeAreaLayoutGuide.snp.left).offset(16)
             make.right.equalTo(self.view.safeAreaLayoutGuide.snp.right).offset(-16)
         }

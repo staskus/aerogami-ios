@@ -16,7 +16,7 @@ class FeedRouter {
             let bookTripViewController = bookTripConfigurator.createViewController(trip: trip)
             bookTripViewController.modalPresentationStyle = .overCurrentContext
             bookTripViewController.modalTransitionStyle = .coverVertical
-            viewController?.present(bookTripViewController, animated: true, completion: nil)
+            viewController?.tabBarController?.present(bookTripViewController, animated: true, completion: nil)
         }
     }
 }

@@ -36,12 +36,12 @@ extension BookTripViewController {
             make.edges.equalTo(self.view.snp.edges)
         }
 
-        UIView.topMost.addSubviews(
+        UIView.parentOfTopMost.addSubviews(
             blurBackground.style(blurBackgroundStyle)
         )
 
         blurBackground.snp.makeConstraints { make in
-            make.edges.equalTo(UIView.topMost.snp.edges)
+            make.edges.equalTo(UIView.parentOfTopMost.snp.edges)
         }
     }
 }

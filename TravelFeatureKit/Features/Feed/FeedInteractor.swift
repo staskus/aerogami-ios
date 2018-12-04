@@ -116,4 +116,8 @@ class FeedInteractor: FeatureInteractor, FeedInteractable {
         disposeBag = DisposeBag()
         notificationToken?.invalidate()
     }
+
+    deinit {
+        notificationToken?.invalidate()
+    }
 }
