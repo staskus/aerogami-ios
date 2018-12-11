@@ -26,12 +26,12 @@ extension UIView {
 
         return UIViewController.topMost.view
     }
-    
+
     class var parentOfTopMost: UIView {
         if let controller = UIViewController.topMost.presentingViewController {
             return controller.view
         }
-        
+
         return UIView.topMost
     }
 }

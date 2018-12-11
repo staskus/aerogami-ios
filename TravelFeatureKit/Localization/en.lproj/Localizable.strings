@@ -1,5 +1,7 @@
 "cancel" = "Cancel";
-"error.genericTitle" = "Something went wrong!";
+"error.genericTitle" = "Something went wrong. Please try again!";
+"empty.genericTitle" = "No data at the moment.";
+"empty.favoritesTitle" = "You have no favorite trips!\nYou will see them here after clicking favorite icon in the trip information view!";
 "feedTab.title" = "Feed";
 "favoritesTab.title" = "Favorites";
 "feed.bothWays.title" = "Both ways";

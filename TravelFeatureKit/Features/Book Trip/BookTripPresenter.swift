@@ -81,9 +81,9 @@ class BookTripAdapter: FeatureAdapter {
             )
         ]
     }
-    
+
     // MARK: - Share
-    
+
     private func makeShareRoute(_ content: BookTrip.Data) -> BookTrip.Route {
         let shareText = R.string.localizable.bookTripShareText(content.bookUrl.absoluteString)
         return BookTrip.Route.share(shareText)

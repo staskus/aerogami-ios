@@ -46,6 +46,7 @@ class FeedInteractor: FeatureInteractor, FeedInteractable {
     func dispatch(_ action: Feed.Action) {
         switch action {
         case .load:
+            contentState = .loading(data: contentState.data)
             load()
         case .changeRegion(let regionId):
             changeRegion(id: regionId)
@@ -53,8 +54,6 @@ class FeedInteractor: FeatureInteractor, FeedInteractable {
     }
 
     func load() {
-        contentState = .loading(data: nil)
-
         let selectedRegion = regionRepository.getSelectedRegion()
 
         Observable.combineLatest(
@@ -75,7 +74,7 @@ class FeedInteractor: FeatureInteractor, FeedInteractable {
                     self.loadImages(for: data.trips)
                 },
                 onError: { error in
-                    self.contentState = .error(error: .loading(reason: error.localizedDescription))
+                    self.contentState = .error(error: .loading(reason: R.string.localizable.errorGenericTitle()))
                 }
             )
             .disposed(by: disposeBag)
@@ -95,9 +94,7 @@ class FeedInteractor: FeatureInteractor, FeedInteractable {
     }
 
     func changeRegion(id: String?) {
-        guard let currentData = self.contentState.data else { return }
-        let data = currentData.with(trips: []).with(tripImages: [])
-        self.contentState = .loaded(data: data, error: nil)
+        contentState = .loading(data: nil)
 
         regionRepository.saveSelectedRegion(by: id)
         load()

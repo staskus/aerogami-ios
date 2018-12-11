@@ -7,7 +7,7 @@ struct Feed {
         let trips: [Trip]
         let selectedRegionId: String?
         let tripImages: [TripImage]
-        
+
         static func empty() -> Feed.Data {
             return Feed.Data(regions: [], trips: [], selectedRegionId: nil, tripImages: [])
         }
@@ -25,6 +25,10 @@ struct Feed {
             struct Region: Equatable {
                 let id: String
                 let name: String
+            }
+
+            var hasContent: Bool {
+                return !rows.isEmpty
             }
         }
     }
