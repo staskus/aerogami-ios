@@ -102,7 +102,7 @@ extension FeatureViewController where Self: UIViewController {
                 errorView?.isHidden = true
             }
 
-        case .error(_):
+        case .error(let error):
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             emptyView?.isHidden = true
             loadingView?.isHidden = true
@@ -110,6 +110,7 @@ extension FeatureViewController where Self: UIViewController {
                 view.bringSubviewToFront(errorView)
                 errorView.isHidden = false
             }
+            (errorView as? ErrorSettable)?.configure(error)
         case .loaded(let viewModel, _):
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             configureView(for: viewModel)

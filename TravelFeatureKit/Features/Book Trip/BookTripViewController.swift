@@ -248,7 +248,7 @@ extension BookTripViewController: BookTripButtonsViewDelegate {
         if let action = viewModel.action {
             interactor.dispatch(action)
         }
-        
+
         if let route = viewModel.route {
             router.route(to: route)
         }

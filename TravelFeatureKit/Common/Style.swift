@@ -24,4 +24,14 @@ struct Style {
             image.contentMode = .scaleAspectFit
         }
     }
+
+    struct Label {
+        static func main(_ label: UILabel) {
+            label.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
+            label.alpha = 0.7
+            label.textColor = .darkGray
+            label.numberOfLines = 0
+            label.textAlignment = .center
+        }
+    }
 }

@@ -16,7 +16,7 @@ struct BookTripButtonViewModel {
     let imageName: String
     let action: BookTrip.Action?
     let route: BookTrip.Route?
-    
+
     init(title: String, imageName: String, action: BookTrip.Action? = nil, route: BookTrip.Route? = nil) {
         self.title = title
         self.imageName = imageName

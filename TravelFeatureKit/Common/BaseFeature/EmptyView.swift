@@ -7,11 +7,31 @@
 //
 
 import UIKit
+import SnapKit
 
 class EmptyView: UIView {
+    let label = UILabel()
+
     init() {
         super.init(frame: .zero)
-        backgroundColor = .blue
+        setupView()
+    }
+
+    private func setupView() {
+        backgroundColor = .clear
+        isUserInteractionEnabled = false
+
+        addSubviews(
+            label
+                .style(Style.Label.main)
+                .style { $0.text = R.string.localizable.emptyGenericTitle() }
+        )
+
+        label.snp.makeConstraints { make in
+            make.width.equalTo(snp.width).multipliedBy(0.8)
+            make.centerX.equalTo(snp.centerX)
+            make.centerY.equalTo(snp.centerY)
+        }
     }
 
     required init?(coder aDecoder: NSCoder) {

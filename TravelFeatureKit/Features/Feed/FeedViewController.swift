@@ -9,9 +9,9 @@ class FeedViewController: UIViewController, FeatureViewController {
     typealias Interactor = FeatureInteractor & FeedInteractable
 
     // State Views
-    var errorView: UIView?
+    var errorView: UIView? = ErrorView()
     var loadingView: UIView?
-    var emptyView: UIView?
+    var emptyView: UIView? = EmptyView()
 
     // Properties
     private let interactor: Interactor

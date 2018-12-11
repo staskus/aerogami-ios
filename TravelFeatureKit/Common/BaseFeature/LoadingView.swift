@@ -14,6 +14,7 @@ class LoadingView: UIView {
 
     init() {
         super.init(frame: .zero)
+        backgroundColor = .white
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         addSubview(activityIndicator)
         activityIndicator.color = .black
