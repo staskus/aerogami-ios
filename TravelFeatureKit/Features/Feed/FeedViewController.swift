@@ -158,6 +158,8 @@ extension FeedViewController: FeedTableHeaderViewDelegate {
         )
 
         alertViewController.view.tintColor = Theme.primary
+        alertViewController.popoverPresentationController?.sourceRect = headerView.regionButton.bounds
+        alertViewController.popoverPresentationController?.sourceView = headerView.regionButton
 
         present(alertViewController, animated: true, completion: nil)
     }
