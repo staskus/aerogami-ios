@@ -43,8 +43,8 @@ class ApplicationLoader {
     }
 
     private func prepareForInjection() {
-        #if DEBUG
-        Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/iOSInjection10.bundle")?.load()
-        #endif
+//        #if DEBUG
+//        Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/iOSInjection10.bundle")?.load()
+//        #endif
     }
 }

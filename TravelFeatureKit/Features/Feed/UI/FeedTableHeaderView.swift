@@ -15,7 +15,7 @@ protocol FeedTableHeaderViewDelegate: class {
 
 class FeedTableHeaderView: UIView {
     private let titleLabel = UILabel()
-    private let regionButton = UIButton()
+    let regionButton = UIButton()
     weak var delegate: FeedTableHeaderViewDelegate?
 
     override init(frame: CGRect) {

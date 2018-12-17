@@ -58,7 +58,6 @@ class FeedCardCell: UITableViewCell, ReusableView {
             make.edges
                 .equalTo(self.contentView)
                 .inset(UIEdgeInsets(top: 0, left: 20, bottom: 30, right: 20)).priority(750)
-            make.width.lessThanOrEqualTo(335).priority(751)
             make.centerX.equalTo(self.contentView).priority(751)
             make.height.equalTo(412)
         }
