@@ -126,6 +126,7 @@ extension FeatureViewController where Self: UIViewController {
                 // Show Empty view
                 view.bringSubviewToFront(emptyView)
                 emptyView.isHidden = false
+                display()
             }
         } else {
             // If viewModel has content, hide emptyView
