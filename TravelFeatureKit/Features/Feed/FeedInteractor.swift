@@ -107,13 +107,15 @@ class FeedInteractor: FeatureInteractor, FeedInteractable {
 
     private func subscribeForRealmNotifications() {
         notificationToken = realm.observe { [weak self] _, _ in
+            if let content = self?.contentState.data {
+                self?.contentState = .loading(data: content.with(trips: []))
+            }
             self?.load()
         }
     }
 
     func unsubscribe() {
         disposeBag = DisposeBag()
-        notificationToken?.invalidate()
     }
 
     deinit {
