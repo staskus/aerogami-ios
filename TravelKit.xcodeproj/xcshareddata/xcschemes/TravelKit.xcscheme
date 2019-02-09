@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "01A3572721834B8500B493F6"
+               BuildableName = "TravelKitTests.xctest"
+               BlueprintName = "TravelKitTests"
+               ReferencedContainer = "container:TravelKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AA0A1E88215BA70900754EC7"
+            BuildableName = "TravelKit.framework"
+            BlueprintName = "TravelKit"
+            ReferencedContainer = "container:TravelKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

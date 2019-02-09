@@ -150,7 +150,7 @@ private class FeedCardTopView: UIView {
     func configure(with viewModel: FeedCardViewModel) {
         imageView.sd_setImage(with: viewModel.imageUrl)
         subtitleLabel.text = viewModel.direction
-        titleLabel.text = viewModel.trip
+        titleLabel.text = "Vilnius\nBarcelona" //viewModel.trip
     }
 
     private func setupView() {
@@ -230,7 +230,7 @@ private class FeedCardBottomView: UIView {
     func configure(with viewModel: FeedCardViewModel) {
         button.setTitle("  \(viewModel.routeName)  ", for: .normal)
         topLabel.text = R.string.localizable.feedTotalPriceTitle().lowercased()
-        priceLabel.text = viewModel.price
+        priceLabel.text = "€29" //viewModel.price
         dateLabel.text = viewModel.dateRange
     }
 
