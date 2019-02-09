@@ -9,7 +9,6 @@
 import RxSwift
 import TravelKit
 import TravelAPIKit
-import ObjectMapper
 
 class APITripDataStore: RemoteTripDataStore {
     private let apiClient: APIClient
@@ -26,8 +25,9 @@ class APITripDataStore: RemoteTripDataStore {
             fullPath = "\(path)/\(region)"
         }
         return apiClient.get(path: fullPath)
+            .map { try? JSONSerialization.data(withJSONObject: $0, options: []) }
             .map { response in
-                guard let trips = try? Mapper<Trip>().mapArray(JSONObject: response) else {
+                guard let data = response, let trips = try? Trip.decoder.decode([Trip].self, from: data) else {
                     throw RemoteTripDataStoreError.parseError
                 }
                 return trips
