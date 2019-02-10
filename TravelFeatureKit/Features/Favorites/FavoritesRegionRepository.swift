@@ -14,7 +14,7 @@ class FavoritesRegionRepository: TravelKit.RegionRepository {
     private let region: Region
 
     init() {
-        let region = Region()
+        var region = Region()
         region.id = "0"
         region.name = R.string.localizable.feedRegionButtonTitle()
         self.region = region

@@ -49,7 +49,7 @@ class FeedCardCell: UITableViewCell, ReusableView {
             topView,
             bottomView,
             expiredView.style { $0.isHidden = true },
-            backgroundButton.style(backgroundButtonStyle)
+            backgroundButton
         )
     }
 
@@ -79,10 +79,6 @@ class FeedCardCell: UITableViewCell, ReusableView {
         expiredView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.containerView)
         }
-
-//        backgroundButton.snp.makeConstraints { (make) in
-//            make.edges.equalTo(self.containerView)
-//        }
     }
 
     override func layoutSubviews() {
@@ -112,14 +108,6 @@ class FeedCardCell: UITableViewCell, ReusableView {
         containerView.layer.cornerRadius = 15
         containerView.clipsToBounds = true
         containerView.layer.masksToBounds = true
-    }
-
-    private func backgroundButtonStyle(_ button: UIButton) {
-        return
-        backgroundButton.addTarget(self, action: #selector(onTouchDown), for: .touchDown)
-        backgroundButton.addTarget(self, action: #selector(onTouchUp), for: .touchUpInside)
-        backgroundButton.addTarget(self, action: #selector(onTouchUp), for: .touchUpOutside)
-        backgroundButton.addTarget(self, action: #selector(onTouchUp), for: .touchCancel)
     }
 
     @objc private func onTouchDown() {

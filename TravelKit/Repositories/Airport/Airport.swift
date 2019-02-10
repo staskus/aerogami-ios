@@ -7,41 +7,25 @@
 //
 
 import Foundation
-import ObjectMapper
-import ObjectMapper_Realm
-import RealmSwift
 
-public class Airport: Object, ImmutableMappable {
-    @objc public dynamic var code: String = ""
-    @objc public dynamic var city: String = ""
-    @objc public dynamic var countryCode: String = ""
-    @objc public dynamic var name: String = ""
-    @objc public dynamic var state: String?
-    @objc public dynamic var lon = 0.0
-    @objc public dynamic var lat = 0.0
-
-    public override static func primaryKey() -> String? {
-        return "code"
-    }
-
-    required convenience public init(map: Map) throws {
-        self.init()
-        code =                try map.value("code")
-        city =                try map.value("city")
-        countryCode =         try map.value("country")
-        name =                try map.value("name")
-        state =               try? map.value("state")
-        lon =                 try map.value("lon")
-        lat =                 try map.value("lat")
-    }
-
-    public func mapping(map: Map) {
-        code                >>> map["code"]
-        city                >>> map["city"]
-        countryCode         >>> map["country"]
-        name                >>> map["name"]
-        state               >>> map["state"]
-        lon                 >>> map["lon"]
-        lat                 >>> map["lat"]
-    }
+public struct Airport: Codable, Equatable {
+    public var code: String = ""
+    public var city: String = ""
+    public var countryCode: String = ""
+    public var name: String = ""
+    public var state: String?
+    public var lon = 0.0
+    public var lat = 0.0
+    
+    public static var decoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }()
+    
+    public static var encoder: JSONEncoder = {
+        let encoder = JSONEncoder()
+        encoder.keyEncodingStrategy = .convertToSnakeCase
+        return encoder
+    }()
 }

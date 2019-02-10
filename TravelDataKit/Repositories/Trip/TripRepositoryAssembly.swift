@@ -23,7 +23,7 @@ public class TripRepositoryAssembly: Assembly {
         }.inObjectScope(.container)
 
         container.register(LocalTripDataStore.self) { r in
-            RealmTripDataStore()
+            UserDefaultsTripDataStore()
         }.inObjectScope(.container)
 
         container.register(TravelKit.FavoriteTripRepository.self) { r in

@@ -1,7 +1,6 @@
 import Foundation
-import ObjectMapper
 
-class APIDateTransform: TransformType {
+class APIDateTransform {
     public typealias Object = Date
     public typealias JSON = Double
 

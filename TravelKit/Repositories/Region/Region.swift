@@ -7,27 +7,23 @@
 //
 
 import Foundation
-import ObjectMapper
-import ObjectMapper_Realm
-import RealmSwift
 
-public class Region: Object, ImmutableMappable {
-    @objc public dynamic var id: String = ""
-    @objc public dynamic var name: String = ""
-    @objc public dynamic var createdAt = Date()
+public struct Region: Codable, Equatable {
+    public var id: String = ""
+    public var name: String = ""
+    public let createdAt = Date()
+    
+    public init() {}
 
-    public override static func primaryKey() -> String? {
-        return "id"
-    }
-
-    required convenience public init(map: Map) throws {
-        self.init()
-        id =                try map.value("id")
-        name =              try map.value("name")
-    }
-
-    public func mapping(map: Map) {
-        id                <- map["id"]
-        name              <- map["name"]
-    }
+    public static var decoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }()
+    
+    public static var encoder: JSONEncoder = {
+        let encoder = JSONEncoder()
+        encoder.keyEncodingStrategy = .convertToSnakeCase
+        return encoder
+    }()
 }

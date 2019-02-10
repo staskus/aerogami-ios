@@ -7,24 +7,22 @@
 //
 
 import Foundation
-import RealmSwift
 
-public class Trip: Object, Codable {
-    @objc public dynamic var id: String = ""
+public struct Trip: Codable, Equatable {
+    public var id: String = ""
+    public var currency: String = ""
+    public var price = 0
 
-    @objc public dynamic var currency: String = ""
-    @objc public dynamic var price = 0
+    public var airlines = ""
+    public var flightNumber = 0
 
-    @objc public dynamic var airlines = ""
-    @objc public dynamic var flightNumber = 0
+    public var destination: TripLocation!
+    public var departure: TripLocation!
 
-    @objc public dynamic var destination: TripLocation!
-    @objc public dynamic var departure: TripLocation!
-
-    @objc public dynamic var createdAt = Date()
-    @objc public dynamic var departureAt = Date()
-    @objc public dynamic var returnAt = Date()
-    @objc public dynamic var expiresAt = Date()
+    public var createdAt = Date()
+    public var departureAt = Date()
+    public var returnAt = Date()
+    public var expiresAt = Date()
     
     public static var decoder: JSONDecoder = {
         let decoder = JSONDecoder()
@@ -37,18 +35,10 @@ public class Trip: Object, Codable {
         encoder.keyEncodingStrategy = .convertToSnakeCase
         return encoder
     }()
-
-    public override static func primaryKey() -> String? {
-        return "id"
-    }
 }
 
-public class TripLocation: Object, Codable {
-    @objc public dynamic var city: String!
-    @objc public dynamic var countryCode: String!
-    @objc public dynamic var airportCode: String!
-
-    public override static func primaryKey() -> String? {
-        return "airportCode"
-    }
+public struct TripLocation: Codable, Equatable {
+    public var city: String!
+    public var countryCode: String!
+    public var airportCode: String!
 }
