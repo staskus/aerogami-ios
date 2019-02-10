@@ -9,7 +9,6 @@
 import RxSwift
 import TravelKit
 import TravelAPIKit
-import ObjectMapper
 
 class APIAirportDataStore: RemoteAirportDataStore {
     private let apiClient: APIClient
@@ -25,10 +24,11 @@ class APIAirportDataStore: RemoteAirportDataStore {
         return apiClient.get(path: fullPath)
             .map { response in
                 guard let body = ((response as? [String: Any])?["body"]) as? String,
-                    let aiport = try? Mapper<Airport>().map(JSONString: body) else {
+                    let data = body.data(using: .utf8),
+                    let airport = try? Airport.decoder.decode(Airport.self, from: data) else {
                     throw RemoteAirportDataStoreError.parseError
                 }
-                return aiport
+                return airport
         }
     }
 }

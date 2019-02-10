@@ -277,7 +277,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TravelAPIKit-TravelAPIKitTests/Pods-TravelAPIKit-TravelAPIKitTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TravelAPIKit-TravelAPIKitTests/Pods-TravelAPIKit-TravelAPIKitTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
@@ -292,7 +292,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelAPIKit-TravelAPIKitTests/Pods-TravelAPIKit-TravelAPIKitTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelAPIKit-TravelAPIKitTests/Pods-TravelAPIKit-TravelAPIKitTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

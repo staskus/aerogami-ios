@@ -1,7 +1,6 @@
 import UIKit
 import RxSwift
 import TravelKit
-import RealmSwift
 
 protocol FeedInteractable {
     func dispatch(_ action: Feed.Action)
@@ -16,11 +15,6 @@ class FeedInteractor: FeatureInteractor, FeedInteractable {
     private let tripRepository: TripRepository
     private let airportRepository: AirportRepository
     private let tripImageRepository: TripImageRepository
-
-    private var realm: Realm {
-        return try! Realm()
-    }
-    private var notificationToken: NotificationToken?
 
     private var contentState: ContentState<Feed.Data> = .loading(data: nil) {
         didSet {
@@ -102,23 +96,9 @@ class FeedInteractor: FeatureInteractor, FeedInteractable {
 
     func subscribe() {
         presenter.present(contentState)
-        subscribeForRealmNotifications()
-    }
-
-    private func subscribeForRealmNotifications() {
-        notificationToken = realm.observe { [weak self] _, _ in
-            if let content = self?.contentState.data {
-                self?.contentState = .loading(data: content.with(trips: []))
-            }
-            self?.load()
-        }
     }
 
     func unsubscribe() {
         disposeBag = DisposeBag()
-    }
-
-    deinit {
-        notificationToken?.invalidate()
     }
 }

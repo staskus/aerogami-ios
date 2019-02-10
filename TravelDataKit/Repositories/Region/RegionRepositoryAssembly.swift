@@ -17,7 +17,7 @@ public class RegionRepositoryAssembly: Assembly {
         }.inObjectScope(.container)
 
         container.register(LocalRegionDataStore.self) { r in
-            RealmRegionDataStore()
+            UserDefaultsRegionDataStore()
         }.inObjectScope(.container)
 
         container.register(LocalRegionPeferencesDataStore.self) { r in

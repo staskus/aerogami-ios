@@ -14,10 +14,10 @@
 		AA0A1ED6215BA91F00754EC7 /* TravelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1ED5215BA91F00754EC7 /* TravelKit.framework */; };
 		AA49F82B21AB322E008B72FB /* FavoriteTripRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA49F82A21AB322E008B72FB /* FavoriteTripRepository.swift */; };
 		AA49F82E21AB325A008B72FB /* LocalTripDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA49F82D21AB325A008B72FB /* LocalTripDataStore.swift */; };
-		AA49F83021AB3263008B72FB /* RealmTripDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA49F82F21AB3263008B72FB /* RealmTripDataStore.swift */; };
+		AA49F83021AB3263008B72FB /* UserDefaultsTripDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA49F82F21AB3263008B72FB /* UserDefaultsTripDataStore.swift */; };
 		AA49F83421AC69A4008B72FB /* TripImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA49F83321AC69A4008B72FB /* TripImageRepository.swift */; };
 		AA7FD501215BC778000FB362 /* APIRegionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD500215BC778000FB362 /* APIRegionDataStore.swift */; };
-		AA7FD503215BC796000FB362 /* RealmRegionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD502215BC796000FB362 /* RealmRegionDataStore.swift */; };
+		AA7FD503215BC796000FB362 /* UserDefaultsRegionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD502215BC796000FB362 /* UserDefaultsRegionDataStore.swift */; };
 		AA7FD505215BC7AE000FB362 /* TravelAPIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7FD504215BC7AE000FB362 /* TravelAPIKit.framework */; };
 		AA7FD507215BC859000FB362 /* LocalRegionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD506215BC859000FB362 /* LocalRegionDataStore.swift */; };
 		AA7FD509215BC86E000FB362 /* RemoteRegionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7FD508215BC86E000FB362 /* RemoteRegionDataStore.swift */; };
@@ -29,7 +29,7 @@
 		AAD7AFE3215E1450000AC1F6 /* APITripDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFE2215E1450000AC1F6 /* APITripDataStore.swift */; };
 		AAD7AFE7215E1589000AC1F6 /* TripRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFE6215E1589000AC1F6 /* TripRepository.swift */; };
 		AAD7AFE9215E15BF000AC1F6 /* TripRepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFE8215E15BF000AC1F6 /* TripRepositoryAssembly.swift */; };
-		AAD7AFF6215E218B000AC1F6 /* RealmAirportDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFF5215E218B000AC1F6 /* RealmAirportDataStore.swift */; };
+		AAD7AFF6215E218B000AC1F6 /* UserDefaultsAirportDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFF5215E218B000AC1F6 /* UserDefaultsAirportDataStore.swift */; };
 		AAD7AFF8215E2198000AC1F6 /* LocalAirportDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFF7215E2198000AC1F6 /* LocalAirportDataStore.swift */; };
 		AAD7AFFB215E2290000AC1F6 /* APIAirportDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFFA215E2290000AC1F6 /* APIAirportDataStore.swift */; };
 		AAD7AFFD215E2298000AC1F6 /* RemoteAirportDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7AFFC215E2298000AC1F6 /* RemoteAirportDataStore.swift */; };
@@ -67,10 +67,10 @@
 		AA0A1ED5215BA91F00754EC7 /* TravelKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TravelKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA49F82A21AB322E008B72FB /* FavoriteTripRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTripRepository.swift; sourceTree = "<group>"; };
 		AA49F82D21AB325A008B72FB /* LocalTripDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTripDataStore.swift; sourceTree = "<group>"; };
-		AA49F82F21AB3263008B72FB /* RealmTripDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTripDataStore.swift; sourceTree = "<group>"; };
+		AA49F82F21AB3263008B72FB /* UserDefaultsTripDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsTripDataStore.swift; sourceTree = "<group>"; };
 		AA49F83321AC69A4008B72FB /* TripImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripImageRepository.swift; sourceTree = "<group>"; };
 		AA7FD500215BC778000FB362 /* APIRegionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRegionDataStore.swift; sourceTree = "<group>"; };
-		AA7FD502215BC796000FB362 /* RealmRegionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRegionDataStore.swift; sourceTree = "<group>"; };
+		AA7FD502215BC796000FB362 /* UserDefaultsRegionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsRegionDataStore.swift; sourceTree = "<group>"; };
 		AA7FD504215BC7AE000FB362 /* TravelAPIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TravelAPIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7FD506215BC859000FB362 /* LocalRegionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRegionDataStore.swift; sourceTree = "<group>"; };
 		AA7FD508215BC86E000FB362 /* RemoteRegionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRegionDataStore.swift; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		AAD7AFE2215E1450000AC1F6 /* APITripDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITripDataStore.swift; sourceTree = "<group>"; };
 		AAD7AFE6215E1589000AC1F6 /* TripRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRepository.swift; sourceTree = "<group>"; };
 		AAD7AFE8215E15BF000AC1F6 /* TripRepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRepositoryAssembly.swift; sourceTree = "<group>"; };
-		AAD7AFF5215E218B000AC1F6 /* RealmAirportDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAirportDataStore.swift; sourceTree = "<group>"; };
+		AAD7AFF5215E218B000AC1F6 /* UserDefaultsAirportDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsAirportDataStore.swift; sourceTree = "<group>"; };
 		AAD7AFF7215E2198000AC1F6 /* LocalAirportDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAirportDataStore.swift; sourceTree = "<group>"; };
 		AAD7AFFA215E2290000AC1F6 /* APIAirportDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIAirportDataStore.swift; sourceTree = "<group>"; };
 		AAD7AFFC215E2298000AC1F6 /* RemoteAirportDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAirportDataStore.swift; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				AA49F82D21AB325A008B72FB /* LocalTripDataStore.swift */,
-				AA49F82F21AB3263008B72FB /* RealmTripDataStore.swift */,
+				AA49F82F21AB3263008B72FB /* UserDefaultsTripDataStore.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 		AA7FD4FE215BC75A000FB362 /* Local */ = {
 			isa = PBXGroup;
 			children = (
-				AA7FD502215BC796000FB362 /* RealmRegionDataStore.swift */,
+				AA7FD502215BC796000FB362 /* UserDefaultsRegionDataStore.swift */,
 				AA7FD506215BC859000FB362 /* LocalRegionDataStore.swift */,
 				AAC5E7982163615A0027323C /* LocalRegionPeferencesDataStore.swift */,
 				AAC5E79A2163619D0027323C /* UserDefaultsRegionPreferencesDataStore.swift */,
@@ -274,7 +274,7 @@
 		AAD7AFF4215E2167000AC1F6 /* Local */ = {
 			isa = PBXGroup;
 			children = (
-				AAD7AFF5215E218B000AC1F6 /* RealmAirportDataStore.swift */,
+				AAD7AFF5215E218B000AC1F6 /* UserDefaultsAirportDataStore.swift */,
 				AAD7AFF7215E2198000AC1F6 /* LocalAirportDataStore.swift */,
 			);
 			path = Local;
@@ -492,13 +492,8 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TravelDataKit-TravelDataKitTests/Pods-TravelDataKit-TravelDataKitTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TravelDataKit-TravelDataKitTests/Pods-TravelDataKit-TravelDataKitTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper+Realm/ObjectMapper_Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapperAdditions/ObjectMapperAdditions.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
@@ -511,11 +506,6 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper_Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapperAdditions.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
@@ -525,7 +515,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelDataKit-TravelDataKitTests/Pods-TravelDataKit-TravelDataKitTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelDataKit-TravelDataKitTests/Pods-TravelDataKit-TravelDataKitTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -535,7 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA7FD503215BC796000FB362 /* RealmRegionDataStore.swift in Sources */,
+				AA7FD503215BC796000FB362 /* UserDefaultsRegionDataStore.swift in Sources */,
 				AAD7AFFD215E2298000AC1F6 /* RemoteAirportDataStore.swift in Sources */,
 				AA7FD509215BC86E000FB362 /* RemoteRegionDataStore.swift in Sources */,
 				AAFC203221A4ABDC00E1D8A8 /* BookURLRepositoryAssembly.swift in Sources */,
@@ -545,13 +535,13 @@
 				AA49F82E21AB325A008B72FB /* LocalTripDataStore.swift in Sources */,
 				AAD7AFD4215D23EC000AC1F6 /* RegionRepositoryAssembly.swift in Sources */,
 				AA7FD501215BC778000FB362 /* APIRegionDataStore.swift in Sources */,
-				AA49F83021AB3263008B72FB /* RealmTripDataStore.swift in Sources */,
+				AA49F83021AB3263008B72FB /* UserDefaultsTripDataStore.swift in Sources */,
 				AAD7AFE7215E1589000AC1F6 /* TripRepository.swift in Sources */,
 				AAD7AFE9215E15BF000AC1F6 /* TripRepositoryAssembly.swift in Sources */,
 				AAD7AFFB215E2290000AC1F6 /* APIAirportDataStore.swift in Sources */,
 				AA49F83421AC69A4008B72FB /* TripImageRepository.swift in Sources */,
 				AAD7AFE3215E1450000AC1F6 /* APITripDataStore.swift in Sources */,
-				AAD7AFF6215E218B000AC1F6 /* RealmAirportDataStore.swift in Sources */,
+				AAD7AFF6215E218B000AC1F6 /* UserDefaultsAirportDataStore.swift in Sources */,
 				AAFC201F21A4A2F900E1D8A8 /* BookURLRepository.swift in Sources */,
 				AA7FD50F215BCAC5000FB362 /* RegionRepository.swift in Sources */,
 				AA0A1EC6215BA88300754EC7 /* Example.swift in Sources */,

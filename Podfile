@@ -7,12 +7,8 @@ deployment_target = '11.0'
 workspace 'TravelApplication.xcworkspace'
 
 #Versions
-$objectMapperVersion =                '~> 3.3'
 $swinjectVersion =                    '~> 2.4'
-$realmVersion =                       '~> 3.7'
 $rxSwiftVersion =                     '~> 4.2'
-$omAdditionsVersion =                 '~> 4.1'
-$omRealmVersion =                     '~> 0.6'
 $swiftDateVersion =                   '~> 5.0'
 $rxAlamofireVersion =                 '~> 4.2'
 $alamofireVersion =                   '~> 4.7'
@@ -31,11 +27,7 @@ end
 # ############################################################
 
 def shared_TravelKit_pods
-    pod 'ObjectMapper',               $objectMapperVersion
-    pod 'RealmSwift'
     pod 'RxSwift',                    $rxSwiftVersion
-    pod 'ObjectMapperAdditions/Core', $omAdditionsVersion
-    pod 'ObjectMapper+Realm',         $omRealmVersion
     pod 'SwiftDate',                  $swiftDateVersion
 end
 
@@ -82,7 +74,6 @@ end
 # #############################################################################
 
 def shared_TravelDataKit_pods
-    pod 'RealmSwift'
     pod 'RxSwift',                    $rxSwiftVersion
     pod 'SwiftDate',                  $swiftDateVersion
     pod 'Swinject',                   $swinjectVersion
@@ -124,6 +115,7 @@ target 'TravelFeatureKit' do
   platform :ios, deployment_target
 
   shared_TravelFeatureKit_pods
+  pod 'CocoaLumberjack/Swift'
 
   target 'TravelFeatureKitTests' do
     project 'TravelFeatureKit.xcodeproj'

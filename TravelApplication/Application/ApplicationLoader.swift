@@ -27,7 +27,6 @@ class ApplicationLoader {
     func start(launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
         setupLogger()
         loadRootViewController()
-        prepareForInjection()
     }
 
     private func loadRootViewController() {
@@ -40,11 +39,5 @@ class ApplicationLoader {
 
     private func setupLogger() {
         DDLog.add(DDASLLogger.sharedInstance)
-    }
-
-    private func prepareForInjection() {
-//        #if DEBUG
-//        Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/iOSInjection10.bundle")?.load()
-//        #endif
     }
 }

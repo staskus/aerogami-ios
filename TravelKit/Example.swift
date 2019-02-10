@@ -8,7 +8,6 @@
 
 import UIKit
 import RxSwift
-import RealmSwift
 
 public protocol Example {
     func doStuff()

@@ -17,7 +17,7 @@ public class AirportRepositoryAssembly: Assembly {
         }.inObjectScope(.container)
 
         container.register(LocalAirportDataStore.self) { r in
-            RealmAirportDataStore()
+            UserDefaultsAirportDataStore()
         }.inObjectScope(.container)
 
         container.register(TravelKit.AirportRepository.self) { r in
