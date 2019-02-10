@@ -20,9 +20,7 @@ public class FavoriteTripRepository: TravelKit.FavoriteTripRepository {
     }
 
     public func getTrips(in region: String?) -> Observable<[Trip]> {
-        return Observable.deferred { () -> Observable<[Trip]> in
-            return .just(self.localDataStore.getTrips())
-        }
+        return localDataStore.getTrips()
     }
 
     public func isFavorite(_ trip: Trip) -> Observable<Bool> {
