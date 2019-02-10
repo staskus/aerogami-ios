@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import RxSwift
 import TravelKit
 
 public protocol LocalTripDataStore {
     func getTrip(by id: String) -> Trip?
-    func getTrips() -> [Trip]
+    func getTrips() -> Observable<[Trip]>
     func write(trip: Trip)
     func remove(trip: Trip)
 }
