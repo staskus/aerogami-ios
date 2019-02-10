@@ -19,7 +19,9 @@ struct Constants {
     static let environment = Environment.development
 
     struct API {
-        static let baseUrl = "https://48n584gglk.execute-api.eu-central-1.amazonaws.com/dev"
+        static let baseUrl: String = {
+            return valueForAPIKey(keyname: "BASE_URL") ?? "BASE_URL"
+        }()
     }
 
     #else
@@ -27,10 +29,24 @@ struct Constants {
     static let environment = Environment.production
 
     struct API {
-        static let baseUrl = "https://48n584gglk.execute-api.eu-central-1.amazonaws.com/dev"
+        static let baseUrl: String = {
+            return valueForAPIKey(keyname: "BASE_URL") ?? "BASE_URL"
+        }()
     }
 
     #endif
 
-    static let affiliateId = "d0116d33d3445e61d64615852917f9e6"
+    static let affiliateId = {
+        return valueForAPIKey(keyname: "AFFILIATE_ID") ?? "AFFILIATE_ID"
+    }()
+}
+
+private func valueForAPIKey(keyname: String) -> String? {
+    guard let filePath = Bundle.main.path(forResource: "Keys", ofType: "plist"),
+          let plist = NSDictionary(contentsOfFile: filePath),
+          let value = plist.object(forKey: keyname) as? String else {
+        return nil
+    }
+
+    return value
 }
