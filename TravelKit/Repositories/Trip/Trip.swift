@@ -24,15 +24,19 @@ public struct Trip: Codable, Equatable {
     public var returnAt = Date()
     public var expiresAt = Date()
     
+    public init() {}
+    
     public static var decoder: JSONDecoder = {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
+        decoder.dateDecodingStrategy = .millisecondsSince1970
         return decoder
     }()
     
     public static var encoder: JSONEncoder = {
         let encoder = JSONEncoder()
         encoder.keyEncodingStrategy = .convertToSnakeCase
+        decoder.dateDecodingStrategy = .millisecondsSince1970
         return encoder
     }()
 }
@@ -41,4 +45,6 @@ public struct TripLocation: Codable, Equatable {
     public var city: String!
     public var countryCode: String!
     public var airportCode: String!
+    
+    public init() {}
 }

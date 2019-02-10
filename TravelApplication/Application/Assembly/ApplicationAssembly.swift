@@ -21,7 +21,8 @@ class ApplicationAssembly: Assembly {
         }.inObjectScope(.container)
 
         container.register(APIClient.self) { _ in
-            BaseAPIClient(baseUrl: Constants.API.baseUrl)
+            let client: APIClient = Constants.isMockingEnabled ? MockAPIClient() : BaseAPIClient(baseUrl: Constants.API.baseUrl ?? "")
+            return client
         }.inObjectScope(.container)
     }
 }

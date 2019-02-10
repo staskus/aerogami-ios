@@ -19,8 +19,8 @@ struct Constants {
     static let environment = Environment.development
 
     struct API {
-        static let baseUrl: String = {
-            return valueForAPIKey(keyname: "BASE_URL") ?? "BASE_URL"
+        static let baseUrl: String? = {
+            return valueForAPIKey(keyname: "BASE_URL")
         }()
     }
 
@@ -29,8 +29,8 @@ struct Constants {
     static let environment = Environment.production
 
     struct API {
-        static let baseUrl: String = {
-            return valueForAPIKey(keyname: "BASE_URL") ?? "BASE_URL"
+        static let baseUrl: String? = {
+            return valueForAPIKey(keyname: "BASE_URL")
         }()
     }
 
@@ -39,6 +39,10 @@ struct Constants {
     static let affiliateId = {
         return valueForAPIKey(keyname: "AFFILIATE_ID") ?? "AFFILIATE_ID"
     }()
+    
+    static var isMockingEnabled: Bool {
+        return Constants.API.baseUrl == nil && Constants.environment == .development
+    }
 }
 
 private func valueForAPIKey(keyname: String) -> String? {

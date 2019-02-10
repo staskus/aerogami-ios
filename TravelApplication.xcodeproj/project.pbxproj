@@ -45,6 +45,11 @@
 		AAD2E363215BB6BC008B77BE /* TravelDataKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1ECD215BA8C900754EC7 /* TravelDataKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AAD2E36C215BB842008B77BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2E36B215BB842008B77BE /* Constants.swift */; };
 		AAD2E36D215BB842008B77BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2E36B215BB842008B77BE /* Constants.swift */; };
+		AAEF9038221040DF00257914 /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEF9037221040DF00257914 /* MockAPIClient.swift */; };
+		AAEF9039221040DF00257914 /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEF9037221040DF00257914 /* MockAPIClient.swift */; };
+		AAEF903C2210417700257914 /* TripMock.json in Resources */ = {isa = PBXBuildFile; fileRef = AAEF903A2210417700257914 /* TripMock.json */; };
+		AAEF90402210436E00257914 /* AirportMock.json in Resources */ = {isa = PBXBuildFile; fileRef = AAEF903D2210436E00257914 /* AirportMock.json */; };
+		AAEF90422210436E00257914 /* RegionMock.json in Resources */ = {isa = PBXBuildFile; fileRef = AAEF903E2210436E00257914 /* RegionMock.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +230,10 @@
 		AAD2E368215BB6BC008B77BE /* Aerogami Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aerogami Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD2E36A215BB6BC008B77BE /* Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Dev.plist"; path = "/Users/Povilas/Projects/TravelSwift/Info-Dev.plist"; sourceTree = "<absolute>"; };
 		AAD2E36B215BB842008B77BE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AAEF9037221040DF00257914 /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
+		AAEF903A2210417700257914 /* TripMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TripMock.json; sourceTree = "<group>"; };
+		AAEF903D2210436E00257914 /* AirportMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AirportMock.json; sourceTree = "<group>"; };
+		AAEF903E2210436E00257914 /* RegionMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RegionMock.json; sourceTree = "<group>"; };
 		B3DD0F23D49182673376940F /* Pods-TravelApplication Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApplication Dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApplication Dev/Pods-TravelApplication Dev.release.xcconfig"; sourceTree = "<group>"; };
 		FF759E11D9C9A3522F209AFE /* Pods-TravelApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApplication/Pods-TravelApplication.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -325,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				AA6183D4215BEA6500F47C9C /* Assembly */,
+				AAEF9032221040CC00257914 /* Mocking */,
 				AABB46AD219B5059001AA5D1 /* Injection */,
 				AA6183D8215BEC4E00F47C9C /* ApplicationLoader.swift */,
 			);
@@ -395,6 +405,17 @@
 				AABB46B2219B506A001AA5D1 /* UIViewController+Injected.swift */,
 			);
 			path = Injection;
+			sourceTree = "<group>";
+		};
+		AAEF9032221040CC00257914 /* Mocking */ = {
+			isa = PBXGroup;
+			children = (
+				AAEF903D2210436E00257914 /* AirportMock.json */,
+				AAEF903E2210436E00257914 /* RegionMock.json */,
+				AAEF903A2210417700257914 /* TripMock.json */,
+				AAEF9037221040DF00257914 /* MockAPIClient.swift */,
+			);
+			path = Mocking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -607,6 +628,9 @@
 			files = (
 				AAD2E35C215BB6BC008B77BE /* LaunchScreen.storyboard in Resources */,
 				AAD2E35D215BB6BC008B77BE /* Assets.xcassets in Resources */,
+				AAEF903C2210417700257914 /* TripMock.json in Resources */,
+				AAEF90402210436E00257914 /* AirportMock.json in Resources */,
+				AAEF90422210436E00257914 /* RegionMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,6 +789,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA652F3E215BA46E0044E3C9 /* ViewController.swift in Sources */,
+				AAEF9038221040DF00257914 /* MockAPIClient.swift in Sources */,
 				AA652F3C215BA46E0044E3C9 /* AppDelegate.swift in Sources */,
 				AA6183D9215BEC4E00F47C9C /* ApplicationLoader.swift in Sources */,
 				AAD2E36C215BB842008B77BE /* Constants.swift in Sources */,
@@ -787,6 +812,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD2E353215BB6BC008B77BE /* ViewController.swift in Sources */,
+				AAEF9039221040DF00257914 /* MockAPIClient.swift in Sources */,
 				AAD2E354215BB6BC008B77BE /* AppDelegate.swift in Sources */,
 				AA6183DA215BEC4E00F47C9C /* ApplicationLoader.swift in Sources */,
 				AAD2E36D215BB842008B77BE /* Constants.swift in Sources */,
