@@ -45,8 +45,6 @@
 		AAD2E363215BB6BC008B77BE /* TravelDataKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA0A1ECD215BA8C900754EC7 /* TravelDataKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AAD2E36C215BB842008B77BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2E36B215BB842008B77BE /* Constants.swift */; };
 		AAD2E36D215BB842008B77BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2E36B215BB842008B77BE /* Constants.swift */; };
-		AAEF902122102F8800257914 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAEF902022102F8800257914 /* Keys.plist */; };
-		AAEF902222102F8800257914 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAEF902022102F8800257914 /* Keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,7 +225,6 @@
 		AAD2E368215BB6BC008B77BE /* Aerogami Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aerogami Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD2E36A215BB6BC008B77BE /* Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Dev.plist"; path = "/Users/Povilas/Projects/TravelSwift/Info-Dev.plist"; sourceTree = "<absolute>"; };
 		AAD2E36B215BB842008B77BE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		AAEF902022102F8800257914 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		B3DD0F23D49182673376940F /* Pods-TravelApplication Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApplication Dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApplication Dev/Pods-TravelApplication Dev.release.xcconfig"; sourceTree = "<group>"; };
 		FF759E11D9C9A3522F209AFE /* Pods-TravelApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApplication/Pods-TravelApplication.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -379,7 +376,6 @@
 				AA652F47215BA46F0044E3C9 /* Info.plist */,
 				AAD2E36A215BB6BC008B77BE /* Info-Dev.plist */,
 				AAD2E36B215BB842008B77BE /* Constants.swift */,
-				AAEF902022102F8800257914 /* Keys.plist */,
 			);
 			path = TravelApplication;
 			sourceTree = "<group>";
@@ -414,6 +410,7 @@
 				AA652F36215BA46E0044E3C9 /* Resources */,
 				AA0A1EA0215BA7E700754EC7 /* Embed Frameworks */,
 				E02BD687707964F944DD85A2 /* [CP] Embed Pods Frameworks */,
+				AAEF90282210340F00257914 /* Load Keys */,
 			);
 			buildRules = (
 			);
@@ -456,6 +453,7 @@
 				AAD2E35B215BB6BC008B77BE /* Resources */,
 				AAD2E35F215BB6BC008B77BE /* Embed Frameworks */,
 				7E3313F4325C3CEE45C68AE5 /* [CP] Embed Pods Frameworks */,
+				AAEF9027221033E200257914 /* Load Keys */,
 			);
 			buildRules = (
 			);
@@ -591,7 +589,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAEF902122102F8800257914 /* Keys.plist in Resources */,
 				AA652F46215BA46F0044E3C9 /* LaunchScreen.storyboard in Resources */,
 				AA652F43215BA46F0044E3C9 /* Assets.xcassets in Resources */,
 			);
@@ -608,7 +605,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAEF902222102F8800257914 /* Keys.plist in Resources */,
 				AAD2E35C215BB6BC008B77BE /* LaunchScreen.storyboard in Resources */,
 				AAD2E35D215BB6BC008B77BE /* Assets.xcassets in Resources */,
 			);
@@ -670,6 +666,42 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		AAEF9027221033E200257914 /* Load Keys */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Load Keys";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f \"${PROJECT_DIR}/TravelApplication/Keys.plist\" ]\nthen\ncp -r \"${PROJECT_DIR}/TravelApplication/Keys.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\"\nfi\n";
+		};
+		AAEF90282210340F00257914 /* Load Keys */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Load Keys";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f \"${PROJECT_DIR}/TravelApplication/Keys.plist\"]\nthen\ncp -r \"${PROJECT_DIR}/TravelApplication/Keys.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\"\nfi\n";
 		};
 		C2D42C71287E80A2F8AD9325 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
